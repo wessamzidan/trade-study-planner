@@ -1,0 +1,3702 @@
+{
+  "schema_version": "2.0",
+  "generated": "2026-11-13",
+  "source": "UN/LOCODE (github.com/datasets/un-locode) coordinates; curated port selection; searoute bundled ports as fallback",
+  "countries": {
+    "EGY": {
+      "ports": [
+        {
+          "name": "Alexandria",
+          "locode": "EGALY",
+          "lat": 31.1833,
+          "lon": 29.9167,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Damietta",
+          "locode": "EGDAM",
+          "lat": 31.4167,
+          "lon": 31.8167,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Port Said",
+          "locode": "EGPSD",
+          "lat": 31.2653,
+          "lon": 32.2861,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Ain Sokhna",
+          "locode": "EGSOK",
+          "lat": 29.65,
+          "lon": 32.35,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "MAR": {
+      "ports": [
+        {
+          "name": "Casablanca",
+          "locode": "MACAS",
+          "lat": 33.5833,
+          "lon": -7.6,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Tangier",
+          "locode": "MATNG",
+          "lat": 35.7833,
+          "lon": -5.8167,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "DZA": {
+      "ports": [
+        {
+          "name": "Algiers",
+          "locode": "DZALG",
+          "lat": 36.75,
+          "lon": 3.05,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Oran",
+          "locode": "DZORN",
+          "lat": 35.7167,
+          "lon": -0.65,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "TUN": {
+      "ports": [
+        {
+          "name": "Rades",
+          "locode": "TNRAD",
+          "lat": 36.7754,
+          "lon": 10.2888,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Sfax",
+          "locode": "TNSFA",
+          "lat": 34.7401,
+          "lon": 10.772,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "LBY": {
+      "ports": [
+        {
+          "name": "Tripoli",
+          "locode": "LYTIP",
+          "lat": 32.8931,
+          "lon": 13.1916,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Qasr Ahmed",
+          "locode": "LYMRA",
+          "lat": 32.3551,
+          "lon": 15.2237,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "SDN": {
+      "ports": [
+        {
+          "name": "Port Sudan",
+          "locode": "SDPZU",
+          "lat": 19.6114,
+          "lon": 37.2258,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "KEN": {
+      "ports": [
+        {
+          "name": "Mombasa",
+          "locode": "KEMBA",
+          "lat": -4.0678,
+          "lon": 39.6665,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "TZA": {
+      "ports": [
+        {
+          "name": "Dar es Salaam",
+          "locode": "TZDAR",
+          "lat": -6.8,
+          "lon": 39.2833,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ZAF": {
+      "ports": [
+        {
+          "name": "Durban",
+          "locode": "ZADUR",
+          "lat": -29.85,
+          "lon": 31.0167,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Cape Town",
+          "locode": "ZACPT",
+          "lat": -33.9167,
+          "lon": 18.4167,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Gqeberha",
+          "locode": "ZAPLZ",
+          "lat": -33.95,
+          "lon": 25.6,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "NGA": {
+      "ports": [
+        {
+          "name": "Apapa",
+          "locode": "NGAPP",
+          "lat": 6.4486,
+          "lon": 3.3924,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Lagos",
+          "locode": "NGLOS",
+          "lat": 6.4235,
+          "lon": 3.4067,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Tincan",
+          "locode": "NGTIN",
+          "lat": 6.4305,
+          "lon": 3.3451,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "GHA": {
+      "ports": [
+        {
+          "name": "Tema",
+          "locode": "GHTEM",
+          "lat": 5.6333,
+          "lon": 0.0167,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Takoradi",
+          "locode": "GHTKD",
+          "lat": 4.884,
+          "lon": -1.7395,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "CIV": {
+      "ports": [
+        {
+          "name": "Abidjan",
+          "locode": "CIABJ",
+          "lat": 5.3333,
+          "lon": -4.0167,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "SEN": {
+      "ports": [
+        {
+          "name": "Dakar",
+          "locode": "SNDKR",
+          "lat": 14.6824,
+          "lon": -17.4408,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "CMR": {
+      "ports": [
+        {
+          "name": "Douala",
+          "locode": "CMDLA",
+          "lat": 4.0473,
+          "lon": 9.6955,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "AGO": {
+      "ports": [
+        {
+          "name": "Luanda",
+          "locode": "AOLAD",
+          "lat": -8.8082,
+          "lon": 13.255,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "MOZ": {
+      "ports": [
+        {
+          "name": "Maputo",
+          "locode": "MZMPM",
+          "lat": -25.9667,
+          "lon": 32.5667,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Beira",
+          "locode": "MZBEW",
+          "lat": -19.8333,
+          "lon": 34.8354,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "MUS": {
+      "ports": [
+        {
+          "name": "Port Louis",
+          "locode": "MUPLU",
+          "lat": -20.1436,
+          "lon": 57.5163,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "MDG": {
+      "ports": [
+        {
+          "name": "Toamasina",
+          "locode": "MGTOA",
+          "lat": -18.1604,
+          "lon": 49.4112,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "DJI": {
+      "ports": [
+        {
+          "name": "Djibouti",
+          "locode": "DJJIB",
+          "lat": 11.5462,
+          "lon": 43.0782,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "NAM": {
+      "ports": [
+        {
+          "name": "Walvis Bay",
+          "locode": "NAWVB",
+          "lat": -22.9503,
+          "lon": 14.5006,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "GAB": {
+      "ports": [
+        {
+          "name": "Owendo",
+          "locode": "GAOWE",
+          "lat": 0.2905,
+          "lon": 9.5088,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "COG": {
+      "ports": [
+        {
+          "name": "Pointe Noire",
+          "locode": "CGPNR",
+          "lat": -4.8,
+          "lon": 11.85,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "COD": {
+      "ports": [
+        {
+          "name": "Matadi",
+          "locode": "CDMAT",
+          "lat": -5.8262,
+          "lon": 13.4692,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "TGO": {
+      "ports": [
+        {
+          "name": "Lome",
+          "locode": "TGLFW",
+          "lat": 6.1169,
+          "lon": 1.2101,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "BEN": {
+      "ports": [
+        {
+          "name": "Cotonou",
+          "locode": "BJCOO",
+          "lat": 6.35,
+          "lon": 2.4333,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "MRT": {
+      "ports": [
+        {
+          "name": "Nouadhibou",
+          "locode": "MRNDB",
+          "lat": 20.9,
+          "lon": -17.05,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "GIN": {
+      "ports": [
+        {
+          "name": "Conakry",
+          "locode": "GNCKY",
+          "lat": 9.5106,
+          "lon": -13.7153,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "SLE": {
+      "ports": [
+        {
+          "name": "Freetown",
+          "locode": "SLFNA",
+          "lat": 8.4891,
+          "lon": -13.2048,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "LBR": {
+      "ports": [
+        {
+          "name": "Monrovia",
+          "locode": "LRMLW",
+          "lat": 6.3,
+          "lon": -10.8,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "GMB": {
+      "ports": [
+        {
+          "name": "Banjul",
+          "locode": "GMBJL",
+          "lat": 13.45,
+          "lon": -16.5667,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "SOM": {
+      "ports": [
+        {
+          "name": "Mogadishu",
+          "locode": "SOMGQ",
+          "lat": 2.0468,
+          "lon": 45.3207,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "NLD": {
+      "ports": [
+        {
+          "name": "Rotterdam",
+          "locode": "NLRTM",
+          "lat": 51.9167,
+          "lon": 4.5,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "BEL": {
+      "ports": [
+        {
+          "name": "Antwerp",
+          "locode": "BEANR",
+          "lat": 51.2167,
+          "lon": 4.4167,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Zeebrugge",
+          "locode": "BEZEE",
+          "lat": 51.3333,
+          "lon": 3.2,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "DEU": {
+      "ports": [
+        {
+          "name": "Hamburg",
+          "locode": "DEHAM",
+          "lat": 53.5167,
+          "lon": 9.9333,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Bremerhaven",
+          "locode": "DEBRV",
+          "lat": 53.5333,
+          "lon": 8.6,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "FRA": {
+      "ports": [
+        {
+          "name": "Le Havre",
+          "locode": "FRLEH",
+          "lat": 49.5,
+          "lon": 0.1,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Marseille",
+          "locode": "FRMRS",
+          "lat": 43.3,
+          "lon": 5.4,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "GBR": {
+      "ports": [
+        {
+          "name": "Felixstowe",
+          "locode": "GBFXT",
+          "lat": 51.9579,
+          "lon": 1.3445,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Southampton",
+          "locode": "GBSOU",
+          "lat": 50.8939,
+          "lon": -1.3753,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "London Gateway",
+          "locode": "GBLGP",
+          "lat": 51.5,
+          "lon": 0.4833,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ESP": {
+      "ports": [
+        {
+          "name": "Valencia",
+          "locode": "ESVLC",
+          "lat": 39.4511,
+          "lon": -0.3303,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Algeciras",
+          "locode": "ESALG",
+          "lat": 36.1411,
+          "lon": -5.4381,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Barcelona",
+          "locode": "ESBCN",
+          "lat": 41.35,
+          "lon": 2.1667,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "PRT": {
+      "ports": [
+        {
+          "name": "Lisbon",
+          "locode": "PTLIS",
+          "lat": 38.7167,
+          "lon": -9.1333,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Sines",
+          "locode": "PTSIE",
+          "lat": 37.95,
+          "lon": -8.8667,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ITA": {
+      "ports": [
+        {
+          "name": "Genoa",
+          "locode": "ITGOA",
+          "lat": 44.4167,
+          "lon": 8.95,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "La Spezia",
+          "locode": "ITSPE",
+          "lat": 44.1167,
+          "lon": 9.8333,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Gioia Tauro",
+          "locode": "ITGIT",
+          "lat": 38.4167,
+          "lon": 15.9,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "GRC": {
+      "ports": [
+        {
+          "name": "Piraeus",
+          "locode": "GRPIR",
+          "lat": 37.9333,
+          "lon": 23.6167,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "TUR": {
+      "ports": [
+        {
+          "name": "Mersin",
+          "locode": "TRMER",
+          "lat": 36.7167,
+          "lon": 34.6333,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Izmir",
+          "locode": "TRIZM",
+          "lat": 38.4167,
+          "lon": 27.15,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Istanbul",
+          "locode": "TRIST",
+          "lat": 41.0167,
+          "lon": 28.9667,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "POL": {
+      "ports": [
+        {
+          "name": "Gdansk",
+          "locode": "PLGDN",
+          "lat": 54.3992,
+          "lon": 18.6675,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Gdynia",
+          "locode": "PLGDY",
+          "lat": 54.5,
+          "lon": 18.55,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "SWE": {
+      "ports": [
+        {
+          "name": "Gothenburg",
+          "locode": "SEGOT",
+          "lat": 57.7167,
+          "lon": 11.9667,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "DNK": {
+      "ports": [
+        {
+          "name": "Aarhus",
+          "locode": "DKAAR",
+          "lat": 56.15,
+          "lon": 10.2167,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "NOR": {
+      "ports": [
+        {
+          "name": "Oslo",
+          "locode": "NOOSL",
+          "lat": 59.9,
+          "lon": 10.7333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "FIN": {
+      "ports": [
+        {
+          "name": "Helsinki",
+          "locode": "FIHEL",
+          "lat": 60.1667,
+          "lon": 24.9333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "IRL": {
+      "ports": [
+        {
+          "name": "Dublin",
+          "locode": "IEDUB",
+          "lat": 53.3434,
+          "lon": -6.2267,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "ROU": {
+      "ports": [
+        {
+          "name": "Constanta",
+          "locode": "ROCND",
+          "lat": 44.1833,
+          "lon": 28.65,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "BGR": {
+      "ports": [
+        {
+          "name": "Varna",
+          "locode": "BGVAR",
+          "lat": 43.2065,
+          "lon": 27.9217,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "HRV": {
+      "ports": [
+        {
+          "name": "Rijeka",
+          "locode": "HRRJK",
+          "lat": 45.3333,
+          "lon": 14.4,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "SVN": {
+      "ports": [
+        {
+          "name": "Koper",
+          "locode": "SIKOP",
+          "lat": 45.5487,
+          "lon": 13.7345,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "EST": {
+      "ports": [
+        {
+          "name": "Tallinn",
+          "locode": "EETLL",
+          "lat": 59.4333,
+          "lon": 24.7333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "LVA": {
+      "ports": [
+        {
+          "name": "Riga",
+          "locode": "LVRIX",
+          "lat": 56.9456,
+          "lon": 24.1061,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "LTU": {
+      "ports": [
+        {
+          "name": "Klaipeda",
+          "locode": "LTKLJ",
+          "lat": 55.7036,
+          "lon": 21.126,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "UKR": {
+      "ports": [
+        {
+          "name": "Odesa",
+          "locode": "UAODS",
+          "lat": 46.5,
+          "lon": 30.75,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "RUS": {
+      "ports": [
+        {
+          "name": "Saint Petersburg",
+          "locode": "RULED",
+          "lat": 59.8833,
+          "lon": 30.25,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Novorossiysk",
+          "locode": "RUNVS",
+          "lat": 44.7167,
+          "lon": 37.7667,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "GEO": {
+      "ports": [
+        {
+          "name": "Poti",
+          "locode": "GEPTI",
+          "lat": 42.1781,
+          "lon": 41.672,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Batumi",
+          "locode": "GEBUS",
+          "lat": 41.6459,
+          "lon": 41.6608,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "CYP": {
+      "ports": [
+        {
+          "name": "Limassol",
+          "locode": "CYLMS",
+          "lat": 34.6833,
+          "lon": 33.05,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "MLT": {
+      "ports": [
+        {
+          "name": "Marsaxlokk",
+          "locode": "MTMAR",
+          "lat": 35.8333,
+          "lon": 14.5333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ISL": {
+      "ports": [
+        {
+          "name": "Reykjavik",
+          "locode": "ISREY",
+          "lat": 64.15,
+          "lon": -21.95,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ALB": {
+      "ports": [
+        {
+          "name": "Durres",
+          "locode": "ALDRZ",
+          "lat": 41.3187,
+          "lon": 19.4488,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "MNE": {
+      "ports": [
+        {
+          "name": "Bar",
+          "locode": "MEBAR",
+          "lat": 42.0833,
+          "lon": 19.0833,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "CHN": {
+      "ports": [
+        {
+          "name": "Shanghai",
+          "locode": "CNSHA",
+          "lat": 31.4001,
+          "lon": 121.4971,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Ningbo",
+          "locode": "CNNGB",
+          "lat": 29.8719,
+          "lon": 121.5594,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Shenzhen",
+          "locode": "CNSZX",
+          "lat": 22.5171,
+          "lon": 114.0286,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Qingdao",
+          "locode": "CNTAO",
+          "lat": 36.065,
+          "lon": 120.3853,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "HKG": {
+      "ports": [
+        {
+          "name": "Hong Kong",
+          "locode": "HKHKG",
+          "lat": 22.3167,
+          "lon": 114.1667,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "TWN": {
+      "ports": [
+        {
+          "name": "Kaohsiung",
+          "locode": "TWKHH",
+          "lat": 22.642,
+          "lon": 120.272,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "JPN": {
+      "ports": [
+        {
+          "name": "Tokyo",
+          "locode": "JPTYO",
+          "lat": 35.6833,
+          "lon": 139.75,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Yokohama",
+          "locode": "JPYOK",
+          "lat": 35.45,
+          "lon": 139.65,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Kobe",
+          "locode": "JPUKB",
+          "lat": 34.6833,
+          "lon": 135.1667,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "KOR": {
+      "ports": [
+        {
+          "name": "Busan",
+          "locode": "KRPUS",
+          "lat": 35.1333,
+          "lon": 129.05,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "SGP": {
+      "ports": [
+        {
+          "name": "Singapore",
+          "locode": "SGSIN",
+          "lat": 1.2833,
+          "lon": 103.85,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "MYS": {
+      "ports": [
+        {
+          "name": "Port Klang",
+          "locode": "MYPKG",
+          "lat": 3.0,
+          "lon": 101.4,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Tanjung Pelepas",
+          "locode": "MYTPP",
+          "lat": 1.3667,
+          "lon": 103.55,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "THA": {
+      "ports": [
+        {
+          "name": "Laem Chabang",
+          "locode": "THLCH",
+          "lat": 13.0833,
+          "lon": 100.8833,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Bangkok",
+          "locode": "THBKK",
+          "lat": 13.75,
+          "lon": 100.5167,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "VNM": {
+      "ports": [
+        {
+          "name": "Cai Mep",
+          "locode": "VNCMT",
+          "lat": 10.5167,
+          "lon": 107.0,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Haiphong",
+          "locode": "VNHPH",
+          "lat": 20.85,
+          "lon": 106.6833,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "IDN": {
+      "ports": [
+        {
+          "name": "Jakarta",
+          "locode": "IDJKT",
+          "lat": -6.1333,
+          "lon": 106.8333,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Surabaya",
+          "locode": "IDSUB",
+          "lat": -7.2333,
+          "lon": 112.75,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "PHL": {
+      "ports": [
+        {
+          "name": "Manila",
+          "locode": "PHMNL",
+          "lat": 14.6312,
+          "lon": 120.972,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "IND": {
+      "ports": [
+        {
+          "name": "Nhava Sheva",
+          "locode": "INNSA",
+          "lat": 18.95,
+          "lon": 72.9667,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Mundra",
+          "locode": "INMUN",
+          "lat": 22.795,
+          "lon": 69.7467,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Chennai",
+          "locode": "INMAA",
+          "lat": 13.0833,
+          "lon": 80.2833,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "PAK": {
+      "ports": [
+        {
+          "name": "Karachi",
+          "locode": "PKKHI",
+          "lat": 24.8765,
+          "lon": 66.9337,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "BGD": {
+      "ports": [
+        {
+          "name": "Chattogram",
+          "locode": "BDCGP",
+          "lat": 22.3333,
+          "lon": 91.8333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "LKA": {
+      "ports": [
+        {
+          "name": "Colombo",
+          "locode": "LKCMB",
+          "lat": 6.9167,
+          "lon": 79.85,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "MMR": {
+      "ports": [
+        {
+          "name": "Yangon",
+          "locode": "MMRGN",
+          "lat": 16.7746,
+          "lon": 96.1677,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "KHM": {
+      "ports": [
+        {
+          "name": "Sihanoukville",
+          "locode": "KHKOS",
+          "lat": 10.6,
+          "lon": 103.5167,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "SAU": {
+      "ports": [
+        {
+          "name": "Jeddah",
+          "locode": "SAJED",
+          "lat": 21.4667,
+          "lon": 39.1667,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Dammam",
+          "locode": "SADMM",
+          "lat": 26.5,
+          "lon": 50.2,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ARE": {
+      "ports": [
+        {
+          "name": "Jebel Ali",
+          "locode": "AEJEA",
+          "lat": 25.0195,
+          "lon": 55.0518,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Khalifa Port (Abu Dhabi)",
+          "locode": "AEKHL",
+          "lat": 24.8333,
+          "lon": 54.6667,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "OMN": {
+      "ports": [
+        {
+          "name": "Salalah",
+          "locode": "OMSLL",
+          "lat": 16.9988,
+          "lon": 54.1,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Sohar",
+          "locode": "OMSOH",
+          "lat": 24.3333,
+          "lon": 56.75,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "QAT": {
+      "ports": [
+        {
+          "name": "Doha",
+          "locode": "QADOH",
+          "lat": 25.2945,
+          "lon": 51.5225,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "KWT": {
+      "ports": [
+        {
+          "name": "Shuwaikh",
+          "locode": "KWSWK",
+          "lat": 29.35,
+          "lon": 47.9333,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Kuwait",
+          "locode": "KWKWI",
+          "lat": 29.3751,
+          "lon": 47.9689,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "BHR": {
+      "ports": [
+        {
+          "name": "Khalifa Bin Salman Port",
+          "locode": "BHKBS",
+          "lat": 26.2,
+          "lon": 50.6167,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "IRN": {
+      "ports": [
+        {
+          "name": "Bandar Abbas",
+          "locode": "IRBND",
+          "lat": 27.1833,
+          "lon": 56.2667,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "IRQ": {
+      "ports": [
+        {
+          "name": "Umm Qasr",
+          "locode": "IQUQR",
+          "lat": 30.0333,
+          "lon": 47.9333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ISR": {
+      "ports": [
+        {
+          "name": "Haifa",
+          "locode": "ILHFA",
+          "lat": 32.8,
+          "lon": 34.9833,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Ashdod",
+          "locode": "ILASH",
+          "lat": 31.8167,
+          "lon": 34.6663,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "JOR": {
+      "ports": [
+        {
+          "name": "Aqaba",
+          "locode": "JOAQJ",
+          "lat": 29.5333,
+          "lon": 35.0,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "LBN": {
+      "ports": [
+        {
+          "name": "Beirut",
+          "locode": "LBBEY",
+          "lat": 33.8333,
+          "lon": 35.4833,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "SYR": {
+      "ports": [
+        {
+          "name": "Latakia",
+          "locode": "SYLTK",
+          "lat": 35.5167,
+          "lon": 35.7833,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "YEM": {
+      "ports": [
+        {
+          "name": "Aden",
+          "locode": "YEADE",
+          "lat": 12.8589,
+          "lon": 45.0051,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "BRN": {
+      "ports": [
+        {
+          "name": "Muara",
+          "locode": "BNMUA",
+          "lat": 5.0228,
+          "lon": 115.0656,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "USA": {
+      "ports": [
+        {
+          "name": "New York",
+          "locode": "USNYC",
+          "lat": 40.7,
+          "lon": -74.0,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Los Angeles",
+          "locode": "USLAX",
+          "lat": 34.05,
+          "lon": -118.25,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Houston",
+          "locode": "USHOU",
+          "lat": 29.75,
+          "lon": -95.35,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Savannah",
+          "locode": "USSAV",
+          "lat": 32.0866,
+          "lon": -81.0997,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "CAN": {
+      "ports": [
+        {
+          "name": "Vancouver",
+          "locode": "CAVAN",
+          "lat": 49.2879,
+          "lon": -123.0944,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Montreal",
+          "locode": "CAMTR",
+          "lat": 45.5142,
+          "lon": -73.5593,
+          "default": false,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Halifax",
+          "locode": "CAHAL",
+          "lat": 44.6258,
+          "lon": -63.5739,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "MEX": {
+      "ports": [
+        {
+          "name": "Manzanillo",
+          "locode": "MXZLO",
+          "lat": 19.05,
+          "lon": -104.3,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Veracruz",
+          "locode": "MXVER",
+          "lat": 19.2,
+          "lon": -96.0833,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Lazaro Cardenas",
+          "locode": "MXLZC",
+          "lat": 17.95,
+          "lon": -102.1833,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "GTM": {
+      "ports": [
+        {
+          "name": "Santo Tomas de Castilla",
+          "locode": "GTSTC",
+          "lat": 15.7,
+          "lon": -88.6167,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Puerto Quetzal",
+          "locode": "GTPRQ",
+          "lat": 13.9343,
+          "lon": -90.7855,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "PAN": {
+      "ports": [
+        {
+          "name": "Balboa",
+          "locode": "PABLB",
+          "lat": 8.9396,
+          "lon": -79.5547,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Manzanillo",
+          "locode": "PAMIT",
+          "lat": 9.6116,
+          "lon": -79.6021,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "COL": {
+      "ports": [
+        {
+          "name": "Cartagena",
+          "locode": "COCTG",
+          "lat": 10.4025,
+          "lon": -75.52,
+          "default": true,
+          "coord_source": "searoute"
+        },
+        {
+          "name": "Buenaventura",
+          "locode": "COBUN",
+          "lat": 3.8884,
+          "lon": -77.0444,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "VEN": {
+      "ports": [
+        {
+          "name": "Puerto Cabello",
+          "locode": "VEPBL",
+          "lat": 10.4786,
+          "lon": -68.0084,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "ECU": {
+      "ports": [
+        {
+          "name": "Guayaquil",
+          "locode": "ECGYE",
+          "lat": -2.1667,
+          "lon": -79.9,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "PER": {
+      "ports": [
+        {
+          "name": "Callao",
+          "locode": "PECLL",
+          "lat": -12.05,
+          "lon": -77.1333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "CHL": {
+      "ports": [
+        {
+          "name": "Valparaiso",
+          "locode": "CLVAP",
+          "lat": -33.0333,
+          "lon": -71.6333,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "San Antonio",
+          "locode": "CLSAI",
+          "lat": -33.6,
+          "lon": -71.6,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "ARG": {
+      "ports": [
+        {
+          "name": "Buenos Aires",
+          "locode": "ARBUE",
+          "lat": -34.5833,
+          "lon": -58.6667,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "URY": {
+      "ports": [
+        {
+          "name": "Montevideo",
+          "locode": "UYMVD",
+          "lat": -34.9068,
+          "lon": -56.1961,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "BRA": {
+      "ports": [
+        {
+          "name": "Santos",
+          "locode": "BRSSZ",
+          "lat": -23.9333,
+          "lon": -46.3167,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Paranagua",
+          "locode": "BRPNG",
+          "lat": -25.5,
+          "lon": -48.5167,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Itajai",
+          "locode": "BRITJ",
+          "lat": -26.9,
+          "lon": -48.65,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "CRI": {
+      "ports": [
+        {
+          "name": "Moin",
+          "locode": "CRMOB",
+          "lat": 10.0,
+          "lon": -83.0833,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "DOM": {
+      "ports": [
+        {
+          "name": "Caucedo",
+          "locode": "DOCAU",
+          "lat": 18.4167,
+          "lon": -69.6333,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "JAM": {
+      "ports": [
+        {
+          "name": "Kingston",
+          "locode": "JMKIN",
+          "lat": 17.9899,
+          "lon": -76.8265,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "CUB": {
+      "ports": [
+        {
+          "name": "Mariel",
+          "locode": "CUMAR",
+          "lat": 23.0,
+          "lon": -82.75,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "TTO": {
+      "ports": [
+        {
+          "name": "Port-of-Spain",
+          "locode": "TTPOS",
+          "lat": 10.65,
+          "lon": -61.5167,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "HND": {
+      "ports": [
+        {
+          "name": "Puerto Cortes",
+          "locode": "HNPCR",
+          "lat": 15.8605,
+          "lon": -87.9483,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "SLV": {
+      "ports": [
+        {
+          "name": "Acajutla",
+          "locode": "SVAQJ",
+          "lat": 13.5699,
+          "lon": -89.8304,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "NIC": {
+      "ports": [
+        {
+          "name": "Corinto",
+          "locode": "NICIO",
+          "lat": 12.538,
+          "lon": -87.1902,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "BHS": {
+      "ports": [
+        {
+          "name": "Freeport",
+          "locode": "BSFPO",
+          "lat": 26.5088,
+          "lon": -78.6991,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "GUY": {
+      "ports": [
+        {
+          "name": "Georgetown",
+          "locode": "GYGEO",
+          "lat": 6.8153,
+          "lon": -58.1543,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "SUR": {
+      "ports": [
+        {
+          "name": "Paramaribo",
+          "locode": "SRPBM",
+          "lat": 5.8806,
+          "lon": -55.2146,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "AUS": {
+      "ports": [
+        {
+          "name": "Melbourne",
+          "locode": "AUMEL",
+          "lat": -37.8167,
+          "lon": 144.9667,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Sydney",
+          "locode": "AUSYD",
+          "lat": -33.85,
+          "lon": 151.2,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Brisbane",
+          "locode": "AUBNE",
+          "lat": -27.4667,
+          "lon": 153.0167,
+          "default": false,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Fremantle",
+          "locode": "AUFRE",
+          "lat": -32.0374,
+          "lon": 115.752,
+          "default": false,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "NZL": {
+      "ports": [
+        {
+          "name": "Auckland",
+          "locode": "NZAKL",
+          "lat": -36.8333,
+          "lon": 174.8,
+          "default": true,
+          "coord_source": "unlocode"
+        },
+        {
+          "name": "Tauranga",
+          "locode": "NZTRG",
+          "lat": -37.6833,
+          "lon": 176.1667,
+          "default": false,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "FJI": {
+      "ports": [
+        {
+          "name": "Suva",
+          "locode": "FJSUV",
+          "lat": -18.1333,
+          "lon": 178.45,
+          "default": true,
+          "coord_source": "unlocode"
+        }
+      ],
+      "landlocked": false
+    },
+    "PNG": {
+      "ports": [
+        {
+          "name": "Lae",
+          "locode": "PGLAE",
+          "lat": -6.7167,
+          "lon": 146.9667,
+          "default": true,
+          "coord_source": "searoute"
+        }
+      ],
+      "landlocked": false
+    },
+    "ETH": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "DJJIB"
+      ]
+    },
+    "UGA": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "KEMBA",
+        "TZDAR"
+      ]
+    },
+    "RWA": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "TZDAR",
+        "KEMBA"
+      ]
+    },
+    "BDI": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "TZDAR"
+      ]
+    },
+    "ZMB": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "TZDAR",
+        "MZBEW"
+      ]
+    },
+    "ZWE": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "MZBEW",
+        "ZADUR"
+      ]
+    },
+    "MWI": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "MZBEW",
+        "TZDAR"
+      ]
+    },
+    "BWA": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "ZADUR",
+        "NAWVB"
+      ]
+    },
+    "SSD": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "KEMBA"
+      ]
+    },
+    "MLI": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "SNDKR",
+        "CIABJ"
+      ]
+    },
+    "BFA": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CIABJ",
+        "GHTEM"
+      ]
+    },
+    "NER": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "BJCOO",
+        "NGLOS"
+      ]
+    },
+    "TCD": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CMDLA"
+      ]
+    },
+    "CAF": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CMDLA"
+      ]
+    },
+    "LSO": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "ZADUR"
+      ]
+    },
+    "SWZ": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "ZADUR",
+        "MZMPM"
+      ]
+    },
+    "CHE": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "NLRTM",
+        "ITGOA"
+      ]
+    },
+    "AUT": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "DEHAM",
+        "SIKOP"
+      ]
+    },
+    "CZE": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "DEHAM",
+        "DEBRV"
+      ]
+    },
+    "SVK": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "DEHAM",
+        "SIKOP"
+      ]
+    },
+    "HUN": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "HRRJK",
+        "DEHAM"
+      ]
+    },
+    "SRB": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "HRRJK",
+        "ROCND"
+      ]
+    },
+    "BIH": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "HRPLE"
+      ]
+    },
+    "MKD": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "GRPIR"
+      ]
+    },
+    "BLR": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "LTKLJ",
+        "PLGDN"
+      ]
+    },
+    "MDA": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "ROCND",
+        "UAODS"
+      ]
+    },
+    "LUX": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "BEANR",
+        "NLRTM"
+      ]
+    },
+    "KAZ": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CNLYG",
+        "GEPTI"
+      ]
+    },
+    "UZB": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "GEPTI",
+        "IRBND"
+      ]
+    },
+    "TKM": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "IRBND",
+        "GEPTI"
+      ]
+    },
+    "KGZ": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CNLYG",
+        "GEPTI"
+      ]
+    },
+    "TJK": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "GEPTI",
+        "IRBND"
+      ]
+    },
+    "AFG": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "PKKHI",
+        "IRBND"
+      ]
+    },
+    "NPL": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "INCCU",
+        "INVTZ"
+      ]
+    },
+    "BTN": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "INCCU"
+      ]
+    },
+    "LAO": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "THLCH",
+        "VNHPH"
+      ]
+    },
+    "MNG": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CNTXG"
+      ]
+    },
+    "ARM": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "GEPTI"
+      ]
+    },
+    "AZE": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "GEPTI"
+      ]
+    },
+    "PRY": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "ARBUE",
+        "UYMVD"
+      ]
+    },
+    "BOL": {
+      "ports": [],
+      "landlocked": true,
+      "gateways": [
+        "CLARI",
+        "PECLL"
+      ]
+    }
+  },
+  "by_locode": {
+    "EGALY": {
+      "iso3": "EGY",
+      "name": "Alexandria",
+      "lat": 31.1833,
+      "lon": 29.9167,
+      "coord_source": "unlocode"
+    },
+    "EGDAM": {
+      "iso3": "EGY",
+      "name": "Damietta",
+      "lat": 31.4167,
+      "lon": 31.8167,
+      "coord_source": "unlocode"
+    },
+    "EGPSD": {
+      "iso3": "EGY",
+      "name": "Port Said",
+      "lat": 31.2653,
+      "lon": 32.2861,
+      "coord_source": "searoute"
+    },
+    "EGSOK": {
+      "iso3": "EGY",
+      "name": "Ain Sokhna",
+      "lat": 29.65,
+      "lon": 32.35,
+      "coord_source": "unlocode"
+    },
+    "MACAS": {
+      "iso3": "MAR",
+      "name": "Casablanca",
+      "lat": 33.5833,
+      "lon": -7.6,
+      "coord_source": "unlocode"
+    },
+    "MATNG": {
+      "iso3": "MAR",
+      "name": "Tangier",
+      "lat": 35.7833,
+      "lon": -5.8167,
+      "coord_source": "unlocode"
+    },
+    "DZALG": {
+      "iso3": "DZA",
+      "name": "Algiers",
+      "lat": 36.75,
+      "lon": 3.05,
+      "coord_source": "unlocode"
+    },
+    "DZORN": {
+      "iso3": "DZA",
+      "name": "Oran",
+      "lat": 35.7167,
+      "lon": -0.65,
+      "coord_source": "searoute"
+    },
+    "TNRAD": {
+      "iso3": "TUN",
+      "name": "Rades",
+      "lat": 36.7754,
+      "lon": 10.2888,
+      "coord_source": "searoute"
+    },
+    "TNSFA": {
+      "iso3": "TUN",
+      "name": "Sfax",
+      "lat": 34.7401,
+      "lon": 10.772,
+      "coord_source": "searoute"
+    },
+    "LYTIP": {
+      "iso3": "LBY",
+      "name": "Tripoli",
+      "lat": 32.8931,
+      "lon": 13.1916,
+      "coord_source": "searoute"
+    },
+    "LYMRA": {
+      "iso3": "LBY",
+      "name": "Qasr Ahmed",
+      "lat": 32.3551,
+      "lon": 15.2237,
+      "coord_source": "searoute"
+    },
+    "SDPZU": {
+      "iso3": "SDN",
+      "name": "Port Sudan",
+      "lat": 19.6114,
+      "lon": 37.2258,
+      "coord_source": "searoute"
+    },
+    "KEMBA": {
+      "iso3": "KEN",
+      "name": "Mombasa",
+      "lat": -4.0678,
+      "lon": 39.6665,
+      "coord_source": "searoute"
+    },
+    "TZDAR": {
+      "iso3": "TZA",
+      "name": "Dar es Salaam",
+      "lat": -6.8,
+      "lon": 39.2833,
+      "coord_source": "unlocode"
+    },
+    "ZADUR": {
+      "iso3": "ZAF",
+      "name": "Durban",
+      "lat": -29.85,
+      "lon": 31.0167,
+      "coord_source": "unlocode"
+    },
+    "ZACPT": {
+      "iso3": "ZAF",
+      "name": "Cape Town",
+      "lat": -33.9167,
+      "lon": 18.4167,
+      "coord_source": "unlocode"
+    },
+    "ZAPLZ": {
+      "iso3": "ZAF",
+      "name": "Gqeberha",
+      "lat": -33.95,
+      "lon": 25.6,
+      "coord_source": "unlocode"
+    },
+    "NGAPP": {
+      "iso3": "NGA",
+      "name": "Apapa",
+      "lat": 6.4486,
+      "lon": 3.3924,
+      "coord_source": "searoute"
+    },
+    "NGLOS": {
+      "iso3": "NGA",
+      "name": "Lagos",
+      "lat": 6.4235,
+      "lon": 3.4067,
+      "coord_source": "searoute"
+    },
+    "NGTIN": {
+      "iso3": "NGA",
+      "name": "Tincan",
+      "lat": 6.4305,
+      "lon": 3.3451,
+      "coord_source": "searoute"
+    },
+    "GHTEM": {
+      "iso3": "GHA",
+      "name": "Tema",
+      "lat": 5.6333,
+      "lon": 0.0167,
+      "coord_source": "searoute"
+    },
+    "GHTKD": {
+      "iso3": "GHA",
+      "name": "Takoradi",
+      "lat": 4.884,
+      "lon": -1.7395,
+      "coord_source": "searoute"
+    },
+    "CIABJ": {
+      "iso3": "CIV",
+      "name": "Abidjan",
+      "lat": 5.3333,
+      "lon": -4.0167,
+      "coord_source": "unlocode"
+    },
+    "SNDKR": {
+      "iso3": "SEN",
+      "name": "Dakar",
+      "lat": 14.6824,
+      "lon": -17.4408,
+      "coord_source": "searoute"
+    },
+    "CMDLA": {
+      "iso3": "CMR",
+      "name": "Douala",
+      "lat": 4.0473,
+      "lon": 9.6955,
+      "coord_source": "searoute"
+    },
+    "AOLAD": {
+      "iso3": "AGO",
+      "name": "Luanda",
+      "lat": -8.8082,
+      "lon": 13.255,
+      "coord_source": "searoute"
+    },
+    "MZMPM": {
+      "iso3": "MOZ",
+      "name": "Maputo",
+      "lat": -25.9667,
+      "lon": 32.5667,
+      "coord_source": "searoute"
+    },
+    "MZBEW": {
+      "iso3": "MOZ",
+      "name": "Beira",
+      "lat": -19.8333,
+      "lon": 34.8354,
+      "coord_source": "searoute"
+    },
+    "MUPLU": {
+      "iso3": "MUS",
+      "name": "Port Louis",
+      "lat": -20.1436,
+      "lon": 57.5163,
+      "coord_source": "searoute"
+    },
+    "MGTOA": {
+      "iso3": "MDG",
+      "name": "Toamasina",
+      "lat": -18.1604,
+      "lon": 49.4112,
+      "coord_source": "searoute"
+    },
+    "DJJIB": {
+      "iso3": "DJI",
+      "name": "Djibouti",
+      "lat": 11.5462,
+      "lon": 43.0782,
+      "coord_source": "searoute"
+    },
+    "NAWVB": {
+      "iso3": "NAM",
+      "name": "Walvis Bay",
+      "lat": -22.9503,
+      "lon": 14.5006,
+      "coord_source": "searoute"
+    },
+    "GAOWE": {
+      "iso3": "GAB",
+      "name": "Owendo",
+      "lat": 0.2905,
+      "lon": 9.5088,
+      "coord_source": "searoute"
+    },
+    "CGPNR": {
+      "iso3": "COG",
+      "name": "Pointe Noire",
+      "lat": -4.8,
+      "lon": 11.85,
+      "coord_source": "unlocode"
+    },
+    "CDMAT": {
+      "iso3": "COD",
+      "name": "Matadi",
+      "lat": -5.8262,
+      "lon": 13.4692,
+      "coord_source": "searoute"
+    },
+    "TGLFW": {
+      "iso3": "TGO",
+      "name": "Lome",
+      "lat": 6.1169,
+      "lon": 1.2101,
+      "coord_source": "searoute"
+    },
+    "BJCOO": {
+      "iso3": "BEN",
+      "name": "Cotonou",
+      "lat": 6.35,
+      "lon": 2.4333,
+      "coord_source": "searoute"
+    },
+    "MRNDB": {
+      "iso3": "MRT",
+      "name": "Nouadhibou",
+      "lat": 20.9,
+      "lon": -17.05,
+      "coord_source": "searoute"
+    },
+    "GNCKY": {
+      "iso3": "GIN",
+      "name": "Conakry",
+      "lat": 9.5106,
+      "lon": -13.7153,
+      "coord_source": "searoute"
+    },
+    "SLFNA": {
+      "iso3": "SLE",
+      "name": "Freetown",
+      "lat": 8.4891,
+      "lon": -13.2048,
+      "coord_source": "searoute"
+    },
+    "LRMLW": {
+      "iso3": "LBR",
+      "name": "Monrovia",
+      "lat": 6.3,
+      "lon": -10.8,
+      "coord_source": "unlocode"
+    },
+    "GMBJL": {
+      "iso3": "GMB",
+      "name": "Banjul",
+      "lat": 13.45,
+      "lon": -16.5667,
+      "coord_source": "searoute"
+    },
+    "SOMGQ": {
+      "iso3": "SOM",
+      "name": "Mogadishu",
+      "lat": 2.0468,
+      "lon": 45.3207,
+      "coord_source": "searoute"
+    },
+    "NLRTM": {
+      "iso3": "NLD",
+      "name": "Rotterdam",
+      "lat": 51.9167,
+      "lon": 4.5,
+      "coord_source": "unlocode"
+    },
+    "BEANR": {
+      "iso3": "BEL",
+      "name": "Antwerp",
+      "lat": 51.2167,
+      "lon": 4.4167,
+      "coord_source": "unlocode"
+    },
+    "BEZEE": {
+      "iso3": "BEL",
+      "name": "Zeebrugge",
+      "lat": 51.3333,
+      "lon": 3.2,
+      "coord_source": "unlocode"
+    },
+    "DEHAM": {
+      "iso3": "DEU",
+      "name": "Hamburg",
+      "lat": 53.5167,
+      "lon": 9.9333,
+      "coord_source": "unlocode"
+    },
+    "DEBRV": {
+      "iso3": "DEU",
+      "name": "Bremerhaven",
+      "lat": 53.5333,
+      "lon": 8.6,
+      "coord_source": "unlocode"
+    },
+    "FRLEH": {
+      "iso3": "FRA",
+      "name": "Le Havre",
+      "lat": 49.5,
+      "lon": 0.1,
+      "coord_source": "unlocode"
+    },
+    "FRMRS": {
+      "iso3": "FRA",
+      "name": "Marseille",
+      "lat": 43.3,
+      "lon": 5.4,
+      "coord_source": "unlocode"
+    },
+    "GBFXT": {
+      "iso3": "GBR",
+      "name": "Felixstowe",
+      "lat": 51.9579,
+      "lon": 1.3445,
+      "coord_source": "searoute"
+    },
+    "GBSOU": {
+      "iso3": "GBR",
+      "name": "Southampton",
+      "lat": 50.8939,
+      "lon": -1.3753,
+      "coord_source": "searoute"
+    },
+    "GBLGP": {
+      "iso3": "GBR",
+      "name": "London Gateway",
+      "lat": 51.5,
+      "lon": 0.4833,
+      "coord_source": "unlocode"
+    },
+    "ESVLC": {
+      "iso3": "ESP",
+      "name": "Valencia",
+      "lat": 39.4511,
+      "lon": -0.3303,
+      "coord_source": "searoute"
+    },
+    "ESALG": {
+      "iso3": "ESP",
+      "name": "Algeciras",
+      "lat": 36.1411,
+      "lon": -5.4381,
+      "coord_source": "searoute"
+    },
+    "ESBCN": {
+      "iso3": "ESP",
+      "name": "Barcelona",
+      "lat": 41.35,
+      "lon": 2.1667,
+      "coord_source": "searoute"
+    },
+    "PTLIS": {
+      "iso3": "PRT",
+      "name": "Lisbon",
+      "lat": 38.7167,
+      "lon": -9.1333,
+      "coord_source": "unlocode"
+    },
+    "PTSIE": {
+      "iso3": "PRT",
+      "name": "Sines",
+      "lat": 37.95,
+      "lon": -8.8667,
+      "coord_source": "unlocode"
+    },
+    "ITGOA": {
+      "iso3": "ITA",
+      "name": "Genoa",
+      "lat": 44.4167,
+      "lon": 8.95,
+      "coord_source": "unlocode"
+    },
+    "ITSPE": {
+      "iso3": "ITA",
+      "name": "La Spezia",
+      "lat": 44.1167,
+      "lon": 9.8333,
+      "coord_source": "unlocode"
+    },
+    "ITGIT": {
+      "iso3": "ITA",
+      "name": "Gioia Tauro",
+      "lat": 38.4167,
+      "lon": 15.9,
+      "coord_source": "unlocode"
+    },
+    "GRPIR": {
+      "iso3": "GRC",
+      "name": "Piraeus",
+      "lat": 37.9333,
+      "lon": 23.6167,
+      "coord_source": "unlocode"
+    },
+    "TRMER": {
+      "iso3": "TUR",
+      "name": "Mersin",
+      "lat": 36.7167,
+      "lon": 34.6333,
+      "coord_source": "unlocode"
+    },
+    "TRIZM": {
+      "iso3": "TUR",
+      "name": "Izmir",
+      "lat": 38.4167,
+      "lon": 27.15,
+      "coord_source": "unlocode"
+    },
+    "TRIST": {
+      "iso3": "TUR",
+      "name": "Istanbul",
+      "lat": 41.0167,
+      "lon": 28.9667,
+      "coord_source": "unlocode"
+    },
+    "PLGDN": {
+      "iso3": "POL",
+      "name": "Gdansk",
+      "lat": 54.3992,
+      "lon": 18.6675,
+      "coord_source": "searoute"
+    },
+    "PLGDY": {
+      "iso3": "POL",
+      "name": "Gdynia",
+      "lat": 54.5,
+      "lon": 18.55,
+      "coord_source": "unlocode"
+    },
+    "SEGOT": {
+      "iso3": "SWE",
+      "name": "Gothenburg",
+      "lat": 57.7167,
+      "lon": 11.9667,
+      "coord_source": "unlocode"
+    },
+    "DKAAR": {
+      "iso3": "DNK",
+      "name": "Aarhus",
+      "lat": 56.15,
+      "lon": 10.2167,
+      "coord_source": "unlocode"
+    },
+    "NOOSL": {
+      "iso3": "NOR",
+      "name": "Oslo",
+      "lat": 59.9,
+      "lon": 10.7333,
+      "coord_source": "unlocode"
+    },
+    "FIHEL": {
+      "iso3": "FIN",
+      "name": "Helsinki",
+      "lat": 60.1667,
+      "lon": 24.9333,
+      "coord_source": "unlocode"
+    },
+    "IEDUB": {
+      "iso3": "IRL",
+      "name": "Dublin",
+      "lat": 53.3434,
+      "lon": -6.2267,
+      "coord_source": "searoute"
+    },
+    "ROCND": {
+      "iso3": "ROU",
+      "name": "Constanta",
+      "lat": 44.1833,
+      "lon": 28.65,
+      "coord_source": "unlocode"
+    },
+    "BGVAR": {
+      "iso3": "BGR",
+      "name": "Varna",
+      "lat": 43.2065,
+      "lon": 27.9217,
+      "coord_source": "searoute"
+    },
+    "HRRJK": {
+      "iso3": "HRV",
+      "name": "Rijeka",
+      "lat": 45.3333,
+      "lon": 14.4,
+      "coord_source": "unlocode"
+    },
+    "SIKOP": {
+      "iso3": "SVN",
+      "name": "Koper",
+      "lat": 45.5487,
+      "lon": 13.7345,
+      "coord_source": "searoute"
+    },
+    "EETLL": {
+      "iso3": "EST",
+      "name": "Tallinn",
+      "lat": 59.4333,
+      "lon": 24.7333,
+      "coord_source": "unlocode"
+    },
+    "LVRIX": {
+      "iso3": "LVA",
+      "name": "Riga",
+      "lat": 56.9456,
+      "lon": 24.1061,
+      "coord_source": "searoute"
+    },
+    "LTKLJ": {
+      "iso3": "LTU",
+      "name": "Klaipeda",
+      "lat": 55.7036,
+      "lon": 21.126,
+      "coord_source": "searoute"
+    },
+    "UAODS": {
+      "iso3": "UKR",
+      "name": "Odesa",
+      "lat": 46.5,
+      "lon": 30.75,
+      "coord_source": "unlocode"
+    },
+    "RULED": {
+      "iso3": "RUS",
+      "name": "Saint Petersburg",
+      "lat": 59.8833,
+      "lon": 30.25,
+      "coord_source": "unlocode"
+    },
+    "RUNVS": {
+      "iso3": "RUS",
+      "name": "Novorossiysk",
+      "lat": 44.7167,
+      "lon": 37.7667,
+      "coord_source": "unlocode"
+    },
+    "GEPTI": {
+      "iso3": "GEO",
+      "name": "Poti",
+      "lat": 42.1781,
+      "lon": 41.672,
+      "coord_source": "searoute"
+    },
+    "GEBUS": {
+      "iso3": "GEO",
+      "name": "Batumi",
+      "lat": 41.6459,
+      "lon": 41.6608,
+      "coord_source": "searoute"
+    },
+    "CYLMS": {
+      "iso3": "CYP",
+      "name": "Limassol",
+      "lat": 34.6833,
+      "lon": 33.05,
+      "coord_source": "unlocode"
+    },
+    "MTMAR": {
+      "iso3": "MLT",
+      "name": "Marsaxlokk",
+      "lat": 35.8333,
+      "lon": 14.5333,
+      "coord_source": "unlocode"
+    },
+    "ISREY": {
+      "iso3": "ISL",
+      "name": "Reykjavik",
+      "lat": 64.15,
+      "lon": -21.95,
+      "coord_source": "unlocode"
+    },
+    "ALDRZ": {
+      "iso3": "ALB",
+      "name": "Durres",
+      "lat": 41.3187,
+      "lon": 19.4488,
+      "coord_source": "searoute"
+    },
+    "MEBAR": {
+      "iso3": "MNE",
+      "name": "Bar",
+      "lat": 42.0833,
+      "lon": 19.0833,
+      "coord_source": "unlocode"
+    },
+    "CNSHA": {
+      "iso3": "CHN",
+      "name": "Shanghai",
+      "lat": 31.4001,
+      "lon": 121.4971,
+      "coord_source": "searoute"
+    },
+    "CNNGB": {
+      "iso3": "CHN",
+      "name": "Ningbo",
+      "lat": 29.8719,
+      "lon": 121.5594,
+      "coord_source": "searoute"
+    },
+    "CNSZX": {
+      "iso3": "CHN",
+      "name": "Shenzhen",
+      "lat": 22.5171,
+      "lon": 114.0286,
+      "coord_source": "searoute"
+    },
+    "CNTAO": {
+      "iso3": "CHN",
+      "name": "Qingdao",
+      "lat": 36.065,
+      "lon": 120.3853,
+      "coord_source": "searoute"
+    },
+    "HKHKG": {
+      "iso3": "HKG",
+      "name": "Hong Kong",
+      "lat": 22.3167,
+      "lon": 114.1667,
+      "coord_source": "unlocode"
+    },
+    "TWKHH": {
+      "iso3": "TWN",
+      "name": "Kaohsiung",
+      "lat": 22.642,
+      "lon": 120.272,
+      "coord_source": "searoute"
+    },
+    "JPTYO": {
+      "iso3": "JPN",
+      "name": "Tokyo",
+      "lat": 35.6833,
+      "lon": 139.75,
+      "coord_source": "unlocode"
+    },
+    "JPYOK": {
+      "iso3": "JPN",
+      "name": "Yokohama",
+      "lat": 35.45,
+      "lon": 139.65,
+      "coord_source": "unlocode"
+    },
+    "JPUKB": {
+      "iso3": "JPN",
+      "name": "Kobe",
+      "lat": 34.6833,
+      "lon": 135.1667,
+      "coord_source": "unlocode"
+    },
+    "KRPUS": {
+      "iso3": "KOR",
+      "name": "Busan",
+      "lat": 35.1333,
+      "lon": 129.05,
+      "coord_source": "unlocode"
+    },
+    "SGSIN": {
+      "iso3": "SGP",
+      "name": "Singapore",
+      "lat": 1.2833,
+      "lon": 103.85,
+      "coord_source": "unlocode"
+    },
+    "MYPKG": {
+      "iso3": "MYS",
+      "name": "Port Klang",
+      "lat": 3.0,
+      "lon": 101.4,
+      "coord_source": "unlocode"
+    },
+    "MYTPP": {
+      "iso3": "MYS",
+      "name": "Tanjung Pelepas",
+      "lat": 1.3667,
+      "lon": 103.55,
+      "coord_source": "unlocode"
+    },
+    "THLCH": {
+      "iso3": "THA",
+      "name": "Laem Chabang",
+      "lat": 13.0833,
+      "lon": 100.8833,
+      "coord_source": "unlocode"
+    },
+    "THBKK": {
+      "iso3": "THA",
+      "name": "Bangkok",
+      "lat": 13.75,
+      "lon": 100.5167,
+      "coord_source": "unlocode"
+    },
+    "VNCMT": {
+      "iso3": "VNM",
+      "name": "Cai Mep",
+      "lat": 10.5167,
+      "lon": 107.0,
+      "coord_source": "unlocode"
+    },
+    "VNHPH": {
+      "iso3": "VNM",
+      "name": "Haiphong",
+      "lat": 20.85,
+      "lon": 106.6833,
+      "coord_source": "unlocode"
+    },
+    "IDJKT": {
+      "iso3": "IDN",
+      "name": "Jakarta",
+      "lat": -6.1333,
+      "lon": 106.8333,
+      "coord_source": "unlocode"
+    },
+    "IDSUB": {
+      "iso3": "IDN",
+      "name": "Surabaya",
+      "lat": -7.2333,
+      "lon": 112.75,
+      "coord_source": "unlocode"
+    },
+    "PHMNL": {
+      "iso3": "PHL",
+      "name": "Manila",
+      "lat": 14.6312,
+      "lon": 120.972,
+      "coord_source": "searoute"
+    },
+    "INNSA": {
+      "iso3": "IND",
+      "name": "Nhava Sheva",
+      "lat": 18.95,
+      "lon": 72.9667,
+      "coord_source": "searoute"
+    },
+    "INMUN": {
+      "iso3": "IND",
+      "name": "Mundra",
+      "lat": 22.795,
+      "lon": 69.7467,
+      "coord_source": "searoute"
+    },
+    "INMAA": {
+      "iso3": "IND",
+      "name": "Chennai",
+      "lat": 13.0833,
+      "lon": 80.2833,
+      "coord_source": "unlocode"
+    },
+    "PKKHI": {
+      "iso3": "PAK",
+      "name": "Karachi",
+      "lat": 24.8765,
+      "lon": 66.9337,
+      "coord_source": "searoute"
+    },
+    "BDCGP": {
+      "iso3": "BGD",
+      "name": "Chattogram",
+      "lat": 22.3333,
+      "lon": 91.8333,
+      "coord_source": "unlocode"
+    },
+    "LKCMB": {
+      "iso3": "LKA",
+      "name": "Colombo",
+      "lat": 6.9167,
+      "lon": 79.85,
+      "coord_source": "unlocode"
+    },
+    "MMRGN": {
+      "iso3": "MMR",
+      "name": "Yangon",
+      "lat": 16.7746,
+      "lon": 96.1677,
+      "coord_source": "searoute"
+    },
+    "KHKOS": {
+      "iso3": "KHM",
+      "name": "Sihanoukville",
+      "lat": 10.6,
+      "lon": 103.5167,
+      "coord_source": "unlocode"
+    },
+    "SAJED": {
+      "iso3": "SAU",
+      "name": "Jeddah",
+      "lat": 21.4667,
+      "lon": 39.1667,
+      "coord_source": "unlocode"
+    },
+    "SADMM": {
+      "iso3": "SAU",
+      "name": "Dammam",
+      "lat": 26.5,
+      "lon": 50.2,
+      "coord_source": "unlocode"
+    },
+    "AEJEA": {
+      "iso3": "ARE",
+      "name": "Jebel Ali",
+      "lat": 25.0195,
+      "lon": 55.0518,
+      "coord_source": "searoute"
+    },
+    "AEKHL": {
+      "iso3": "ARE",
+      "name": "Khalifa Port (Abu Dhabi)",
+      "lat": 24.8333,
+      "lon": 54.6667,
+      "coord_source": "unlocode"
+    },
+    "OMSLL": {
+      "iso3": "OMN",
+      "name": "Salalah",
+      "lat": 16.9988,
+      "lon": 54.1,
+      "coord_source": "searoute"
+    },
+    "OMSOH": {
+      "iso3": "OMN",
+      "name": "Sohar",
+      "lat": 24.3333,
+      "lon": 56.75,
+      "coord_source": "searoute"
+    },
+    "QADOH": {
+      "iso3": "QAT",
+      "name": "Doha",
+      "lat": 25.2945,
+      "lon": 51.5225,
+      "coord_source": "searoute"
+    },
+    "KWSWK": {
+      "iso3": "KWT",
+      "name": "Shuwaikh",
+      "lat": 29.35,
+      "lon": 47.9333,
+      "coord_source": "unlocode"
+    },
+    "KWKWI": {
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "lat": 29.3751,
+      "lon": 47.9689,
+      "coord_source": "searoute"
+    },
+    "BHKBS": {
+      "iso3": "BHR",
+      "name": "Khalifa Bin Salman Port",
+      "lat": 26.2,
+      "lon": 50.6167,
+      "coord_source": "unlocode"
+    },
+    "IRBND": {
+      "iso3": "IRN",
+      "name": "Bandar Abbas",
+      "lat": 27.1833,
+      "lon": 56.2667,
+      "coord_source": "unlocode"
+    },
+    "IQUQR": {
+      "iso3": "IRQ",
+      "name": "Umm Qasr",
+      "lat": 30.0333,
+      "lon": 47.9333,
+      "coord_source": "unlocode"
+    },
+    "ILHFA": {
+      "iso3": "ISR",
+      "name": "Haifa",
+      "lat": 32.8,
+      "lon": 34.9833,
+      "coord_source": "unlocode"
+    },
+    "ILASH": {
+      "iso3": "ISR",
+      "name": "Ashdod",
+      "lat": 31.8167,
+      "lon": 34.6663,
+      "coord_source": "searoute"
+    },
+    "JOAQJ": {
+      "iso3": "JOR",
+      "name": "Aqaba",
+      "lat": 29.5333,
+      "lon": 35.0,
+      "coord_source": "unlocode"
+    },
+    "LBBEY": {
+      "iso3": "LBN",
+      "name": "Beirut",
+      "lat": 33.8333,
+      "lon": 35.4833,
+      "coord_source": "unlocode"
+    },
+    "SYLTK": {
+      "iso3": "SYR",
+      "name": "Latakia",
+      "lat": 35.5167,
+      "lon": 35.7833,
+      "coord_source": "unlocode"
+    },
+    "YEADE": {
+      "iso3": "YEM",
+      "name": "Aden",
+      "lat": 12.8589,
+      "lon": 45.0051,
+      "coord_source": "searoute"
+    },
+    "BNMUA": {
+      "iso3": "BRN",
+      "name": "Muara",
+      "lat": 5.0228,
+      "lon": 115.0656,
+      "coord_source": "searoute"
+    },
+    "USNYC": {
+      "iso3": "USA",
+      "name": "New York",
+      "lat": 40.7,
+      "lon": -74.0,
+      "coord_source": "unlocode"
+    },
+    "USLAX": {
+      "iso3": "USA",
+      "name": "Los Angeles",
+      "lat": 34.05,
+      "lon": -118.25,
+      "coord_source": "unlocode"
+    },
+    "USHOU": {
+      "iso3": "USA",
+      "name": "Houston",
+      "lat": 29.75,
+      "lon": -95.35,
+      "coord_source": "unlocode"
+    },
+    "USSAV": {
+      "iso3": "USA",
+      "name": "Savannah",
+      "lat": 32.0866,
+      "lon": -81.0997,
+      "coord_source": "searoute"
+    },
+    "CAVAN": {
+      "iso3": "CAN",
+      "name": "Vancouver",
+      "lat": 49.2879,
+      "lon": -123.0944,
+      "coord_source": "searoute"
+    },
+    "CAMTR": {
+      "iso3": "CAN",
+      "name": "Montreal",
+      "lat": 45.5142,
+      "lon": -73.5593,
+      "coord_source": "searoute"
+    },
+    "CAHAL": {
+      "iso3": "CAN",
+      "name": "Halifax",
+      "lat": 44.6258,
+      "lon": -63.5739,
+      "coord_source": "searoute"
+    },
+    "MXZLO": {
+      "iso3": "MEX",
+      "name": "Manzanillo",
+      "lat": 19.05,
+      "lon": -104.3,
+      "coord_source": "unlocode"
+    },
+    "MXVER": {
+      "iso3": "MEX",
+      "name": "Veracruz",
+      "lat": 19.2,
+      "lon": -96.0833,
+      "coord_source": "unlocode"
+    },
+    "MXLZC": {
+      "iso3": "MEX",
+      "name": "Lazaro Cardenas",
+      "lat": 17.95,
+      "lon": -102.1833,
+      "coord_source": "unlocode"
+    },
+    "GTSTC": {
+      "iso3": "GTM",
+      "name": "Santo Tomas de Castilla",
+      "lat": 15.7,
+      "lon": -88.6167,
+      "coord_source": "unlocode"
+    },
+    "GTPRQ": {
+      "iso3": "GTM",
+      "name": "Puerto Quetzal",
+      "lat": 13.9343,
+      "lon": -90.7855,
+      "coord_source": "searoute"
+    },
+    "PABLB": {
+      "iso3": "PAN",
+      "name": "Balboa",
+      "lat": 8.9396,
+      "lon": -79.5547,
+      "coord_source": "searoute"
+    },
+    "PAMIT": {
+      "iso3": "PAN",
+      "name": "Manzanillo",
+      "lat": 9.6116,
+      "lon": -79.6021,
+      "coord_source": "searoute"
+    },
+    "COCTG": {
+      "iso3": "COL",
+      "name": "Cartagena",
+      "lat": 10.4025,
+      "lon": -75.52,
+      "coord_source": "searoute"
+    },
+    "COBUN": {
+      "iso3": "COL",
+      "name": "Buenaventura",
+      "lat": 3.8884,
+      "lon": -77.0444,
+      "coord_source": "searoute"
+    },
+    "VEPBL": {
+      "iso3": "VEN",
+      "name": "Puerto Cabello",
+      "lat": 10.4786,
+      "lon": -68.0084,
+      "coord_source": "searoute"
+    },
+    "ECGYE": {
+      "iso3": "ECU",
+      "name": "Guayaquil",
+      "lat": -2.1667,
+      "lon": -79.9,
+      "coord_source": "unlocode"
+    },
+    "PECLL": {
+      "iso3": "PER",
+      "name": "Callao",
+      "lat": -12.05,
+      "lon": -77.1333,
+      "coord_source": "unlocode"
+    },
+    "CLVAP": {
+      "iso3": "CHL",
+      "name": "Valparaiso",
+      "lat": -33.0333,
+      "lon": -71.6333,
+      "coord_source": "unlocode"
+    },
+    "CLSAI": {
+      "iso3": "CHL",
+      "name": "San Antonio",
+      "lat": -33.6,
+      "lon": -71.6,
+      "coord_source": "unlocode"
+    },
+    "ARBUE": {
+      "iso3": "ARG",
+      "name": "Buenos Aires",
+      "lat": -34.5833,
+      "lon": -58.6667,
+      "coord_source": "unlocode"
+    },
+    "UYMVD": {
+      "iso3": "URY",
+      "name": "Montevideo",
+      "lat": -34.9068,
+      "lon": -56.1961,
+      "coord_source": "searoute"
+    },
+    "BRSSZ": {
+      "iso3": "BRA",
+      "name": "Santos",
+      "lat": -23.9333,
+      "lon": -46.3167,
+      "coord_source": "unlocode"
+    },
+    "BRPNG": {
+      "iso3": "BRA",
+      "name": "Paranagua",
+      "lat": -25.5,
+      "lon": -48.5167,
+      "coord_source": "unlocode"
+    },
+    "BRITJ": {
+      "iso3": "BRA",
+      "name": "Itajai",
+      "lat": -26.9,
+      "lon": -48.65,
+      "coord_source": "unlocode"
+    },
+    "CRMOB": {
+      "iso3": "CRI",
+      "name": "Moin",
+      "lat": 10.0,
+      "lon": -83.0833,
+      "coord_source": "unlocode"
+    },
+    "DOCAU": {
+      "iso3": "DOM",
+      "name": "Caucedo",
+      "lat": 18.4167,
+      "lon": -69.6333,
+      "coord_source": "unlocode"
+    },
+    "JMKIN": {
+      "iso3": "JAM",
+      "name": "Kingston",
+      "lat": 17.9899,
+      "lon": -76.8265,
+      "coord_source": "searoute"
+    },
+    "CUMAR": {
+      "iso3": "CUB",
+      "name": "Mariel",
+      "lat": 23.0,
+      "lon": -82.75,
+      "coord_source": "unlocode"
+    },
+    "TTPOS": {
+      "iso3": "TTO",
+      "name": "Port-of-Spain",
+      "lat": 10.65,
+      "lon": -61.5167,
+      "coord_source": "unlocode"
+    },
+    "HNPCR": {
+      "iso3": "HND",
+      "name": "Puerto Cortes",
+      "lat": 15.8605,
+      "lon": -87.9483,
+      "coord_source": "searoute"
+    },
+    "SVAQJ": {
+      "iso3": "SLV",
+      "name": "Acajutla",
+      "lat": 13.5699,
+      "lon": -89.8304,
+      "coord_source": "searoute"
+    },
+    "NICIO": {
+      "iso3": "NIC",
+      "name": "Corinto",
+      "lat": 12.538,
+      "lon": -87.1902,
+      "coord_source": "searoute"
+    },
+    "BSFPO": {
+      "iso3": "BHS",
+      "name": "Freeport",
+      "lat": 26.5088,
+      "lon": -78.6991,
+      "coord_source": "searoute"
+    },
+    "GYGEO": {
+      "iso3": "GUY",
+      "name": "Georgetown",
+      "lat": 6.8153,
+      "lon": -58.1543,
+      "coord_source": "searoute"
+    },
+    "SRPBM": {
+      "iso3": "SUR",
+      "name": "Paramaribo",
+      "lat": 5.8806,
+      "lon": -55.2146,
+      "coord_source": "searoute"
+    },
+    "AUMEL": {
+      "iso3": "AUS",
+      "name": "Melbourne",
+      "lat": -37.8167,
+      "lon": 144.9667,
+      "coord_source": "unlocode"
+    },
+    "AUSYD": {
+      "iso3": "AUS",
+      "name": "Sydney",
+      "lat": -33.85,
+      "lon": 151.2,
+      "coord_source": "unlocode"
+    },
+    "AUBNE": {
+      "iso3": "AUS",
+      "name": "Brisbane",
+      "lat": -27.4667,
+      "lon": 153.0167,
+      "coord_source": "unlocode"
+    },
+    "AUFRE": {
+      "iso3": "AUS",
+      "name": "Fremantle",
+      "lat": -32.0374,
+      "lon": 115.752,
+      "coord_source": "searoute"
+    },
+    "NZAKL": {
+      "iso3": "NZL",
+      "name": "Auckland",
+      "lat": -36.8333,
+      "lon": 174.8,
+      "coord_source": "unlocode"
+    },
+    "NZTRG": {
+      "iso3": "NZL",
+      "name": "Tauranga",
+      "lat": -37.6833,
+      "lon": 176.1667,
+      "coord_source": "unlocode"
+    },
+    "FJSUV": {
+      "iso3": "FJI",
+      "name": "Suva",
+      "lat": -18.1333,
+      "lon": 178.45,
+      "coord_source": "unlocode"
+    },
+    "PGLAE": {
+      "iso3": "PNG",
+      "name": "Lae",
+      "lat": -6.7167,
+      "lon": 146.9667,
+      "coord_source": "searoute"
+    },
+    "HRPLE": {
+      "iso3": "HRV",
+      "name": "Ploce",
+      "lat": 43.05,
+      "lon": 17.4333,
+      "coord_source": "unlocode"
+    },
+    "CNLYG": {
+      "iso3": "CHN",
+      "name": "Lianyungang",
+      "lat": 34.7167,
+      "lon": 119.4333,
+      "coord_source": "unlocode"
+    },
+    "INCCU": {
+      "iso3": "IND",
+      "name": "Kolkata",
+      "lat": 22.5667,
+      "lon": 88.35,
+      "coord_source": "unlocode"
+    },
+    "INVTZ": {
+      "iso3": "IND",
+      "name": "Visakhapatnam",
+      "lat": 17.7,
+      "lon": 83.3,
+      "coord_source": "unlocode"
+    },
+    "CNTXG": {
+      "iso3": "CHN",
+      "name": "Tianjin",
+      "lat": 38.9833,
+      "lon": 117.7,
+      "coord_source": "unlocode"
+    },
+    "CLARI": {
+      "iso3": "CHL",
+      "name": "Arica",
+      "lat": -18.4833,
+      "lon": -70.3167,
+      "coord_source": "unlocode"
+    }
+  }
+}

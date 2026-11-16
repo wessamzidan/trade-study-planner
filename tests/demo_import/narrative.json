@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0",
+  "language": "en",
+  "executive_summary": {
+    "headline": "DEMO (synthetic data): Egypt is the cheapest landed source at about 30% margin; China works at 19% but its quoted price sits above its usual export price; three other suppliers cannot be costed until prices and a duty rate arrive.",
+    "paragraphs": [
+      "This is a demonstration study built entirely on synthetic data to show what the toolkit produces for an importer. None of its figures describe a real market.",
+      "In the synthetic data, Saudi Arabia imported USD 59.8 million of frozen vegetables (HS 071080) in 2025, growing 8.1% a year since 2022. Egypt is already its largest supplier with a 21.0% share.",
+      "At the quoted supplier prices and the importer's local selling price, Egypt lands at USD 1.04 per kg and earns 30.3%; China lands at USD 1.20 per kg and earns 19.4%, both above the 15% target.",
+      "Belgium, Spain and India cannot be costed yet: Belgium's duty rate and the Spanish and Indian supplier prices are missing."
+    ],
+    "recommendations": [
+      "Keep Egypt as the main source: it is the cheapest landed supplier, with a firm freight quote and zero duty in this demonstration.",
+      "Negotiate with the Chinese supplier: its quote lands about 15.8% above China's average export price in the trade data.",
+      "Request prices from Spanish and Indian suppliers and verify Belgium's duty rate, then re-run the model to rank all five sources."
+    ],
+    "key_caveat": "Only two of the five suppliers are fully costed; the ranking of the others depends on prices still to be collected."
+  },
+  "sections": {
+    "scope_method": {
+      "paragraphs": [
+        "The study covers HS 071080 (frozen vegetables not elsewhere specified) imported into Saudi Arabia. Trade data cover 2021 to 2026; 2026 is partial, so trends use 2022 to 2025.",
+        "Every price, freight and tariff figure carries its source and a tier."
+      ],
+      "bullets": [
+        "Trade flows: synthetic Comtrade-shaped data generated for this demonstration.",
+        "Supplier prices: pro-forma quotes for Egypt and China; last season's price for Belgium."
+      ]
+    },
+    "home_position": {
+      "paragraphs": [
+        "Saudi Arabia's imports reached USD 59.8 million in 2025, ranking 10th among 47 reporting importers with a 2.41% world share."
+      ],
+      "bullets": [
+        "All mirror checks are consistent: what suppliers report sending matches what Saudi Arabia reports receiving."
+      ]
+    },
+    "global_landscape": {
+      "paragraphs": [
+        "Reported world exports totalled USD 2,331 million in 2025. Spain is the largest exporter with an 18.5% share, followed by the Netherlands, China, Belgium and Poland."
+      ],
+      "bullets": []
+    },
+    "competition": {
+      "paragraphs": [
+        "Egypt supplies 21.0% of Saudi Arabia's imports, Belgium and India each under 3%, and China 0.7%, although China is the third-largest exporter worldwide."
+      ],
+      "bullets": []
+    },
+    "logistics_access": {
+      "paragraphs": [
+        "Egypt and China have firm freight quotes. India's freight is a distance-based estimate with a wide range, and Belgium's comes from a rate tool.",
+        "Duty is zero for Egypt and Spain under an agreement in this demonstration; Belgium's rate is still to be verified."
+      ],
+      "bullets": [
+        "India: the inland delivery cost in Saudi Arabia is missing for this lane."
+      ]
+    },
+    "shortlist": {
+      "paragraphs": [
+        "Five suppliers were taken forward: four current sources to keep (Egypt, Belgium, Spain and India) and China to develop."
+      ],
+      "partner_notes": {
+        "EGY": "Largest current supplier; cheapest landed cost.",
+        "CHN": "Large exporter with a small share of Saudi imports.",
+        "BEL": "Established supplier; duty rate to be verified.",
+        "ESP": "World's largest exporter; supplier price still needed.",
+        "IND": "Supplier of interest; price and delivery cost still needed."
+      },
+      "not_prioritised": [
+        {"partner": "NLD", "reason": "Large exporter, but much of its trade is likely re-exported product sourced elsewhere."}
+      ]
+    },
+    "financial_case": {
+      "paragraphs": [
+        "Buying FOB, the importer pays freight, insurance, duty and delivery. Egypt earns USD 10,845 per container (30.3%) and China USD 6,971 (19.4%).",
+        "The planned 24 containers a year would recover the one-time sourcing cost within 3 months at these margins."
+      ],
+      "partner_verdicts": {
+        "EGY": "Viable; keep as main source.",
+        "CHN": "Viable at target; negotiate the price down.",
+        "BEL": "Not costed: duty rate to be verified.",
+        "ESP": "Not costed: supplier price needed.",
+        "IND": "Not costed: supplier price and delivery cost needed."
+      }
+    },
+    "risks": {
+      "diagnostic": [
+        "Will Spanish and Indian suppliers quote below the Egyptian landed cost?",
+        "Can the Chinese supplier meet Saudi food registration requirements?"
+      ],
+      "macro": [
+        "Freight on the modelled India lane can move well outside its estimated range."
+      ],
+      "data_limits": [
+        "All trade data in this demonstration are synthetic.",
+        "2026 is a partial year and is excluded from trends."
+      ]
+    },
+    "next_steps": {
+      "two_weeks": [
+        "Request FOB quotes from two Spanish and two Indian suppliers.",
+        "Verify Belgium's duty rate with the customs broker."
+      ],
+      "thirty_days": [
+        "Re-run the model with all five suppliers costed and choose a second source."
+      ],
+      "ninety_days": [
+        "Place a trial order with the second source and compare the actual landed cost with the model."
+      ]
+    }
+  }
+}

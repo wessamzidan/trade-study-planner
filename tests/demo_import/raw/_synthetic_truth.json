@@ -1,0 +1,93 @@
+{
+  "synthetic": true,
+  "seed": 7,
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "latest_complete_year": 2025,
+  "partial_year": 2026,
+  "aggregate_rows": 18,
+  "reexport_rows": 7,
+  "files": {
+    "SYNTHETIC_home_flows.csv": {
+      "kind": "ui_latin1",
+      "rows": 94
+    },
+    "SYNTHETIC_world_imports.csv": {
+      "kind": "ui_latin1",
+      "rows": 261
+    },
+    "SYNTHETIC_world_exports.json": {
+      "kind": "api",
+      "rows": 83
+    },
+    "SYNTHETIC_mirror.json": {
+      "kind": "api",
+      "rows": 74
+    },
+    "SYNTHETIC_partner_detail_EGY.json": {
+      "kind": "generic_names",
+      "rows": 132
+    },
+    "SYNTHETIC_partner_detail_CHN.csv": {
+      "kind": "generic_codes",
+      "rows": 258
+    },
+    "SYNTHETIC_partner_detail_BEL.csv": {
+      "kind": "ui_utf8",
+      "rows": 252
+    },
+    "SYNTHETIC_partner_detail_ESP.csv": {
+      "kind": "generic_iso3",
+      "rows": 220
+    },
+    "SYNTHETIC_partner_detail_IND.csv": {
+      "kind": "generic_iso3",
+      "rows": 225
+    }
+  },
+  "uae_gap_years": [
+    2024,
+    2025
+  ],
+  "breakdown_with_total": {
+    "reporter": "GBR",
+    "year": 2022,
+    "value": 192375440,
+    "flow": "M"
+  },
+  "breakdown_without_total": {
+    "reporter": "POL",
+    "year": 2022,
+    "value": 21604678,
+    "flow": "M"
+  },
+  "blank_primary_rows": 3,
+  "partial_importers": [
+    "BEL",
+    "BHR",
+    "CAN",
+    "CIV",
+    "EGY",
+    "ESP",
+    "ITA",
+    "JPN",
+    "MYS",
+    "NOR",
+    "PRT",
+    "SAU",
+    "SDN",
+    "SGP"
+  ],
+  "partial_exporters": [
+    "BEL",
+    "CHN",
+    "EGY",
+    "SAU"
+  ]
+}

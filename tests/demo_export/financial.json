@@ -1,0 +1,2720 @@
+{
+  "schema_version": "2.0",
+  "perspective": "export",
+  "currency": "USD",
+  "container_type": "40RF",
+  "units_per_container": 24000.0,
+  "unit": "kg",
+  "incoterm": "CFR",
+  "incoterm_input": "CFR",
+  "cost_basis": "EXW",
+  "study_id": "DEMO-export-frozen-veg",
+  "home_country": "EGY",
+  "generated_at": "2026-11-13T16:09:32",
+  "lanes": {
+    "SAU": {
+      "status": "modelled",
+      "missing": [],
+      "buyer_side_missing": [],
+      "errors": [],
+      "notes": [],
+      "perspective": "export",
+      "incoterm": "CFR",
+      "valuation_basis": "CIF",
+      "price_per_unit": 1.12,
+      "price_basis": "user",
+      "required_price_per_unit": 1.02439,
+      "revenue": 26880.0,
+      "user_cost": 20160.0,
+      "margin": 6720.0,
+      "margin_pct": 25.0,
+      "buyer_landed": 27647.52,
+      "buyer_landed_per_unit": 1.15198,
+      "benchmark_unit_value": 1.1021,
+      "price_gap_pct": 4.525905,
+      "FOBv": 25430.0,
+      "CIFv": 26987.52,
+      "CV": 26987.52,
+      "DU": 0.0,
+      "INS": null,
+      "VATnr": 0.0,
+      "invoice_value": 26880.0,
+      "waterfall": [
+        {
+          "key": "goods",
+          "label": "Goods at EXW cost",
+          "amount": 18240.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OI",
+          "label": "Origin inland",
+          "amount": 350.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "OD",
+          "label": "Origin documents",
+          "amount": 120.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "OT",
+          "label": "Origin THC",
+          "amount": 0.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "FR",
+          "label": "Freight",
+          "amount": 1450.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "INS",
+          "label": "Insurance (buyer)",
+          "amount": 107.52,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DT",
+          "label": "Destination THC",
+          "amount": 0.0,
+          "side": "buyer",
+          "tier": "quote"
+        },
+        {
+          "key": "IC",
+          "label": "Import clearance",
+          "amount": 260.0,
+          "side": "buyer",
+          "tier": "quote"
+        },
+        {
+          "key": "DU",
+          "label": "Import duty",
+          "amount": 0.0,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "DI",
+          "label": "Destination inland",
+          "amount": 400.0,
+          "side": "buyer",
+          "tier": "quote"
+        },
+        {
+          "key": "VAT",
+          "label": "Non-recoverable VAT",
+          "amount": 0.0,
+          "side": "buyer",
+          "tier": "published"
+        }
+      ],
+      "FOB_cost": 18710.0,
+      "goods": 18240.0,
+      "freight_scenarios": {
+        "low": {
+          "margin": 6720.0,
+          "margin_pct": 25.0,
+          "buyer_landed": 27647.52,
+          "user_cost": 20160.0
+        },
+        "base": {
+          "margin": 6720.0,
+          "margin_pct": 25.0,
+          "buyer_landed": 27647.52,
+          "user_cost": 20160.0
+        },
+        "high": {
+          "margin": 6720.0,
+          "margin_pct": 25.0,
+          "buyer_landed": 27647.52,
+          "user_cost": 20160.0
+        }
+      },
+      "sensitivity": {
+        "price_pct": [
+          -15,
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15
+        ],
+        "cost_pct": [
+          -20,
+          -10,
+          0,
+          10,
+          20
+        ],
+        "margin": [
+          [
+            6336.0,
+            4512.0,
+            2688.0,
+            864.0,
+            -960.0
+          ],
+          [
+            7680.0,
+            5856.0,
+            4032.0,
+            2208.0,
+            384.0
+          ],
+          [
+            9024.0,
+            7200.0,
+            5376.0,
+            3552.0,
+            1728.0
+          ],
+          [
+            10368.0,
+            8544.0,
+            6720.0,
+            4896.0,
+            3072.0
+          ],
+          [
+            11712.0,
+            9888.0,
+            8064.0,
+            6240.0,
+            4416.0
+          ],
+          [
+            13056.0,
+            11232.0,
+            9408.0,
+            7584.0,
+            5760.0
+          ],
+          [
+            14400.0,
+            12576.0,
+            10752.0,
+            8928.0,
+            7104.0
+          ]
+        ],
+        "layout": "margin[i][j] = price_pct[i] x cost_pct[j], margin per container"
+      },
+      "fx_sensitivity": [
+        {
+          "shock_pct": -20,
+          "margin": 2160.0
+        },
+        {
+          "shock_pct": -10,
+          "margin": 4693.333333
+        },
+        {
+          "shock_pct": 0,
+          "margin": 6720.0
+        },
+        {
+          "shock_pct": 10,
+          "margin": 8378.181818
+        },
+        {
+          "shock_pct": 20,
+          "margin": 9760.0
+        }
+      ],
+      "duty_sensitivity_metric": "buyer_landed",
+      "duty_sensitivity": [
+        {
+          "shock_pp": -5,
+          "value": 27647.52
+        },
+        {
+          "shock_pp": 0,
+          "value": 27647.52
+        },
+        {
+          "shock_pp": 5,
+          "value": 28996.896
+        }
+      ],
+      "break_even_containers_per_year": 2.678571,
+      "cash_cycle_days": 44.0,
+      "cash_cycle_missing": [],
+      "cash_tied_per_container": 20160.0,
+      "planned_containers_per_year": 24.0,
+      "transit_days_base": 6.0,
+      "peak_working_capital": 58325.917808,
+      "iso3": "SAU",
+      "name": "Saudi Arabia"
+    },
+    "ARE": {
+      "status": "modelled",
+      "missing": [],
+      "buyer_side_missing": [],
+      "errors": [],
+      "notes": [],
+      "perspective": "export",
+      "incoterm": "CFR",
+      "valuation_basis": "CIF",
+      "price_per_unit": 1.15,
+      "price_basis": "user",
+      "required_price_per_unit": 1.047205,
+      "revenue": 27600.0,
+      "user_cost": 20609.0,
+      "margin": 6991.0,
+      "margin_pct": 25.32971,
+      "buyer_landed": 34767.3984,
+      "buyer_landed_per_unit": 1.448642,
+      "benchmark_unit_value": null,
+      "price_gap_pct": null,
+      "FOBv": 25920.0,
+      "CIFv": 27710.4,
+      "CV": 27710.4,
+      "DU": 3048.144,
+      "INS": null,
+      "VATnr": 3075.8544,
+      "invoice_value": 27600.0,
+      "waterfall": [
+        {
+          "key": "goods",
+          "label": "Goods at EXW cost",
+          "amount": 18240.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OI",
+          "label": "Origin inland",
+          "amount": 371.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "OD",
+          "label": "Origin documents",
+          "amount": 127.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "OT",
+          "label": "Origin THC",
+          "amount": 191.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "FR",
+          "label": "Freight",
+          "amount": 1680.0,
+          "side": "seller",
+          "tier": "quote"
+        },
+        {
+          "key": "INS",
+          "label": "Insurance (buyer)",
+          "amount": 110.4,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DT",
+          "label": "Destination THC",
+          "amount": 233.0,
+          "side": "buyer",
+          "tier": "quote"
+        },
+        {
+          "key": "IC",
+          "label": "Import clearance",
+          "amount": 276.0,
+          "side": "buyer",
+          "tier": "quote"
+        },
+        {
+          "key": "DU",
+          "label": "Import duty",
+          "amount": 3048.144,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "DI",
+          "label": "Destination inland",
+          "amount": 424.0,
+          "side": "buyer",
+          "tier": "quote"
+        },
+        {
+          "key": "VAT",
+          "label": "Non-recoverable VAT",
+          "amount": 3075.8544,
+          "side": "buyer",
+          "tier": "published"
+        }
+      ],
+      "FOB_cost": 18929.0,
+      "goods": 18240.0,
+      "freight_scenarios": {
+        "low": {
+          "margin": 6991.0,
+          "margin_pct": 25.32971,
+          "buyer_landed": 34767.3984,
+          "user_cost": 20609.0
+        },
+        "base": {
+          "margin": 6991.0,
+          "margin_pct": 25.32971,
+          "buyer_landed": 34767.3984,
+          "user_cost": 20609.0
+        },
+        "high": {
+          "margin": 6991.0,
+          "margin_pct": 25.32971,
+          "buyer_landed": 34767.3984,
+          "user_cost": 20609.0
+        }
+      },
+      "sensitivity": {
+        "price_pct": [
+          -15,
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15
+        ],
+        "cost_pct": [
+          -20,
+          -10,
+          0,
+          10,
+          20
+        ],
+        "margin": [
+          [
+            6499.0,
+            4675.0,
+            2851.0,
+            1027.0,
+            -797.0
+          ],
+          [
+            7879.0,
+            6055.0,
+            4231.0,
+            2407.0,
+            583.0
+          ],
+          [
+            9259.0,
+            7435.0,
+            5611.0,
+            3787.0,
+            1963.0
+          ],
+          [
+            10639.0,
+            8815.0,
+            6991.0,
+            5167.0,
+            3343.0
+          ],
+          [
+            12019.0,
+            10195.0,
+            8371.0,
+            6547.0,
+            4723.0
+          ],
+          [
+            13399.0,
+            11575.0,
+            9751.0,
+            7927.0,
+            6103.0
+          ],
+          [
+            14779.0,
+            12955.0,
+            11131.0,
+            9307.0,
+            7483.0
+          ]
+        ],
+        "layout": "margin[i][j] = price_pct[i] x cost_pct[j], margin per container"
+      },
+      "fx_sensitivity": [
+        {
+          "shock_pct": -20,
+          "margin": 2431.0
+        },
+        {
+          "shock_pct": -10,
+          "margin": 4964.333333
+        },
+        {
+          "shock_pct": 0,
+          "margin": 6991.0
+        },
+        {
+          "shock_pct": 10,
+          "margin": 8649.181818
+        },
+        {
+          "shock_pct": 20,
+          "margin": 10031.0
+        }
+      ],
+      "duty_sensitivity_metric": "buyer_landed",
+      "duty_sensitivity": [
+        {
+          "shock_pp": -5,
+          "value": 33243.3264
+        },
+        {
+          "shock_pp": 0,
+          "value": 34767.3984
+        },
+        {
+          "shock_pp": 5,
+          "value": 36291.4704
+        }
+      ],
+      "break_even_containers_per_year": 2.574739,
+      "cash_cycle_days": 44.0,
+      "cash_cycle_missing": [],
+      "cash_tied_per_container": 20609.0,
+      "planned_containers_per_year": 6.0,
+      "transit_days_base": 9.0,
+      "peak_working_capital": 14906.235616,
+      "iso3": "ARE",
+      "name": "United Arab Emirates"
+    },
+    "NLD": {
+      "status": "modelled",
+      "missing": [],
+      "buyer_side_missing": [
+        "duty_rate_pct"
+      ],
+      "errors": [],
+      "notes": [],
+      "perspective": "export",
+      "incoterm": "CFR",
+      "valuation_basis": "CIF",
+      "price_per_unit": 1.113084,
+      "price_basis": "required_at_target_margin",
+      "required_price_per_unit": 1.113084,
+      "revenue": 26714.02439,
+      "user_cost": 21905.5,
+      "margin": 4808.52439,
+      "margin_pct": 18.0,
+      "buyer_landed": null,
+      "buyer_landed_per_unit": null,
+      "benchmark_unit_value": null,
+      "price_gap_pct": null,
+      "FOBv": 23776.52439,
+      "CIFv": 26820.880488,
+      "CV": 26820.880488,
+      "DU": null,
+      "INS": null,
+      "VATnr": null,
+      "invoice_value": 26714.02439,
+      "waterfall": [
+        {
+          "key": "goods",
+          "label": "Goods at EXW cost",
+          "amount": 18240.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OI",
+          "label": "Origin inland",
+          "amount": 392.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OD",
+          "label": "Origin documents",
+          "amount": 134.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OT",
+          "label": "Origin THC",
+          "amount": 202.0,
+          "side": "seller",
+          "tier": "published"
+        },
+        {
+          "key": "FR",
+          "label": "Freight",
+          "amount": 2937.5,
+          "side": "seller",
+          "tier": "connector"
+        },
+        {
+          "key": "INS",
+          "label": "Insurance (buyer)",
+          "amount": 106.856098,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DT",
+          "label": "Destination THC",
+          "amount": 246.0,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "IC",
+          "label": "Import clearance",
+          "amount": 291.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DU",
+          "label": "Import duty",
+          "amount": null,
+          "side": "buyer",
+          "tier": "missing"
+        },
+        {
+          "key": "DI",
+          "label": "Destination inland",
+          "amount": 448.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "VAT",
+          "label": "Non-recoverable VAT",
+          "amount": null,
+          "side": "buyer",
+          "tier": "modelled"
+        }
+      ],
+      "FOB_cost": 18968.0,
+      "goods": 18240.0,
+      "freight_scenarios": {
+        "low": {
+          "margin": 4808.52439,
+          "margin_pct": 18.0,
+          "buyer_landed": null,
+          "user_cost": 21905.5
+        },
+        "base": {
+          "margin": 4808.52439,
+          "margin_pct": 18.0,
+          "buyer_landed": null,
+          "user_cost": 21905.5
+        },
+        "high": {
+          "margin": 4808.52439,
+          "margin_pct": 18.0,
+          "buyer_landed": null,
+          "user_cost": 21905.5
+        }
+      },
+      "sensitivity": {
+        "price_pct": [
+          -15,
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15
+        ],
+        "cost_pct": [
+          -20,
+          -10,
+          0,
+          10,
+          20
+        ],
+        "margin": [
+          [
+            4449.420732,
+            2625.420732,
+            801.420732,
+            -1022.579268,
+            -2846.579268
+          ],
+          [
+            5785.121951,
+            3961.121951,
+            2137.121951,
+            313.121951,
+            -1510.878049
+          ],
+          [
+            7120.823171,
+            5296.823171,
+            3472.823171,
+            1648.823171,
+            -175.176829
+          ],
+          [
+            8456.52439,
+            6632.52439,
+            4808.52439,
+            2984.52439,
+            1160.52439
+          ],
+          [
+            9792.22561,
+            7968.22561,
+            6144.22561,
+            4320.22561,
+            2496.22561
+          ],
+          [
+            11127.926829,
+            9303.926829,
+            7479.926829,
+            5655.926829,
+            3831.926829
+          ],
+          [
+            12463.628049,
+            10639.628049,
+            8815.628049,
+            6991.628049,
+            5167.628049
+          ]
+        ],
+        "layout": "margin[i][j] = price_pct[i] x cost_pct[j], margin per container"
+      },
+      "fx_sensitivity": [
+        {
+          "shock_pct": -20,
+          "margin": 248.52439
+        },
+        {
+          "shock_pct": -10,
+          "margin": 2781.857724
+        },
+        {
+          "shock_pct": 0,
+          "margin": 4808.52439
+        },
+        {
+          "shock_pct": 10,
+          "margin": 6466.706208
+        },
+        {
+          "shock_pct": 20,
+          "margin": 7848.52439
+        }
+      ],
+      "duty_sensitivity_metric": "buyer_landed",
+      "duty_sensitivity": [
+        {
+          "shock_pp": -5,
+          "value": null
+        },
+        {
+          "shock_pp": 0,
+          "value": null
+        },
+        {
+          "shock_pp": 5,
+          "value": null
+        }
+      ],
+      "break_even_containers_per_year": 3.743352,
+      "cash_cycle_days": 44.0,
+      "cash_cycle_missing": [],
+      "cash_tied_per_container": 21905.5,
+      "planned_containers_per_year": 6.0,
+      "transit_days_base": 22.0,
+      "peak_working_capital": 15843.978082,
+      "iso3": "NLD",
+      "name": "Netherlands"
+    },
+    "GBR": {
+      "status": "modelled",
+      "missing": [],
+      "buyer_side_missing": [],
+      "errors": [],
+      "notes": [],
+      "perspective": "export",
+      "incoterm": "CFR",
+      "valuation_basis": "CIF",
+      "price_per_unit": 1.112652,
+      "price_basis": "required_at_target_margin",
+      "required_price_per_unit": 1.112652,
+      "revenue": 26703.658537,
+      "user_cost": 21897.0,
+      "margin": 4806.658537,
+      "margin_pct": 18.0,
+      "buyer_landed": 27849.473171,
+      "buyer_landed_per_unit": 1.160395,
+      "benchmark_unit_value": 1.1762,
+      "price_gap_pct": -1.343758,
+      "FOBv": 23813.658537,
+      "CIFv": 26810.473171,
+      "CV": 26810.473171,
+      "DU": 0.0,
+      "INS": null,
+      "VATnr": 0.0,
+      "invoice_value": 26703.658537,
+      "waterfall": [
+        {
+          "key": "goods",
+          "label": "Goods at EXW cost",
+          "amount": 18240.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OI",
+          "label": "Origin inland",
+          "amount": 413.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OD",
+          "label": "Origin documents",
+          "amount": 142.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OT",
+          "label": "Origin THC",
+          "amount": 212.0,
+          "side": "seller",
+          "tier": "published"
+        },
+        {
+          "key": "FR",
+          "label": "Freight",
+          "amount": 2890.0,
+          "side": "seller",
+          "tier": "published"
+        },
+        {
+          "key": "INS",
+          "label": "Insurance (buyer)",
+          "amount": 106.814634,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DT",
+          "label": "Destination THC",
+          "amount": 260.0,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "IC",
+          "label": "Import clearance",
+          "amount": 307.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DU",
+          "label": "Import duty",
+          "amount": 0.0,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "DI",
+          "label": "Destination inland",
+          "amount": 472.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "VAT",
+          "label": "Non-recoverable VAT",
+          "amount": 0.0,
+          "side": "buyer",
+          "tier": "published"
+        }
+      ],
+      "FOB_cost": 19007.0,
+      "goods": 18240.0,
+      "freight_scenarios": {
+        "low": {
+          "margin": 4806.658537,
+          "margin_pct": 18.0,
+          "buyer_landed": 27849.473171,
+          "user_cost": 21897.0
+        },
+        "base": {
+          "margin": 4806.658537,
+          "margin_pct": 18.0,
+          "buyer_landed": 27849.473171,
+          "user_cost": 21897.0
+        },
+        "high": {
+          "margin": 4806.658537,
+          "margin_pct": 18.0,
+          "buyer_landed": 27849.473171,
+          "user_cost": 21897.0
+        }
+      },
+      "sensitivity": {
+        "price_pct": [
+          -15,
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15
+        ],
+        "cost_pct": [
+          -20,
+          -10,
+          0,
+          10,
+          20
+        ],
+        "margin": [
+          [
+            4449.109756,
+            2625.109756,
+            801.109756,
+            -1022.890244,
+            -2846.890244
+          ],
+          [
+            5784.292683,
+            3960.292683,
+            2136.292683,
+            312.292683,
+            -1511.707317
+          ],
+          [
+            7119.47561,
+            5295.47561,
+            3471.47561,
+            1647.47561,
+            -176.52439
+          ],
+          [
+            8454.658537,
+            6630.658537,
+            4806.658537,
+            2982.658537,
+            1158.658537
+          ],
+          [
+            9789.841463,
+            7965.841463,
+            6141.841463,
+            4317.841463,
+            2493.841463
+          ],
+          [
+            11125.02439,
+            9301.02439,
+            7477.02439,
+            5653.02439,
+            3829.02439
+          ],
+          [
+            12460.207317,
+            10636.207317,
+            8812.207317,
+            6988.207317,
+            5164.207317
+          ]
+        ],
+        "layout": "margin[i][j] = price_pct[i] x cost_pct[j], margin per container"
+      },
+      "fx_sensitivity": [
+        {
+          "shock_pct": -20,
+          "margin": 246.658537
+        },
+        {
+          "shock_pct": -10,
+          "margin": 2779.99187
+        },
+        {
+          "shock_pct": 0,
+          "margin": 4806.658537
+        },
+        {
+          "shock_pct": 10,
+          "margin": 6464.840355
+        },
+        {
+          "shock_pct": 20,
+          "margin": 7846.658537
+        }
+      ],
+      "duty_sensitivity_metric": "buyer_landed",
+      "duty_sensitivity": [
+        {
+          "shock_pp": -5,
+          "value": 27849.473171
+        },
+        {
+          "shock_pp": 0,
+          "value": 27849.473171
+        },
+        {
+          "shock_pp": 5,
+          "value": 29189.996829
+        }
+      ],
+      "break_even_containers_per_year": 3.744805,
+      "cash_cycle_days": 44.0,
+      "cash_cycle_missing": [],
+      "cash_tied_per_container": 21897.0,
+      "planned_containers_per_year": 6.0,
+      "transit_days_base": 11.7,
+      "peak_working_capital": 15837.830137,
+      "iso3": "GBR",
+      "name": "United Kingdom"
+    },
+    "DEU": {
+      "status": "modelled",
+      "missing": [],
+      "buyer_side_missing": [],
+      "errors": [],
+      "notes": [],
+      "perspective": "export",
+      "incoterm": "CFR",
+      "valuation_basis": "CIF",
+      "price_per_unit": 1.074796,
+      "price_basis": "required_at_target_margin",
+      "required_price_per_unit": 1.074796,
+      "revenue": 25795.097561,
+      "user_cost": 21151.98,
+      "margin": 4643.117561,
+      "margin_pct": 18.0,
+      "buyer_landed": 29579.105746,
+      "buyer_landed_per_unit": 1.232463,
+      "benchmark_unit_value": 1.1435,
+      "price_gap_pct": 7.779864,
+      "FOBv": 23689.117561,
+      "CIFv": 25898.277951,
+      "CV": 25898.277951,
+      "DU": 2589.827795,
+      "INS": null,
+      "VATnr": 0.0,
+      "invoice_value": 25795.097561,
+      "waterfall": [
+        {
+          "key": "goods",
+          "label": "Goods at EXW cost",
+          "amount": 18240.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OI",
+          "label": "Origin inland",
+          "amount": 434.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OD",
+          "label": "Origin documents",
+          "amount": 149.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OT",
+          "label": "Origin THC",
+          "amount": 223.0,
+          "side": "seller",
+          "tier": "published"
+        },
+        {
+          "key": "FR",
+          "label": "Freight",
+          "amount": 2105.98,
+          "side": "seller",
+          "tier": "modelled"
+        },
+        {
+          "key": "INS",
+          "label": "Insurance (buyer)",
+          "amount": 103.18039,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DT",
+          "label": "Destination THC",
+          "amount": 273.0,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "IC",
+          "label": "Import clearance",
+          "amount": 322.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DU",
+          "label": "Import duty",
+          "amount": 2589.827795,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "DI",
+          "label": "Destination inland",
+          "amount": 496.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "VAT",
+          "label": "Non-recoverable VAT",
+          "amount": 0.0,
+          "side": "buyer",
+          "tier": "published"
+        }
+      ],
+      "FOB_cost": 19046.0,
+      "goods": 18240.0,
+      "freight_scenarios": {
+        "low": {
+          "margin": 4481.317317,
+          "margin_pct": 18.0,
+          "buyer_landed": 28586.371361,
+          "user_cost": 20414.89
+        },
+        "base": {
+          "margin": 4643.117561,
+          "margin_pct": 18.0,
+          "buyer_landed": 29579.105746,
+          "user_cost": 21151.98
+        },
+        "high": {
+          "margin": 4804.917805,
+          "margin_pct": 18.0,
+          "buyer_landed": 30571.840132,
+          "user_cost": 21889.07
+        }
+      },
+      "sensitivity": {
+        "price_pct": [
+          -15,
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15
+        ],
+        "cost_pct": [
+          -20,
+          -10,
+          0,
+          10,
+          20
+        ],
+        "margin": [
+          [
+            4421.852927,
+            2597.852927,
+            773.852927,
+            -1050.147073,
+            -2874.147073
+          ],
+          [
+            5711.607805,
+            3887.607805,
+            2063.607805,
+            239.607805,
+            -1584.392195
+          ],
+          [
+            7001.362683,
+            5177.362683,
+            3353.362683,
+            1529.362683,
+            -294.637317
+          ],
+          [
+            8291.117561,
+            6467.117561,
+            4643.117561,
+            2819.117561,
+            995.117561
+          ],
+          [
+            9580.872439,
+            7756.872439,
+            5932.872439,
+            4108.872439,
+            2284.872439
+          ],
+          [
+            10870.627317,
+            9046.627317,
+            7222.627317,
+            5398.627317,
+            3574.627317
+          ],
+          [
+            12160.382195,
+            10336.382195,
+            8512.382195,
+            6688.382195,
+            4864.382195
+          ]
+        ],
+        "layout": "margin[i][j] = price_pct[i] x cost_pct[j], margin per container"
+      },
+      "fx_sensitivity": [
+        {
+          "shock_pct": -20,
+          "margin": 83.117561
+        },
+        {
+          "shock_pct": -10,
+          "margin": 2616.450894
+        },
+        {
+          "shock_pct": 0,
+          "margin": 4643.117561
+        },
+        {
+          "shock_pct": 10,
+          "margin": 6301.299379
+        },
+        {
+          "shock_pct": 20,
+          "margin": 7683.117561
+        }
+      ],
+      "duty_sensitivity_metric": "buyer_landed",
+      "duty_sensitivity": [
+        {
+          "shock_pp": -5,
+          "value": 28284.191849
+        },
+        {
+          "shock_pp": 0,
+          "value": 29579.105746
+        },
+        {
+          "shock_pp": 5,
+          "value": 30874.019644
+        }
+      ],
+      "break_even_containers_per_year": 3.876706,
+      "cash_cycle_days": 44.0,
+      "cash_cycle_missing": [],
+      "cash_tied_per_container": 21151.98,
+      "planned_containers_per_year": 6.0,
+      "transit_days_base": 12.6,
+      "peak_working_capital": 15298.966356,
+      "iso3": "DEU",
+      "name": "Germany"
+    },
+    "KWT": {
+      "status": "modelled",
+      "missing": [],
+      "buyer_side_missing": [
+        "destination_inland"
+      ],
+      "errors": [],
+      "notes": [],
+      "perspective": "export",
+      "incoterm": "CFR",
+      "valuation_basis": "CIF",
+      "price_per_unit": 1.077448,
+      "price_basis": "required_at_target_margin",
+      "required_price_per_unit": 1.077448,
+      "revenue": 25858.756098,
+      "user_cost": 21204.18,
+      "margin": 4654.576098,
+      "margin_pct": 18.0,
+      "buyer_landed": null,
+      "buyer_landed_per_unit": null,
+      "benchmark_unit_value": null,
+      "price_gap_pct": null,
+      "FOBv": 23739.576098,
+      "CIFv": 25962.191122,
+      "CV": 25962.191122,
+      "DU": 3375.084846,
+      "INS": null,
+      "VATnr": 4400.591395,
+      "invoice_value": 25858.756098,
+      "waterfall": [
+        {
+          "key": "goods",
+          "label": "Goods at EXW cost",
+          "amount": 18240.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OI",
+          "label": "Origin inland",
+          "amount": 455.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OD",
+          "label": "Origin documents",
+          "amount": 156.0,
+          "side": "seller",
+          "tier": "user"
+        },
+        {
+          "key": "OT",
+          "label": "Origin THC",
+          "amount": 234.0,
+          "side": "seller",
+          "tier": "published"
+        },
+        {
+          "key": "FR",
+          "label": "Freight",
+          "amount": 2119.18,
+          "side": "seller",
+          "tier": "modelled"
+        },
+        {
+          "key": "INS",
+          "label": "Insurance (buyer)",
+          "amount": 103.435024,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DT",
+          "label": "Destination THC",
+          "amount": 286.0,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "IC",
+          "label": "Import clearance",
+          "amount": 338.0,
+          "side": "buyer",
+          "tier": "user"
+        },
+        {
+          "key": "DU",
+          "label": "Import duty",
+          "amount": 3375.084846,
+          "side": "buyer",
+          "tier": "published"
+        },
+        {
+          "key": "DI",
+          "label": "Destination inland",
+          "amount": null,
+          "side": "buyer",
+          "tier": "missing"
+        },
+        {
+          "key": "VAT",
+          "label": "Non-recoverable VAT",
+          "amount": 4400.591395,
+          "side": "buyer",
+          "tier": "published"
+        }
+      ],
+      "FOB_cost": 19085.0,
+      "goods": 18240.0,
+      "freight_scenarios": {
+        "low": {
+          "margin": 4491.761707,
+          "margin_pct": 18.0,
+          "buyer_landed": null,
+          "user_cost": 20462.47
+        },
+        "base": {
+          "margin": 4654.576098,
+          "margin_pct": 18.0,
+          "buyer_landed": null,
+          "user_cost": 21204.18
+        },
+        "high": {
+          "margin": 4817.390488,
+          "margin_pct": 18.0,
+          "buyer_landed": null,
+          "user_cost": 21945.89
+        }
+      },
+      "sensitivity": {
+        "price_pct": [
+          -15,
+          -10,
+          -5,
+          0,
+          5,
+          10,
+          15
+        ],
+        "cost_pct": [
+          -20,
+          -10,
+          0,
+          10,
+          20
+        ],
+        "margin": [
+          [
+            4423.762683,
+            2599.762683,
+            775.762683,
+            -1048.237317,
+            -2872.237317
+          ],
+          [
+            5716.700488,
+            3892.700488,
+            2068.700488,
+            244.700488,
+            -1579.299512
+          ],
+          [
+            7009.638293,
+            5185.638293,
+            3361.638293,
+            1537.638293,
+            -286.361707
+          ],
+          [
+            8302.576098,
+            6478.576098,
+            4654.576098,
+            2830.576098,
+            1006.576098
+          ],
+          [
+            9595.513902,
+            7771.513902,
+            5947.513902,
+            4123.513902,
+            2299.513902
+          ],
+          [
+            10888.451707,
+            9064.451707,
+            7240.451707,
+            5416.451707,
+            3592.451707
+          ],
+          [
+            12181.389512,
+            10357.389512,
+            8533.389512,
+            6709.389512,
+            4885.389512
+          ]
+        ],
+        "layout": "margin[i][j] = price_pct[i] x cost_pct[j], margin per container"
+      },
+      "fx_sensitivity": [
+        {
+          "shock_pct": -20,
+          "margin": 94.576098
+        },
+        {
+          "shock_pct": -10,
+          "margin": 2627.909431
+        },
+        {
+          "shock_pct": 0,
+          "margin": 4654.576098
+        },
+        {
+          "shock_pct": 10,
+          "margin": 6312.757916
+        },
+        {
+          "shock_pct": 20,
+          "margin": 7694.576098
+        }
+      ],
+      "duty_sensitivity_metric": "buyer_landed",
+      "duty_sensitivity": [
+        {
+          "shock_pp": -5,
+          "value": null
+        },
+        {
+          "shock_pp": 0,
+          "value": null
+        },
+        {
+          "shock_pp": 5,
+          "value": null
+        }
+      ],
+      "break_even_containers_per_year": 3.867162,
+      "cash_cycle_days": 44.0,
+      "cash_cycle_missing": [],
+      "cash_tied_per_container": 21204.18,
+      "planned_containers_per_year": 6.0,
+      "transit_days_base": 12.9,
+      "peak_working_capital": 15336.721973,
+      "iso3": "KWT",
+      "name": "Kuwait"
+    }
+  },
+  "portfolio": {
+    "planned_containers_per_year": 54.0,
+    "weighted_margin": 5864.875176,
+    "annual_margin": 316703.259512,
+    "annual_fixed": 18000.0,
+    "one_time": 9000.0,
+    "payback_month": 2,
+    "payback_note": "",
+    "monthly": [
+      {
+        "month": 1,
+        "containers": 4.5,
+        "cash": -10500.0,
+        "cumulative": -10500.0
+      },
+      {
+        "month": 2,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 14391.938293
+      },
+      {
+        "month": 3,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 39283.876585
+      },
+      {
+        "month": 4,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 64175.814878
+      },
+      {
+        "month": 5,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 89067.753171
+      },
+      {
+        "month": 6,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 113959.691463
+      },
+      {
+        "month": 7,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 138851.629756
+      },
+      {
+        "month": 8,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 163743.568049
+      },
+      {
+        "month": 9,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 188635.506341
+      },
+      {
+        "month": 10,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 213527.444634
+      },
+      {
+        "month": 11,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 238419.382927
+      },
+      {
+        "month": 12,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 263311.32122
+      },
+      {
+        "month": 13,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 288203.259512
+      },
+      {
+        "month": 14,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 313095.197805
+      },
+      {
+        "month": 15,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 337987.136098
+      },
+      {
+        "month": 16,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 362879.07439
+      },
+      {
+        "month": 17,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 387771.012683
+      },
+      {
+        "month": 18,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 412662.950976
+      },
+      {
+        "month": 19,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 437554.889268
+      },
+      {
+        "month": 20,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 462446.827561
+      },
+      {
+        "month": 21,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 487338.765854
+      },
+      {
+        "month": 22,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 512230.704146
+      },
+      {
+        "month": 23,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 537122.642439
+      },
+      {
+        "month": 24,
+        "containers": 4.5,
+        "cash": 24891.938293,
+        "cumulative": 562014.580732
+      }
+    ],
+    "lanes_included": [
+      "SAU",
+      "ARE",
+      "NLD",
+      "GBR",
+      "DEU",
+      "KWT"
+    ],
+    "weighted_cash_cycle_days": 44.0,
+    "cash_lag_months": 1,
+    "monthly_basis": "derived: planned containers per year / 12",
+    "notes": []
+  },
+  "inputs_echo": [
+    {
+      "key": "units_per_container",
+      "lane": null,
+      "value": 24000.0,
+      "unit": "kg/container",
+      "tier": "user",
+      "source": "client packing list",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "net_kg_per_unit",
+      "lane": null,
+      "value": 1.0,
+      "unit": "kg/kg",
+      "tier": "derived",
+      "source": "unit is kg",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "fx_cost_per_model",
+      "lane": null,
+      "value": 50.0,
+      "unit": "EGP per USD",
+      "tier": "user",
+      "source": "client planning rate",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "fx_price_per_model",
+      "lane": null,
+      "value": 1.0,
+      "unit": "USD per USD",
+      "tier": "derived",
+      "source": "price currency equals model currency",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "insurance_rate_pct",
+      "lane": null,
+      "value": 0.4,
+      "unit": "%",
+      "tier": "user",
+      "source": "client's cargo policy",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "target_margin_pct",
+      "lane": null,
+      "value": 18.0,
+      "unit": "%",
+      "tier": "user",
+      "source": "client target",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "cost_per_unit",
+      "lane": null,
+      "value": 38.0,
+      "unit": "EGP/kg",
+      "tier": "user",
+      "source": "client costing sheet",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "price_per_unit",
+      "lane": "SAU",
+      "value": 1.12,
+      "unit": "USD/kg",
+      "tier": "user",
+      "source": "current customer price",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "credit_days",
+      "lane": null,
+      "value": 30.0,
+      "unit": "days",
+      "tier": "user",
+      "source": "client terms",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "advance_pct",
+      "lane": null,
+      "value": 20.0,
+      "unit": "%",
+      "tier": "user",
+      "source": "client terms",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "customer_credit_days",
+      "lane": null,
+      "value": null,
+      "unit": "days",
+      "tier": "missing",
+      "source": "not provided",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "production_lead_days",
+      "lane": null,
+      "value": 21.0,
+      "unit": "days",
+      "tier": "user",
+      "source": "client",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_dwell_days",
+      "lane": null,
+      "value": 4.0,
+      "unit": "days",
+      "tier": "user",
+      "source": "client",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "clearance_days",
+      "lane": null,
+      "value": null,
+      "unit": "days",
+      "tier": "missing",
+      "source": "",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "inventory_days",
+      "lane": null,
+      "value": null,
+      "unit": "days",
+      "tier": "missing",
+      "source": "not provided",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "fixed_annual",
+      "lane": null,
+      "value": 18000.0,
+      "unit": "USD",
+      "tier": "user",
+      "source": "export desk allocation",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "fixed_one_time",
+      "lane": null,
+      "value": 9000.0,
+      "unit": "USD",
+      "tier": "user",
+      "source": "certification and samples budget",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "planned_containers_per_year",
+      "lane": "SAU",
+      "value": 24.0,
+      "unit": "containers/yr",
+      "tier": "user",
+      "source": "client plan",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "freight",
+      "lane": "SAU",
+      "value": 1450.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic forwarder quote ref D-001 (all-in)",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_inland",
+      "lane": "SAU",
+      "value": 350.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic origin inland tariff, lane SAU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_docs",
+      "lane": "SAU",
+      "value": 120.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic origin docs tariff, lane SAU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_thc",
+      "lane": "SAU",
+      "value": 0.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "included in all-in rate",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_thc",
+      "lane": "SAU",
+      "value": 0.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "included in all-in rate",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_clearance",
+      "lane": "SAU",
+      "value": 260.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic import clearance tariff, lane SAU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_inland",
+      "lane": "SAU",
+      "value": 400.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic destination inland tariff, lane SAU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "transit_days_base",
+      "lane": "SAU",
+      "value": 6.0,
+      "unit": "days",
+      "tier": "quote",
+      "source": "freight.json transit time (base)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "duty_rate_pct",
+      "lane": "SAU",
+      "value": 0.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic zero duty under a demo agreement - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "other_duties_pct",
+      "lane": "SAU",
+      "value": 0.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic no other duties - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_vat_pct",
+      "lane": "SAU",
+      "value": 15.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic import VAT - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "valuation_basis",
+      "lane": "SAU",
+      "value": "CIF",
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json valuation_basis (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "vat_recoverable",
+      "lane": "SAU",
+      "value": true,
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json vat_recoverable (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "price_per_unit",
+      "lane": "ARE",
+      "value": 1.15,
+      "unit": "USD/kg",
+      "tier": "user",
+      "source": "current customer price",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "planned_containers_per_year",
+      "lane": "ARE",
+      "value": 6.0,
+      "unit": "containers/yr",
+      "tier": "user",
+      "source": "client plan",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "freight",
+      "lane": "ARE",
+      "value": 1680.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic forwarder quote ref D-002",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_inland",
+      "lane": "ARE",
+      "value": 371.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic origin inland tariff, lane ARE",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_docs",
+      "lane": "ARE",
+      "value": 127.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic origin docs tariff, lane ARE",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_thc",
+      "lane": "ARE",
+      "value": 191.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic origin thc tariff, lane ARE",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_thc",
+      "lane": "ARE",
+      "value": 233.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic destination thc tariff, lane ARE",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_clearance",
+      "lane": "ARE",
+      "value": 276.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic import clearance tariff, lane ARE",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_inland",
+      "lane": "ARE",
+      "value": 424.0,
+      "unit": "USD/container",
+      "tier": "quote",
+      "source": "DEMO synthetic destination inland tariff, lane ARE",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "transit_days_base",
+      "lane": "ARE",
+      "value": 9.0,
+      "unit": "days",
+      "tier": "quote",
+      "source": "freight.json transit time (base)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "duty_rate_pct",
+      "lane": "ARE",
+      "value": 10.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic MFN rate applied (no agreement) - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "other_duties_pct",
+      "lane": "ARE",
+      "value": 1.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic other duties and charges - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_vat_pct",
+      "lane": "ARE",
+      "value": 10.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic import VAT - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "valuation_basis",
+      "lane": "ARE",
+      "value": "CIF",
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json valuation_basis (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "vat_recoverable",
+      "lane": "ARE",
+      "value": false,
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json vat_recoverable (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "price_per_unit",
+      "lane": "NLD",
+      "value": null,
+      "unit": "USD/kg",
+      "tier": "missing",
+      "source": "",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "planned_containers_per_year",
+      "lane": "NLD",
+      "value": 6.0,
+      "unit": "containers/yr",
+      "tier": "user",
+      "source": "client plan",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "freight",
+      "lane": "NLD",
+      "value": 2937.5,
+      "unit": "USD/container",
+      "tier": "connector",
+      "source": "DEMO synthetic rate tool market average",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_inland",
+      "lane": "NLD",
+      "value": 392.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin inland tariff, lane NLD",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_docs",
+      "lane": "NLD",
+      "value": 134.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin docs tariff, lane NLD",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_thc",
+      "lane": "NLD",
+      "value": 202.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic origin thc tariff, lane NLD",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_thc",
+      "lane": "NLD",
+      "value": 246.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic destination thc tariff, lane NLD",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_clearance",
+      "lane": "NLD",
+      "value": 291.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic import clearance tariff, lane NLD",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_inland",
+      "lane": "NLD",
+      "value": 448.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic destination inland tariff, lane NLD",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "transit_days_base",
+      "lane": "NLD",
+      "value": 22.0,
+      "unit": "days",
+      "tier": "connector",
+      "source": "freight.json transit time (base)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "duty_rate_pct",
+      "lane": "NLD",
+      "value": null,
+      "unit": "%",
+      "tier": "missing",
+      "source": "DEMO synthetic: rate not found, verify with the customs authority",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "other_duties_pct",
+      "lane": "NLD",
+      "value": 0.0,
+      "unit": "%",
+      "tier": "modelled",
+      "source": "DEMO synthetic assumed no other duties (verify) - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_vat_pct",
+      "lane": "NLD",
+      "value": 15.0,
+      "unit": "%",
+      "tier": "modelled",
+      "source": "DEMO synthetic VAT rate placeholder (verify) - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "valuation_basis",
+      "lane": "NLD",
+      "value": "CIF",
+      "unit": "",
+      "tier": "modelled",
+      "source": "tariff.json valuation_basis (verify)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "vat_recoverable",
+      "lane": "NLD",
+      "value": true,
+      "unit": "",
+      "tier": "modelled",
+      "source": "tariff.json vat_recoverable (verify)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "price_per_unit",
+      "lane": "GBR",
+      "value": null,
+      "unit": "USD/kg",
+      "tier": "missing",
+      "source": "",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "planned_containers_per_year",
+      "lane": "GBR",
+      "value": 6.0,
+      "unit": "containers/yr",
+      "tier": "user",
+      "source": "client plan",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "freight",
+      "lane": "GBR",
+      "value": 2890.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic published carrier spot rate page",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_inland",
+      "lane": "GBR",
+      "value": 413.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin inland tariff, lane GBR",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_docs",
+      "lane": "GBR",
+      "value": 142.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin docs tariff, lane GBR",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_thc",
+      "lane": "GBR",
+      "value": 212.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic origin thc tariff, lane GBR",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_thc",
+      "lane": "GBR",
+      "value": 260.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic destination thc tariff, lane GBR",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_clearance",
+      "lane": "GBR",
+      "value": 307.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic import clearance tariff, lane GBR",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_inland",
+      "lane": "GBR",
+      "value": 472.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic destination inland tariff, lane GBR",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "transit_days_base",
+      "lane": "GBR",
+      "value": 11.7,
+      "unit": "days",
+      "tier": "modelled",
+      "source": "freight.json transit time (base)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "duty_rate_pct",
+      "lane": "GBR",
+      "value": 0.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic zero duty under a demo agreement - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "other_duties_pct",
+      "lane": "GBR",
+      "value": 0.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic no other duties - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_vat_pct",
+      "lane": "GBR",
+      "value": 15.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic import VAT - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "valuation_basis",
+      "lane": "GBR",
+      "value": "CIF",
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json valuation_basis (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "vat_recoverable",
+      "lane": "GBR",
+      "value": true,
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json vat_recoverable (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "price_per_unit",
+      "lane": "DEU",
+      "value": null,
+      "unit": "USD/kg",
+      "tier": "missing",
+      "source": "",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "planned_containers_per_year",
+      "lane": "DEU",
+      "value": 6.0,
+      "unit": "containers/yr",
+      "tier": "user",
+      "source": "client plan",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "freight",
+      "lane": "DEU",
+      "value": 2105.98,
+      "unit": "USD/container",
+      "tier": "modelled",
+      "source": "Distance model usd = a + b x nm (least_squares, a=1699.917, b=0.11781) fitted to 2 benchmark(s): DEMO synthetic index: Far East to North Europe (2026-11-13); DEMO synthetic index: Far East to US West Coast (2026-11-13); range +/-35%",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_inland",
+      "lane": "DEU",
+      "value": 434.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin inland tariff, lane DEU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_docs",
+      "lane": "DEU",
+      "value": 149.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin docs tariff, lane DEU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_thc",
+      "lane": "DEU",
+      "value": 223.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic origin thc tariff, lane DEU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_thc",
+      "lane": "DEU",
+      "value": 273.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic destination thc tariff, lane DEU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_clearance",
+      "lane": "DEU",
+      "value": 322.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic import clearance tariff, lane DEU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_inland",
+      "lane": "DEU",
+      "value": 496.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic destination inland tariff, lane DEU",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "transit_days_base",
+      "lane": "DEU",
+      "value": 12.6,
+      "unit": "days",
+      "tier": "modelled",
+      "source": "freight.json transit time (base)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "duty_rate_pct",
+      "lane": "DEU",
+      "value": 10.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic MFN rate applied (no agreement) - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "other_duties_pct",
+      "lane": "DEU",
+      "value": 0.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic other duties and charges - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_vat_pct",
+      "lane": "DEU",
+      "value": 10.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic import VAT - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "valuation_basis",
+      "lane": "DEU",
+      "value": "CIF",
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json valuation_basis (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "vat_recoverable",
+      "lane": "DEU",
+      "value": true,
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json vat_recoverable (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "price_per_unit",
+      "lane": "KWT",
+      "value": null,
+      "unit": "USD/kg",
+      "tier": "missing",
+      "source": "",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "planned_containers_per_year",
+      "lane": "KWT",
+      "value": 6.0,
+      "unit": "containers/yr",
+      "tier": "user",
+      "source": "client plan",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "freight",
+      "lane": "KWT",
+      "value": 2119.18,
+      "unit": "USD/container",
+      "tier": "modelled",
+      "source": "Distance model usd = a + b x nm (least_squares, a=1699.917, b=0.11781) fitted to 2 benchmark(s): DEMO synthetic index: Far East to North Europe (2026-11-13); DEMO synthetic index: Far East to US West Coast (2026-11-13); range +/-35%",
+      "url": null,
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_inland",
+      "lane": "KWT",
+      "value": 455.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin inland tariff, lane KWT",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_docs",
+      "lane": "KWT",
+      "value": 156.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic origin docs tariff, lane KWT",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "origin_thc",
+      "lane": "KWT",
+      "value": 234.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic origin thc tariff, lane KWT",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_thc",
+      "lane": "KWT",
+      "value": 286.0,
+      "unit": "USD/container",
+      "tier": "published",
+      "source": "DEMO synthetic destination thc tariff, lane KWT",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_clearance",
+      "lane": "KWT",
+      "value": 338.0,
+      "unit": "USD/container",
+      "tier": "user",
+      "source": "DEMO synthetic import clearance tariff, lane KWT",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "destination_inland",
+      "lane": "KWT",
+      "value": null,
+      "unit": "USD/container",
+      "tier": "missing",
+      "source": "DEMO synthetic: not yet obtained, left missing on purpose",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "transit_days_base",
+      "lane": "KWT",
+      "value": 12.9,
+      "unit": "days",
+      "tier": "modelled",
+      "source": "freight.json transit time (base)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "duty_rate_pct",
+      "lane": "KWT",
+      "value": 12.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic MFN rate applied (no agreement) - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "other_duties_pct",
+      "lane": "KWT",
+      "value": 1.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic other duties and charges - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "import_vat_pct",
+      "lane": "KWT",
+      "value": 15.0,
+      "unit": "%",
+      "tier": "published",
+      "source": "DEMO synthetic import VAT - not a real schedule",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "key": "valuation_basis",
+      "lane": "KWT",
+      "value": "CIF",
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json valuation_basis (sourced)",
+      "url": null,
+      "as_of": null
+    },
+    {
+      "key": "vat_recoverable",
+      "lane": "KWT",
+      "value": false,
+      "unit": "",
+      "tier": "published",
+      "source": "tariff.json vat_recoverable (sourced)",
+      "url": null,
+      "as_of": null
+    }
+  ],
+  "payment_terms": "T/T 30 days after B/L"
+}

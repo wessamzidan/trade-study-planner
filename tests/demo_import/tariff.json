@@ -1,0 +1,247 @@
+{
+  "schema_version": "2.0",
+  "hs_code": "071080",
+  "lanes": {
+    "EGY": {
+      "importer": "SAU",
+      "exporter": "EGY",
+      "valuation_basis": "CIF",
+      "ntb": [],
+      "notes": "DEMO synthetic data",
+      "duty_rate_pct": {
+        "value": 0.0,
+        "tier": "published",
+        "source": "DEMO synthetic zero duty under a demo agreement - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "mfn_rate_pct": {
+        "value": 12.0,
+        "tier": "published",
+        "source": "DEMO synthetic MFN rate - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "preference": {
+        "agreement": "DEMO FTA",
+        "rate_pct": {
+          "value": 0.0,
+          "tier": "published",
+          "source": "DEMO synthetic preferential rate - not a real schedule",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "conditions": "DEMO synthetic rules of origin"
+      },
+      "other_duties_pct": {
+        "value": 0.0,
+        "tier": "published",
+        "source": "DEMO synthetic no other duties - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "import_vat_pct": {
+        "value": 15.0,
+        "tier": "published",
+        "source": "DEMO synthetic import VAT - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "vat_recoverable": true,
+      "status": "sourced"
+    },
+    "CHN": {
+      "importer": "SAU",
+      "exporter": "CHN",
+      "valuation_basis": "CIF",
+      "ntb": [],
+      "notes": "DEMO synthetic data",
+      "duty_rate_pct": {
+        "value": 10.0,
+        "tier": "published",
+        "source": "DEMO synthetic MFN rate applied (no agreement) - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "mfn_rate_pct": {
+        "value": 10.0,
+        "tier": "published",
+        "source": "DEMO synthetic MFN rate - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "preference": {
+        "agreement": null,
+        "rate_pct": {
+          "value": null,
+          "tier": "missing",
+          "source": "DEMO synthetic: no agreement",
+          "url": null,
+          "as_of": null
+        },
+        "conditions": ""
+      },
+      "other_duties_pct": {
+        "value": 1.0,
+        "tier": "published",
+        "source": "DEMO synthetic other duties and charges - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "import_vat_pct": {
+        "value": 10.0,
+        "tier": "published",
+        "source": "DEMO synthetic import VAT - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "vat_recoverable": false,
+      "status": "sourced"
+    },
+    "BEL": {
+      "importer": "SAU",
+      "exporter": "BEL",
+      "valuation_basis": "CIF",
+      "ntb": [],
+      "notes": "DEMO synthetic data",
+      "duty_rate_pct": {
+        "value": null,
+        "tier": "missing",
+        "source": "DEMO synthetic: rate not found, verify with the customs authority",
+        "url": null,
+        "as_of": null
+      },
+      "mfn_rate_pct": {
+        "value": null,
+        "tier": "missing",
+        "source": "DEMO synthetic: rate not found",
+        "url": null,
+        "as_of": null
+      },
+      "preference": {
+        "agreement": null,
+        "rate_pct": {
+          "value": null,
+          "tier": "missing",
+          "source": "DEMO synthetic: none identified",
+          "url": null,
+          "as_of": null
+        },
+        "conditions": ""
+      },
+      "other_duties_pct": {
+        "value": 0.0,
+        "tier": "modelled",
+        "source": "DEMO synthetic assumed no other duties (verify) - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "import_vat_pct": {
+        "value": 15.0,
+        "tier": "modelled",
+        "source": "DEMO synthetic VAT rate placeholder (verify) - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "vat_recoverable": true,
+      "status": "verify"
+    },
+    "ESP": {
+      "importer": "SAU",
+      "exporter": "ESP",
+      "valuation_basis": "CIF",
+      "ntb": [],
+      "notes": "DEMO synthetic data",
+      "duty_rate_pct": {
+        "value": 0.0,
+        "tier": "published",
+        "source": "DEMO synthetic zero duty under a demo agreement - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "mfn_rate_pct": {
+        "value": 12.0,
+        "tier": "published",
+        "source": "DEMO synthetic MFN rate - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "preference": {
+        "agreement": "DEMO FTA",
+        "rate_pct": {
+          "value": 0.0,
+          "tier": "published",
+          "source": "DEMO synthetic preferential rate - not a real schedule",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "conditions": "DEMO synthetic rules of origin"
+      },
+      "other_duties_pct": {
+        "value": 0.0,
+        "tier": "published",
+        "source": "DEMO synthetic no other duties - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "import_vat_pct": {
+        "value": 15.0,
+        "tier": "published",
+        "source": "DEMO synthetic import VAT - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "vat_recoverable": true,
+      "status": "sourced"
+    },
+    "IND": {
+      "importer": "SAU",
+      "exporter": "IND",
+      "valuation_basis": "CIF",
+      "ntb": [],
+      "notes": "DEMO synthetic data",
+      "duty_rate_pct": {
+        "value": 10.0,
+        "tier": "published",
+        "source": "DEMO synthetic MFN rate applied (no agreement) - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "mfn_rate_pct": {
+        "value": 10.0,
+        "tier": "published",
+        "source": "DEMO synthetic MFN rate - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "preference": {
+        "agreement": null,
+        "rate_pct": {
+          "value": null,
+          "tier": "missing",
+          "source": "DEMO synthetic: no agreement",
+          "url": null,
+          "as_of": null
+        },
+        "conditions": ""
+      },
+      "other_duties_pct": {
+        "value": 0.0,
+        "tier": "published",
+        "source": "DEMO synthetic other duties and charges - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "import_vat_pct": {
+        "value": 10.0,
+        "tier": "published",
+        "source": "DEMO synthetic import VAT - not a real schedule",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "vat_recoverable": true,
+      "status": "sourced"
+    }
+  },
+  "notes": "DEMO synthetic tariff data. Replace with cited lookups before use."
+}

@@ -1,0 +1,357 @@
+{
+  "schema_version": "2.0",
+  "container_type": "40RF",
+  "home_port": {
+    "name": "Jeddah",
+    "locode": "SAJED"
+  },
+  "lanes": {
+    "EGY": {
+      "partner_port": {
+        "name": "Alexandria",
+        "locode": "EGALY"
+      },
+      "rates": [
+        {
+          "container_type": "40RF",
+          "all_in": true,
+          "covers": [
+            "origin_thc",
+            "destination_thc"
+          ],
+          "carrier": "DEMO synthetic carrier",
+          "as_of": "2026-11-13",
+          "url": "https://example.com/demo",
+          "valid_until": "2099-12-31",
+          "tier": "quote",
+          "usd": 1450,
+          "transit_days": 6,
+          "source": "DEMO synthetic forwarder quote ref D-001 (all-in)"
+        }
+      ],
+      "local_charges": {
+        "origin_inland": {
+          "value": 350,
+          "tier": "quote",
+          "source": "DEMO synthetic origin inland tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 120,
+          "tier": "quote",
+          "source": "DEMO synthetic origin docs tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 180,
+          "tier": "quote",
+          "source": "DEMO synthetic origin thc tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 220,
+          "tier": "quote",
+          "source": "DEMO synthetic destination thc tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 260,
+          "tier": "quote",
+          "source": "DEMO synthetic import clearance tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 400,
+          "tier": "quote",
+          "source": "DEMO synthetic destination inland tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      }
+    },
+    "CHN": {
+      "partner_port": {
+        "name": "Shanghai",
+        "locode": "CNSHA"
+      },
+      "rates": [
+        {
+          "container_type": "40RF",
+          "all_in": false,
+          "covers": [],
+          "carrier": "DEMO synthetic carrier",
+          "as_of": "2026-11-13",
+          "url": "https://example.com/demo",
+          "valid_until": "2099-12-31",
+          "tier": "quote",
+          "usd": 1680,
+          "transit_days": 9,
+          "source": "DEMO synthetic forwarder quote ref D-002"
+        }
+      ],
+      "local_charges": {
+        "origin_inland": {
+          "value": 371,
+          "tier": "quote",
+          "source": "DEMO synthetic origin inland tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 127,
+          "tier": "quote",
+          "source": "DEMO synthetic origin docs tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 191,
+          "tier": "quote",
+          "source": "DEMO synthetic origin thc tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 233,
+          "tier": "quote",
+          "source": "DEMO synthetic destination thc tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 276,
+          "tier": "quote",
+          "source": "DEMO synthetic import clearance tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 424,
+          "tier": "quote",
+          "source": "DEMO synthetic destination inland tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      }
+    },
+    "BEL": {
+      "partner_port": {
+        "name": "Antwerp",
+        "locode": "BEANR"
+      },
+      "rates": [
+        {
+          "container_type": "40DC",
+          "all_in": false,
+          "covers": [],
+          "carrier": "DEMO synthetic carrier",
+          "as_of": "2026-11-13",
+          "url": "https://example.com/demo",
+          "valid_until": null,
+          "tier": "connector",
+          "usd": 2350,
+          "transit_days": 22,
+          "source": "DEMO synthetic rate tool market average"
+        }
+      ],
+      "local_charges": {
+        "origin_inland": {
+          "value": 392,
+          "tier": "user",
+          "source": "DEMO synthetic origin inland tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 134,
+          "tier": "user",
+          "source": "DEMO synthetic origin docs tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 202,
+          "tier": "published",
+          "source": "DEMO synthetic origin thc tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 246,
+          "tier": "published",
+          "source": "DEMO synthetic destination thc tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 291,
+          "tier": "user",
+          "source": "DEMO synthetic import clearance tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 448,
+          "tier": "user",
+          "source": "DEMO synthetic destination inland tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      }
+    },
+    "ESP": {
+      "partner_port": {
+        "name": "Valencia",
+        "locode": "ESVLC"
+      },
+      "rates": [
+        {
+          "container_type": "40RF",
+          "all_in": false,
+          "covers": [],
+          "carrier": "DEMO synthetic carrier",
+          "as_of": "2026-11-13",
+          "url": "https://example.com/demo",
+          "valid_until": null,
+          "tier": "published",
+          "usd": 2890,
+          "transit_days": null,
+          "source": "DEMO synthetic published carrier spot rate page"
+        }
+      ],
+      "local_charges": {
+        "origin_inland": {
+          "value": 413,
+          "tier": "user",
+          "source": "DEMO synthetic origin inland tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 142,
+          "tier": "user",
+          "source": "DEMO synthetic origin docs tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 212,
+          "tier": "published",
+          "source": "DEMO synthetic origin thc tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 260,
+          "tier": "published",
+          "source": "DEMO synthetic destination thc tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 307,
+          "tier": "user",
+          "source": "DEMO synthetic import clearance tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 472,
+          "tier": "user",
+          "source": "DEMO synthetic destination inland tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      }
+    },
+    "IND": {
+      "partner_port": {
+        "name": "Nhava Sheva",
+        "locode": "INNSA"
+      },
+      "rates": [],
+      "local_charges": {
+        "origin_inland": {
+          "value": 434,
+          "tier": "user",
+          "source": "DEMO synthetic origin inland tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 149,
+          "tier": "user",
+          "source": "DEMO synthetic origin docs tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 223,
+          "tier": "published",
+          "source": "DEMO synthetic origin thc tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 273,
+          "tier": "published",
+          "source": "DEMO synthetic destination thc tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 322,
+          "tier": "user",
+          "source": "DEMO synthetic import clearance tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": null,
+          "tier": "missing",
+          "source": "DEMO synthetic: not yet obtained, left missing on purpose",
+          "url": null,
+          "as_of": null
+        }
+      }
+    }
+  },
+  "calibration_points": [
+    {
+      "label": "DEMO synthetic index: Far East to North Europe",
+      "from_locode": "SGSIN",
+      "to_locode": "NLRTM",
+      "usd": 2150,
+      "container_type": "40DC",
+      "source": "DEMO synthetic index",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    },
+    {
+      "label": "DEMO synthetic index: Far East to US West Coast",
+      "from_locode": "CNSHA",
+      "to_locode": "USLAX",
+      "usd": 1900,
+      "container_type": "40DC",
+      "source": "DEMO synthetic index",
+      "url": "https://example.com/demo",
+      "as_of": "2026-11-13"
+    }
+  ],
+  "equipment_multiplier": {
+    "value": 1.25,
+    "tier": "published",
+    "source": "DEMO synthetic reefer-over-dry premium (illustrative)",
+    "url": "https://example.com/demo",
+    "as_of": "2026-11-13"
+  },
+  "model": {
+    "range_pct": 35
+  },
+  "meta": {}
+}

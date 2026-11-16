@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0",
+  "hs_codes_found": [
+    "071080"
+  ],
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "files": [
+    {
+      "file": "SYNTHETIC_home_flows.csv",
+      "format": "comtrade_ui_csv",
+      "rows_in": 94,
+      "rows_kept": 90
+    },
+    {
+      "file": "SYNTHETIC_mirror.json",
+      "format": "comtrade_api_json",
+      "rows_in": 74,
+      "rows_kept": 40
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_BEL.csv",
+      "format": "comtrade_ui_csv",
+      "rows_in": 252,
+      "rows_kept": 252
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_CHN.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 258,
+      "rows_kept": 258
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_EGY.json",
+      "format": "generic_rows_json",
+      "rows_in": 132,
+      "rows_kept": 132
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_ESP.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 220,
+      "rows_kept": 220
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_IND.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 225,
+      "rows_kept": 225
+    },
+    {
+      "file": "SYNTHETIC_world_exports.json",
+      "format": "comtrade_api_json",
+      "rows_in": 83,
+      "rows_kept": 46
+    },
+    {
+      "file": "SYNTHETIC_world_imports.csv",
+      "format": "comtrade_ui_csv",
+      "rows_in": 261,
+      "rows_kept": 246
+    }
+  ],
+  "views": {
+    "home_flows": true,
+    "world_imports": true,
+    "world_exports": true,
+    "mirror": true,
+    "partner_detail": [
+      "BEL",
+      "CHN",
+      "EGY",
+      "ESP",
+      "IND"
+    ],
+    "matrix": false
+  },
+  "dropped": {
+    "reexports": 7,
+    "aggregates": 18,
+    "other_hs": 0,
+    "other_flows": 0,
+    "outside_years": 0,
+    "unusable_rows": 0,
+    "breakdown_rows_ignored": 2,
+    "breakdown_groups_summed": 1
+  },
+  "coverage": {
+    "world_imports": {
+      "2021": 48,
+      "2022": 48,
+      "2023": 48,
+      "2024": 47,
+      "2025": 47,
+      "2026": 14
+    },
+    "world_exports": {
+      "2021": 14,
+      "2022": 14,
+      "2023": 14,
+      "2024": 14,
+      "2025": 14,
+      "2026": 4
+    }
+  },
+  "warnings": []
+}

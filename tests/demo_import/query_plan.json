@@ -1,0 +1,560 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-11-13T15:53:00",
+  "perspective": "import",
+  "home": "SAU",
+  "hs_code": "071080",
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "endpoints": {
+    "keyed": "https://comtradeapi.un.org/data/v1/get/C/A/HS",
+    "preview": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+    "ui": "https://comtradeplus.un.org/TradeFlow"
+  },
+  "limits": {
+    "max_periods_per_call": 12,
+    "free_key_calls_per_day": 500,
+    "keyed_rows_per_call": 100000,
+    "preview_rows_per_call": 500,
+    "preview_periods_per_call": 1
+  },
+  "queries": [
+    {
+      "id": "home_flows",
+      "purpose": "Who home buys from",
+      "feeds_views": [
+        "home_flows"
+      ],
+      "params": {
+        "reporter": "SAU",
+        "partner": "all",
+        "flow": "M",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "reporterCode": 682,
+        "flowCode": "M",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?reporterCode=682&flowCode=M&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?reporterCode=682&flowCode=M&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/home_flows",
+      "save_as_csv": "raw/home_flows.csv",
+      "save_as_json": "raw/home_flows.json",
+      "note": "Needs the World total row; if the source omits it, normalize/analyze derive the total from partner rows and warn.",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: Saudi Arabia",
+        "Partners: All (also tick World so the total row is included)",
+        "2nd partner: World",
+        "Trade flows: Import",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/home_flows.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 import values (USD, net weight) for Saudi Arabia with all partners, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/home_flows.json."
+    },
+    {
+      "id": "world_imports",
+      "purpose": "Competing buyers and home's rank",
+      "feeds_views": [
+        "world_imports"
+      ],
+      "params": {
+        "reporter": "all",
+        "partner": "W00",
+        "flow": "M",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "partnerCode": 0,
+        "flowCode": "M",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?partnerCode=0&flowCode=M&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?partnerCode=0&flowCode=M&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/world_imports",
+      "save_as_csv": "raw/world_imports.csv",
+      "save_as_json": "raw/world_imports.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: All",
+        "Partners: World",
+        "2nd partner: World",
+        "Trade flows: Import",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/world_imports.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 import values (USD, net weight) for all reporters with partner World, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/world_imports.json."
+    },
+    {
+      "id": "world_exports",
+      "purpose": "Supplier scale",
+      "feeds_views": [
+        "world_exports"
+      ],
+      "params": {
+        "reporter": "all",
+        "partner": "W00",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "partnerCode": 0,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?partnerCode=0&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?partnerCode=0&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/world_exports",
+      "save_as_csv": "raw/world_exports.csv",
+      "save_as_json": "raw/world_exports.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: All",
+        "Partners: World",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/world_exports.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for all reporters with partner World, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/world_exports.json."
+    },
+    {
+      "id": "mirror",
+      "purpose": "What suppliers say they sold to home",
+      "feeds_views": [
+        "mirror"
+      ],
+      "params": {
+        "reporter": "all",
+        "partner": "SAU",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "partnerCode": 682,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?partnerCode=682&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?partnerCode=682&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/mirror",
+      "save_as_csv": "raw/mirror.csv",
+      "save_as_json": "raw/mirror.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: All",
+        "Partners: Saudi Arabia",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/mirror.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for all reporters with partner Saudi Arabia, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/mirror.json."
+    },
+    {
+      "id": "partner_detail:EGY",
+      "purpose": "That supplier's other buyers",
+      "feeds_views": [
+        "partner_detail"
+      ],
+      "params": {
+        "reporter": "EGY",
+        "partner": "all",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "reporterCode": 818,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?reporterCode=818&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?reporterCode=818&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/partner_detail_EGY",
+      "save_as_csv": "raw/partner_detail_EGY.csv",
+      "save_as_json": "raw/partner_detail_EGY.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: Egypt",
+        "Partners: All (also tick World so the total row is included)",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/partner_detail_EGY.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for Egypt with all partners, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/partner_detail_EGY.json."
+    },
+    {
+      "id": "partner_detail:CHN",
+      "purpose": "That supplier's other buyers",
+      "feeds_views": [
+        "partner_detail"
+      ],
+      "params": {
+        "reporter": "CHN",
+        "partner": "all",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "reporterCode": 156,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?reporterCode=156&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?reporterCode=156&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/partner_detail_CHN",
+      "save_as_csv": "raw/partner_detail_CHN.csv",
+      "save_as_json": "raw/partner_detail_CHN.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: China",
+        "Partners: All (also tick World so the total row is included)",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/partner_detail_CHN.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for China with all partners, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/partner_detail_CHN.json."
+    },
+    {
+      "id": "partner_detail:BEL",
+      "purpose": "That supplier's other buyers",
+      "feeds_views": [
+        "partner_detail"
+      ],
+      "params": {
+        "reporter": "BEL",
+        "partner": "all",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "reporterCode": 56,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?reporterCode=56&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?reporterCode=56&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/partner_detail_BEL",
+      "save_as_csv": "raw/partner_detail_BEL.csv",
+      "save_as_json": "raw/partner_detail_BEL.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: Belgium",
+        "Partners: All (also tick World so the total row is included)",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/partner_detail_BEL.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for Belgium with all partners, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/partner_detail_BEL.json."
+    },
+    {
+      "id": "partner_detail:ESP",
+      "purpose": "That supplier's other buyers",
+      "feeds_views": [
+        "partner_detail"
+      ],
+      "params": {
+        "reporter": "ESP",
+        "partner": "all",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "reporterCode": 724,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?reporterCode=724&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?reporterCode=724&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/partner_detail_ESP",
+      "save_as_csv": "raw/partner_detail_ESP.csv",
+      "save_as_json": "raw/partner_detail_ESP.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: Spain",
+        "Partners: All (also tick World so the total row is included)",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/partner_detail_ESP.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for Spain with all partners, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/partner_detail_ESP.json."
+    },
+    {
+      "id": "partner_detail:IND",
+      "purpose": "That supplier's other buyers",
+      "feeds_views": [
+        "partner_detail"
+      ],
+      "params": {
+        "reporter": "IND",
+        "partner": "all",
+        "flow": "X",
+        "hs_code": "071080",
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      },
+      "comtrade": {
+        "reporterCode": 699,
+        "flowCode": "X",
+        "cmdCode": "071080",
+        "period": "2021,2022,2023,2024,2025,2026",
+        "partner2Code": 0,
+        "customsCode": "C00",
+        "motCode": 0,
+        "includeDesc": true,
+        "maxRecords": 100000
+      },
+      "period_chunks": [
+        "2021,2022,2023,2024,2025,2026"
+      ],
+      "api_path": "/data/v1/get/C/A/HS?reporterCode=699&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=100000&period=2021,2022,2023,2024,2025,2026",
+      "preview_path": "/public/v1/preview/C/A/HS?reporterCode=699&flowCode=X&cmdCode=071080&partner2Code=0&customsCode=C00&motCode=0&includeDesc=true&maxRecords=500&period={year}",
+      "calls_keyed": 1,
+      "calls_keyless": 6,
+      "save_as": "raw/partner_detail_IND",
+      "save_as_csv": "raw/partner_detail_IND.csv",
+      "save_as_json": "raw/partner_detail_IND.json",
+      "note": "",
+      "ui_steps": [
+        "Open https://comtradeplus.un.org/TradeFlow",
+        "Type of trade: Goods",
+        "Frequency: Annual",
+        "Classification: HS (latest revision offered)",
+        "Periods: 2021 to 2026 (tick every year; one download if the site allows)",
+        "Reporters: India",
+        "Partners: All (also tick World so the total row is included)",
+        "2nd partner: World",
+        "Trade flows: Export",
+        "Commodity code: 071080",
+        "Modes of transport: TOTAL",
+        "Customs code: TOTAL",
+        "Click Download, choose CSV, and save it as raw/partner_detail_IND.csv (keep the original columns; do not edit the file)"
+      ],
+      "connector_hint": "Ask the Comtrade connector for annual HS 071080 export values (USD, net weight) for India with all partners, years 2021-2026, totals only (no transport-mode, customs or second-partner breakdown), then save the rows as generic-rows JSON (year, reporter, partner, flow, value_usd, net_kg, qty, qty_unit, hs_code) to raw/partner_detail_IND.json."
+    }
+  ]
+}

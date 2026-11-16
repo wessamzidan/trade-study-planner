@@ -1,0 +1,13 @@
+# Study folders hold client data and raw UN Comtrade extracts, which may not be redistributed.
+studies/
+**/raw/
+!tests/demo_*/raw/
+__pycache__/
+*.pyc
+.env
+env.json
+~$*
+.DS_Store
+
+# Built packages (attach to releases instead)
+dist/

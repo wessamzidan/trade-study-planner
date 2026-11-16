@@ -1,0 +1,124 @@
+{
+  "schema_version": "2.0",
+  "language": "en",
+  "executive_summary": {
+    "headline": "DEMO (synthetic data): Saudi Arabia and the United Arab Emirates already return about 25% per container at current prices; Germany and the United Kingdom are the strongest expansion cases but depend on prices still to be confirmed.",
+    "paragraphs": [
+      "This is a demonstration study built entirely on synthetic data to show what the toolkit produces. None of its figures describe a real market.",
+      "In the synthetic data, Egypt exported USD 45.6 million of frozen vegetables (HS 071080) in 2025, the latest complete year, growing 11.1% a year since 2022. It ranks 13th of 14 reporting exporters with a 1.96% world share, so there is room to grow in large importing markets where its presence is small.",
+      "At the client's current prices, Saudi Arabia returns a 25.0% margin per container and the United Arab Emirates 25.3%, both above the 18% target. For the four other selected markets no price was given, so the model shows the price needed to reach the target margin instead of a margin.",
+      "The planned 54 containers a year would recover the one-time entry cost within 2 months, provided the planned volumes and prices hold."
+    ],
+    "recommendations": [
+      "Protect the Saudi Arabia business first: it is the largest current market, earns 25.0% per container and its freight rate is a firm quote.",
+      "Test prices in the United Kingdom and Germany: obtain two buyer price indications in each market and compare them with the required price in the financial case before committing volume.",
+      "Resolve the open data before quoting: the Netherlands duty rate, the Kuwait inland delivery cost, and the gap between Egypt's and the Netherlands' reported trade."
+    ],
+    "key_caveat": "Margins for four of the six markets are required prices, not observed ones: they show what must be charged, not what buyers will pay."
+  },
+  "sections": {
+    "scope_method": {
+      "paragraphs": [
+        "The study covers one product line, HS 071080 (frozen vegetables not elsewhere specified), exported from Egypt. Trade data cover 2021 to 2026; 2026 is partial, so trends use 2022 to 2025.",
+        "Every commercial, freight and tariff figure carries its source and a tier. Modelled freight and tariffs marked 'verify' are estimates that must be checked before any price is quoted."
+      ],
+      "bullets": [
+        "Trade flows: synthetic Comtrade-shaped data generated for this demonstration.",
+        "Freight: two client quotes, one rate tool result, one published rate and two modelled estimates.",
+        "Costs, prices and terms: the client's own figures as recorded at scoping."
+      ]
+    },
+    "home_position": {
+      "paragraphs": [
+        "Egypt's exports reached USD 45.6 million in 2025, up 11.1% a year since 2022. Saudi Arabia is the largest destination, followed by the United Arab Emirates, the Netherlands and the United Kingdom."
+      ],
+      "bullets": [
+        "The United Arab Emirates did not report its imports for 2025, so Egypt's figure for that market cannot be cross-checked.",
+        "The Netherlands reports receiving much less from Egypt than Egypt reports sending, which usually points to goods passing through Dutch ports to other buyers."
+      ]
+    },
+    "global_landscape": {
+      "paragraphs": [
+        "Reported world imports totalled USD 2,480 million in 2025. The United States is the largest importer with a 26.6% share, followed by Germany, the United Kingdom, France and the Netherlands.",
+        "Most of the large importing markets are in Europe and North America, where Egypt's current presence is small."
+      ],
+      "bullets": []
+    },
+    "competition": {
+      "paragraphs": [
+        "Egypt is a small supplier in the global ranking. In the markets it already serves it holds a meaningful share: 16.8% of Saudi Arabia's imports and 15.9% of Kuwait's."
+      ],
+      "bullets": [
+        "In the United Kingdom and Germany, Egypt holds 1.3% and 0.2% of imports respectively: entry would mean taking share from established suppliers."
+      ]
+    },
+    "logistics_access": {
+      "paragraphs": [
+        "All six lanes use 40-foot reefer containers. Saudi Arabia and the United Arab Emirates have firm forwarder quotes; Germany and Kuwait rely on a distance-based estimate fitted to two published benchmarks, so their freight carries a wide range.",
+        "Duties are zero under a trade agreement for Saudi Arabia and the United Kingdom in this demonstration; the Netherlands rate is still to be verified."
+      ],
+      "bullets": [
+        "Kuwait: the inland delivery cost at destination is missing, so the buyer's landed cost there is not shown.",
+        "Each tariff should be re-checked for recent changes before a price is quoted."
+      ]
+    },
+    "shortlist": {
+      "paragraphs": [
+        "Six markets were taken forward: four existing markets to defend (Saudi Arabia, the United Arab Emirates, the Netherlands and the United Kingdom) and two to expand (Germany and Kuwait)."
+      ],
+      "partner_notes": {
+        "SAU": "Largest current market; firm freight quote; zero duty in this demonstration.",
+        "ARE": "Second-largest destination but not scored, because it reported no imports for 2025.",
+        "NLD": "Large market and likely a re-export hub; duty to be verified.",
+        "GBR": "Large and growing market where Egypt is a small supplier.",
+        "DEU": "Largest European market; freight is a modelled estimate.",
+        "KWT": "Small market where Egypt is already a major supplier."
+      },
+      "not_prioritised": [
+        {"partner": "USA", "reason": "Largest importer, but no current presence and the longest lane; worth a separate study once European prices are tested."},
+        {"partner": "RUS", "reason": "A current core market, not selected for this demonstration round; it would be modelled the same way once the client confirms prices and payment terms."}
+      ]
+    },
+    "financial_case": {
+      "paragraphs": [
+        "At current prices Saudi Arabia earns USD 6,720 per container (25.0%) and the United Arab Emirates USD 6,991 (25.3%). Selling at CFR, the client pays freight to the destination port; the buyer pays duty and delivery from there.",
+        "For the other four markets the model reports the price needed for an 18% margin. In Germany the buyer's landed cost at that price would be about 7.8% above the average import price, which suggests the target is hard to reach there without lower freight."
+      ],
+      "partner_verdicts": {
+        "SAU": "Viable at current price; protect.",
+        "ARE": "Viable at current price; confirm the market size, since the partner does not report.",
+        "NLD": "Required price shown; duty to be verified before quoting.",
+        "GBR": "Required price lands close to the market's average import price; worth testing.",
+        "DEU": "Required price lands above the market average; viable only with better freight or a premium position.",
+        "KWT": "Required price shown; destination delivery cost still missing."
+      }
+    },
+    "risks": {
+      "diagnostic": [
+        "What do buyers in the United Kingdom and Germany pay today for comparable product?",
+        "Is the Netherlands gap explained by goods moving through Dutch ports to other markets?"
+      ],
+      "macro": [
+        "Freight on the modelled lanes can move well outside the estimated range.",
+        "Exchange-rate moves change the cost of goods in dollars; see the FX sensitivity in the workbook."
+      ],
+      "data_limits": [
+        "All trade data in this demonstration are synthetic.",
+        "2026 is a partial year and is excluded from trends."
+      ]
+    },
+    "next_steps": {
+      "two_weeks": [
+        "Request two buyer price indications each in the United Kingdom and Germany.",
+        "Verify the Netherlands duty rate and the Kuwait destination delivery cost."
+      ],
+      "thirty_days": [
+        "Get forwarder quotes for the Germany and Kuwait lanes to replace the modelled freight.",
+        "Re-run the financial model with the confirmed prices and rates."
+      ],
+      "ninety_days": [
+        "Ship a trial container to the best-scoring expansion market and record the actual landed cost."
+      ]
+    }
+  }
+}

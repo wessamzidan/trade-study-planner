@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "hs_codes_found": [
+    "071080"
+  ],
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "files": [
+    {
+      "file": "SYNTHETIC_home_flows.csv",
+      "format": "comtrade_ui_csv",
+      "rows_in": 136,
+      "rows_kept": 132
+    },
+    {
+      "file": "SYNTHETIC_mirror.json",
+      "format": "comtrade_api_json",
+      "rows_in": 103,
+      "rows_kept": 68
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_ARE.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 48,
+      "rows_kept": 48
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_DEU.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 75,
+      "rows_kept": 75
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_GBR.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 80,
+      "rows_kept": 80
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_KWT.csv",
+      "format": "generic_rows_csv",
+      "rows_in": 80,
+      "rows_kept": 80
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_NLD.csv",
+      "format": "comtrade_ui_csv",
+      "rows_in": 75,
+      "rows_kept": 75
+    },
+    {
+      "file": "SYNTHETIC_partner_detail_SAU.json",
+      "format": "generic_rows_json",
+      "rows_in": 90,
+      "rows_kept": 90
+    },
+    {
+      "file": "SYNTHETIC_world_exports.json",
+      "format": "comtrade_api_json",
+      "rows_in": 83,
+      "rows_kept": 68
+    },
+    {
+      "file": "SYNTHETIC_world_imports.csv",
+      "format": "comtrade_ui_csv",
+      "rows_in": 261,
+      "rows_kept": 223
+    }
+  ],
+  "views": {
+    "home_flows": true,
+    "world_imports": true,
+    "world_exports": true,
+    "mirror": true,
+    "partner_detail": [
+      "ARE",
+      "DEU",
+      "GBR",
+      "KWT",
+      "NLD",
+      "SAU"
+    ],
+    "matrix": false
+  },
+  "dropped": {
+    "reexports": 7,
+    "aggregates": 18,
+    "other_hs": 0,
+    "other_flows": 0,
+    "outside_years": 0,
+    "unusable_rows": 0,
+    "breakdown_rows_ignored": 2,
+    "breakdown_groups_summed": 1
+  },
+  "coverage": {
+    "world_imports": {
+      "2021": 48,
+      "2022": 48,
+      "2023": 48,
+      "2024": 47,
+      "2025": 47,
+      "2026": 14
+    },
+    "world_exports": {
+      "2021": 14,
+      "2022": 14,
+      "2023": 14,
+      "2024": 14,
+      "2025": 14,
+      "2026": 4
+    }
+  },
+  "warnings": []
+}

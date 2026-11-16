@@ -1,0 +1,2993 @@
+{
+  "schema_version": "2.0",
+  "meta": {
+    "perspective": "export",
+    "home": {
+      "iso3": "EGY",
+      "name": "Egypt"
+    },
+    "hs_code": "071080",
+    "product_name": "Frozen vegetables",
+    "years_available": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "latest_complete_year": 2025,
+    "base_year": 2022,
+    "partial_years": [
+      2026
+    ],
+    "window_label": "2022–2025",
+    "views": {
+      "home_flows": true,
+      "world_imports": true,
+      "world_exports": true,
+      "mirror": true,
+      "partner_detail": [
+        "ARE",
+        "DEU",
+        "GBR",
+        "KWT",
+        "NLD",
+        "SAU"
+      ],
+      "matrix": false
+    },
+    "labels": {
+      "partner_noun": "market",
+      "tier_core": "Defend",
+      "tier_growth": "Expand",
+      "tier_new": "Open"
+    },
+    "rules": {
+      "core_share_pct": 5.0,
+      "core_top_n": 3,
+      "min_presence_share_pct": 0.25,
+      "material_partner_share_pct": 0.25,
+      "score_weights": {
+        "size": 0.35,
+        "growth": 0.25,
+        "price": 0.15,
+        "foothold": 0.15,
+        "openness": 0.1
+      },
+      "score_min_components": 2
+    },
+    "warnings": [
+      "home flows to non-country areas ['_899'] are in totals but not ranked"
+    ],
+    "generated_at": "2026-11-13T15:55:24"
+  },
+  "home_position": {
+    "annual": [
+      {
+        "year": 2021,
+        "value_usd": 29875926.0,
+        "net_kg": 27333130.0,
+        "unit_value_usd_per_kg": 1.093,
+        "partial": false
+      },
+      {
+        "year": 2022,
+        "value_usd": 33265080.0,
+        "net_kg": 30448819.0,
+        "unit_value_usd_per_kg": 1.0925,
+        "partial": false
+      },
+      {
+        "year": 2023,
+        "value_usd": 34137870.0,
+        "net_kg": 31088120.0,
+        "unit_value_usd_per_kg": 1.0981,
+        "partial": false
+      },
+      {
+        "year": 2024,
+        "value_usd": 40692219.0,
+        "net_kg": 37274853.0,
+        "unit_value_usd_per_kg": 1.0917,
+        "partial": false
+      },
+      {
+        "year": 2025,
+        "value_usd": 45602877.0,
+        "net_kg": 41647297.0,
+        "unit_value_usd_per_kg": 1.095,
+        "partial": false
+      },
+      {
+        "year": 2026,
+        "value_usd": 16569265.0,
+        "net_kg": 15250302.0,
+        "unit_value_usd_per_kg": 1.0865,
+        "partial": true
+      }
+    ],
+    "latest_value_usd": 45602877.0,
+    "cagr_pct": 11.09,
+    "world_rank": 13,
+    "world_share_pct": 1.9562,
+    "n_ranked": 14
+  },
+  "world_imports": {
+    "annual": [
+      {
+        "year": 2021,
+        "value_usd": 1945183123.0,
+        "n_reporters": 48,
+        "partial": false
+      },
+      {
+        "year": 2022,
+        "value_usd": 2084117788.0,
+        "n_reporters": 48,
+        "partial": false
+      },
+      {
+        "year": 2023,
+        "value_usd": 2193812925.0,
+        "n_reporters": 48,
+        "partial": false
+      },
+      {
+        "year": 2024,
+        "value_usd": 2308902485.0,
+        "n_reporters": 47,
+        "partial": false
+      },
+      {
+        "year": 2025,
+        "value_usd": 2480028223.0,
+        "n_reporters": 47,
+        "partial": false
+      },
+      {
+        "year": 2026,
+        "value_usd": 186596119.0,
+        "n_reporters": 14,
+        "partial": true
+      }
+    ],
+    "ranking": [
+      {
+        "iso3": "USA",
+        "name": "United States",
+        "value_usd": 658713080.0,
+        "share_pct": 26.5607,
+        "cagr_pct": 5.81,
+        "unit_value_usd_per_kg": 1.346,
+        "rank": 1
+      },
+      {
+        "iso3": "DEU",
+        "name": "Germany",
+        "value_usd": 318116819.0,
+        "share_pct": 12.8271,
+        "cagr_pct": 4.87,
+        "unit_value_usd_per_kg": 1.1435,
+        "rank": 2
+      },
+      {
+        "iso3": "GBR",
+        "name": "United Kingdom",
+        "value_usd": 262820376.0,
+        "share_pct": 10.5975,
+        "cagr_pct": 10.96,
+        "unit_value_usd_per_kg": 1.1762,
+        "rank": 3
+      },
+      {
+        "iso3": "FRA",
+        "name": "France",
+        "value_usd": 138483407.0,
+        "share_pct": 5.5839,
+        "cagr_pct": 9.31,
+        "unit_value_usd_per_kg": 1.3209,
+        "rank": 4
+      },
+      {
+        "iso3": "NLD",
+        "name": "Netherlands",
+        "value_usd": 137409162.0,
+        "share_pct": 5.5406,
+        "cagr_pct": 5.62,
+        "unit_value_usd_per_kg": 1.4056,
+        "rank": 5
+      },
+      {
+        "iso3": "ITA",
+        "name": "Italy",
+        "value_usd": 72165111.0,
+        "share_pct": 2.9099,
+        "cagr_pct": 9.93,
+        "unit_value_usd_per_kg": 1.2601,
+        "rank": 6
+      },
+      {
+        "iso3": "RUS",
+        "name": "Russian Federation",
+        "value_usd": 66810460.0,
+        "share_pct": 2.6939,
+        "cagr_pct": 16.12,
+        "unit_value_usd_per_kg": 1.3758,
+        "rank": 7
+      },
+      {
+        "iso3": "BEL",
+        "name": "Belgium",
+        "value_usd": 63449004.0,
+        "share_pct": 2.5584,
+        "cagr_pct": 8.1,
+        "unit_value_usd_per_kg": 1.3029,
+        "rank": 8
+      },
+      {
+        "iso3": "JPN",
+        "name": "Japan",
+        "value_usd": 61783912.0,
+        "share_pct": 2.4913,
+        "cagr_pct": 4.78,
+        "unit_value_usd_per_kg": 1.2318,
+        "rank": 9
+      },
+      {
+        "iso3": "SAU",
+        "name": "Saudi Arabia",
+        "value_usd": 59772538.0,
+        "share_pct": 2.4102,
+        "cagr_pct": 8.14,
+        "unit_value_usd_per_kg": 1.1021,
+        "rank": 10
+      },
+      {
+        "iso3": "CAN",
+        "name": "Canada",
+        "value_usd": 55290254.0,
+        "share_pct": 2.2294,
+        "cagr_pct": 6.95,
+        "unit_value_usd_per_kg": 1.229,
+        "rank": 11
+      },
+      {
+        "iso3": "ESP",
+        "name": "Spain",
+        "value_usd": 34910254.0,
+        "share_pct": 1.4077,
+        "cagr_pct": 3.85,
+        "unit_value_usd_per_kg": 1.4667,
+        "rank": 12
+      },
+      {
+        "iso3": "AUT",
+        "name": "Austria",
+        "value_usd": 32461789.0,
+        "share_pct": 1.3089,
+        "cagr_pct": 7.87,
+        "unit_value_usd_per_kg": 1.2232,
+        "rank": 13
+      },
+      {
+        "iso3": "CHE",
+        "name": "Switzerland",
+        "value_usd": 25403766.0,
+        "share_pct": 1.0243,
+        "cagr_pct": 5.31,
+        "unit_value_usd_per_kg": 1.1914,
+        "rank": 14
+      },
+      {
+        "iso3": "KOR",
+        "name": "South Korea",
+        "value_usd": 24839644.0,
+        "share_pct": 1.0016,
+        "cagr_pct": 3.58,
+        "unit_value_usd_per_kg": 1.266,
+        "rank": 15
+      },
+      {
+        "iso3": "POL",
+        "name": "Poland",
+        "value_usd": 24784864.0,
+        "share_pct": 0.9994,
+        "cagr_pct": 4.68,
+        "unit_value_usd_per_kg": 1.6108,
+        "rank": 16
+      },
+      {
+        "iso3": "SGP",
+        "name": "Singapore",
+        "value_usd": 22114414.0,
+        "share_pct": 0.8917,
+        "cagr_pct": 1.68,
+        "unit_value_usd_per_kg": 1.1288,
+        "rank": 17
+      },
+      {
+        "iso3": "JOR",
+        "name": "Jordan",
+        "value_usd": 20942091.0,
+        "share_pct": 0.8444,
+        "cagr_pct": 6.76,
+        "unit_value_usd_per_kg": 1.2307,
+        "rank": 18
+      },
+      {
+        "iso3": "NOR",
+        "name": "Norway",
+        "value_usd": 20806038.0,
+        "share_pct": 0.8389,
+        "cagr_pct": 3.65,
+        "unit_value_usd_per_kg": 1.4009,
+        "rank": 19
+      },
+      {
+        "iso3": "KWT",
+        "name": "Kuwait",
+        "value_usd": 20531971.0,
+        "share_pct": 0.8279,
+        "cagr_pct": 1.06,
+        "unit_value_usd_per_kg": 1.1703,
+        "rank": 20
+      },
+      {
+        "iso3": "LBY",
+        "name": "Libya",
+        "value_usd": 19304382.0,
+        "share_pct": 0.7784,
+        "cagr_pct": 7.04,
+        "unit_value_usd_per_kg": 1.3148,
+        "rank": 21
+      },
+      {
+        "iso3": "AUS",
+        "name": "Australia",
+        "value_usd": 19054694.0,
+        "share_pct": 0.7683,
+        "cagr_pct": 3.82,
+        "unit_value_usd_per_kg": 1.3888,
+        "rank": 22
+      },
+      {
+        "iso3": "SWE",
+        "name": "Sweden",
+        "value_usd": 18821645.0,
+        "share_pct": 0.7589,
+        "cagr_pct": 0.87,
+        "unit_value_usd_per_kg": 1.0723,
+        "rank": 23
+      },
+      {
+        "iso3": "QAT",
+        "name": "Qatar",
+        "value_usd": 18606850.0,
+        "share_pct": 0.7503,
+        "cagr_pct": -2.3,
+        "unit_value_usd_per_kg": 1.1449,
+        "rank": 24
+      },
+      {
+        "iso3": "IRL",
+        "name": "Ireland",
+        "value_usd": 17280945.0,
+        "share_pct": 0.6968,
+        "cagr_pct": 6.43,
+        "unit_value_usd_per_kg": 1.294,
+        "rank": 25
+      },
+      {
+        "iso3": "DNK",
+        "name": "Denmark",
+        "value_usd": 17267256.0,
+        "share_pct": 0.6963,
+        "cagr_pct": 0.83,
+        "unit_value_usd_per_kg": 1.2537,
+        "rank": 26
+      },
+      {
+        "iso3": "GRC",
+        "name": "Greece",
+        "value_usd": 16701742.0,
+        "share_pct": 0.6734,
+        "cagr_pct": 1.18,
+        "unit_value_usd_per_kg": 1.3342,
+        "rank": 27
+      },
+      {
+        "iso3": "ROU",
+        "name": "Romania",
+        "value_usd": 16211184.0,
+        "share_pct": 0.6537,
+        "cagr_pct": 5.34,
+        "unit_value_usd_per_kg": 1.1476,
+        "rank": 28
+      },
+      {
+        "iso3": "BHR",
+        "name": "Bahrain",
+        "value_usd": 15423348.0,
+        "share_pct": 0.6219,
+        "cagr_pct": 6.99,
+        "unit_value_usd_per_kg": 1.445,
+        "rank": 29
+      },
+      {
+        "iso3": "KEN",
+        "name": "Kenya",
+        "value_usd": 14976764.0,
+        "share_pct": 0.6039,
+        "cagr_pct": 7.45,
+        "unit_value_usd_per_kg": 1.3096,
+        "rank": 30
+      },
+      {
+        "iso3": "PRT",
+        "name": "Portugal",
+        "value_usd": 14338769.0,
+        "share_pct": 0.5782,
+        "cagr_pct": 11.08,
+        "unit_value_usd_per_kg": 1.6093,
+        "rank": 31
+      },
+      {
+        "iso3": "IRQ",
+        "name": "Iraq",
+        "value_usd": 14264047.0,
+        "share_pct": 0.5752,
+        "cagr_pct": 11.86,
+        "unit_value_usd_per_kg": 1.4992,
+        "rank": 32
+      },
+      {
+        "iso3": "CIV",
+        "name": "Côte d'Ivoire",
+        "value_usd": 13076749.0,
+        "share_pct": 0.5273,
+        "cagr_pct": 9.09,
+        "unit_value_usd_per_kg": 1.5248,
+        "rank": 33
+      },
+      {
+        "iso3": "SDN",
+        "name": "Sudan",
+        "value_usd": 12879651.0,
+        "share_pct": 0.5193,
+        "cagr_pct": 4.65,
+        "unit_value_usd_per_kg": 1.2069,
+        "rank": 34
+      },
+      {
+        "iso3": "CZE",
+        "name": "Czechia",
+        "value_usd": 12180971.0,
+        "share_pct": 0.4912,
+        "cagr_pct": 4.81,
+        "unit_value_usd_per_kg": 1.3257,
+        "rank": 35
+      },
+      {
+        "iso3": "EGY",
+        "name": "Egypt",
+        "value_usd": 11950363.0,
+        "share_pct": 0.4819,
+        "cagr_pct": 6.5,
+        "unit_value_usd_per_kg": 1.2952,
+        "rank": 36
+      },
+      {
+        "iso3": "FIN",
+        "name": "Finland",
+        "value_usd": 11413777.0,
+        "share_pct": 0.4602,
+        "cagr_pct": 10.54,
+        "unit_value_usd_per_kg": 1.3722,
+        "rank": 37
+      },
+      {
+        "iso3": "IND",
+        "name": "India",
+        "value_usd": 10663889.0,
+        "share_pct": 0.43,
+        "cagr_pct": 5.32,
+        "unit_value_usd_per_kg": 1.5835,
+        "rank": 38
+      },
+      {
+        "iso3": "MEX",
+        "name": "Mexico",
+        "value_usd": 10424847.0,
+        "share_pct": 0.4204,
+        "cagr_pct": 12.0,
+        "unit_value_usd_per_kg": 1.4449,
+        "rank": 39
+      },
+      {
+        "iso3": "BRA",
+        "name": "Brazil",
+        "value_usd": 10198228.0,
+        "share_pct": 0.4112,
+        "cagr_pct": 3.54,
+        "unit_value_usd_per_kg": 1.0736,
+        "rank": 40
+      },
+      {
+        "iso3": "HKG",
+        "name": "Hong Kong",
+        "value_usd": 10003321.0,
+        "share_pct": 0.4034,
+        "cagr_pct": 2.9,
+        "unit_value_usd_per_kg": 1.3093,
+        "rank": 41
+      },
+      {
+        "iso3": "HUN",
+        "name": "Hungary",
+        "value_usd": 9732338.0,
+        "share_pct": 0.3924,
+        "cagr_pct": 13.2,
+        "unit_value_usd_per_kg": 1.2822,
+        "rank": 42
+      },
+      {
+        "iso3": "TUR",
+        "name": "Türkiye",
+        "value_usd": 9617340.0,
+        "share_pct": 0.3878,
+        "cagr_pct": 9.87,
+        "unit_value_usd_per_kg": 1.3514,
+        "rank": 43
+      },
+      {
+        "iso3": "MYS",
+        "name": "Malaysia",
+        "value_usd": 8889200.0,
+        "share_pct": 0.3584,
+        "cagr_pct": 5.0,
+        "unit_value_usd_per_kg": 1.0784,
+        "rank": 44
+      },
+      {
+        "iso3": "LBN",
+        "name": "Lebanon",
+        "value_usd": 8659736.0,
+        "share_pct": 0.3492,
+        "cagr_pct": 9.72,
+        "unit_value_usd_per_kg": 1.2755,
+        "rank": 45
+      },
+      {
+        "iso3": "OMN",
+        "name": "Oman",
+        "value_usd": 8462599.0,
+        "share_pct": 0.3412,
+        "cagr_pct": 1.46,
+        "unit_value_usd_per_kg": 1.1731,
+        "rank": 46
+      },
+      {
+        "iso3": "CHN",
+        "name": "China",
+        "value_usd": 8014634.0,
+        "share_pct": 0.3232,
+        "cagr_pct": 8.43,
+        "unit_value_usd_per_kg": 1.1814,
+        "rank": 47
+      }
+    ]
+  },
+  "world_exports": {
+    "annual": [
+      {
+        "year": 2021,
+        "value_usd": 1802661107.0,
+        "n_reporters": 14,
+        "partial": false
+      },
+      {
+        "year": 2022,
+        "value_usd": 1960396281.0,
+        "n_reporters": 14,
+        "partial": false
+      },
+      {
+        "year": 2023,
+        "value_usd": 1965703634.0,
+        "n_reporters": 14,
+        "partial": false
+      },
+      {
+        "year": 2024,
+        "value_usd": 2197072887.0,
+        "n_reporters": 14,
+        "partial": false
+      },
+      {
+        "year": 2025,
+        "value_usd": 2331210589.0,
+        "n_reporters": 14,
+        "partial": false
+      },
+      {
+        "year": 2026,
+        "value_usd": 218017066.0,
+        "n_reporters": 4,
+        "partial": true
+      }
+    ],
+    "ranking": [
+      {
+        "iso3": "ESP",
+        "name": "Spain",
+        "value_usd": 430140875.0,
+        "share_pct": 18.4514,
+        "cagr_pct": 10.48,
+        "unit_value_usd_per_kg": 1.2551,
+        "rank": 1
+      },
+      {
+        "iso3": "NLD",
+        "name": "Netherlands",
+        "value_usd": 423634678.0,
+        "share_pct": 18.1723,
+        "cagr_pct": 8.38,
+        "unit_value_usd_per_kg": 1.5069,
+        "rank": 2
+      },
+      {
+        "iso3": "CHN",
+        "name": "China",
+        "value_usd": 282955663.0,
+        "share_pct": 12.1377,
+        "cagr_pct": 2.98,
+        "unit_value_usd_per_kg": 0.9007,
+        "rank": 3
+      },
+      {
+        "iso3": "BEL",
+        "name": "Belgium",
+        "value_usd": 259853755.0,
+        "share_pct": 11.1467,
+        "cagr_pct": 6.84,
+        "unit_value_usd_per_kg": 1.357,
+        "rank": 4
+      },
+      {
+        "iso3": "POL",
+        "name": "Poland",
+        "value_usd": 189655189.0,
+        "share_pct": 8.1355,
+        "cagr_pct": -0.34,
+        "unit_value_usd_per_kg": 0.9802,
+        "rank": 5
+      },
+      {
+        "iso3": "FRA",
+        "name": "France",
+        "value_usd": 176948857.0,
+        "share_pct": 7.5904,
+        "cagr_pct": 1.3,
+        "unit_value_usd_per_kg": 1.4293,
+        "rank": 6
+      },
+      {
+        "iso3": "DEU",
+        "name": "Germany",
+        "value_usd": 113756070.0,
+        "share_pct": 4.8797,
+        "cagr_pct": 5.26,
+        "unit_value_usd_per_kg": 1.4887,
+        "rank": 7
+      },
+      {
+        "iso3": "MEX",
+        "name": "Mexico",
+        "value_usd": 111615107.0,
+        "share_pct": 4.7879,
+        "cagr_pct": 5.99,
+        "unit_value_usd_per_kg": 1.0482,
+        "rank": 8
+      },
+      {
+        "iso3": "IND",
+        "name": "India",
+        "value_usd": 110904056.0,
+        "share_pct": 4.7574,
+        "cagr_pct": 7.28,
+        "unit_value_usd_per_kg": 0.8428,
+        "rank": 9
+      },
+      {
+        "iso3": "ITA",
+        "name": "Italy",
+        "value_usd": 68587162.0,
+        "share_pct": 2.9421,
+        "cagr_pct": 8.93,
+        "unit_value_usd_per_kg": 1.4011,
+        "rank": 10
+      },
+      {
+        "iso3": "TUR",
+        "name": "Türkiye",
+        "value_usd": 64210045.0,
+        "share_pct": 2.7544,
+        "cagr_pct": 4.27,
+        "unit_value_usd_per_kg": 0.9405,
+        "rank": 11
+      },
+      {
+        "iso3": "USA",
+        "name": "United States",
+        "value_usd": 49493726.0,
+        "share_pct": 2.1231,
+        "cagr_pct": 1.36,
+        "unit_value_usd_per_kg": 1.5693,
+        "rank": 12
+      },
+      {
+        "iso3": "EGY",
+        "name": "Egypt",
+        "value_usd": 45602877.0,
+        "share_pct": 1.9562,
+        "cagr_pct": 11.09,
+        "unit_value_usd_per_kg": 1.095,
+        "rank": 13
+      },
+      {
+        "iso3": "SAU",
+        "name": "Saudi Arabia",
+        "value_usd": 3852529.0,
+        "share_pct": 0.1653,
+        "cagr_pct": 7.0,
+        "unit_value_usd_per_kg": 1.2679,
+        "rank": 14
+      }
+    ]
+  },
+  "partners": [
+    {
+      "iso3": "ARE",
+      "name": "United Arab Emirates",
+      "tier": "core",
+      "score": null,
+      "score_components": {
+        "size": null,
+        "growth": null,
+        "price": null,
+        "foothold": 97.8,
+        "openness": null
+      },
+      "partner_trade_latest_usd": null,
+      "partner_trade_share_pct": null,
+      "partner_trade_cagr_pct": null,
+      "partner_unit_value_usd_per_kg": null,
+      "partner_reports_latest": false,
+      "home_flow_latest_usd": 6205322.0,
+      "home_flow_share_of_home_pct": 13.6073,
+      "home_flow_cagr_pct": 10.13,
+      "home_flow_by_year": {
+        "2021": 4263651.0,
+        "2022": 4645557.0,
+        "2023": 5143708.0,
+        "2024": 5480627.0,
+        "2025": 6205322.0,
+        "2026": 2412303.0
+      },
+      "home_unit_value_usd_per_kg": 1.3339,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no imports report from this partner for 2025; its size, growth and price are unknown",
+        "not scored: no imports reported by this partner for 2025"
+      ]
+    },
+    {
+      "iso3": "AUS",
+      "name": "Australia",
+      "tier": "new",
+      "score": 40.5,
+      "score_components": {
+        "size": 53.3,
+        "growth": 24.4,
+        "price": 77.8,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 19054694.0,
+      "partner_trade_share_pct": 0.7683,
+      "partner_trade_cagr_pct": 3.82,
+      "partner_unit_value_usd_per_kg": 1.3888,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "AUT",
+      "name": "Austria",
+      "tier": "new",
+      "score": 52.2,
+      "score_components": {
+        "size": 73.3,
+        "growth": 66.7,
+        "price": 31.1,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 32461789.0,
+      "partner_trade_share_pct": 1.3089,
+      "partner_trade_cagr_pct": 7.87,
+      "partner_unit_value_usd_per_kg": 1.2232,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "BEL",
+      "name": "Belgium",
+      "tier": "new",
+      "score": 60.8,
+      "score_components": {
+        "size": 84.4,
+        "growth": 68.9,
+        "price": 53.3,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 63449004.0,
+      "partner_trade_share_pct": 2.5584,
+      "partner_trade_cagr_pct": 8.1,
+      "partner_unit_value_usd_per_kg": 1.3029,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "BHR",
+      "name": "Bahrain",
+      "tier": "new",
+      "score": 56.3,
+      "score_components": {
+        "size": 37.8,
+        "growth": 60.0,
+        "price": 86.7,
+        "foothold": 63.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 15423348.0,
+      "partner_trade_share_pct": 0.6219,
+      "partner_trade_cagr_pct": 6.99,
+      "partner_unit_value_usd_per_kg": 1.445,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 99688.0,
+      "home_flow_share_of_home_pct": 0.2186,
+      "home_flow_cagr_pct": 2.67,
+      "home_flow_by_year": {
+        "2021": 90262.0,
+        "2022": 92103.0,
+        "2023": 96980.0,
+        "2024": 98927.0,
+        "2025": 99688.0,
+        "2026": 38100.0
+      },
+      "home_unit_value_usd_per_kg": 1.1801,
+      "mirror_flow_latest_usd": 117271.0,
+      "home_share_in_partner_pct": 0.7603,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "BRA",
+      "name": "Brazil",
+      "tier": "new",
+      "score": 11.4,
+      "score_components": {
+        "size": 15.6,
+        "growth": 17.8,
+        "price": 2.2,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 10198228.0,
+      "partner_trade_share_pct": 0.4112,
+      "partner_trade_cagr_pct": 3.54,
+      "partner_unit_value_usd_per_kg": 1.0736,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "CAN",
+      "name": "Canada",
+      "tier": "new",
+      "score": 51.9,
+      "score_components": {
+        "size": 77.8,
+        "growth": 57.8,
+        "price": 33.3,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 55290254.0,
+      "partner_trade_share_pct": 2.2294,
+      "partner_trade_cagr_pct": 6.95,
+      "partner_unit_value_usd_per_kg": 1.229,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "CHE",
+      "name": "Switzerland",
+      "tier": "new",
+      "score": 43.8,
+      "score_components": {
+        "size": 71.1,
+        "growth": 42.2,
+        "price": 26.7,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 25403766.0,
+      "partner_trade_share_pct": 1.0243,
+      "partner_trade_cagr_pct": 5.31,
+      "partner_unit_value_usd_per_kg": 1.1914,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "CHN",
+      "name": "China",
+      "tier": "new",
+      "score": 24.4,
+      "score_components": {
+        "size": 0.0,
+        "growth": 73.3,
+        "price": 24.4,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 8014634.0,
+      "partner_trade_share_pct": 0.3232,
+      "partner_trade_cagr_pct": 8.43,
+      "partner_unit_value_usd_per_kg": 1.1814,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "CIV",
+      "name": "Côte d'Ivoire",
+      "tier": "growth",
+      "score": 62.3,
+      "score_components": {
+        "size": 28.9,
+        "growth": 75.6,
+        "price": 93.3,
+        "foothold": 87.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 13076749.0,
+      "partner_trade_share_pct": 0.5273,
+      "partner_trade_cagr_pct": 9.09,
+      "partner_unit_value_usd_per_kg": 1.5248,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 895521.0,
+      "home_flow_share_of_home_pct": 1.9637,
+      "home_flow_cagr_pct": 11.31,
+      "home_flow_by_year": {
+        "2021": 590341.0,
+        "2022": 649423.0,
+        "2023": 731361.0,
+        "2024": 802170.0,
+        "2025": 895521.0,
+        "2026": 364099.0
+      },
+      "home_unit_value_usd_per_kg": 1.2679,
+      "mirror_flow_latest_usd": 864377.0,
+      "home_share_in_partner_pct": 6.61,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "CZE",
+      "name": "Czechia",
+      "tier": "new",
+      "score": 30.1,
+      "score_components": {
+        "size": 24.4,
+        "growth": 35.6,
+        "price": 64.4,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 12180971.0,
+      "partner_trade_share_pct": 0.4912,
+      "partner_trade_cagr_pct": 4.81,
+      "partner_unit_value_usd_per_kg": 1.3257,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "DEU",
+      "name": "Germany",
+      "tier": "growth",
+      "score": 66.7,
+      "score_components": {
+        "size": 97.8,
+        "growth": 37.8,
+        "price": 11.1,
+        "foothold": 80.4,
+        "openness": 93.3
+      },
+      "partner_trade_latest_usd": 318116819.0,
+      "partner_trade_share_pct": 12.8271,
+      "partner_trade_cagr_pct": 4.87,
+      "partner_unit_value_usd_per_kg": 1.1435,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 588868.0,
+      "home_flow_share_of_home_pct": 1.2913,
+      "home_flow_cagr_pct": 0.25,
+      "home_flow_by_year": {
+        "2021": 583089.0,
+        "2022": 584441.0,
+        "2023": 597830.0,
+        "2024": 599249.0,
+        "2025": 588868.0,
+        "2026": 222742.0
+      },
+      "home_unit_value_usd_per_kg": 0.9475,
+      "mirror_flow_latest_usd": 629078.0,
+      "home_share_in_partner_pct": 0.1978,
+      "of_interest": true,
+      "notes": []
+    },
+    {
+      "iso3": "DNK",
+      "name": "Denmark",
+      "tier": "new",
+      "score": 24.5,
+      "score_components": {
+        "size": 44.4,
+        "growth": 2.2,
+        "price": 40.0,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 17267256.0,
+      "partner_trade_share_pct": 0.6963,
+      "partner_trade_cagr_pct": 0.83,
+      "partner_unit_value_usd_per_kg": 1.2537,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "ESP",
+      "name": "Spain",
+      "tier": "new",
+      "score": 51.6,
+      "score_components": {
+        "size": 75.6,
+        "growth": 26.7,
+        "price": 88.9,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 34910254.0,
+      "partner_trade_share_pct": 1.4077,
+      "partner_trade_cagr_pct": 3.85,
+      "partner_unit_value_usd_per_kg": 1.4667,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "FIN",
+      "name": "Finland",
+      "tier": "new",
+      "score": 44.9,
+      "score_components": {
+        "size": 22.2,
+        "growth": 86.7,
+        "price": 73.3,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 11413777.0,
+      "partner_trade_share_pct": 0.4602,
+      "partner_trade_cagr_pct": 10.54,
+      "partner_unit_value_usd_per_kg": 1.3722,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "FRA",
+      "name": "France",
+      "tier": "growth",
+      "score": 79.5,
+      "score_components": {
+        "size": 93.3,
+        "growth": 77.8,
+        "price": 62.2,
+        "foothold": 67.4,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 138483407.0,
+      "partner_trade_share_pct": 5.5839,
+      "partner_trade_cagr_pct": 9.31,
+      "partner_unit_value_usd_per_kg": 1.3209,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 200545.0,
+      "home_flow_share_of_home_pct": 0.4398,
+      "home_flow_cagr_pct": 2.94,
+      "home_flow_by_year": {
+        "2021": 178401.0,
+        "2022": 183840.0,
+        "2023": 187979.0,
+        "2024": 190377.0,
+        "2025": 200545.0,
+        "2026": 74810.0
+      },
+      "home_unit_value_usd_per_kg": 1.1215,
+      "mirror_flow_latest_usd": 202320.0,
+      "home_share_in_partner_pct": 0.1461,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "tier": "core",
+      "score": 82.4,
+      "score_components": {
+        "size": 95.6,
+        "growth": 88.9,
+        "price": 22.2,
+        "foothold": 93.5,
+        "openness": 93.2
+      },
+      "partner_trade_latest_usd": 262820376.0,
+      "partner_trade_share_pct": 10.5975,
+      "partner_trade_cagr_pct": 10.96,
+      "partner_unit_value_usd_per_kg": 1.1762,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 3249368.0,
+      "home_flow_share_of_home_pct": 7.1254,
+      "home_flow_cagr_pct": 8.3,
+      "home_flow_by_year": {
+        "2021": 2359755.0,
+        "2022": 2558128.0,
+        "2023": 2797619.0,
+        "2024": 3051918.0,
+        "2025": 3249368.0,
+        "2026": 1301576.0
+      },
+      "home_unit_value_usd_per_kg": 0.9618,
+      "mirror_flow_latest_usd": 3387376.0,
+      "home_share_in_partner_pct": 1.2889,
+      "of_interest": false,
+      "notes": []
+    },
+    {
+      "iso3": "GRC",
+      "name": "Greece",
+      "tier": "new",
+      "score": 30.0,
+      "score_components": {
+        "size": 42.2,
+        "growth": 8.9,
+        "price": 66.7,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 16701742.0,
+      "partner_trade_share_pct": 0.6734,
+      "partner_trade_cagr_pct": 1.18,
+      "partner_unit_value_usd_per_kg": 1.3342,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "HKG",
+      "name": "Hong Kong",
+      "tier": "growth",
+      "score": 31.1,
+      "score_components": {
+        "size": 13.3,
+        "growth": 15.6,
+        "price": 55.6,
+        "foothold": 73.9,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 10003321.0,
+      "partner_trade_share_pct": 0.4034,
+      "partner_trade_cagr_pct": 2.9,
+      "partner_unit_value_usd_per_kg": 1.3093,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 346924.0,
+      "home_flow_share_of_home_pct": 0.7608,
+      "home_flow_cagr_pct": 5.04,
+      "home_flow_by_year": {
+        "2021": 284208.0,
+        "2022": 299374.0,
+        "2023": 317437.0,
+        "2024": 333355.0,
+        "2025": 346924.0,
+        "2026": 136945.0
+      },
+      "home_unit_value_usd_per_kg": 1.0671,
+      "mirror_flow_latest_usd": 373406.0,
+      "home_share_in_partner_pct": 3.7328,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "HUN",
+      "name": "Hungary",
+      "tier": "new",
+      "score": 39.6,
+      "score_components": {
+        "size": 11.1,
+        "growth": 97.8,
+        "price": 48.9,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 9732338.0,
+      "partner_trade_share_pct": 0.3924,
+      "partner_trade_cagr_pct": 13.2,
+      "partner_unit_value_usd_per_kg": 1.2822,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "IND",
+      "name": "India",
+      "tier": "new",
+      "score": 36.0,
+      "score_components": {
+        "size": 20.0,
+        "growth": 44.4,
+        "price": 95.6,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 10663889.0,
+      "partner_trade_share_pct": 0.43,
+      "partner_trade_cagr_pct": 5.32,
+      "partner_unit_value_usd_per_kg": 1.5835,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "IRL",
+      "name": "Ireland",
+      "tier": "new",
+      "score": 41.5,
+      "score_components": {
+        "size": 46.7,
+        "growth": 53.3,
+        "price": 51.1,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 17280945.0,
+      "partner_trade_share_pct": 0.6968,
+      "partner_trade_cagr_pct": 6.43,
+      "partner_unit_value_usd_per_kg": 1.294,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "IRQ",
+      "name": "Iraq",
+      "tier": "growth",
+      "score": 64.1,
+      "score_components": {
+        "size": 31.1,
+        "growth": 93.3,
+        "price": 91.1,
+        "foothold": 65.2,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 14264047.0,
+      "partner_trade_share_pct": 0.5752,
+      "partner_trade_cagr_pct": 11.86,
+      "partner_unit_value_usd_per_kg": 1.4992,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 121302.0,
+      "home_flow_share_of_home_pct": 0.266,
+      "home_flow_cagr_pct": 2.27,
+      "home_flow_by_year": {
+        "2021": 110949.0,
+        "2022": 113417.0,
+        "2023": 116288.0,
+        "2024": 119756.0,
+        "2025": 121302.0,
+        "2026": 44751.0
+      },
+      "home_unit_value_usd_per_kg": 1.202,
+      "mirror_flow_latest_usd": 130848.0,
+      "home_share_in_partner_pct": 0.9173,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "ITA",
+      "name": "Italy",
+      "tier": "new",
+      "score": 75.2,
+      "score_components": {
+        "size": 88.9,
+        "growth": 84.4,
+        "price": 42.2,
+        "foothold": 60.9,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 72165111.0,
+      "partner_trade_share_pct": 2.9099,
+      "partner_trade_cagr_pct": 9.93,
+      "partner_unit_value_usd_per_kg": 1.2601,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 88525.0,
+      "home_flow_share_of_home_pct": 0.1941,
+      "home_flow_cagr_pct": 10.0,
+      "home_flow_by_year": {
+        "2021": 59292.0,
+        "2022": 66511.0,
+        "2023": 73302.0,
+        "2024": 80994.0,
+        "2025": 88525.0,
+        "2026": 36439.0
+      },
+      "home_unit_value_usd_per_kg": 1.1774,
+      "mirror_flow_latest_usd": 101876.0,
+      "home_share_in_partner_pct": 0.1412,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "JOR",
+      "name": "Jordan",
+      "tier": "growth",
+      "score": 58.2,
+      "score_components": {
+        "size": 62.2,
+        "growth": 55.6,
+        "price": 35.6,
+        "foothold": 76.1,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 20942091.0,
+      "partner_trade_share_pct": 0.8444,
+      "partner_trade_cagr_pct": 6.76,
+      "partner_unit_value_usd_per_kg": 1.2307,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 452133.0,
+      "home_flow_share_of_home_pct": 0.9915,
+      "home_flow_cagr_pct": 14.49,
+      "home_flow_by_year": {
+        "2021": 272789.0,
+        "2022": 301243.0,
+        "2023": 353296.0,
+        "2024": 399713.0,
+        "2025": 452133.0,
+        "2026": 188504.0
+      },
+      "home_unit_value_usd_per_kg": 1.1408,
+      "mirror_flow_latest_usd": 517373.0,
+      "home_share_in_partner_pct": 2.4705,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "JPN",
+      "name": "Japan",
+      "tier": "new",
+      "score": 47.5,
+      "score_components": {
+        "size": 82.2,
+        "growth": 33.3,
+        "price": 37.8,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 61783912.0,
+      "partner_trade_share_pct": 2.4913,
+      "partner_trade_cagr_pct": 4.78,
+      "partner_unit_value_usd_per_kg": 1.2318,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "KEN",
+      "name": "Kenya",
+      "tier": "new",
+      "score": 51.1,
+      "score_components": {
+        "size": 35.6,
+        "growth": 64.4,
+        "price": 57.8,
+        "foothold": 58.7,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 14976764.0,
+      "partner_trade_share_pct": 0.6039,
+      "partner_trade_cagr_pct": 7.45,
+      "partner_unit_value_usd_per_kg": 1.3096,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 61028.0,
+      "home_flow_share_of_home_pct": 0.1338,
+      "home_flow_cagr_pct": 11.01,
+      "home_flow_by_year": {
+        "2021": 41389.0,
+        "2022": 44611.0,
+        "2023": 49268.0,
+        "2024": 53427.0,
+        "2025": 61028.0,
+        "2026": 24498.0
+      },
+      "home_unit_value_usd_per_kg": 1.2709,
+      "mirror_flow_latest_usd": 66651.0,
+      "home_share_in_partner_pct": 0.445,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "KOR",
+      "name": "South Korea",
+      "tier": "new",
+      "score": 39.8,
+      "score_components": {
+        "size": 68.9,
+        "growth": 20.0,
+        "price": 44.4,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 24839644.0,
+      "partner_trade_share_pct": 1.0016,
+      "partner_trade_cagr_pct": 3.58,
+      "partner_unit_value_usd_per_kg": 1.266,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "tier": "growth",
+      "score": 47.1,
+      "score_components": {
+        "size": 57.8,
+        "growth": 6.7,
+        "price": 17.8,
+        "foothold": 89.1,
+        "openness": 91.9
+      },
+      "partner_trade_latest_usd": 20531971.0,
+      "partner_trade_share_pct": 0.8279,
+      "partner_trade_cagr_pct": 1.06,
+      "partner_unit_value_usd_per_kg": 1.1703,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 1913252.0,
+      "home_flow_share_of_home_pct": 4.1955,
+      "home_flow_cagr_pct": 12.62,
+      "home_flow_by_year": {
+        "2021": 1156017.0,
+        "2022": 1339306.0,
+        "2023": 1469476.0,
+        "2024": 1676485.0,
+        "2025": 1913252.0,
+        "2026": 770285.0
+      },
+      "home_unit_value_usd_per_kg": 0.9707,
+      "mirror_flow_latest_usd": 3264515.0,
+      "home_share_in_partner_pct": 15.8997,
+      "of_interest": false,
+      "notes": []
+    },
+    {
+      "iso3": "LBN",
+      "name": "Lebanon",
+      "tier": "growth",
+      "score": 43.3,
+      "score_components": {
+        "size": 4.4,
+        "growth": 80.0,
+        "price": 46.7,
+        "foothold": 69.6,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 8659736.0,
+      "partner_trade_share_pct": 0.3492,
+      "partner_trade_cagr_pct": 9.72,
+      "partner_unit_value_usd_per_kg": 1.2755,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 252213.0,
+      "home_flow_share_of_home_pct": 0.5531,
+      "home_flow_cagr_pct": 12.39,
+      "home_flow_by_year": {
+        "2021": 159836.0,
+        "2022": 177667.0,
+        "2023": 197313.0,
+        "2024": 225607.0,
+        "2025": 252213.0,
+        "2026": 102483.0
+      },
+      "home_unit_value_usd_per_kg": 1.0628,
+      "mirror_flow_latest_usd": 267395.0,
+      "home_share_in_partner_pct": 3.0878,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "LBY",
+      "name": "Libya",
+      "tier": "growth",
+      "score": 63.0,
+      "score_components": {
+        "size": 55.6,
+        "growth": 62.2,
+        "price": 60.0,
+        "foothold": 84.8,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 19304382.0,
+      "partner_trade_share_pct": 0.7784,
+      "partner_trade_cagr_pct": 7.04,
+      "partner_unit_value_usd_per_kg": 1.3148,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 795369.0,
+      "home_flow_share_of_home_pct": 1.7441,
+      "home_flow_cagr_pct": 10.35,
+      "home_flow_by_year": {
+        "2021": 527840.0,
+        "2022": 591852.0,
+        "2023": 647998.0,
+        "2024": 705355.0,
+        "2025": 795369.0,
+        "2026": 330842.0
+      },
+      "home_unit_value_usd_per_kg": 1.1402,
+      "mirror_flow_latest_usd": 789778.0,
+      "home_share_in_partner_pct": 4.0912,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "MEX",
+      "name": "Mexico",
+      "tier": "new",
+      "score": 47.5,
+      "score_components": {
+        "size": 17.8,
+        "growth": 95.6,
+        "price": 84.4,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 10424847.0,
+      "partner_trade_share_pct": 0.4204,
+      "partner_trade_cagr_pct": 12.0,
+      "partner_unit_value_usd_per_kg": 1.4449,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "MYS",
+      "name": "Malaysia",
+      "tier": "new",
+      "score": 14.5,
+      "score_components": {
+        "size": 6.7,
+        "growth": 40.0,
+        "price": 4.4,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 8889200.0,
+      "partner_trade_share_pct": 0.3584,
+      "partner_trade_cagr_pct": 5.0,
+      "partner_unit_value_usd_per_kg": 1.0784,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "tier": "core",
+      "score": 80.0,
+      "score_components": {
+        "size": 91.1,
+        "growth": 48.9,
+        "price": 82.2,
+        "foothold": 95.7,
+        "openness": 91.8
+      },
+      "partner_trade_latest_usd": 137409162.0,
+      "partner_trade_share_pct": 5.5406,
+      "partner_trade_cagr_pct": 5.62,
+      "partner_unit_value_usd_per_kg": 1.4056,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 4161353.0,
+      "home_flow_share_of_home_pct": 9.1252,
+      "home_flow_cagr_pct": 3.93,
+      "home_flow_by_year": {
+        "2021": 3555354.0,
+        "2022": 3707299.0,
+        "2023": 3826046.0,
+        "2024": 4016596.0,
+        "2025": 4161353.0,
+        "2026": 1594062.0
+      },
+      "home_unit_value_usd_per_kg": 1.2859,
+      "mirror_flow_latest_usd": 1065772.0,
+      "home_share_in_partner_pct": 0.7756,
+      "of_interest": false,
+      "notes": []
+    },
+    {
+      "iso3": "NOR",
+      "name": "Norway",
+      "tier": "new",
+      "score": 42.8,
+      "score_components": {
+        "size": 60.0,
+        "growth": 22.2,
+        "price": 80.0,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 20806038.0,
+      "partner_trade_share_pct": 0.8389,
+      "partner_trade_cagr_pct": 3.65,
+      "partner_unit_value_usd_per_kg": 1.4009,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "OMN",
+      "name": "Oman",
+      "tier": "growth",
+      "score": 19.2,
+      "score_components": {
+        "size": 2.2,
+        "growth": 11.1,
+        "price": 20.0,
+        "foothold": 71.7,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 8462599.0,
+      "partner_trade_share_pct": 0.3412,
+      "partner_trade_cagr_pct": 1.46,
+      "partner_unit_value_usd_per_kg": 1.1731,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 305624.0,
+      "home_flow_share_of_home_pct": 0.6702,
+      "home_flow_cagr_pct": 13.41,
+      "home_flow_by_year": {
+        "2021": 182288.0,
+        "2022": 209509.0,
+        "2023": 235820.0,
+        "2024": 263527.0,
+        "2025": 305624.0,
+        "2026": 122342.0
+      },
+      "home_unit_value_usd_per_kg": 1.1001,
+      "mirror_flow_latest_usd": 346236.0,
+      "home_share_in_partner_pct": 4.0914,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "POL",
+      "name": "Poland",
+      "tier": "new",
+      "score": 51.2,
+      "score_components": {
+        "size": 66.7,
+        "growth": 31.1,
+        "price": 100.0,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 24784864.0,
+      "partner_trade_share_pct": 0.9994,
+      "partner_trade_cagr_pct": 4.68,
+      "partner_unit_value_usd_per_kg": 1.6108,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "PRT",
+      "name": "Portugal",
+      "tier": "new",
+      "score": 54.6,
+      "score_components": {
+        "size": 33.3,
+        "growth": 91.1,
+        "price": 97.8,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 14338769.0,
+      "partner_trade_share_pct": 0.5782,
+      "partner_trade_cagr_pct": 11.08,
+      "partner_unit_value_usd_per_kg": 1.6093,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "QAT",
+      "name": "Qatar",
+      "tier": "growth",
+      "score": 34.3,
+      "score_components": {
+        "size": 48.9,
+        "growth": 0.0,
+        "price": 13.3,
+        "foothold": 78.3,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 18606850.0,
+      "partner_trade_share_pct": 0.7503,
+      "partner_trade_cagr_pct": -2.3,
+      "partner_unit_value_usd_per_kg": 1.1449,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 498411.0,
+      "home_flow_share_of_home_pct": 1.0929,
+      "home_flow_cagr_pct": 8.86,
+      "home_flow_by_year": {
+        "2021": 355918.0,
+        "2022": 386314.0,
+        "2023": 422843.0,
+        "2024": 469678.0,
+        "2025": 498411.0,
+        "2026": 194875.0
+      },
+      "home_unit_value_usd_per_kg": 0.9642,
+      "mirror_flow_latest_usd": 499366.0,
+      "home_share_in_partner_pct": 2.6838,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "ROU",
+      "name": "Romania",
+      "tier": "new",
+      "score": 31.1,
+      "score_components": {
+        "size": 40.0,
+        "growth": 46.7,
+        "price": 15.6,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 16211184.0,
+      "partner_trade_share_pct": 0.6537,
+      "partner_trade_cagr_pct": 5.34,
+      "partner_unit_value_usd_per_kg": 1.1476,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "RUS",
+      "name": "Russian Federation",
+      "tier": "core",
+      "score": 89.3,
+      "score_components": {
+        "size": 86.7,
+        "growth": 100.0,
+        "price": 75.6,
+        "foothold": 91.3,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 66810460.0,
+      "partner_trade_share_pct": 2.6939,
+      "partner_trade_cagr_pct": 16.12,
+      "partner_unit_value_usd_per_kg": 1.3758,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 2821068.0,
+      "home_flow_share_of_home_pct": 6.1862,
+      "home_flow_cagr_pct": 6.89,
+      "home_flow_by_year": {
+        "2021": 2144356.0,
+        "2022": 2310064.0,
+        "2023": 2441523.0,
+        "2024": 2607697.0,
+        "2025": 2821068.0,
+        "2026": 1097480.0
+      },
+      "home_unit_value_usd_per_kg": 1.1196,
+      "mirror_flow_latest_usd": 3077075.0,
+      "home_share_in_partner_pct": 4.6057,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "tier": "core",
+      "score": 71.1,
+      "score_components": {
+        "size": 80.0,
+        "growth": 71.1,
+        "price": 6.7,
+        "foothold": 100.0,
+        "openness": 92.9
+      },
+      "partner_trade_latest_usd": 59772538.0,
+      "partner_trade_share_pct": 2.4102,
+      "partner_trade_cagr_pct": 8.14,
+      "partner_unit_value_usd_per_kg": 1.1021,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 9557039.0,
+      "home_flow_share_of_home_pct": 20.9571,
+      "home_flow_cagr_pct": 13.58,
+      "home_flow_by_year": {
+        "2021": 5663161.0,
+        "2022": 6522506.0,
+        "2023": 7526024.0,
+        "2024": 8500010.0,
+        "2025": 9557039.0,
+        "2026": 3978222.0
+      },
+      "home_unit_value_usd_per_kg": 0.98,
+      "mirror_flow_latest_usd": 10022333.0,
+      "home_share_in_partner_pct": 16.7675,
+      "of_interest": false,
+      "notes": []
+    },
+    {
+      "iso3": "SDN",
+      "name": "Sudan",
+      "tier": "growth",
+      "score": 37.0,
+      "score_components": {
+        "size": 26.7,
+        "growth": 28.9,
+        "price": 28.9,
+        "foothold": 82.6,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 12879651.0,
+      "partner_trade_share_pct": 0.5193,
+      "partner_trade_cagr_pct": 4.65,
+      "partner_unit_value_usd_per_kg": 1.2069,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": 709277.0,
+      "home_flow_share_of_home_pct": 1.5553,
+      "home_flow_cagr_pct": 5.78,
+      "home_flow_by_year": {
+        "2021": 583152.0,
+        "2022": 599223.0,
+        "2023": 637847.0,
+        "2024": 665585.0,
+        "2025": 709277.0,
+        "2026": 268174.0
+      },
+      "home_unit_value_usd_per_kg": 1.0795,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "SGP",
+      "name": "Singapore",
+      "tier": "new",
+      "score": 30.2,
+      "score_components": {
+        "size": 64.4,
+        "growth": 13.3,
+        "price": 8.9,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 22114414.0,
+      "partner_trade_share_pct": 0.8917,
+      "partner_trade_cagr_pct": 1.68,
+      "partner_unit_value_usd_per_kg": 1.1288,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "SWE",
+      "name": "Sweden",
+      "tier": "new",
+      "score": 21.1,
+      "score_components": {
+        "size": 51.1,
+        "growth": 4.4,
+        "price": 0.0,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 18821645.0,
+      "partner_trade_share_pct": 0.7589,
+      "partner_trade_cagr_pct": 0.87,
+      "partner_unit_value_usd_per_kg": 1.0723,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "TUR",
+      "name": "Türkiye",
+      "tier": "new",
+      "score": 38.1,
+      "score_components": {
+        "size": 8.9,
+        "growth": 82.2,
+        "price": 71.1,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 9617340.0,
+      "partner_trade_share_pct": 0.3878,
+      "partner_trade_cagr_pct": 9.87,
+      "partner_unit_value_usd_per_kg": 1.3514,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    },
+    {
+      "iso3": "USA",
+      "name": "United States",
+      "tier": "new",
+      "score": 64.6,
+      "score_components": {
+        "size": 100.0,
+        "growth": 51.1,
+        "price": 68.9,
+        "foothold": 0.0,
+        "openness": null
+      },
+      "partner_trade_latest_usd": 658713080.0,
+      "partner_trade_share_pct": 26.5607,
+      "partner_trade_cagr_pct": 5.81,
+      "partner_unit_value_usd_per_kg": 1.346,
+      "partner_reports_latest": true,
+      "home_flow_latest_usd": null,
+      "home_flow_share_of_home_pct": null,
+      "home_flow_cagr_pct": null,
+      "home_flow_by_year": {},
+      "home_unit_value_usd_per_kg": null,
+      "mirror_flow_latest_usd": null,
+      "home_share_in_partner_pct": null,
+      "of_interest": false,
+      "notes": [
+        "no home exports recorded in 2025",
+        "score uses only the available components (no data for: openness)"
+      ]
+    }
+  ],
+  "shortlist": {
+    "core": [
+      "SAU",
+      "ARE",
+      "NLD",
+      "GBR",
+      "RUS"
+    ],
+    "growth": [
+      "FRA",
+      "DEU",
+      "IRQ",
+      "LBY",
+      "CIV"
+    ],
+    "new": [
+      "ITA",
+      "USA",
+      "BEL",
+      "BHR",
+      "PRT"
+    ]
+  },
+  "mirror_checks": [
+    {
+      "iso3": "ARE",
+      "name": "United Arab Emirates",
+      "year": 2025,
+      "home_reported_usd": 6205322.0,
+      "partner_reported_usd": null,
+      "ratio": null,
+      "status": "partner_not_reporting",
+      "note": "partner has no World-partner row in the latest complete year"
+    },
+    {
+      "iso3": "CIV",
+      "name": "Côte d'Ivoire",
+      "year": 2025,
+      "home_reported_usd": 895521.0,
+      "partner_reported_usd": 864377.0,
+      "ratio": 0.965,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "DEU",
+      "name": "Germany",
+      "year": 2025,
+      "home_reported_usd": 588868.0,
+      "partner_reported_usd": 629078.0,
+      "ratio": 1.068,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "FRA",
+      "name": "France",
+      "year": 2025,
+      "home_reported_usd": 200545.0,
+      "partner_reported_usd": 202320.0,
+      "ratio": 1.009,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "year": 2025,
+      "home_reported_usd": 3249368.0,
+      "partner_reported_usd": 3387376.0,
+      "ratio": 1.042,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "HKG",
+      "name": "Hong Kong",
+      "year": 2025,
+      "home_reported_usd": 346924.0,
+      "partner_reported_usd": 373406.0,
+      "ratio": 1.076,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "IRQ",
+      "name": "Iraq",
+      "year": 2025,
+      "home_reported_usd": 121302.0,
+      "partner_reported_usd": 130848.0,
+      "ratio": 1.079,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "JOR",
+      "name": "Jordan",
+      "year": 2025,
+      "home_reported_usd": 452133.0,
+      "partner_reported_usd": 517373.0,
+      "ratio": 1.144,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "year": 2025,
+      "home_reported_usd": 1913252.0,
+      "partner_reported_usd": 3264515.0,
+      "ratio": 1.706,
+      "status": "partner_reports_more",
+      "note": "possible indirect shipments attributed by origin"
+    },
+    {
+      "iso3": "LBN",
+      "name": "Lebanon",
+      "year": 2025,
+      "home_reported_usd": 252213.0,
+      "partner_reported_usd": 267395.0,
+      "ratio": 1.06,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "LBY",
+      "name": "Libya",
+      "year": 2025,
+      "home_reported_usd": 795369.0,
+      "partner_reported_usd": 789778.0,
+      "ratio": 0.993,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "year": 2025,
+      "home_reported_usd": 4161353.0,
+      "partner_reported_usd": 1065772.0,
+      "ratio": 0.256,
+      "status": "partner_reports_less",
+      "note": "possible hub routing or re-export, classification difference or timing"
+    },
+    {
+      "iso3": "OMN",
+      "name": "Oman",
+      "year": 2025,
+      "home_reported_usd": 305624.0,
+      "partner_reported_usd": 346236.0,
+      "ratio": 1.133,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "QAT",
+      "name": "Qatar",
+      "year": 2025,
+      "home_reported_usd": 498411.0,
+      "partner_reported_usd": 499366.0,
+      "ratio": 1.002,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "RUS",
+      "name": "Russian Federation",
+      "year": 2025,
+      "home_reported_usd": 2821068.0,
+      "partner_reported_usd": 3077075.0,
+      "ratio": 1.091,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "year": 2025,
+      "home_reported_usd": 9557039.0,
+      "partner_reported_usd": 10022333.0,
+      "ratio": 1.049,
+      "status": "consistent",
+      "note": "within the expected CIF/FOB band"
+    },
+    {
+      "iso3": "SDN",
+      "name": "Sudan",
+      "year": 2025,
+      "home_reported_usd": 709277.0,
+      "partner_reported_usd": null,
+      "ratio": null,
+      "status": "only_home_reports",
+      "note": "partner reports the product but shows nothing from/to home"
+    }
+  ],
+  "partner_detail": {
+    "DEU": {
+      "basis": "partner_reported",
+      "year": 2025,
+      "total_usd": 318116819.0,
+      "rows": [
+        {
+          "iso3": "ESP",
+          "name": "Spain",
+          "value_usd": 39036942.0,
+          "share_pct": 12.2713,
+          "unit_value_usd_per_kg": 1.3278
+        },
+        {
+          "iso3": "BEL",
+          "name": "Belgium",
+          "value_usd": 35529794.0,
+          "share_pct": 11.1688,
+          "unit_value_usd_per_kg": 1.4324
+        },
+        {
+          "iso3": "NLD",
+          "name": "Netherlands",
+          "value_usd": 34963026.0,
+          "share_pct": 10.9906,
+          "unit_value_usd_per_kg": 1.62
+        },
+        {
+          "iso3": "POL",
+          "name": "Poland",
+          "value_usd": 34392232.0,
+          "share_pct": 10.8112,
+          "unit_value_usd_per_kg": 0.9
+        },
+        {
+          "iso3": "CHN",
+          "name": "China",
+          "value_usd": 31681288.0,
+          "share_pct": 9.959,
+          "unit_value_usd_per_kg": 0.7924
+        },
+        {
+          "iso3": "FRA",
+          "name": "France",
+          "value_usd": 18492336.0,
+          "share_pct": 5.8131,
+          "unit_value_usd_per_kg": 1.4825
+        },
+        {
+          "iso3": "ITA",
+          "name": "Italy",
+          "value_usd": 11319053.0,
+          "share_pct": 3.5581,
+          "unit_value_usd_per_kg": 1.218
+        },
+        {
+          "iso3": "USA",
+          "name": "United States",
+          "value_usd": 6977438.0,
+          "share_pct": 2.1934,
+          "unit_value_usd_per_kg": 1.4227
+        },
+        {
+          "iso3": "MEX",
+          "name": "Mexico",
+          "value_usd": 6149242.0,
+          "share_pct": 1.933,
+          "unit_value_usd_per_kg": 0.9832
+        },
+        {
+          "iso3": "IND",
+          "name": "India",
+          "value_usd": 5540557.0,
+          "share_pct": 1.7417,
+          "unit_value_usd_per_kg": 0.7236
+        },
+        {
+          "iso3": "TUR",
+          "name": "Türkiye",
+          "value_usd": 5290645.0,
+          "share_pct": 1.6631,
+          "unit_value_usd_per_kg": 0.887
+        },
+        {
+          "iso3": "EGY",
+          "name": "Egypt",
+          "value_usd": 629078.0,
+          "share_pct": 0.1978,
+          "unit_value_usd_per_kg": 1.0125
+        },
+        {
+          "iso3": "SAU",
+          "name": "Saudi Arabia",
+          "value_usd": 385850.0,
+          "share_pct": 0.1213,
+          "unit_value_usd_per_kg": 1.195
+        }
+      ],
+      "home_rank": 12,
+      "home_share_pct": 0.1978,
+      "hhi": 0.0673,
+      "basis_note": "total is the partner's World row; shares are percentages of that total, non-country areas are in the total but not listed; HHI covers listed rows only"
+    },
+    "GBR": {
+      "basis": "partner_reported",
+      "year": 2025,
+      "total_usd": 262820376.0,
+      "rows": [
+        {
+          "iso3": "ESP",
+          "name": "Spain",
+          "value_usd": 45287861.0,
+          "share_pct": 17.2315,
+          "unit_value_usd_per_kg": 1.2328
+        },
+        {
+          "iso3": "NLD",
+          "name": "Netherlands",
+          "value_usd": 34650476.0,
+          "share_pct": 13.1841,
+          "unit_value_usd_per_kg": 1.5192
+        },
+        {
+          "iso3": "BEL",
+          "name": "Belgium",
+          "value_usd": 19859001.0,
+          "share_pct": 7.5561,
+          "unit_value_usd_per_kg": 1.401
+        },
+        {
+          "iso3": "CHN",
+          "name": "China",
+          "value_usd": 18007235.0,
+          "share_pct": 6.8515,
+          "unit_value_usd_per_kg": 0.9399
+        },
+        {
+          "iso3": "POL",
+          "name": "Poland",
+          "value_usd": 16693620.0,
+          "share_pct": 6.3517,
+          "unit_value_usd_per_kg": 0.9884
+        },
+        {
+          "iso3": "DEU",
+          "name": "Germany",
+          "value_usd": 10581370.0,
+          "share_pct": 4.0261,
+          "unit_value_usd_per_kg": 1.3328
+        },
+        {
+          "iso3": "MEX",
+          "name": "Mexico",
+          "value_usd": 9564735.0,
+          "share_pct": 3.6393,
+          "unit_value_usd_per_kg": 0.9185
+        },
+        {
+          "iso3": "IND",
+          "name": "India",
+          "value_usd": 9275734.0,
+          "share_pct": 3.5293,
+          "unit_value_usd_per_kg": 0.8262
+        },
+        {
+          "iso3": "FRA",
+          "name": "France",
+          "value_usd": 8304208.0,
+          "share_pct": 3.1597,
+          "unit_value_usd_per_kg": 1.3554
+        },
+        {
+          "iso3": "TUR",
+          "name": "Türkiye",
+          "value_usd": 5207019.0,
+          "share_pct": 1.9812,
+          "unit_value_usd_per_kg": 0.8867
+        },
+        {
+          "iso3": "USA",
+          "name": "United States",
+          "value_usd": 3470723.0,
+          "share_pct": 1.3206,
+          "unit_value_usd_per_kg": 1.3551
+        },
+        {
+          "iso3": "ITA",
+          "name": "Italy",
+          "value_usd": 3451193.0,
+          "share_pct": 1.3131,
+          "unit_value_usd_per_kg": 1.4675
+        },
+        {
+          "iso3": "EGY",
+          "name": "Egypt",
+          "value_usd": 3387376.0,
+          "share_pct": 1.2889,
+          "unit_value_usd_per_kg": 1.0038
+        },
+        {
+          "iso3": "SAU",
+          "name": "Saudi Arabia",
+          "value_usd": 171807.0,
+          "share_pct": 0.0654,
+          "unit_value_usd_per_kg": 1.2775
+        }
+      ],
+      "home_rank": 13,
+      "home_share_pct": 1.2889,
+      "hhi": 0.0676,
+      "basis_note": "total is the partner's World row; shares are percentages of that total, non-country areas are in the total but not listed; HHI covers listed rows only"
+    },
+    "KWT": {
+      "basis": "partner_reported",
+      "year": 2025,
+      "total_usd": 20531971.0,
+      "rows": [
+        {
+          "iso3": "EGY",
+          "name": "Egypt",
+          "value_usd": 3264515.0,
+          "share_pct": 15.8997,
+          "unit_value_usd_per_kg": 1.6593
+        },
+        {
+          "iso3": "FRA",
+          "name": "France",
+          "value_usd": 2490440.0,
+          "share_pct": 12.1296,
+          "unit_value_usd_per_kg": 1.2574
+        },
+        {
+          "iso3": "NLD",
+          "name": "Netherlands",
+          "value_usd": 2230733.0,
+          "share_pct": 10.8647,
+          "unit_value_usd_per_kg": 1.2891
+        },
+        {
+          "iso3": "BEL",
+          "name": "Belgium",
+          "value_usd": 2007571.0,
+          "share_pct": 9.7778,
+          "unit_value_usd_per_kg": 1.258
+        },
+        {
+          "iso3": "CHN",
+          "name": "China",
+          "value_usd": 1970303.0,
+          "share_pct": 9.5963,
+          "unit_value_usd_per_kg": 0.7991
+        },
+        {
+          "iso3": "ESP",
+          "name": "Spain",
+          "value_usd": 1291470.0,
+          "share_pct": 6.29,
+          "unit_value_usd_per_kg": 1.0645
+        },
+        {
+          "iso3": "POL",
+          "name": "Poland",
+          "value_usd": 864023.0,
+          "share_pct": 4.2082,
+          "unit_value_usd_per_kg": 0.989
+        },
+        {
+          "iso3": "IND",
+          "name": "India",
+          "value_usd": 709923.0,
+          "share_pct": 3.4576,
+          "unit_value_usd_per_kg": 0.8737
+        },
+        {
+          "iso3": "MEX",
+          "name": "Mexico",
+          "value_usd": 605414.0,
+          "share_pct": 2.9486,
+          "unit_value_usd_per_kg": 0.9806
+        },
+        {
+          "iso3": "USA",
+          "name": "United States",
+          "value_usd": 549170.0,
+          "share_pct": 2.6747,
+          "unit_value_usd_per_kg": 1.4075
+        },
+        {
+          "iso3": "TUR",
+          "name": "Türkiye",
+          "value_usd": 549101.0,
+          "share_pct": 2.6744,
+          "unit_value_usd_per_kg": 0.9839
+        },
+        {
+          "iso3": "DEU",
+          "name": "Germany",
+          "value_usd": 493444.0,
+          "share_pct": 2.4033,
+          "unit_value_usd_per_kg": 1.2826
+        },
+        {
+          "iso3": "ITA",
+          "name": "Italy",
+          "value_usd": 356030.0,
+          "share_pct": 1.734,
+          "unit_value_usd_per_kg": 1.3505
+        },
+        {
+          "iso3": "SAU",
+          "name": "Saudi Arabia",
+          "value_usd": 17029.0,
+          "share_pct": 0.0829,
+          "unit_value_usd_per_kg": 1.2811
+        }
+      ],
+      "home_rank": 1,
+      "home_share_pct": 15.8997,
+      "hhi": 0.0807,
+      "basis_note": "total is the partner's World row; shares are percentages of that total, non-country areas are in the total but not listed; HHI covers listed rows only"
+    },
+    "NLD": {
+      "basis": "partner_reported",
+      "year": 2025,
+      "total_usd": 137409162.0,
+      "rows": [
+        {
+          "iso3": "BEL",
+          "name": "Belgium",
+          "value_usd": 20487923.0,
+          "share_pct": 14.9102,
+          "unit_value_usd_per_kg": 1.8021
+        },
+        {
+          "iso3": "CHN",
+          "name": "China",
+          "value_usd": 19101834.0,
+          "share_pct": 13.9014,
+          "unit_value_usd_per_kg": 1.0364
+        },
+        {
+          "iso3": "FRA",
+          "name": "France",
+          "value_usd": 18821644.0,
+          "share_pct": 13.6975,
+          "unit_value_usd_per_kg": 1.6743
+        },
+        {
+          "iso3": "ESP",
+          "name": "Spain",
+          "value_usd": 14586590.0,
+          "share_pct": 10.6154,
+          "unit_value_usd_per_kg": 1.5759
+        },
+        {
+          "iso3": "IND",
+          "name": "India",
+          "value_usd": 9045594.0,
+          "share_pct": 6.583,
+          "unit_value_usd_per_kg": 1.1795
+        },
+        {
+          "iso3": "DEU",
+          "name": "Germany",
+          "value_usd": 6381721.0,
+          "share_pct": 4.6443,
+          "unit_value_usd_per_kg": 2.1289
+        },
+        {
+          "iso3": "POL",
+          "name": "Poland",
+          "value_usd": 5133556.0,
+          "share_pct": 3.736,
+          "unit_value_usd_per_kg": 1.2143
+        },
+        {
+          "iso3": "USA",
+          "name": "United States",
+          "value_usd": 4462969.0,
+          "share_pct": 3.2479,
+          "unit_value_usd_per_kg": 2.1517
+        },
+        {
+          "iso3": "ITA",
+          "name": "Italy",
+          "value_usd": 3072698.0,
+          "share_pct": 2.2362,
+          "unit_value_usd_per_kg": 1.717
+        },
+        {
+          "iso3": "MEX",
+          "name": "Mexico",
+          "value_usd": 2791915.0,
+          "share_pct": 2.0318,
+          "unit_value_usd_per_kg": 1.3112
+        },
+        {
+          "iso3": "TUR",
+          "name": "Türkiye",
+          "value_usd": 1427059.0,
+          "share_pct": 1.0385,
+          "unit_value_usd_per_kg": 1.1005
+        },
+        {
+          "iso3": "EGY",
+          "name": "Egypt",
+          "value_usd": 1065772.0,
+          "share_pct": 0.7756,
+          "unit_value_usd_per_kg": 0.3309
+        },
+        {
+          "iso3": "SAU",
+          "name": "Saudi Arabia",
+          "value_usd": 220658.0,
+          "share_pct": 0.1606,
+          "unit_value_usd_per_kg": 1.6223
+        }
+      ],
+      "home_rank": 12,
+      "home_share_pct": 0.7756,
+      "hhi": 0.0816,
+      "basis_note": "total is the partner's World row; shares are percentages of that total, non-country areas are in the total but not listed; HHI covers listed rows only"
+    },
+    "SAU": {
+      "basis": "partner_reported",
+      "year": 2025,
+      "total_usd": 59772538.0,
+      "rows": [
+        {
+          "iso3": "EGY",
+          "name": "Egypt",
+          "value_usd": 10022333.0,
+          "share_pct": 16.7675,
+          "unit_value_usd_per_kg": 1.0096
+        },
+        {
+          "iso3": "BEL",
+          "name": "Belgium",
+          "value_usd": 7617288.0,
+          "share_pct": 12.7438,
+          "unit_value_usd_per_kg": 1.3064
+        },
+        {
+          "iso3": "ESP",
+          "name": "Spain",
+          "value_usd": 5374967.0,
+          "share_pct": 8.9924,
+          "unit_value_usd_per_kg": 1.1247
+        },
+        {
+          "iso3": "NLD",
+          "name": "Netherlands",
+          "value_usd": 4921760.0,
+          "share_pct": 8.2341,
+          "unit_value_usd_per_kg": 1.5794
+        },
+        {
+          "iso3": "IND",
+          "name": "India",
+          "value_usd": 3072200.0,
+          "share_pct": 5.1398,
+          "unit_value_usd_per_kg": 0.7989
+        },
+        {
+          "iso3": "FRA",
+          "name": "France",
+          "value_usd": 2689938.0,
+          "share_pct": 4.5003,
+          "unit_value_usd_per_kg": 1.4511
+        },
+        {
+          "iso3": "POL",
+          "name": "Poland",
+          "value_usd": 2630922.0,
+          "share_pct": 4.4016,
+          "unit_value_usd_per_kg": 0.8999
+        },
+        {
+          "iso3": "CHN",
+          "name": "China",
+          "value_usd": 2253652.0,
+          "share_pct": 3.7704,
+          "unit_value_usd_per_kg": 0.823
+        },
+        {
+          "iso3": "MEX",
+          "name": "Mexico",
+          "value_usd": 2167036.0,
+          "share_pct": 3.6255,
+          "unit_value_usd_per_kg": 0.9157
+        },
+        {
+          "iso3": "DEU",
+          "name": "Germany",
+          "value_usd": 1784026.0,
+          "share_pct": 2.9847,
+          "unit_value_usd_per_kg": 1.4551
+        },
+        {
+          "iso3": "TUR",
+          "name": "Türkiye",
+          "value_usd": 1659289.0,
+          "share_pct": 2.776,
+          "unit_value_usd_per_kg": 0.9413
+        },
+        {
+          "iso3": "USA",
+          "name": "United States",
+          "value_usd": 1250952.0,
+          "share_pct": 2.0929,
+          "unit_value_usd_per_kg": 1.3877
+        },
+        {
+          "iso3": "ITA",
+          "name": "Italy",
+          "value_usd": 310696.0,
+          "share_pct": 0.5198,
+          "unit_value_usd_per_kg": 1.2624
+        }
+      ],
+      "home_rank": 1,
+      "home_share_pct": 16.7675,
+      "hhi": 0.0707,
+      "basis_note": "total is the partner's World row; shares are percentages of that total, non-country areas are in the total but not listed; HHI covers listed rows only"
+    }
+  }
+}

@@ -1,0 +1,2652 @@
+{
+ "schema_version": "2.0",
+ "generated": "2026-11-13",
+ "note": "ISO 3166 via pycountry; comtrade_code differs from m49 for a few reporters",
+ "countries": [
+  {
+   "iso3": "ABW",
+   "iso2": "AW",
+   "m49": 533,
+   "comtrade_code": 533,
+   "name": "Aruba",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "AFG",
+   "iso2": "AF",
+   "m49": 4,
+   "comtrade_code": 4,
+   "name": "Afghanistan",
+   "official_name": "Islamic Republic of Afghanistan",
+   "aliases": []
+  },
+  {
+   "iso3": "AGO",
+   "iso2": "AO",
+   "m49": 24,
+   "comtrade_code": 24,
+   "name": "Angola",
+   "official_name": "Republic of Angola",
+   "aliases": []
+  },
+  {
+   "iso3": "AIA",
+   "iso2": "AI",
+   "m49": 660,
+   "comtrade_code": 660,
+   "name": "Anguilla",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "ALA",
+   "iso2": "AX",
+   "m49": 248,
+   "comtrade_code": 248,
+   "name": "Åland Islands",
+   "official_name": null,
+   "aliases": [
+    "Aland",
+    "Aland Islands"
+   ]
+  },
+  {
+   "iso3": "ALB",
+   "iso2": "AL",
+   "m49": 8,
+   "comtrade_code": 8,
+   "name": "Albania",
+   "official_name": "Republic of Albania",
+   "aliases": []
+  },
+  {
+   "iso3": "AND",
+   "iso2": "AD",
+   "m49": 20,
+   "comtrade_code": 20,
+   "name": "Andorra",
+   "official_name": "Principality of Andorra",
+   "aliases": []
+  },
+  {
+   "iso3": "ARE",
+   "iso2": "AE",
+   "m49": 784,
+   "comtrade_code": 784,
+   "name": "United Arab Emirates",
+   "official_name": null,
+   "aliases": [
+    "Emirates",
+    "U.A.E.",
+    "UAE"
+   ]
+  },
+  {
+   "iso3": "ARG",
+   "iso2": "AR",
+   "m49": 32,
+   "comtrade_code": 32,
+   "name": "Argentina",
+   "official_name": "Argentine Republic",
+   "aliases": [
+    "Argentine Republic"
+   ]
+  },
+  {
+   "iso3": "ARM",
+   "iso2": "AM",
+   "m49": 51,
+   "comtrade_code": 51,
+   "name": "Armenia",
+   "official_name": "Republic of Armenia",
+   "aliases": []
+  },
+  {
+   "iso3": "ASM",
+   "iso2": "AS",
+   "m49": 16,
+   "comtrade_code": 16,
+   "name": "American Samoa",
+   "official_name": null,
+   "aliases": [
+    "US Samoa"
+   ]
+  },
+  {
+   "iso3": "ATA",
+   "iso2": "AQ",
+   "m49": 10,
+   "comtrade_code": 10,
+   "name": "Antarctica",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "ATF",
+   "iso2": "TF",
+   "m49": 260,
+   "comtrade_code": 260,
+   "name": "French Southern Territories",
+   "official_name": null,
+   "aliases": [
+    "French Southern and Antarctic Lands",
+    "TAAF"
+   ]
+  },
+  {
+   "iso3": "ATG",
+   "iso2": "AG",
+   "m49": 28,
+   "comtrade_code": 28,
+   "name": "Antigua and Barbuda",
+   "official_name": null,
+   "aliases": [
+    "Antigua & Barbuda"
+   ]
+  },
+  {
+   "iso3": "AUS",
+   "iso2": "AU",
+   "m49": 36,
+   "comtrade_code": 36,
+   "name": "Australia",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "AUT",
+   "iso2": "AT",
+   "m49": 40,
+   "comtrade_code": 40,
+   "name": "Austria",
+   "official_name": "Republic of Austria",
+   "aliases": [
+    "Osterreich",
+    "Republic of Austria",
+    "Österreich"
+   ]
+  },
+  {
+   "iso3": "AZE",
+   "iso2": "AZ",
+   "m49": 31,
+   "comtrade_code": 31,
+   "name": "Azerbaijan",
+   "official_name": "Republic of Azerbaijan",
+   "aliases": []
+  },
+  {
+   "iso3": "BDI",
+   "iso2": "BI",
+   "m49": 108,
+   "comtrade_code": 108,
+   "name": "Burundi",
+   "official_name": "Republic of Burundi",
+   "aliases": []
+  },
+  {
+   "iso3": "BEL",
+   "iso2": "BE",
+   "m49": 56,
+   "comtrade_code": 56,
+   "name": "Belgium",
+   "official_name": "Kingdom of Belgium",
+   "aliases": [
+    "Kingdom of Belgium"
+   ]
+  },
+  {
+   "iso3": "BEN",
+   "iso2": "BJ",
+   "m49": 204,
+   "comtrade_code": 204,
+   "name": "Benin",
+   "official_name": "Republic of Benin",
+   "aliases": []
+  },
+  {
+   "iso3": "BES",
+   "iso2": "BQ",
+   "m49": 535,
+   "comtrade_code": 535,
+   "name": "Bonaire, Sint Eustatius and Saba",
+   "official_name": "Bonaire, Sint Eustatius and Saba",
+   "aliases": [
+    "Bonaire",
+    "Caribbean Netherlands"
+   ]
+  },
+  {
+   "iso3": "BFA",
+   "iso2": "BF",
+   "m49": 854,
+   "comtrade_code": 854,
+   "name": "Burkina Faso",
+   "official_name": null,
+   "aliases": [
+    "Burkina"
+   ]
+  },
+  {
+   "iso3": "BGD",
+   "iso2": "BD",
+   "m49": 50,
+   "comtrade_code": 50,
+   "name": "Bangladesh",
+   "official_name": "People's Republic of Bangladesh",
+   "aliases": [
+    "People's Republic of Bangladesh"
+   ]
+  },
+  {
+   "iso3": "BGR",
+   "iso2": "BG",
+   "m49": 100,
+   "comtrade_code": 100,
+   "name": "Bulgaria",
+   "official_name": "Republic of Bulgaria",
+   "aliases": []
+  },
+  {
+   "iso3": "BHR",
+   "iso2": "BH",
+   "m49": 48,
+   "comtrade_code": 48,
+   "name": "Bahrain",
+   "official_name": "Kingdom of Bahrain",
+   "aliases": []
+  },
+  {
+   "iso3": "BHS",
+   "iso2": "BS",
+   "m49": 44,
+   "comtrade_code": 44,
+   "name": "Bahamas",
+   "official_name": "Commonwealth of the Bahamas",
+   "aliases": [
+    "Bahamas, The",
+    "The Bahamas"
+   ]
+  },
+  {
+   "iso3": "BIH",
+   "iso2": "BA",
+   "m49": 70,
+   "comtrade_code": 70,
+   "name": "Bosnia and Herzegovina",
+   "official_name": "Republic of Bosnia and Herzegovina",
+   "aliases": [
+    "Bosnia",
+    "Bosnia & Herzegovina",
+    "Bosnia Herzegovina",
+    "Bosnia-Herzegovina"
+   ]
+  },
+  {
+   "iso3": "BLM",
+   "iso2": "BL",
+   "m49": 652,
+   "comtrade_code": 652,
+   "name": "Saint Barthélemy",
+   "official_name": null,
+   "aliases": [
+    "Saint Barthelemy",
+    "Saint-Barthelemy",
+    "St Barthelemy"
+   ]
+  },
+  {
+   "iso3": "BLR",
+   "iso2": "BY",
+   "m49": 112,
+   "comtrade_code": 112,
+   "name": "Belarus",
+   "official_name": "Republic of Belarus",
+   "aliases": [
+    "Byelorussia"
+   ]
+  },
+  {
+   "iso3": "BLZ",
+   "iso2": "BZ",
+   "m49": 84,
+   "comtrade_code": 84,
+   "name": "Belize",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "BMU",
+   "iso2": "BM",
+   "m49": 60,
+   "comtrade_code": 60,
+   "name": "Bermuda",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "BOL",
+   "iso2": "BO",
+   "m49": 68,
+   "comtrade_code": 68,
+   "name": "Bolivia",
+   "official_name": "Plurinational State of Bolivia",
+   "aliases": [
+    "Bolivia (Plurinational State of)",
+    "Plurinational State of Bolivia"
+   ]
+  },
+  {
+   "iso3": "BRA",
+   "iso2": "BR",
+   "m49": 76,
+   "comtrade_code": 76,
+   "name": "Brazil",
+   "official_name": "Federative Republic of Brazil",
+   "aliases": [
+    "Brasil",
+    "Federative Republic of Brazil"
+   ]
+  },
+  {
+   "iso3": "BRB",
+   "iso2": "BB",
+   "m49": 52,
+   "comtrade_code": 52,
+   "name": "Barbados",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "BRN",
+   "iso2": "BN",
+   "m49": 96,
+   "comtrade_code": 96,
+   "name": "Brunei Darussalam",
+   "official_name": null,
+   "aliases": [
+    "Brunei"
+   ]
+  },
+  {
+   "iso3": "BTN",
+   "iso2": "BT",
+   "m49": 64,
+   "comtrade_code": 64,
+   "name": "Bhutan",
+   "official_name": "Kingdom of Bhutan",
+   "aliases": []
+  },
+  {
+   "iso3": "BVT",
+   "iso2": "BV",
+   "m49": 74,
+   "comtrade_code": 74,
+   "name": "Bouvet Island",
+   "official_name": null,
+   "aliases": [
+    "Bouvet Isds"
+   ]
+  },
+  {
+   "iso3": "BWA",
+   "iso2": "BW",
+   "m49": 72,
+   "comtrade_code": 72,
+   "name": "Botswana",
+   "official_name": "Republic of Botswana",
+   "aliases": []
+  },
+  {
+   "iso3": "CAF",
+   "iso2": "CF",
+   "m49": 140,
+   "comtrade_code": 140,
+   "name": "Central African Republic",
+   "official_name": null,
+   "aliases": [
+    "CAR",
+    "Central African Rep."
+   ]
+  },
+  {
+   "iso3": "CAN",
+   "iso2": "CA",
+   "m49": 124,
+   "comtrade_code": 124,
+   "name": "Canada",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "CCK",
+   "iso2": "CC",
+   "m49": 166,
+   "comtrade_code": 166,
+   "name": "Cocos (Keeling) Islands",
+   "official_name": null,
+   "aliases": [
+    "Cocos Isds",
+    "Cocos Islands",
+    "Keeling Islands"
+   ]
+  },
+  {
+   "iso3": "CHE",
+   "iso2": "CH",
+   "m49": 756,
+   "comtrade_code": 757,
+   "name": "Switzerland",
+   "official_name": "Swiss Confederation",
+   "aliases": [
+    "Swiss",
+    "Swiss Confederation"
+   ]
+  },
+  {
+   "iso3": "CHL",
+   "iso2": "CL",
+   "m49": 152,
+   "comtrade_code": 152,
+   "name": "Chile",
+   "official_name": "Republic of Chile",
+   "aliases": []
+  },
+  {
+   "iso3": "CHN",
+   "iso2": "CN",
+   "m49": 156,
+   "comtrade_code": 156,
+   "name": "China",
+   "official_name": "People's Republic of China",
+   "aliases": [
+    "Mainland China",
+    "PR China",
+    "People's Republic of China"
+   ]
+  },
+  {
+   "iso3": "CIV",
+   "iso2": "CI",
+   "m49": 384,
+   "comtrade_code": 384,
+   "name": "Côte d'Ivoire",
+   "official_name": "Republic of Côte d'Ivoire",
+   "aliases": [
+    "Cote d'Ivoire",
+    "Côte d’Ivoire",
+    "Ivory Coast"
+   ]
+  },
+  {
+   "iso3": "CMR",
+   "iso2": "CM",
+   "m49": 120,
+   "comtrade_code": 120,
+   "name": "Cameroon",
+   "official_name": "Republic of Cameroon",
+   "aliases": [
+    "Cameroun"
+   ]
+  },
+  {
+   "iso3": "COD",
+   "iso2": "CD",
+   "m49": 180,
+   "comtrade_code": 180,
+   "name": "Congo, The Democratic Republic of the",
+   "official_name": null,
+   "aliases": [
+    "Congo (Kinshasa)",
+    "Congo-Kinshasa",
+    "DR Congo",
+    "DRC",
+    "Dem. Rep. of the Congo",
+    "Democratic Republic of the Congo"
+   ]
+  },
+  {
+   "iso3": "COG",
+   "iso2": "CG",
+   "m49": 178,
+   "comtrade_code": 178,
+   "name": "Congo",
+   "official_name": "Republic of the Congo",
+   "aliases": [
+    "Congo (Brazzaville)",
+    "Congo-Brazzaville",
+    "Republic of the Congo"
+   ]
+  },
+  {
+   "iso3": "COK",
+   "iso2": "CK",
+   "m49": 184,
+   "comtrade_code": 184,
+   "name": "Cook Islands",
+   "official_name": null,
+   "aliases": [
+    "Cook Isds"
+   ]
+  },
+  {
+   "iso3": "COL",
+   "iso2": "CO",
+   "m49": 170,
+   "comtrade_code": 170,
+   "name": "Colombia",
+   "official_name": "Republic of Colombia",
+   "aliases": []
+  },
+  {
+   "iso3": "COM",
+   "iso2": "KM",
+   "m49": 174,
+   "comtrade_code": 174,
+   "name": "Comoros",
+   "official_name": "Union of the Comoros",
+   "aliases": [
+    "Comores",
+    "Union of the Comoros"
+   ]
+  },
+  {
+   "iso3": "CPV",
+   "iso2": "CV",
+   "m49": 132,
+   "comtrade_code": 132,
+   "name": "Cabo Verde",
+   "official_name": "Republic of Cabo Verde",
+   "aliases": [
+    "Cape Verde"
+   ]
+  },
+  {
+   "iso3": "CRI",
+   "iso2": "CR",
+   "m49": 188,
+   "comtrade_code": 188,
+   "name": "Costa Rica",
+   "official_name": "Republic of Costa Rica",
+   "aliases": []
+  },
+  {
+   "iso3": "CUB",
+   "iso2": "CU",
+   "m49": 192,
+   "comtrade_code": 192,
+   "name": "Cuba",
+   "official_name": "Republic of Cuba",
+   "aliases": []
+  },
+  {
+   "iso3": "CUW",
+   "iso2": "CW",
+   "m49": 531,
+   "comtrade_code": 531,
+   "name": "Curaçao",
+   "official_name": "Curaçao",
+   "aliases": [
+    "Curacao"
+   ]
+  },
+  {
+   "iso3": "CXR",
+   "iso2": "CX",
+   "m49": 162,
+   "comtrade_code": 162,
+   "name": "Christmas Island",
+   "official_name": null,
+   "aliases": [
+    "Christmas Isds"
+   ]
+  },
+  {
+   "iso3": "CYM",
+   "iso2": "KY",
+   "m49": 136,
+   "comtrade_code": 136,
+   "name": "Cayman Islands",
+   "official_name": null,
+   "aliases": [
+    "Cayman Isds"
+   ]
+  },
+  {
+   "iso3": "CYP",
+   "iso2": "CY",
+   "m49": 196,
+   "comtrade_code": 196,
+   "name": "Cyprus",
+   "official_name": "Republic of Cyprus",
+   "aliases": []
+  },
+  {
+   "iso3": "CZE",
+   "iso2": "CZ",
+   "m49": 203,
+   "comtrade_code": 203,
+   "name": "Czechia",
+   "official_name": "Czech Republic",
+   "aliases": [
+    "Czech Rep.",
+    "Czech Republic"
+   ]
+  },
+  {
+   "iso3": "DEU",
+   "iso2": "DE",
+   "m49": 276,
+   "comtrade_code": 276,
+   "name": "Germany",
+   "official_name": "Federal Republic of Germany",
+   "aliases": [
+    "Deutschland",
+    "Federal Republic of Germany"
+   ]
+  },
+  {
+   "iso3": "DJI",
+   "iso2": "DJ",
+   "m49": 262,
+   "comtrade_code": 262,
+   "name": "Djibouti",
+   "official_name": "Republic of Djibouti",
+   "aliases": []
+  },
+  {
+   "iso3": "DMA",
+   "iso2": "DM",
+   "m49": 212,
+   "comtrade_code": 212,
+   "name": "Dominica",
+   "official_name": "Commonwealth of Dominica",
+   "aliases": []
+  },
+  {
+   "iso3": "DNK",
+   "iso2": "DK",
+   "m49": 208,
+   "comtrade_code": 208,
+   "name": "Denmark",
+   "official_name": "Kingdom of Denmark",
+   "aliases": []
+  },
+  {
+   "iso3": "DOM",
+   "iso2": "DO",
+   "m49": 214,
+   "comtrade_code": 214,
+   "name": "Dominican Republic",
+   "official_name": null,
+   "aliases": [
+    "Dominican Rep."
+   ]
+  },
+  {
+   "iso3": "DZA",
+   "iso2": "DZ",
+   "m49": 12,
+   "comtrade_code": 12,
+   "name": "Algeria",
+   "official_name": "People's Democratic Republic of Algeria",
+   "aliases": []
+  },
+  {
+   "iso3": "ECU",
+   "iso2": "EC",
+   "m49": 218,
+   "comtrade_code": 218,
+   "name": "Ecuador",
+   "official_name": "Republic of Ecuador",
+   "aliases": []
+  },
+  {
+   "iso3": "EGY",
+   "iso2": "EG",
+   "m49": 818,
+   "comtrade_code": 818,
+   "name": "Egypt",
+   "official_name": "Arab Republic of Egypt",
+   "aliases": [
+    "Arab Republic of Egypt"
+   ]
+  },
+  {
+   "iso3": "ERI",
+   "iso2": "ER",
+   "m49": 232,
+   "comtrade_code": 232,
+   "name": "Eritrea",
+   "official_name": "the State of Eritrea",
+   "aliases": []
+  },
+  {
+   "iso3": "ESH",
+   "iso2": "EH",
+   "m49": 732,
+   "comtrade_code": 732,
+   "name": "Western Sahara",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "ESP",
+   "iso2": "ES",
+   "m49": 724,
+   "comtrade_code": 724,
+   "name": "Spain",
+   "official_name": "Kingdom of Spain",
+   "aliases": [
+    "Espana",
+    "España",
+    "Kingdom of Spain"
+   ]
+  },
+  {
+   "iso3": "EST",
+   "iso2": "EE",
+   "m49": 233,
+   "comtrade_code": 233,
+   "name": "Estonia",
+   "official_name": "Republic of Estonia",
+   "aliases": []
+  },
+  {
+   "iso3": "ETH",
+   "iso2": "ET",
+   "m49": 231,
+   "comtrade_code": 231,
+   "name": "Ethiopia",
+   "official_name": "Federal Democratic Republic of Ethiopia",
+   "aliases": []
+  },
+  {
+   "iso3": "FIN",
+   "iso2": "FI",
+   "m49": 246,
+   "comtrade_code": 246,
+   "name": "Finland",
+   "official_name": "Republic of Finland",
+   "aliases": [
+    "Suomi"
+   ]
+  },
+  {
+   "iso3": "FJI",
+   "iso2": "FJ",
+   "m49": 242,
+   "comtrade_code": 242,
+   "name": "Fiji",
+   "official_name": "Republic of Fiji",
+   "aliases": []
+  },
+  {
+   "iso3": "FLK",
+   "iso2": "FK",
+   "m49": 238,
+   "comtrade_code": 238,
+   "name": "Falkland Islands (Malvinas)",
+   "official_name": null,
+   "aliases": [
+    "Falkland Isds (Malvinas)",
+    "Falkland Islands",
+    "Falklands",
+    "Malvinas"
+   ]
+  },
+  {
+   "iso3": "FRA",
+   "iso2": "FR",
+   "m49": 250,
+   "comtrade_code": 251,
+   "name": "France",
+   "official_name": "French Republic",
+   "aliases": [
+    "French Republic"
+   ]
+  },
+  {
+   "iso3": "FRO",
+   "iso2": "FO",
+   "m49": 234,
+   "comtrade_code": 234,
+   "name": "Faroe Islands",
+   "official_name": null,
+   "aliases": [
+    "Faeroe Isds",
+    "Faeroe Islands",
+    "Faroes"
+   ]
+  },
+  {
+   "iso3": "FSM",
+   "iso2": "FM",
+   "m49": 583,
+   "comtrade_code": 583,
+   "name": "Micronesia, Federated States of",
+   "official_name": "Federated States of Micronesia",
+   "aliases": [
+    "FS Micronesia",
+    "FSM",
+    "Federated States of Micronesia",
+    "Micronesia (Federated States of)"
+   ]
+  },
+  {
+   "iso3": "GAB",
+   "iso2": "GA",
+   "m49": 266,
+   "comtrade_code": 266,
+   "name": "Gabon",
+   "official_name": "Gabonese Republic",
+   "aliases": []
+  },
+  {
+   "iso3": "GBR",
+   "iso2": "GB",
+   "m49": 826,
+   "comtrade_code": 826,
+   "name": "United Kingdom",
+   "official_name": "United Kingdom of Great Britain and Northern Ireland",
+   "aliases": [
+    "Britain",
+    "Great Britain",
+    "U.K.",
+    "UK",
+    "United Kingdom of Great Britain and Northern Ireland"
+   ]
+  },
+  {
+   "iso3": "GEO",
+   "iso2": "GE",
+   "m49": 268,
+   "comtrade_code": 268,
+   "name": "Georgia",
+   "official_name": null,
+   "aliases": [
+    "Republic of Georgia"
+   ]
+  },
+  {
+   "iso3": "GGY",
+   "iso2": "GG",
+   "m49": 831,
+   "comtrade_code": 831,
+   "name": "Guernsey",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "GHA",
+   "iso2": "GH",
+   "m49": 288,
+   "comtrade_code": 288,
+   "name": "Ghana",
+   "official_name": "Republic of Ghana",
+   "aliases": []
+  },
+  {
+   "iso3": "GIB",
+   "iso2": "GI",
+   "m49": 292,
+   "comtrade_code": 292,
+   "name": "Gibraltar",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "GIN",
+   "iso2": "GN",
+   "m49": 324,
+   "comtrade_code": 324,
+   "name": "Guinea",
+   "official_name": "Republic of Guinea",
+   "aliases": [
+    "Guinea-Conakry",
+    "Republic of Guinea"
+   ]
+  },
+  {
+   "iso3": "GLP",
+   "iso2": "GP",
+   "m49": 312,
+   "comtrade_code": 312,
+   "name": "Guadeloupe",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "GMB",
+   "iso2": "GM",
+   "m49": 270,
+   "comtrade_code": 270,
+   "name": "Gambia",
+   "official_name": "Republic of the Gambia",
+   "aliases": [
+    "Gambia, The",
+    "The Gambia"
+   ]
+  },
+  {
+   "iso3": "GNB",
+   "iso2": "GW",
+   "m49": 624,
+   "comtrade_code": 624,
+   "name": "Guinea-Bissau",
+   "official_name": "Republic of Guinea-Bissau",
+   "aliases": [
+    "Guinea Bissau"
+   ]
+  },
+  {
+   "iso3": "GNQ",
+   "iso2": "GQ",
+   "m49": 226,
+   "comtrade_code": 226,
+   "name": "Equatorial Guinea",
+   "official_name": "Republic of Equatorial Guinea",
+   "aliases": [
+    "Eq. Guinea",
+    "Guinea Equatorial"
+   ]
+  },
+  {
+   "iso3": "GRC",
+   "iso2": "GR",
+   "m49": 300,
+   "comtrade_code": 300,
+   "name": "Greece",
+   "official_name": "Hellenic Republic",
+   "aliases": [
+    "Hellas",
+    "Hellenic Republic"
+   ]
+  },
+  {
+   "iso3": "GRD",
+   "iso2": "GD",
+   "m49": 308,
+   "comtrade_code": 308,
+   "name": "Grenada",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "GRL",
+   "iso2": "GL",
+   "m49": 304,
+   "comtrade_code": 304,
+   "name": "Greenland",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "GTM",
+   "iso2": "GT",
+   "m49": 320,
+   "comtrade_code": 320,
+   "name": "Guatemala",
+   "official_name": "Republic of Guatemala",
+   "aliases": []
+  },
+  {
+   "iso3": "GUF",
+   "iso2": "GF",
+   "m49": 254,
+   "comtrade_code": 254,
+   "name": "French Guiana",
+   "official_name": null,
+   "aliases": [
+    "French Guyana",
+    "Guyane"
+   ]
+  },
+  {
+   "iso3": "GUM",
+   "iso2": "GU",
+   "m49": 316,
+   "comtrade_code": 316,
+   "name": "Guam",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "GUY",
+   "iso2": "GY",
+   "m49": 328,
+   "comtrade_code": 328,
+   "name": "Guyana",
+   "official_name": "Republic of Guyana",
+   "aliases": []
+  },
+  {
+   "iso3": "HKG",
+   "iso2": "HK",
+   "m49": 344,
+   "comtrade_code": 344,
+   "name": "Hong Kong",
+   "official_name": "Hong Kong Special Administrative Region of China",
+   "aliases": [
+    "China, Hong Kong SAR",
+    "Hong Kong SAR",
+    "Hong Kong SAR, China",
+    "Hong Kong, China"
+   ]
+  },
+  {
+   "iso3": "HMD",
+   "iso2": "HM",
+   "m49": 334,
+   "comtrade_code": 334,
+   "name": "Heard Island and McDonald Islands",
+   "official_name": null,
+   "aliases": [
+    "Heard and McDonald Islands"
+   ]
+  },
+  {
+   "iso3": "HND",
+   "iso2": "HN",
+   "m49": 340,
+   "comtrade_code": 340,
+   "name": "Honduras",
+   "official_name": "Republic of Honduras",
+   "aliases": []
+  },
+  {
+   "iso3": "HRV",
+   "iso2": "HR",
+   "m49": 191,
+   "comtrade_code": 191,
+   "name": "Croatia",
+   "official_name": "Republic of Croatia",
+   "aliases": [
+    "Hrvatska"
+   ]
+  },
+  {
+   "iso3": "HTI",
+   "iso2": "HT",
+   "m49": 332,
+   "comtrade_code": 332,
+   "name": "Haiti",
+   "official_name": "Republic of Haiti",
+   "aliases": []
+  },
+  {
+   "iso3": "HUN",
+   "iso2": "HU",
+   "m49": 348,
+   "comtrade_code": 348,
+   "name": "Hungary",
+   "official_name": "Hungary",
+   "aliases": []
+  },
+  {
+   "iso3": "IDN",
+   "iso2": "ID",
+   "m49": 360,
+   "comtrade_code": 360,
+   "name": "Indonesia",
+   "official_name": "Republic of Indonesia",
+   "aliases": []
+  },
+  {
+   "iso3": "IMN",
+   "iso2": "IM",
+   "m49": 833,
+   "comtrade_code": 833,
+   "name": "Isle of Man",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "IND",
+   "iso2": "IN",
+   "m49": 356,
+   "comtrade_code": 699,
+   "name": "India",
+   "official_name": "Republic of India",
+   "aliases": [
+    "Republic of India"
+   ]
+  },
+  {
+   "iso3": "IOT",
+   "iso2": "IO",
+   "m49": 86,
+   "comtrade_code": 86,
+   "name": "British Indian Ocean Territory",
+   "official_name": null,
+   "aliases": [
+    "BIOT",
+    "Chagos Archipelago"
+   ]
+  },
+  {
+   "iso3": "IRL",
+   "iso2": "IE",
+   "m49": 372,
+   "comtrade_code": 372,
+   "name": "Ireland",
+   "official_name": null,
+   "aliases": [
+    "Eire",
+    "Republic of Ireland"
+   ]
+  },
+  {
+   "iso3": "IRN",
+   "iso2": "IR",
+   "m49": 364,
+   "comtrade_code": 364,
+   "name": "Iran",
+   "official_name": "Islamic Republic of Iran",
+   "aliases": [
+    "Iran (Islamic Republic of)",
+    "Islamic Republic of Iran",
+    "Persia"
+   ]
+  },
+  {
+   "iso3": "IRQ",
+   "iso2": "IQ",
+   "m49": 368,
+   "comtrade_code": 368,
+   "name": "Iraq",
+   "official_name": "Republic of Iraq",
+   "aliases": []
+  },
+  {
+   "iso3": "ISL",
+   "iso2": "IS",
+   "m49": 352,
+   "comtrade_code": 352,
+   "name": "Iceland",
+   "official_name": "Republic of Iceland",
+   "aliases": []
+  },
+  {
+   "iso3": "ISR",
+   "iso2": "IL",
+   "m49": 376,
+   "comtrade_code": 376,
+   "name": "Israel",
+   "official_name": "State of Israel",
+   "aliases": []
+  },
+  {
+   "iso3": "ITA",
+   "iso2": "IT",
+   "m49": 380,
+   "comtrade_code": 381,
+   "name": "Italy",
+   "official_name": "Italian Republic",
+   "aliases": [
+    "Italia",
+    "Italian Republic"
+   ]
+  },
+  {
+   "iso3": "JAM",
+   "iso2": "JM",
+   "m49": 388,
+   "comtrade_code": 388,
+   "name": "Jamaica",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "JEY",
+   "iso2": "JE",
+   "m49": 832,
+   "comtrade_code": 832,
+   "name": "Jersey",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "JOR",
+   "iso2": "JO",
+   "m49": 400,
+   "comtrade_code": 400,
+   "name": "Jordan",
+   "official_name": "Hashemite Kingdom of Jordan",
+   "aliases": []
+  },
+  {
+   "iso3": "JPN",
+   "iso2": "JP",
+   "m49": 392,
+   "comtrade_code": 392,
+   "name": "Japan",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "KAZ",
+   "iso2": "KZ",
+   "m49": 398,
+   "comtrade_code": 398,
+   "name": "Kazakhstan",
+   "official_name": "Republic of Kazakhstan",
+   "aliases": []
+  },
+  {
+   "iso3": "KEN",
+   "iso2": "KE",
+   "m49": 404,
+   "comtrade_code": 404,
+   "name": "Kenya",
+   "official_name": "Republic of Kenya",
+   "aliases": []
+  },
+  {
+   "iso3": "KGZ",
+   "iso2": "KG",
+   "m49": 417,
+   "comtrade_code": 417,
+   "name": "Kyrgyzstan",
+   "official_name": "Kyrgyz Republic",
+   "aliases": [
+    "Kyrgyz",
+    "Kyrgyz Republic"
+   ]
+  },
+  {
+   "iso3": "KHM",
+   "iso2": "KH",
+   "m49": 116,
+   "comtrade_code": 116,
+   "name": "Cambodia",
+   "official_name": "Kingdom of Cambodia",
+   "aliases": []
+  },
+  {
+   "iso3": "KIR",
+   "iso2": "KI",
+   "m49": 296,
+   "comtrade_code": 296,
+   "name": "Kiribati",
+   "official_name": "Republic of Kiribati",
+   "aliases": []
+  },
+  {
+   "iso3": "KNA",
+   "iso2": "KN",
+   "m49": 659,
+   "comtrade_code": 659,
+   "name": "Saint Kitts and Nevis",
+   "official_name": null,
+   "aliases": [
+    "St Kitts & Nevis",
+    "St Kitts and Nevis",
+    "St. Kitts and Nevis"
+   ]
+  },
+  {
+   "iso3": "KOR",
+   "iso2": "KR",
+   "m49": 410,
+   "comtrade_code": 410,
+   "name": "South Korea",
+   "official_name": null,
+   "aliases": [
+    "Korea Rep.",
+    "Korea, Republic of",
+    "Rep. of Korea",
+    "Republic of Korea"
+   ]
+  },
+  {
+   "iso3": "KWT",
+   "iso2": "KW",
+   "m49": 414,
+   "comtrade_code": 414,
+   "name": "Kuwait",
+   "official_name": "State of Kuwait",
+   "aliases": []
+  },
+  {
+   "iso3": "LAO",
+   "iso2": "LA",
+   "m49": 418,
+   "comtrade_code": 418,
+   "name": "Laos",
+   "official_name": null,
+   "aliases": [
+    "Lao PDR",
+    "Lao People's Dem. Rep.",
+    "Lao People's Democratic Republic"
+   ]
+  },
+  {
+   "iso3": "LBN",
+   "iso2": "LB",
+   "m49": 422,
+   "comtrade_code": 422,
+   "name": "Lebanon",
+   "official_name": "Lebanese Republic",
+   "aliases": []
+  },
+  {
+   "iso3": "LBR",
+   "iso2": "LR",
+   "m49": 430,
+   "comtrade_code": 430,
+   "name": "Liberia",
+   "official_name": "Republic of Liberia",
+   "aliases": []
+  },
+  {
+   "iso3": "LBY",
+   "iso2": "LY",
+   "m49": 434,
+   "comtrade_code": 434,
+   "name": "Libya",
+   "official_name": "Libya",
+   "aliases": []
+  },
+  {
+   "iso3": "LCA",
+   "iso2": "LC",
+   "m49": 662,
+   "comtrade_code": 662,
+   "name": "Saint Lucia",
+   "official_name": null,
+   "aliases": [
+    "St Lucia",
+    "St. Lucia"
+   ]
+  },
+  {
+   "iso3": "LIE",
+   "iso2": "LI",
+   "m49": 438,
+   "comtrade_code": 438,
+   "name": "Liechtenstein",
+   "official_name": "Principality of Liechtenstein",
+   "aliases": []
+  },
+  {
+   "iso3": "LKA",
+   "iso2": "LK",
+   "m49": 144,
+   "comtrade_code": 144,
+   "name": "Sri Lanka",
+   "official_name": "Democratic Socialist Republic of Sri Lanka",
+   "aliases": [
+    "Ceylon"
+   ]
+  },
+  {
+   "iso3": "LSO",
+   "iso2": "LS",
+   "m49": 426,
+   "comtrade_code": 426,
+   "name": "Lesotho",
+   "official_name": "Kingdom of Lesotho",
+   "aliases": []
+  },
+  {
+   "iso3": "LTU",
+   "iso2": "LT",
+   "m49": 440,
+   "comtrade_code": 440,
+   "name": "Lithuania",
+   "official_name": "Republic of Lithuania",
+   "aliases": []
+  },
+  {
+   "iso3": "LUX",
+   "iso2": "LU",
+   "m49": 442,
+   "comtrade_code": 442,
+   "name": "Luxembourg",
+   "official_name": "Grand Duchy of Luxembourg",
+   "aliases": [
+    "Grand Duchy of Luxembourg",
+    "Luxemburg"
+   ]
+  },
+  {
+   "iso3": "LVA",
+   "iso2": "LV",
+   "m49": 428,
+   "comtrade_code": 428,
+   "name": "Latvia",
+   "official_name": "Republic of Latvia",
+   "aliases": []
+  },
+  {
+   "iso3": "MAC",
+   "iso2": "MO",
+   "m49": 446,
+   "comtrade_code": 446,
+   "name": "Macao",
+   "official_name": "Macao Special Administrative Region of China",
+   "aliases": [
+    "China, Macao SAR",
+    "Macao SAR",
+    "Macau",
+    "Macau SAR"
+   ]
+  },
+  {
+   "iso3": "MAF",
+   "iso2": "MF",
+   "m49": 663,
+   "comtrade_code": 663,
+   "name": "Saint Martin (French part)",
+   "official_name": null,
+   "aliases": [
+    "Saint Martin (French part)",
+    "Saint-Martin (French part)",
+    "St Martin (French part)"
+   ]
+  },
+  {
+   "iso3": "MAR",
+   "iso2": "MA",
+   "m49": 504,
+   "comtrade_code": 504,
+   "name": "Morocco",
+   "official_name": "Kingdom of Morocco",
+   "aliases": []
+  },
+  {
+   "iso3": "MCO",
+   "iso2": "MC",
+   "m49": 492,
+   "comtrade_code": 492,
+   "name": "Monaco",
+   "official_name": "Principality of Monaco",
+   "aliases": []
+  },
+  {
+   "iso3": "MDA",
+   "iso2": "MD",
+   "m49": 498,
+   "comtrade_code": 498,
+   "name": "Moldova",
+   "official_name": "Republic of Moldova",
+   "aliases": [
+    "Rep. of Moldova",
+    "Republic of Moldova"
+   ]
+  },
+  {
+   "iso3": "MDG",
+   "iso2": "MG",
+   "m49": 450,
+   "comtrade_code": 450,
+   "name": "Madagascar",
+   "official_name": "Republic of Madagascar",
+   "aliases": []
+  },
+  {
+   "iso3": "MDV",
+   "iso2": "MV",
+   "m49": 462,
+   "comtrade_code": 462,
+   "name": "Maldives",
+   "official_name": "Republic of Maldives",
+   "aliases": []
+  },
+  {
+   "iso3": "MEX",
+   "iso2": "MX",
+   "m49": 484,
+   "comtrade_code": 484,
+   "name": "Mexico",
+   "official_name": "United Mexican States",
+   "aliases": [
+    "México",
+    "United Mexican States"
+   ]
+  },
+  {
+   "iso3": "MHL",
+   "iso2": "MH",
+   "m49": 584,
+   "comtrade_code": 584,
+   "name": "Marshall Islands",
+   "official_name": "Republic of the Marshall Islands",
+   "aliases": [
+    "Marshall Isds",
+    "Republic of the Marshall Islands"
+   ]
+  },
+  {
+   "iso3": "MKD",
+   "iso2": "MK",
+   "m49": 807,
+   "comtrade_code": 807,
+   "name": "North Macedonia",
+   "official_name": "Republic of North Macedonia",
+   "aliases": [
+    "FYR Macedonia",
+    "Macedonia",
+    "Republic of North Macedonia"
+   ]
+  },
+  {
+   "iso3": "MLI",
+   "iso2": "ML",
+   "m49": 466,
+   "comtrade_code": 466,
+   "name": "Mali",
+   "official_name": "Republic of Mali",
+   "aliases": []
+  },
+  {
+   "iso3": "MLT",
+   "iso2": "MT",
+   "m49": 470,
+   "comtrade_code": 470,
+   "name": "Malta",
+   "official_name": "Republic of Malta",
+   "aliases": []
+  },
+  {
+   "iso3": "MMR",
+   "iso2": "MM",
+   "m49": 104,
+   "comtrade_code": 104,
+   "name": "Myanmar",
+   "official_name": "Republic of Myanmar",
+   "aliases": [
+    "Burma",
+    "Myanmar (Burma)"
+   ]
+  },
+  {
+   "iso3": "MNE",
+   "iso2": "ME",
+   "m49": 499,
+   "comtrade_code": 499,
+   "name": "Montenegro",
+   "official_name": "Montenegro",
+   "aliases": []
+  },
+  {
+   "iso3": "MNG",
+   "iso2": "MN",
+   "m49": 496,
+   "comtrade_code": 496,
+   "name": "Mongolia",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "MNP",
+   "iso2": "MP",
+   "m49": 580,
+   "comtrade_code": 580,
+   "name": "Northern Mariana Islands",
+   "official_name": "Commonwealth of the Northern Mariana Islands",
+   "aliases": [
+    "CNMI",
+    "Northern Mariana Isds"
+   ]
+  },
+  {
+   "iso3": "MOZ",
+   "iso2": "MZ",
+   "m49": 508,
+   "comtrade_code": 508,
+   "name": "Mozambique",
+   "official_name": "Republic of Mozambique",
+   "aliases": []
+  },
+  {
+   "iso3": "MRT",
+   "iso2": "MR",
+   "m49": 478,
+   "comtrade_code": 478,
+   "name": "Mauritania",
+   "official_name": "Islamic Republic of Mauritania",
+   "aliases": []
+  },
+  {
+   "iso3": "MSR",
+   "iso2": "MS",
+   "m49": 500,
+   "comtrade_code": 500,
+   "name": "Montserrat",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "MTQ",
+   "iso2": "MQ",
+   "m49": 474,
+   "comtrade_code": 474,
+   "name": "Martinique",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "MUS",
+   "iso2": "MU",
+   "m49": 480,
+   "comtrade_code": 480,
+   "name": "Mauritius",
+   "official_name": "Republic of Mauritius",
+   "aliases": []
+  },
+  {
+   "iso3": "MWI",
+   "iso2": "MW",
+   "m49": 454,
+   "comtrade_code": 454,
+   "name": "Malawi",
+   "official_name": "Republic of Malawi",
+   "aliases": []
+  },
+  {
+   "iso3": "MYS",
+   "iso2": "MY",
+   "m49": 458,
+   "comtrade_code": 458,
+   "name": "Malaysia",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "MYT",
+   "iso2": "YT",
+   "m49": 175,
+   "comtrade_code": 175,
+   "name": "Mayotte",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "NAM",
+   "iso2": "NA",
+   "m49": 516,
+   "comtrade_code": 516,
+   "name": "Namibia",
+   "official_name": "Republic of Namibia",
+   "aliases": []
+  },
+  {
+   "iso3": "NCL",
+   "iso2": "NC",
+   "m49": 540,
+   "comtrade_code": 540,
+   "name": "New Caledonia",
+   "official_name": null,
+   "aliases": [
+    "Nouvelle-Caledonie"
+   ]
+  },
+  {
+   "iso3": "NER",
+   "iso2": "NE",
+   "m49": 562,
+   "comtrade_code": 562,
+   "name": "Niger",
+   "official_name": "Republic of the Niger",
+   "aliases": []
+  },
+  {
+   "iso3": "NFK",
+   "iso2": "NF",
+   "m49": 574,
+   "comtrade_code": 574,
+   "name": "Norfolk Island",
+   "official_name": null,
+   "aliases": [
+    "Norfolk Isds"
+   ]
+  },
+  {
+   "iso3": "NGA",
+   "iso2": "NG",
+   "m49": 566,
+   "comtrade_code": 566,
+   "name": "Nigeria",
+   "official_name": "Federal Republic of Nigeria",
+   "aliases": []
+  },
+  {
+   "iso3": "NIC",
+   "iso2": "NI",
+   "m49": 558,
+   "comtrade_code": 558,
+   "name": "Nicaragua",
+   "official_name": "Republic of Nicaragua",
+   "aliases": []
+  },
+  {
+   "iso3": "NIU",
+   "iso2": "NU",
+   "m49": 570,
+   "comtrade_code": 570,
+   "name": "Niue",
+   "official_name": "Niue",
+   "aliases": [
+    "Niue Islands"
+   ]
+  },
+  {
+   "iso3": "NLD",
+   "iso2": "NL",
+   "m49": 528,
+   "comtrade_code": 528,
+   "name": "Netherlands",
+   "official_name": "Kingdom of the Netherlands",
+   "aliases": [
+    "Holland",
+    "Netherlands, The",
+    "The Netherlands"
+   ]
+  },
+  {
+   "iso3": "NOR",
+   "iso2": "NO",
+   "m49": 578,
+   "comtrade_code": 579,
+   "name": "Norway",
+   "official_name": "Kingdom of Norway",
+   "aliases": []
+  },
+  {
+   "iso3": "NPL",
+   "iso2": "NP",
+   "m49": 524,
+   "comtrade_code": 524,
+   "name": "Nepal",
+   "official_name": "Federal Democratic Republic of Nepal",
+   "aliases": []
+  },
+  {
+   "iso3": "NRU",
+   "iso2": "NR",
+   "m49": 520,
+   "comtrade_code": 520,
+   "name": "Nauru",
+   "official_name": "Republic of Nauru",
+   "aliases": []
+  },
+  {
+   "iso3": "NZL",
+   "iso2": "NZ",
+   "m49": 554,
+   "comtrade_code": 554,
+   "name": "New Zealand",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "OMN",
+   "iso2": "OM",
+   "m49": 512,
+   "comtrade_code": 512,
+   "name": "Oman",
+   "official_name": "Sultanate of Oman",
+   "aliases": []
+  },
+  {
+   "iso3": "PAK",
+   "iso2": "PK",
+   "m49": 586,
+   "comtrade_code": 586,
+   "name": "Pakistan",
+   "official_name": "Islamic Republic of Pakistan",
+   "aliases": []
+  },
+  {
+   "iso3": "PAN",
+   "iso2": "PA",
+   "m49": 591,
+   "comtrade_code": 591,
+   "name": "Panama",
+   "official_name": "Republic of Panama",
+   "aliases": []
+  },
+  {
+   "iso3": "PCN",
+   "iso2": "PN",
+   "m49": 612,
+   "comtrade_code": 612,
+   "name": "Pitcairn",
+   "official_name": null,
+   "aliases": [
+    "Pitcairn Isds",
+    "Pitcairn Islands"
+   ]
+  },
+  {
+   "iso3": "PER",
+   "iso2": "PE",
+   "m49": 604,
+   "comtrade_code": 604,
+   "name": "Peru",
+   "official_name": "Republic of Peru",
+   "aliases": [
+    "Perú"
+   ]
+  },
+  {
+   "iso3": "PHL",
+   "iso2": "PH",
+   "m49": 608,
+   "comtrade_code": 608,
+   "name": "Philippines",
+   "official_name": "Republic of the Philippines",
+   "aliases": [
+    "Phillipines",
+    "Republic of the Philippines"
+   ]
+  },
+  {
+   "iso3": "PLW",
+   "iso2": "PW",
+   "m49": 585,
+   "comtrade_code": 585,
+   "name": "Palau",
+   "official_name": "Republic of Palau",
+   "aliases": []
+  },
+  {
+   "iso3": "PNG",
+   "iso2": "PG",
+   "m49": 598,
+   "comtrade_code": 598,
+   "name": "Papua New Guinea",
+   "official_name": "Independent State of Papua New Guinea",
+   "aliases": [
+    "PNG",
+    "Papua-New Guinea"
+   ]
+  },
+  {
+   "iso3": "POL",
+   "iso2": "PL",
+   "m49": 616,
+   "comtrade_code": 616,
+   "name": "Poland",
+   "official_name": "Republic of Poland",
+   "aliases": [
+    "Polska"
+   ]
+  },
+  {
+   "iso3": "PRI",
+   "iso2": "PR",
+   "m49": 630,
+   "comtrade_code": 630,
+   "name": "Puerto Rico",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "PRK",
+   "iso2": "KP",
+   "m49": 408,
+   "comtrade_code": 408,
+   "name": "North Korea",
+   "official_name": "Democratic People's Republic of Korea",
+   "aliases": [
+    "DPRK",
+    "Dem. People's Rep. of Korea",
+    "Democratic People's Republic of Korea",
+    "Korea, DPR"
+   ]
+  },
+  {
+   "iso3": "PRT",
+   "iso2": "PT",
+   "m49": 620,
+   "comtrade_code": 620,
+   "name": "Portugal",
+   "official_name": "Portuguese Republic",
+   "aliases": []
+  },
+  {
+   "iso3": "PRY",
+   "iso2": "PY",
+   "m49": 600,
+   "comtrade_code": 600,
+   "name": "Paraguay",
+   "official_name": "Republic of Paraguay",
+   "aliases": []
+  },
+  {
+   "iso3": "PSE",
+   "iso2": "PS",
+   "m49": 275,
+   "comtrade_code": 275,
+   "name": "Palestine, State of",
+   "official_name": "the State of Palestine",
+   "aliases": [
+    "Palestine",
+    "Palestinian Territories",
+    "State of Palestine"
+   ]
+  },
+  {
+   "iso3": "PYF",
+   "iso2": "PF",
+   "m49": 258,
+   "comtrade_code": 258,
+   "name": "French Polynesia",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "QAT",
+   "iso2": "QA",
+   "m49": 634,
+   "comtrade_code": 634,
+   "name": "Qatar",
+   "official_name": "State of Qatar",
+   "aliases": []
+  },
+  {
+   "iso3": "REU",
+   "iso2": "RE",
+   "m49": 638,
+   "comtrade_code": 638,
+   "name": "Réunion",
+   "official_name": null,
+   "aliases": [
+    "Reunion"
+   ]
+  },
+  {
+   "iso3": "ROU",
+   "iso2": "RO",
+   "m49": 642,
+   "comtrade_code": 642,
+   "name": "Romania",
+   "official_name": null,
+   "aliases": [
+    "Rumania"
+   ]
+  },
+  {
+   "iso3": "RUS",
+   "iso2": "RU",
+   "m49": 643,
+   "comtrade_code": 643,
+   "name": "Russian Federation",
+   "official_name": null,
+   "aliases": [
+    "Russia"
+   ]
+  },
+  {
+   "iso3": "RWA",
+   "iso2": "RW",
+   "m49": 646,
+   "comtrade_code": 646,
+   "name": "Rwanda",
+   "official_name": "Rwandese Republic",
+   "aliases": []
+  },
+  {
+   "iso3": "SAU",
+   "iso2": "SA",
+   "m49": 682,
+   "comtrade_code": 682,
+   "name": "Saudi Arabia",
+   "official_name": "Kingdom of Saudi Arabia",
+   "aliases": [
+    "KSA",
+    "Kingdom of Saudi Arabia",
+    "Saudi"
+   ]
+  },
+  {
+   "iso3": "SDN",
+   "iso2": "SD",
+   "m49": 729,
+   "comtrade_code": 729,
+   "name": "Sudan",
+   "official_name": "Republic of the Sudan",
+   "aliases": [
+    "Republic of the Sudan"
+   ]
+  },
+  {
+   "iso3": "SEN",
+   "iso2": "SN",
+   "m49": 686,
+   "comtrade_code": 686,
+   "name": "Senegal",
+   "official_name": "Republic of Senegal",
+   "aliases": []
+  },
+  {
+   "iso3": "SGP",
+   "iso2": "SG",
+   "m49": 702,
+   "comtrade_code": 702,
+   "name": "Singapore",
+   "official_name": "Republic of Singapore",
+   "aliases": []
+  },
+  {
+   "iso3": "SGS",
+   "iso2": "GS",
+   "m49": 239,
+   "comtrade_code": 239,
+   "name": "South Georgia and the South Sandwich Islands",
+   "official_name": null,
+   "aliases": [
+    "South Georgia",
+    "South Georgia and South Sandwich Islands"
+   ]
+  },
+  {
+   "iso3": "SHN",
+   "iso2": "SH",
+   "m49": 654,
+   "comtrade_code": 654,
+   "name": "Saint Helena, Ascension and Tristan da Cunha",
+   "official_name": null,
+   "aliases": [
+    "Saint Helena",
+    "St Helena"
+   ]
+  },
+  {
+   "iso3": "SJM",
+   "iso2": "SJ",
+   "m49": 744,
+   "comtrade_code": 744,
+   "name": "Svalbard and Jan Mayen",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "SLB",
+   "iso2": "SB",
+   "m49": 90,
+   "comtrade_code": 90,
+   "name": "Solomon Islands",
+   "official_name": null,
+   "aliases": [
+    "Solomon Isds"
+   ]
+  },
+  {
+   "iso3": "SLE",
+   "iso2": "SL",
+   "m49": 694,
+   "comtrade_code": 694,
+   "name": "Sierra Leone",
+   "official_name": "Republic of Sierra Leone",
+   "aliases": []
+  },
+  {
+   "iso3": "SLV",
+   "iso2": "SV",
+   "m49": 222,
+   "comtrade_code": 222,
+   "name": "El Salvador",
+   "official_name": "Republic of El Salvador",
+   "aliases": []
+  },
+  {
+   "iso3": "SMR",
+   "iso2": "SM",
+   "m49": 674,
+   "comtrade_code": 674,
+   "name": "San Marino",
+   "official_name": "Republic of San Marino",
+   "aliases": []
+  },
+  {
+   "iso3": "SOM",
+   "iso2": "SO",
+   "m49": 706,
+   "comtrade_code": 706,
+   "name": "Somalia",
+   "official_name": "Federal Republic of Somalia",
+   "aliases": []
+  },
+  {
+   "iso3": "SPM",
+   "iso2": "PM",
+   "m49": 666,
+   "comtrade_code": 666,
+   "name": "Saint Pierre and Miquelon",
+   "official_name": null,
+   "aliases": [
+    "Saint-Pierre and Miquelon",
+    "St Pierre and Miquelon"
+   ]
+  },
+  {
+   "iso3": "SRB",
+   "iso2": "RS",
+   "m49": 688,
+   "comtrade_code": 688,
+   "name": "Serbia",
+   "official_name": "Republic of Serbia",
+   "aliases": []
+  },
+  {
+   "iso3": "SSD",
+   "iso2": "SS",
+   "m49": 728,
+   "comtrade_code": 728,
+   "name": "South Sudan",
+   "official_name": "Republic of South Sudan",
+   "aliases": []
+  },
+  {
+   "iso3": "STP",
+   "iso2": "ST",
+   "m49": 678,
+   "comtrade_code": 678,
+   "name": "Sao Tome and Principe",
+   "official_name": "Democratic Republic of Sao Tome and Principe",
+   "aliases": []
+  },
+  {
+   "iso3": "SUR",
+   "iso2": "SR",
+   "m49": 740,
+   "comtrade_code": 740,
+   "name": "Suriname",
+   "official_name": "Republic of Suriname",
+   "aliases": [
+    "Surinam"
+   ]
+  },
+  {
+   "iso3": "SVK",
+   "iso2": "SK",
+   "m49": 703,
+   "comtrade_code": 703,
+   "name": "Slovakia",
+   "official_name": "Slovak Republic",
+   "aliases": [
+    "Slovak Republic"
+   ]
+  },
+  {
+   "iso3": "SVN",
+   "iso2": "SI",
+   "m49": 705,
+   "comtrade_code": 705,
+   "name": "Slovenia",
+   "official_name": "Republic of Slovenia",
+   "aliases": []
+  },
+  {
+   "iso3": "SWE",
+   "iso2": "SE",
+   "m49": 752,
+   "comtrade_code": 752,
+   "name": "Sweden",
+   "official_name": "Kingdom of Sweden",
+   "aliases": []
+  },
+  {
+   "iso3": "SWZ",
+   "iso2": "SZ",
+   "m49": 748,
+   "comtrade_code": 748,
+   "name": "Eswatini",
+   "official_name": "Kingdom of Eswatini",
+   "aliases": [
+    "Kingdom of Swaziland",
+    "Swaziland",
+    "eSwatini"
+   ]
+  },
+  {
+   "iso3": "SXM",
+   "iso2": "SX",
+   "m49": 534,
+   "comtrade_code": 534,
+   "name": "Sint Maarten (Dutch part)",
+   "official_name": "Sint Maarten (Dutch part)",
+   "aliases": [
+    "Sint Maarten",
+    "St Maarten",
+    "St. Maarten"
+   ]
+  },
+  {
+   "iso3": "SYC",
+   "iso2": "SC",
+   "m49": 690,
+   "comtrade_code": 690,
+   "name": "Seychelles",
+   "official_name": "Republic of Seychelles",
+   "aliases": []
+  },
+  {
+   "iso3": "SYR",
+   "iso2": "SY",
+   "m49": 760,
+   "comtrade_code": 760,
+   "name": "Syria",
+   "official_name": null,
+   "aliases": [
+    "Syrian Arab Republic"
+   ]
+  },
+  {
+   "iso3": "TCA",
+   "iso2": "TC",
+   "m49": 796,
+   "comtrade_code": 796,
+   "name": "Turks and Caicos Islands",
+   "official_name": null,
+   "aliases": [
+    "Turks & Caicos Islands",
+    "Turks and Caicos Isds"
+   ]
+  },
+  {
+   "iso3": "TCD",
+   "iso2": "TD",
+   "m49": 148,
+   "comtrade_code": 148,
+   "name": "Chad",
+   "official_name": "Republic of Chad",
+   "aliases": []
+  },
+  {
+   "iso3": "TGO",
+   "iso2": "TG",
+   "m49": 768,
+   "comtrade_code": 768,
+   "name": "Togo",
+   "official_name": "Togolese Republic",
+   "aliases": []
+  },
+  {
+   "iso3": "THA",
+   "iso2": "TH",
+   "m49": 764,
+   "comtrade_code": 764,
+   "name": "Thailand",
+   "official_name": "Kingdom of Thailand",
+   "aliases": [
+    "Siam"
+   ]
+  },
+  {
+   "iso3": "TJK",
+   "iso2": "TJ",
+   "m49": 762,
+   "comtrade_code": 762,
+   "name": "Tajikistan",
+   "official_name": "Republic of Tajikistan",
+   "aliases": []
+  },
+  {
+   "iso3": "TKL",
+   "iso2": "TK",
+   "m49": 772,
+   "comtrade_code": 772,
+   "name": "Tokelau",
+   "official_name": null,
+   "aliases": [
+    "Tokelau Islands"
+   ]
+  },
+  {
+   "iso3": "TKM",
+   "iso2": "TM",
+   "m49": 795,
+   "comtrade_code": 795,
+   "name": "Turkmenistan",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "TLS",
+   "iso2": "TL",
+   "m49": 626,
+   "comtrade_code": 626,
+   "name": "Timor-Leste",
+   "official_name": "Democratic Republic of Timor-Leste",
+   "aliases": [
+    "East Timor",
+    "Timor Leste"
+   ]
+  },
+  {
+   "iso3": "TON",
+   "iso2": "TO",
+   "m49": 776,
+   "comtrade_code": 776,
+   "name": "Tonga",
+   "official_name": "Kingdom of Tonga",
+   "aliases": []
+  },
+  {
+   "iso3": "TTO",
+   "iso2": "TT",
+   "m49": 780,
+   "comtrade_code": 780,
+   "name": "Trinidad and Tobago",
+   "official_name": "Republic of Trinidad and Tobago",
+   "aliases": [
+    "Trinidad & Tobago"
+   ]
+  },
+  {
+   "iso3": "TUN",
+   "iso2": "TN",
+   "m49": 788,
+   "comtrade_code": 788,
+   "name": "Tunisia",
+   "official_name": "Republic of Tunisia",
+   "aliases": []
+  },
+  {
+   "iso3": "TUR",
+   "iso2": "TR",
+   "m49": 792,
+   "comtrade_code": 792,
+   "name": "Türkiye",
+   "official_name": "Republic of Türkiye",
+   "aliases": [
+    "Republic of Turkey",
+    "Turkey",
+    "Turkiye"
+   ]
+  },
+  {
+   "iso3": "TUV",
+   "iso2": "TV",
+   "m49": 798,
+   "comtrade_code": 798,
+   "name": "Tuvalu",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "TWN",
+   "iso2": "TW",
+   "m49": 158,
+   "comtrade_code": 158,
+   "name": "Taiwan",
+   "official_name": "Taiwan, Province of China",
+   "aliases": [
+    "Chinese Taipei",
+    "Taiwan, Province of China"
+   ]
+  },
+  {
+   "iso3": "TZA",
+   "iso2": "TZ",
+   "m49": 834,
+   "comtrade_code": 834,
+   "name": "Tanzania",
+   "official_name": "United Republic of Tanzania",
+   "aliases": [
+    "Tanzania, United Republic of",
+    "United Rep. of Tanzania",
+    "United Republic of Tanzania"
+   ]
+  },
+  {
+   "iso3": "UGA",
+   "iso2": "UG",
+   "m49": 800,
+   "comtrade_code": 800,
+   "name": "Uganda",
+   "official_name": "Republic of Uganda",
+   "aliases": []
+  },
+  {
+   "iso3": "UKR",
+   "iso2": "UA",
+   "m49": 804,
+   "comtrade_code": 804,
+   "name": "Ukraine",
+   "official_name": null,
+   "aliases": []
+  },
+  {
+   "iso3": "UMI",
+   "iso2": "UM",
+   "m49": 581,
+   "comtrade_code": 581,
+   "name": "United States Minor Outlying Islands",
+   "official_name": null,
+   "aliases": [
+    "U.S. Minor Outlying Islands",
+    "US Minor Outlying Islands"
+   ]
+  },
+  {
+   "iso3": "URY",
+   "iso2": "UY",
+   "m49": 858,
+   "comtrade_code": 858,
+   "name": "Uruguay",
+   "official_name": "Eastern Republic of Uruguay",
+   "aliases": []
+  },
+  {
+   "iso3": "USA",
+   "iso2": "US",
+   "m49": 840,
+   "comtrade_code": 842,
+   "name": "United States",
+   "official_name": "United States of America",
+   "aliases": [
+    "America",
+    "U.S.",
+    "U.S.A.",
+    "US",
+    "USA",
+    "United States of America"
+   ]
+  },
+  {
+   "iso3": "UZB",
+   "iso2": "UZ",
+   "m49": 860,
+   "comtrade_code": 860,
+   "name": "Uzbekistan",
+   "official_name": "Republic of Uzbekistan",
+   "aliases": []
+  },
+  {
+   "iso3": "VAT",
+   "iso2": "VA",
+   "m49": 336,
+   "comtrade_code": 336,
+   "name": "Holy See (Vatican City State)",
+   "official_name": null,
+   "aliases": [
+    "Holy See",
+    "Vatican",
+    "Vatican City"
+   ]
+  },
+  {
+   "iso3": "VCT",
+   "iso2": "VC",
+   "m49": 670,
+   "comtrade_code": 670,
+   "name": "Saint Vincent and the Grenadines",
+   "official_name": null,
+   "aliases": [
+    "Saint Vincent",
+    "St Vincent and the Grenadines",
+    "St. Vincent and the Grenadines"
+   ]
+  },
+  {
+   "iso3": "VEN",
+   "iso2": "VE",
+   "m49": 862,
+   "comtrade_code": 862,
+   "name": "Venezuela",
+   "official_name": "Bolivarian Republic of Venezuela",
+   "aliases": []
+  },
+  {
+   "iso3": "VGB",
+   "iso2": "VG",
+   "m49": 92,
+   "comtrade_code": 92,
+   "name": "Virgin Islands, British",
+   "official_name": "British Virgin Islands",
+   "aliases": [
+    "BVI",
+    "Br. Virgin Isds",
+    "British Virgin Islands"
+   ]
+  },
+  {
+   "iso3": "VIR",
+   "iso2": "VI",
+   "m49": 850,
+   "comtrade_code": 850,
+   "name": "Virgin Islands, U.S.",
+   "official_name": "Virgin Islands of the United States",
+   "aliases": [
+    "U.S. Virgin Islands",
+    "US Virgin Islands",
+    "USVI",
+    "Virgin Islands of the United States"
+   ]
+  },
+  {
+   "iso3": "VNM",
+   "iso2": "VN",
+   "m49": 704,
+   "comtrade_code": 704,
+   "name": "Vietnam",
+   "official_name": "Socialist Republic of Viet Nam",
+   "aliases": [
+    "Socialist Republic of Viet Nam",
+    "Viet Nam"
+   ]
+  },
+  {
+   "iso3": "VUT",
+   "iso2": "VU",
+   "m49": 548,
+   "comtrade_code": 548,
+   "name": "Vanuatu",
+   "official_name": "Republic of Vanuatu",
+   "aliases": []
+  },
+  {
+   "iso3": "WLF",
+   "iso2": "WF",
+   "m49": 876,
+   "comtrade_code": 876,
+   "name": "Wallis and Futuna",
+   "official_name": null,
+   "aliases": [
+    "Wallis & Futuna",
+    "Wallis and Futuna Isds"
+   ]
+  },
+  {
+   "iso3": "WSM",
+   "iso2": "WS",
+   "m49": 882,
+   "comtrade_code": 882,
+   "name": "Samoa",
+   "official_name": "Independent State of Samoa",
+   "aliases": [
+    "Western Samoa"
+   ]
+  },
+  {
+   "iso3": "YEM",
+   "iso2": "YE",
+   "m49": 887,
+   "comtrade_code": 887,
+   "name": "Yemen",
+   "official_name": "Republic of Yemen",
+   "aliases": []
+  },
+  {
+   "iso3": "ZAF",
+   "iso2": "ZA",
+   "m49": 710,
+   "comtrade_code": 710,
+   "name": "South Africa",
+   "official_name": "Republic of South Africa",
+   "aliases": [
+    "RSA",
+    "Republic of South Africa"
+   ]
+  },
+  {
+   "iso3": "ZMB",
+   "iso2": "ZM",
+   "m49": 894,
+   "comtrade_code": 894,
+   "name": "Zambia",
+   "official_name": "Republic of Zambia",
+   "aliases": []
+  },
+  {
+   "iso3": "ZWE",
+   "iso2": "ZW",
+   "m49": 716,
+   "comtrade_code": 716,
+   "name": "Zimbabwe",
+   "official_name": "Republic of Zimbabwe",
+   "aliases": []
+  }
+ ],
+ "special": [
+  {
+   "code": 0,
+   "iso3": "W00",
+   "name": "World"
+  },
+  {
+   "code": 490,
+   "iso3": "TWN",
+   "name": "Other Asia, nes"
+  },
+  {
+   "code": 899,
+   "iso3": "_899",
+   "name": "Areas, nes"
+  },
+  {
+   "code": 837,
+   "iso3": "_837",
+   "name": "Bunkers"
+  },
+  {
+   "code": 838,
+   "iso3": "_838",
+   "name": "Free Zones"
+  },
+  {
+   "code": 839,
+   "iso3": "_839",
+   "name": "Special Categories"
+  }
+ ],
+ "aggregates": [
+  {
+   "code": 97,
+   "iso3": "_EU",
+   "name": "European Union"
+  },
+  {
+   "code": 975,
+   "iso3": "_975",
+   "name": "ASEAN"
+  }
+ ]
+}

@@ -1,0 +1,940 @@
+year,reporter_iso3,reporter_name,partner_iso3,partner_name,flow,hs_code,value_usd,net_kg,qty,qty_unit,source_file
+2021,ARE,United Arab Emirates,BEL,Belgium,M,071080,3918864,2336456,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,CHN,China,M,071080,2622563,2162578,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,DEU,Germany,M,071080,2270724,1323823,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,EGY,Egypt,M,071080,4549087,3261220,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,ESP,Spain,M,071080,7288509,4783581,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,FRA,France,M,071080,1375404,769443,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,IND,India,M,071080,751098,762554,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,ITA,Italy,M,071080,355441,195099,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,MEX,Mexico,M,071080,732218,561253,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,NLD,Netherlands,M,071080,2827385,1388405,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,POL,Poland,M,071080,1852456,1494847,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,SAU,Saudi Arabia,M,071080,56900,36403,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,TUR,Türkiye,M,071080,339515,317377,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,USA,United States,M,071080,403447,192859,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,W00,World,M,071080,37853844,25266200,,,SYNTHETIC_partner_detail_ARE.csv
+2021,ARE,United Arab Emirates,_899,"Areas, nes",M,071080,8510233,5680302,,,SYNTHETIC_partner_detail_ARE.csv
+2021,AUS,Australia,W00,World,M,071080,15344969,11182057,,N/A,SYNTHETIC_world_imports.csv
+2021,AUT,Austria,W00,World,M,071080,26571968,22417004,,N/A,SYNTHETIC_world_imports.csv
+2021,BEL,Belgium,W00,World,M,071080,45643353,35651531,,N/A,SYNTHETIC_world_imports.csv
+2021,BEL,Belgium,W00,World,X,071080,196946064,146793838,,,SYNTHETIC_world_exports.json
+2021,BHR,Bahrain,EGY,Egypt,M,071080,108439,75842,,,SYNTHETIC_mirror.json
+2021,BHR,Bahrain,W00,World,M,071080,10627235,7208959,,N/A,SYNTHETIC_world_imports.csv
+2021,BRA,Brazil,W00,World,M,071080,8804863,8280396,,N/A,SYNTHETIC_world_imports.csv
+2021,CAN,Canada,W00,World,M,071080,43504746,35637850,,N/A,SYNTHETIC_world_imports.csv
+2021,CHE,Switzerland,W00,World,M,071080,21519489,17650737,,N/A,SYNTHETIC_world_imports.csv
+2021,CHN,China,W00,World,M,071080,6171341,5069525,,N/A,SYNTHETIC_world_imports.csv
+2021,CHN,China,W00,World,X,071080,243422863,269951279,,,SYNTHETIC_world_exports.json
+2021,CIV,Côte d'Ivoire,EGY,Egypt,M,071080,548712,457664,,,SYNTHETIC_mirror.json
+2021,CIV,Côte d'Ivoire,W00,World,M,071080,9147591,6137611,,N/A,SYNTHETIC_world_imports.csv
+2021,CZE,Czechia,W00,World,M,071080,10649472,8371055,,N/A,SYNTHETIC_world_imports.csv
+2021,DEU,Germany,BEL,Belgium,M,071080,43216385,30012736,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,CHN,China,M,071080,17215031,21529137,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,EGY,Egypt,M,071080,619963,613808,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,ESP,Spain,M,071080,26184618,20473908,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,FRA,France,M,071080,22569009,14756520,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,IND,India,M,071080,2713448,3828581,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,ITA,Italy,M,071080,5710843,4680668,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,MEX,Mexico,M,071080,6492856,6540757,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,NLD,Netherlands,M,071080,22859253,14820847,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,POL,Poland,M,071080,36987883,41475273,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,SAU,Saudi Arabia,M,071080,208275,170697,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,TUR,Türkiye,M,071080,4352183,4970060,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,USA,United States,M,071080,7032859,4936440,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,W00,World,M,071080,243675153,209696767,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DEU,Germany,W00,World,X,071080,85230113,56761150,,,SYNTHETIC_world_exports.json
+2021,DEU,Germany,_899,"Areas, nes",M,071080,47512547,40887335,,,SYNTHETIC_partner_detail_DEU.csv
+2021,DNK,Denmark,W00,World,M,071080,16337889,13448845,,N/A,SYNTHETIC_world_imports.csv
+2021,EGY,Egypt,ARE,United Arab Emirates,X,071080,4263651,3271553,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,BHR,Bahrain,X,071080,90262,75923,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,CIV,Côte d'Ivoire,X,071080,590341,456099,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,DEU,Germany,X,071080,583089,605704,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,FRA,France,X,071080,178401,158452,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,GBR,United Kingdom,X,071080,2359755,2385849,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,HKG,Hong Kong,X,071080,284208,263043,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,IRQ,Iraq,X,071080,110949,94021,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,ITA,Italy,X,071080,59292,50226,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,JOR,Jordan,X,071080,272789,240743,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,KEN,Kenya,X,071080,41389,33021,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,KWT,Kuwait,X,071080,1156017,1206888,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,LBN,Lebanon,X,071080,159836,150274,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,LBY,Libya,X,071080,527840,464160,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,NLD,Netherlands,X,071080,3555354,2719043,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,OMN,Oman,X,071080,182288,168783,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,QAT,Qatar,X,071080,355918,371280,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,RUS,Russian Federation,X,071080,2144356,1956153,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,SAU,Saudi Arabia,X,071080,5663161,5989360,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,SDN,Sudan,X,071080,583152,530108,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,W00,World,M,071080,10207628,7993206,,N/A,SYNTHETIC_world_imports.csv
+2021,EGY,Egypt,W00,World,X,071080,29875926,27333130,,N/A,SYNTHETIC_home_flows.csv
+2021,EGY,Egypt,_899,"Areas, nes",X,071080,6713878,6142447,,N/A,SYNTHETIC_home_flows.csv
+2021,ESP,Spain,W00,World,M,071080,27418673,18014497,,N/A,SYNTHETIC_world_imports.csv
+2021,ESP,Spain,W00,World,X,071080,316492233,248669695,,,SYNTHETIC_world_exports.json
+2021,FIN,Finland,W00,World,M,071080,7983746,5783864,,N/A,SYNTHETIC_world_imports.csv
+2021,FRA,France,EGY,Egypt,M,071080,179426,155909,,,SYNTHETIC_mirror.json
+2021,FRA,France,W00,World,M,071080,126369130,94951318,,N/A,SYNTHETIC_world_imports.csv
+2021,FRA,France,W00,World,X,071080,161567443,112918367,,,SYNTHETIC_world_exports.json
+2021,GBR,United Kingdom,BEL,Belgium,M,071080,14135785,9960564,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,CHN,China,M,071080,17695279,18441499,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,DEU,Germany,M,071080,5644657,4401652,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,EGY,Egypt,M,071080,2394296,2362659,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,ESP,Spain,M,071080,24153445,18805379,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,FRA,France,M,071080,4180979,3101791,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,IND,India,M,071080,9498772,11428459,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,ITA,Italy,M,071080,2057069,1458054,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,MEX,Mexico,M,071080,11046656,12085419,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,NLD,Netherlands,M,071080,19663195,12655308,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,POL,Poland,M,071080,11913578,11893074,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,SAU,Saudi Arabia,M,071080,151919,119212,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,TUR,Türkiye,M,071080,4551492,5049123,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,USA,United States,M,071080,1899452,1360015,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,W00,World,M,071080,179216442,157174185,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GBR,United Kingdom,_899,"Areas, nes",M,071080,50229868,44051977,,,SYNTHETIC_partner_detail_GBR.csv
+2021,GRC,Greece,W00,World,M,071080,17012810,12619045,,N/A,SYNTHETIC_world_imports.csv
+2021,HKG,Hong Kong,EGY,Egypt,M,071080,298006,262072,,,SYNTHETIC_mirror.json
+2021,HKG,Hong Kong,W00,World,M,071080,8332817,6315079,,N/A,SYNTHETIC_world_imports.csv
+2021,HUN,Hungary,W00,World,M,071080,6219475,4978108,,N/A,SYNTHETIC_world_imports.csv
+2021,IND,India,W00,World,M,071080,9113374,5954359,,N/A,SYNTHETIC_world_imports.csv
+2021,IND,India,W00,World,X,071080,92187230,108852185,,,SYNTHETIC_world_exports.json
+2021,IRL,Ireland,W00,World,M,071080,12836307,9682732,,N/A,SYNTHETIC_world_imports.csv
+2021,IRQ,Iraq,EGY,Egypt,M,071080,119909,93296,,,SYNTHETIC_mirror.json
+2021,IRQ,Iraq,W00,World,M,071080,9786815,6530406,,N/A,SYNTHETIC_world_imports.csv
+2021,ITA,Italy,EGY,Egypt,M,071080,70173,49360,,,SYNTHETIC_mirror.json
+2021,ITA,Italy,W00,World,M,071080,52083164,40903829,,N/A,SYNTHETIC_world_imports.csv
+2021,ITA,Italy,W00,World,X,071080,53156848,37736895,,,SYNTHETIC_world_exports.json
+2021,JOR,Jordan,EGY,Egypt,M,071080,308259,239879,,,SYNTHETIC_mirror.json
+2021,JOR,Jordan,W00,World,M,071080,13515253,11010314,,N/A,SYNTHETIC_world_imports.csv
+2021,JPN,Japan,W00,World,M,071080,47831186,37900198,,N/A,SYNTHETIC_world_imports.csv
+2021,KEN,Kenya,EGY,Egypt,M,071080,44359,32621,,,SYNTHETIC_mirror.json
+2021,KEN,Kenya,W00,World,M,071080,12951290,10346393,,N/A,SYNTHETIC_world_imports.csv
+2021,KOR,South Korea,W00,World,M,071080,19349301,15389483,,N/A,SYNTHETIC_world_imports.csv
+2021,KWT,Kuwait,BEL,Belgium,M,071080,1938752,1592334,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,CHN,China,M,071080,1900161,2404621,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,DEU,Germany,M,071080,377889,309333,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,EGY,Egypt,M,071080,2013784,1190091,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,ESP,Spain,M,071080,712109,686714,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,FRA,France,M,071080,1894426,1535838,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,IND,India,M,071080,448886,515344,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,ITA,Italy,M,071080,404747,285219,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,MEX,Mexico,M,071080,590231,578532,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,NLD,Netherlands,M,071080,2392878,1877467,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,POL,Poland,M,071080,702962,718058,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,SAU,Saudi Arabia,M,071080,17595,13504,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,TUR,Türkiye,M,071080,335230,355511,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,USA,United States,M,071080,653672,472017,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,W00,World,M,071080,17922944,15619245,,,SYNTHETIC_partner_detail_KWT.csv
+2021,KWT,Kuwait,_899,"Areas, nes",M,071080,3539622,3084662,,,SYNTHETIC_partner_detail_KWT.csv
+2021,LBN,Lebanon,EGY,Egypt,M,071080,166329,149847,,,SYNTHETIC_mirror.json
+2021,LBN,Lebanon,W00,World,M,071080,7007865,5740805,,N/A,SYNTHETIC_world_imports.csv
+2021,LBY,Libya,EGY,Egypt,M,071080,535595,461128,,,SYNTHETIC_mirror.json
+2021,LBY,Libya,W00,World,M,071080,13069591,9792787,,N/A,SYNTHETIC_world_imports.csv
+2021,MEX,Mexico,W00,World,M,071080,8040208,5777468,,N/A,SYNTHETIC_world_imports.csv
+2021,MEX,Mexico,W00,World,X,071080,75581959,73157860,,,SYNTHETIC_world_exports.json
+2021,MYS,Malaysia,W00,World,M,071080,8797823,8147143,,N/A,SYNTHETIC_world_imports.csv
+2021,NLD,Netherlands,BEL,Belgium,M,071080,18083565,9950045,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,CHN,China,M,071080,13050973,12746704,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,DEU,Germany,M,071080,6022714,2847909,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,EGY,Egypt,M,071080,895411,2702763,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,ESP,Spain,M,071080,18248145,11390672,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,FRA,France,M,071080,19547117,11459811,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,IND,India,M,071080,8877055,7603391,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,ITA,Italy,M,071080,3210444,1841597,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,MEX,Mexico,M,071080,1829240,1420993,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,POL,Poland,M,071080,2837580,2237267,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,SAU,Saudi Arabia,M,071080,166184,106779,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,TUR,Türkiye,M,071080,1470480,1349958,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,USA,United States,M,071080,2139118,1012322,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,W00,World,M,071080,126824785,87731981,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NLD,Netherlands,W00,World,X,071080,282822695,188408807,,,SYNTHETIC_world_exports.json
+2021,NLD,Netherlands,_899,"Areas, nes",M,071080,30446759,21061770,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2021,NOR,Norway,W00,World,M,071080,17149232,12041762,,N/A,SYNTHETIC_world_imports.csv
+2021,OMN,Oman,EGY,Egypt,M,071080,210661,170649,,,SYNTHETIC_mirror.json
+2021,OMN,Oman,W00,World,M,071080,7045579,5761837,,N/A,SYNTHETIC_world_imports.csv
+2021,POL,Poland,W00,World,M,071080,20358277,12366237,,N/A,SYNTHETIC_world_imports.csv
+2021,POL,Poland,W00,World,X,071080,164962557,171513868,,,SYNTHETIC_world_exports.json
+2021,PRT,Portugal,W00,World,M,071080,8808222,5511360,,N/A,SYNTHETIC_world_imports.csv
+2021,QAT,Qatar,EGY,Egypt,M,071080,368382,372201,,,SYNTHETIC_mirror.json
+2021,QAT,Qatar,W00,World,M,071080,20309071,17696134,,N/A,SYNTHETIC_world_imports.csv
+2021,ROU,Romania,W00,World,M,071080,12873175,11301531,,N/A,SYNTHETIC_world_imports.csv
+2021,RUS,Russian Federation,EGY,Egypt,M,071080,2357790,1959867,,,SYNTHETIC_mirror.json
+2021,RUS,Russian Federation,W00,World,M,071080,42808659,30889822,,N/A,SYNTHETIC_world_imports.csv
+2021,SAU,Saudi Arabia,BEL,Belgium,M,071080,5204130,3855680,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,CHN,China,M,071080,1570613,1918919,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,DEU,Germany,M,071080,1436051,987119,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,EGY,Egypt,M,071080,6022049,5962628,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,ESP,Spain,M,071080,2716688,2416998,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,FRA,France,M,071080,1940760,1360989,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,IND,India,M,071080,2643067,3353119,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,ITA,Italy,M,071080,333109,263747,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,MEX,Mexico,M,071080,2034549,2169700,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,NLD,Netherlands,M,071080,4841365,3058624,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,POL,Poland,M,071080,2593892,2877534,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,TUR,Türkiye,M,071080,1240548,1306031,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,USA,United States,M,071080,1189808,827548,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,W00,World,M,071080,38892041,34966751,,,SYNTHETIC_partner_detail_SAU.json
+2021,SAU,Saudi Arabia,W00,World,X,071080,3034535,2400566,,,SYNTHETIC_world_exports.json
+2021,SAU,Saudi Arabia,_899,"Areas, nes",M,071080,5125412,4608115,,,SYNTHETIC_partner_detail_SAU.json
+2021,SDN,Sudan,W00,World,M,071080,10183751,8508497,,N/A,SYNTHETIC_world_imports.csv
+2021,SGP,Singapore,W00,World,M,071080,21340841,19548889,,N/A,SYNTHETIC_world_imports.csv
+2021,SWE,Sweden,W00,World,M,071080,16391564,15343850,,N/A,SYNTHETIC_world_imports.csv
+2021,TUR,Türkiye,W00,World,M,071080,7131687,5185500,,N/A,SYNTHETIC_world_imports.csv
+2021,TUR,Türkiye,W00,World,X,071080,54993432,58287368,,,SYNTHETIC_world_exports.json
+2021,USA,United States,W00,World,M,071080,484148484,364547694,,N/A,SYNTHETIC_world_imports.csv
+2021,USA,United States,W00,World,X,071080,42387209,27306300,,,SYNTHETIC_world_exports.json
+2022,ARE,United Arab Emirates,BEL,Belgium,M,071080,4093246,2489818,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,CHN,China,M,071080,2865678,2382294,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,DEU,Germany,M,071080,2261006,1333112,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,EGY,Egypt,M,071080,4988554,3560149,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,ESP,Spain,M,071080,8279857,5657311,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,FRA,France,M,071080,1270775,725866,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,IND,India,M,071080,892246,893718,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,ITA,Italy,M,071080,399630,226734,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,MEX,Mexico,M,071080,779142,617919,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,NLD,Netherlands,M,071080,3080847,1528755,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,POL,Poland,M,071080,1847444,1491477,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,SAU,Saudi Arabia,M,071080,58479,36458,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,TUR,Türkiye,M,071080,407767,372800,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,USA,United States,M,071080,440299,218876,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,W00,World,M,071080,38942003,26484384,,,SYNTHETIC_partner_detail_ARE.csv
+2022,ARE,United Arab Emirates,_899,"Areas, nes",M,071080,7277033,4949097,,,SYNTHETIC_partner_detail_ARE.csv
+2022,AUS,Australia,W00,World,M,071080,17029862,12586852,,N/A,SYNTHETIC_world_imports.csv
+2022,AUT,Austria,W00,World,M,071080,25859587,21924155,,N/A,SYNTHETIC_world_imports.csv
+2022,BEL,Belgium,W00,World,M,071080,50224865,38660976,,N/A,SYNTHETIC_world_imports.csv
+2022,BEL,Belgium,W00,World,X,071080,213095230,158659134,,,SYNTHETIC_world_exports.json
+2022,BHR,Bahrain,EGY,Egypt,M,071080,110800,77201,,,SYNTHETIC_mirror.json
+2022,BHR,Bahrain,W00,World,M,071080,12594928,8581671,,N/A,SYNTHETIC_world_imports.csv
+2022,BRA,Brazil,W00,World,M,071080,9186914,8552770,,N/A,SYNTHETIC_world_imports.csv
+2022,CAN,Canada,W00,World,M,071080,45195719,37050661,,N/A,SYNTHETIC_world_imports.csv
+2022,CHE,Switzerland,W00,World,M,071080,21753115,18124430,,N/A,SYNTHETIC_world_imports.csv
+2022,CHN,China,W00,World,M,071080,6286051,5141452,,N/A,SYNTHETIC_world_imports.csv
+2022,CHN,China,W00,World,X,071080,259081506,288584313,,,SYNTHETIC_world_exports.json
+2022,CIV,Côte d'Ivoire,EGY,Egypt,M,071080,619741,506629,,,SYNTHETIC_mirror.json
+2022,CIV,Côte d'Ivoire,W00,World,M,071080,10072877,6655207,,N/A,SYNTHETIC_world_imports.csv
+2022,CZE,Czechia,W00,World,M,071080,10578719,8323649,,N/A,SYNTHETIC_world_imports.csv
+2022,DEU,Germany,BEL,Belgium,M,071080,39588690,28717270,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,CHN,China,M,071080,20448297,25195087,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,EGY,Egypt,M,071080,607008,606865,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,ESP,Spain,M,071080,29273414,22452658,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,FRA,France,M,071080,21010444,14135324,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,IND,India,M,071080,3331080,4517741,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,ITA,Italy,M,071080,7058652,5600010,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,MEX,Mexico,M,071080,6516355,6439705,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,NLD,Netherlands,M,071080,26080097,16034980,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,POL,Poland,M,071080,37124225,41256790,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,SAU,Saudi Arabia,M,071080,237237,202674,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,TUR,Türkiye,M,071080,4523858,5154553,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,USA,United States,M,071080,7023473,4902560,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,W00,World,M,071080,275833689,238289424,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DEU,Germany,W00,World,X,071080,97543198,64741524,,,SYNTHETIC_world_exports.json
+2022,DEU,Germany,_899,"Areas, nes",M,071080,73010859,63073207,,,SYNTHETIC_partner_detail_DEU.csv
+2022,DNK,Denmark,W00,World,M,071080,16843525,13634840,,N/A,SYNTHETIC_world_imports.csv
+2022,EGY,Egypt,ARE,United Arab Emirates,X,071080,4645557,3557237,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,BHR,Bahrain,X,071080,92103,78277,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,CIV,Côte d'Ivoire,X,071080,649423,508241,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,DEU,Germany,X,071080,584441,612283,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,FRA,France,X,071080,183840,161653,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,GBR,United Kingdom,X,071080,2558128,2615809,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,HKG,Hong Kong,X,071080,299374,278145,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,IRQ,Iraq,X,071080,113417,96692,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,ITA,Italy,X,071080,66511,55282,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,JOR,Jordan,X,071080,301243,269967,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,KEN,Kenya,X,071080,44611,36083,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,KWT,Kuwait,X,071080,1339306,1342628,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,LBN,Lebanon,X,071080,177667,168986,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,LBY,Libya,X,071080,591852,517354,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,NLD,Netherlands,X,071080,3707299,2871098,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,OMN,Oman,X,071080,209509,194666,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,QAT,Qatar,X,071080,386314,403617,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,RUS,Russian Federation,X,071080,2310064,2098005,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,SAU,Saudi Arabia,X,071080,6522506,6801564,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,SDN,Sudan,X,071080,599223,565898,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,W00,World,M,071080,9894074,7851815,,N/A,SYNTHETIC_world_imports.csv
+2022,EGY,Egypt,W00,World,X,071080,33265080,30448819,,N/A,SYNTHETIC_home_flows.csv
+2022,EGY,Egypt,_899,"Areas, nes",X,071080,7882692,7215334,,N/A,SYNTHETIC_home_flows.csv
+2022,ESP,Spain,W00,World,M,071080,31170216,20603052,,N/A,SYNTHETIC_world_imports.csv
+2022,ESP,Spain,W00,World,X,071080,318948021,251105206,,,SYNTHETIC_world_exports.json
+2022,FIN,Finland,W00,World,M,071080,8451201,6140486,,N/A,SYNTHETIC_world_imports.csv
+2022,FRA,France,EGY,Egypt,M,071080,184586,161126,,,SYNTHETIC_mirror.json
+2022,FRA,France,W00,World,M,071080,106026993,80375334,,N/A,SYNTHETIC_world_imports.csv
+2022,FRA,France,W00,World,X,071080,170203714,120100639,,,SYNTHETIC_world_exports.json
+2022,GBR,United Kingdom,BEL,Belgium,M,071080,15017706,10924442,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,CHN,China,M,071080,17832070,18722463,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,DEU,Germany,M,071080,6439353,5085030,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,EGY,Egypt,M,071080,2627227,2604588,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,ESP,Spain,M,071080,27498582,22005167,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,FRA,France,M,071080,4930366,3670529,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,IND,India,M,071080,9207935,11313987,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,ITA,Italy,M,071080,2294512,1644694,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,MEX,Mexico,M,071080,10654836,11517649,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,NLD,Netherlands,M,071080,22581323,14643000,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,POL,Poland,M,071080,13369919,12822864,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,SAU,Saudi Arabia,M,071080,155716,123095,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,TUR,Türkiye,M,071080,4937128,5306149,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,USA,United States,M,071080,2251871,1588026,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,W00,World,M,071080,192375440,167844067,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GBR,United Kingdom,_899,"Areas, nes",M,071080,52576896,45872384,,,SYNTHETIC_partner_detail_GBR.csv
+2022,GRC,Greece,W00,World,M,071080,16125069,11979127,,N/A,SYNTHETIC_world_imports.csv
+2022,HKG,Hong Kong,EGY,Egypt,M,071080,324984,280201,,,SYNTHETIC_mirror.json
+2022,HKG,Hong Kong,W00,World,M,071080,9182066,6994465,,N/A,SYNTHETIC_world_imports.csv
+2022,HUN,Hungary,W00,World,M,071080,6708688,5348795,,N/A,SYNTHETIC_world_imports.csv
+2022,IND,India,W00,World,M,071080,9129155,5952284,,N/A,SYNTHETIC_world_imports.csv
+2022,IND,India,W00,World,X,071080,89816982,106496747,,,SYNTHETIC_world_exports.json
+2022,IRL,Ireland,W00,World,M,071080,14333920,10980255,,N/A,SYNTHETIC_world_imports.csv
+2022,IRQ,Iraq,EGY,Egypt,M,071080,123863,96514,,,SYNTHETIC_mirror.json
+2022,IRQ,Iraq,W00,World,M,071080,10189907,6756925,,N/A,SYNTHETIC_world_imports.csv
+2022,ITA,Italy,EGY,Egypt,M,071080,76252,55496,,,SYNTHETIC_mirror.json
+2022,ITA,Italy,W00,World,M,071080,54317630,42463908,,N/A,SYNTHETIC_world_imports.csv
+2022,ITA,Italy,W00,World,X,071080,53062430,37884121,,,SYNTHETIC_world_exports.json
+2022,JOR,Jordan,EGY,Egypt,M,071080,359853,273741,,,SYNTHETIC_mirror.json
+2022,JOR,Jordan,W00,World,M,071080,17210989,13798622,,N/A,SYNTHETIC_world_imports.csv
+2022,JPN,Japan,W00,World,M,071080,53708290,42232218,,N/A,SYNTHETIC_world_imports.csv
+2022,KEN,Kenya,EGY,Egypt,M,071080,49125,35829,,,SYNTHETIC_mirror.json
+2022,KEN,Kenya,W00,World,M,071080,12071800,9455709,,N/A,SYNTHETIC_world_imports.csv
+2022,KOR,South Korea,W00,World,M,071080,22353481,17920525,,N/A,SYNTHETIC_world_imports.csv
+2022,KWT,Kuwait,BEL,Belgium,M,071080,2008498,1574711,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,CHN,China,M,071080,1920222,2403109,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,DEU,Germany,M,071080,398993,327517,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,EGY,Egypt,M,071080,2274266,1353831,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,ESP,Spain,M,071080,849233,793791,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,FRA,France,M,071080,2032206,1635675,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,IND,India,M,071080,508960,574527,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,ITA,Italy,M,071080,377216,279393,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,MEX,Mexico,M,071080,582019,591271,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,NLD,Netherlands,M,071080,2398987,1820534,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,POL,Poland,M,071080,746893,751926,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,SAU,Saudi Arabia,M,071080,17087,13432,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,TUR,Türkiye,M,071080,380328,394167,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,USA,United States,M,071080,620671,451804,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,W00,World,M,071080,19890649,17061599,,,SYNTHETIC_partner_detail_KWT.csv
+2022,KWT,Kuwait,_899,"Areas, nes",M,071080,4775070,4095911,,,SYNTHETIC_partner_detail_KWT.csv
+2022,LBN,Lebanon,EGY,Egypt,M,071080,180437,168645,,,SYNTHETIC_mirror.json
+2022,LBN,Lebanon,W00,World,M,071080,6556273,5256852,,N/A,SYNTHETIC_world_imports.csv
+2022,LBY,Libya,EGY,Egypt,M,071080,588973,515734,,,SYNTHETIC_mirror.json
+2022,LBY,Libya,W00,World,M,071080,15738813,11869467,,N/A,SYNTHETIC_world_imports.csv
+2022,MEX,Mexico,W00,World,M,071080,7420236,5209707,,N/A,SYNTHETIC_world_imports.csv
+2022,MEX,Mexico,W00,World,X,071080,93753418,90403726,,,SYNTHETIC_world_exports.json
+2022,MYS,Malaysia,W00,World,M,071080,7679745,7051097,,N/A,SYNTHETIC_world_imports.csv
+2022,NLD,Netherlands,BEL,Belgium,M,071080,18030408,10380715,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,CHN,China,M,071080,13961948,13858430,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,DEU,Germany,M,071080,5850919,2926171,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,EGY,Egypt,M,071080,932277,2835630,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,ESP,Spain,M,071080,16643858,10798625,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,FRA,France,M,071080,19860362,11447179,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,IND,India,M,071080,8588325,7654304,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,ITA,Italy,M,071080,3104967,1841776,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,MEX,Mexico,M,071080,2024897,1564450,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,POL,Poland,M,071080,3290326,2644541,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,SAU,Saudi Arabia,M,071080,178290,114499,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,TUR,Türkiye,M,071080,1467834,1348193,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,USA,United States,M,071080,2511282,1209564,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,W00,World,M,071080,116628248,82984585,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NLD,Netherlands,W00,World,X,071080,332728698,221151817,,,SYNTHETIC_world_exports.json
+2022,NLD,Netherlands,_899,"Areas, nes",M,071080,20182555,14360508,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2022,NOR,Norway,W00,World,M,071080,18683043,13133987,,N/A,SYNTHETIC_world_imports.csv
+2022,OMN,Oman,EGY,Egypt,M,071080,233335,192961,,,SYNTHETIC_mirror.json
+2022,OMN,Oman,W00,World,M,071080,8102280,6729235,,N/A,SYNTHETIC_world_imports.csv
+2022,POL,Poland,W00,World,M,071080,21604678,26169990,,N/A,SYNTHETIC_world_imports.csv
+2022,POL,Poland,W00,World,X,071080,191594424,196874644,,,SYNTHETIC_world_exports.json
+2022,PRT,Portugal,W00,World,M,071080,10461695,6511830,,N/A,SYNTHETIC_world_imports.csv
+2022,QAT,Qatar,EGY,Egypt,M,071080,405296,404644,,,SYNTHETIC_mirror.json
+2022,QAT,Qatar,W00,World,M,071080,19953633,17623908,,N/A,SYNTHETIC_world_imports.csv
+2022,ROU,Romania,W00,World,M,071080,13868714,12046138,,N/A,SYNTHETIC_world_imports.csv
+2022,RUS,Russian Federation,EGY,Egypt,M,071080,2552257,2083542,,,SYNTHETIC_mirror.json
+2022,RUS,Russian Federation,W00,World,M,071080,42672365,30586932,,N/A,SYNTHETIC_world_imports.csv
+2022,SAU,Saudi Arabia,BEL,Belgium,M,071080,5660366,4304175,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,CHN,China,M,071080,1750447,2074198,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,DEU,Germany,M,071080,1484873,1046609,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,EGY,Egypt,M,071080,7180262,6779177,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,ESP,Spain,M,071080,3248070,2877072,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,FRA,France,M,071080,2034851,1464496,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,IND,India,M,071080,2816684,3455785,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,ITA,Italy,M,071080,330473,260252,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,MEX,Mexico,M,071080,2038154,2228204,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,NLD,Netherlands,M,071080,4749209,3063839,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,POL,Poland,M,071080,2654422,2878183,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,TUR,Türkiye,M,071080,1397227,1421059,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,USA,United States,M,071080,1238271,852776,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,W00,World,M,071080,47262370,42253006,,,SYNTHETIC_partner_detail_SAU.json
+2022,SAU,Saudi Arabia,W00,World,X,071080,3144838,2481611,,,SYNTHETIC_world_exports.json
+2022,SAU,Saudi Arabia,_899,"Areas, nes",M,071080,10679061,9547181,,,SYNTHETIC_partner_detail_SAU.json
+2022,SDN,Sudan,W00,World,M,071080,11238400,9386781,,N/A,SYNTHETIC_world_imports.csv
+2022,SGP,Singapore,W00,World,M,071080,21037164,18880146,,N/A,SYNTHETIC_world_imports.csv
+2022,SWE,Sweden,W00,World,M,071080,18339746,17252450,,N/A,SYNTHETIC_world_imports.csv
+2022,TUR,Türkiye,W00,World,M,071080,7251595,5251683,,N/A,SYNTHETIC_world_imports.csv
+2022,TUR,Türkiye,W00,World,X,071080,56637394,60001578,,,SYNTHETIC_world_exports.json
+2022,USA,United States,W00,World,M,071080,556077368,415859910,,N/A,SYNTHETIC_world_imports.csv
+2022,USA,United States,W00,World,X,071080,47521348,30663144,,,SYNTHETIC_world_exports.json
+2023,ARE,United Arab Emirates,BEL,Belgium,M,071080,4510097,2705824,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,CHN,China,M,071080,3233813,2619275,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,DEU,Germany,M,071080,2237226,1352644,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,EGY,Egypt,M,071080,5386862,3919738,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,ESP,Spain,M,071080,10268243,6717284,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,FRA,France,M,071080,1196742,704006,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,IND,India,M,071080,1022743,1027475,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,ITA,Italy,M,071080,459044,259216,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,MEX,Mexico,M,071080,851969,661517,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,NLD,Netherlands,M,071080,3266425,1658143,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,POL,Poland,M,071080,1867996,1490160,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,SAU,Saudi Arabia,M,071080,57476,36991,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,TUR,Türkiye,M,071080,473632,429181,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,USA,United States,M,071080,495489,246290,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,W00,World,M,071080,43866990,29587256,,,SYNTHETIC_partner_detail_ARE.csv
+2023,ARE,United Arab Emirates,_899,"Areas, nes",M,071080,8539233,5759512,,,SYNTHETIC_partner_detail_ARE.csv
+2023,AUS,Australia,W00,World,M,071080,18410909,13479038,,N/A,SYNTHETIC_world_imports.csv
+2023,AUT,Austria,W00,World,M,071080,25864838,21768899,,N/A,SYNTHETIC_world_imports.csv
+2023,BEL,Belgium,W00,World,M,071080,55502605,42986076,,N/A,SYNTHETIC_world_imports.csv
+2023,BEL,Belgium,W00,World,X,071080,225820487,167889372,,,SYNTHETIC_world_exports.json
+2023,BHR,Bahrain,EGY,Egypt,M,071080,112429,80529,,,SYNTHETIC_mirror.json
+2023,BHR,Bahrain,W00,World,M,071080,13739938,9346683,,N/A,SYNTHETIC_world_imports.csv
+2023,BRA,Brazil,W00,World,M,071080,8563857,7986573,,N/A,SYNTHETIC_world_imports.csv
+2023,CAN,Canada,W00,World,M,071080,54041281,44173663,,N/A,SYNTHETIC_world_imports.csv
+2023,CHE,Switzerland,W00,World,M,071080,22758431,18747232,,N/A,SYNTHETIC_world_imports.csv
+2023,CHN,China,W00,World,M,071080,6475558,5386822,,N/A,SYNTHETIC_world_imports.csv
+2023,CHN,China,W00,World,X,071080,253087628,277355268,,,SYNTHETIC_world_exports.json
+2023,CIV,Côte d'Ivoire,EGY,Egypt,M,071080,685928,563804,,,SYNTHETIC_mirror.json
+2023,CIV,Côte d'Ivoire,W00,World,M,071080,11322587,7452560,,N/A,SYNTHETIC_world_imports.csv
+2023,CZE,Czechia,W00,World,M,071080,11991983,9191598,,N/A,SYNTHETIC_world_imports.csv
+2023,DEU,Germany,BEL,Belgium,M,071080,38755549,27249584,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,CHN,China,M,071080,23305119,29629193,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,EGY,Egypt,M,071080,609165,617898,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,ESP,Spain,M,071080,32075250,24818022,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,FRA,France,M,071080,20477518,13598915,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,IND,India,M,071080,3877288,5389124,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,ITA,Italy,M,071080,8354686,6650820,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,MEX,Mexico,M,071080,6276540,6395481,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,NLD,Netherlands,M,071080,28173622,17578756,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,POL,Poland,M,071080,37506253,39661513,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,SAU,Saudi Arabia,M,071080,285867,235686,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,TUR,Türkiye,M,071080,4743233,5431130,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,USA,United States,M,071080,6893297,4934441,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,W00,World,M,071080,292014552,251745815,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DEU,Germany,W00,World,X,071080,88061238,58462422,,,SYNTHETIC_world_exports.json
+2023,DEU,Germany,_899,"Areas, nes",M,071080,80681165,69555252,,,SYNTHETIC_partner_detail_DEU.csv
+2023,DNK,Denmark,W00,World,M,071080,16196809,13048735,,N/A,SYNTHETIC_world_imports.csv
+2023,EGY,Egypt,ARE,United Arab Emirates,X,071080,5143708,3919736,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,BHR,Bahrain,X,071080,96980,79841,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,CIV,Côte d'Ivoire,X,071080,731361,569301,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,DEU,Germany,X,071080,597830,609669,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,FRA,France,X,071080,187979,168131,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,GBR,United Kingdom,X,071080,2797619,2854678,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,HKG,Hong Kong,X,071080,317437,294438,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,IRQ,Iraq,X,071080,116288,98464,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,ITA,Italy,X,071080,73302,60292,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,JOR,Jordan,X,071080,353296,310406,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,KEN,Kenya,X,071080,49268,39968,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,KWT,Kuwait,X,071080,1469476,1519550,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,LBN,Lebanon,X,071080,197313,187514,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,LBY,Libya,X,071080,647998,568753,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,NLD,Netherlands,X,071080,3826046,2977808,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,OMN,Oman,X,071080,235820,217337,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,QAT,Qatar,X,071080,422843,440291,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,RUS,Russian Federation,X,071080,2441523,2224738,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,SAU,Saudi Arabia,X,071080,7526024,7645679,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,SDN,Sudan,X,071080,637847,593566,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,W00,World,M,071080,9832733,7674807,,N/A,SYNTHETIC_world_imports.csv
+2023,EGY,Egypt,W00,World,X,071080,34137870,31088120,,N/A,SYNTHETIC_home_flows.csv
+2023,EGY,Egypt,_899,"Areas, nes",X,071080,6267912,5707960,,N/A,SYNTHETIC_home_flows.csv
+2023,ESP,Spain,W00,World,M,071080,30183918,19968218,,N/A,SYNTHETIC_world_imports.csv
+2023,ESP,Spain,W00,World,X,071080,340976679,271153856,,,SYNTHETIC_world_exports.json
+2023,FIN,Finland,W00,World,M,071080,9249755,6584091,,N/A,SYNTHETIC_world_imports.csv
+2023,FRA,France,EGY,Egypt,M,071080,193763,166428,,,SYNTHETIC_mirror.json
+2023,FRA,France,W00,World,M,071080,123194072,92559871,,N/A,SYNTHETIC_world_imports.csv
+2023,FRA,France,W00,World,X,071080,159963346,112134389,,,SYNTHETIC_world_exports.json
+2023,GBR,United Kingdom,BEL,Belgium,M,071080,17020187,11839219,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,CHN,China,M,071080,17842788,18642116,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,DEU,Germany,M,071080,7718623,5871544,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,EGY,Egypt,M,071080,2741178,2826556,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,ESP,Spain,M,071080,32835957,26261557,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,FRA,France,M,071080,5738972,4324860,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,IND,India,M,071080,9447543,11343339,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,ITA,Italy,M,071080,2598946,1854408,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,MEX,Mexico,M,071080,10363736,11087834,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,NLD,Netherlands,M,071080,26306351,16980919,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,POL,Poland,M,071080,14538716,14089345,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,SAU,Saudi Arabia,M,071080,162596,126033,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,TUR,Türkiye,M,071080,4945989,5481235,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,USA,United States,M,071080,2591099,1884513,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,W00,World,M,071080,212352568,181855506,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GBR,United Kingdom,_899,"Areas, nes",M,071080,57499887,49242028,,,SYNTHETIC_partner_detail_GBR.csv
+2023,GRC,Greece,W00,World,M,071080,17047452,12847605,,N/A,SYNTHETIC_world_imports.csv
+2023,HKG,Hong Kong,EGY,Egypt,M,071080,331099,295415,,,SYNTHETIC_mirror.json
+2023,HKG,Hong Kong,W00,World,M,071080,10330487,7895403,,N/A,SYNTHETIC_world_imports.csv
+2023,HUN,Hungary,W00,World,M,071080,7842070,6144084,,N/A,SYNTHETIC_world_imports.csv
+2023,IND,India,W00,World,M,071080,9858853,6372617,,N/A,SYNTHETIC_world_imports.csv
+2023,IND,India,W00,World,X,071080,102383654,121979385,,,SYNTHETIC_world_exports.json
+2023,IRL,Ireland,W00,World,M,071080,15489445,11801660,,N/A,SYNTHETIC_world_imports.csv
+2023,IRQ,Iraq,EGY,Egypt,M,071080,121869,97961,,,SYNTHETIC_mirror.json
+2023,IRQ,Iraq,W00,World,M,071080,11188817,7448116,,N/A,SYNTHETIC_world_imports.csv
+2023,ITA,Italy,EGY,Egypt,M,071080,84008,61425,,,SYNTHETIC_mirror.json
+2023,ITA,Italy,W00,World,M,071080,54630316,42654589,,N/A,SYNTHETIC_world_imports.csv
+2023,ITA,Italy,W00,World,X,071080,61927173,44022511,,,SYNTHETIC_world_exports.json
+2023,JOR,Jordan,EGY,Egypt,M,071080,394950,309076,,,SYNTHETIC_mirror.json
+2023,JOR,Jordan,W00,World,M,071080,17345811,14184936,,N/A,SYNTHETIC_world_imports.csv
+2023,JPN,Japan,W00,World,M,071080,58078024,46510540,,N/A,SYNTHETIC_world_imports.csv
+2023,KEN,Kenya,EGY,Egypt,M,071080,55151,40076,,,SYNTHETIC_mirror.json
+2023,KEN,Kenya,W00,World,M,071080,12464298,9737146,,N/A,SYNTHETIC_world_imports.csv
+2023,KOR,South Korea,W00,World,M,071080,24348924,19036161,,N/A,SYNTHETIC_world_imports.csv
+2023,KWT,Kuwait,BEL,Belgium,M,071080,1997864,1598985,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,CHN,China,M,071080,1920774,2425805,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,DEU,Germany,M,071080,438334,349540,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,EGY,Egypt,M,071080,2552520,1517239,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,ESP,Spain,M,071080,935090,912806,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,FRA,France,M,071080,2113130,1731519,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,IND,India,M,071080,561337,649061,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,ITA,Italy,M,071080,371045,273018,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,MEX,Mexico,M,071080,604497,593122,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,NLD,Netherlands,M,071080,2319803,1798012,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,POL,Poland,M,071080,781740,793729,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,SAU,Saudi Arabia,M,071080,16645,13477,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,TUR,Türkiye,M,071080,425285,444710,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,USA,United States,M,071080,617716,426204,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,W00,World,M,071080,21184062,18303886,,,SYNTHETIC_partner_detail_KWT.csv
+2023,KWT,Kuwait,_899,"Areas, nes",M,071080,5528282,4776659,,,SYNTHETIC_partner_detail_KWT.csv
+2023,LBN,Lebanon,EGY,Egypt,M,071080,207510,187638,,,SYNTHETIC_mirror.json
+2023,LBN,Lebanon,W00,World,M,071080,7275661,5874945,,N/A,SYNTHETIC_world_imports.csv
+2023,LBY,Libya,EGY,Egypt,M,071080,665849,567540,,,SYNTHETIC_mirror.json
+2023,LBY,Libya,W00,World,M,071080,16405855,12392302,,N/A,SYNTHETIC_world_imports.csv
+2023,MEX,Mexico,W00,World,M,071080,7954078,5573271,,N/A,SYNTHETIC_world_imports.csv
+2023,MEX,Mexico,W00,World,X,071080,94418132,90433406,,,SYNTHETIC_world_exports.json
+2023,MYS,Malaysia,W00,World,M,071080,8149215,7446208,,N/A,SYNTHETIC_world_imports.csv
+2023,NLD,Netherlands,BEL,Belgium,M,071080,18683644,10624522,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,CHN,China,M,071080,15256594,15152348,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,DEU,Germany,M,071080,6003865,2918218,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,EGY,Egypt,M,071080,998437,2960755,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,ESP,Spain,M,071080,16329859,10245151,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,FRA,France,M,071080,19179126,11296093,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,IND,India,M,071080,8899443,7632589,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,ITA,Italy,M,071080,3191713,1799380,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,MEX,Mexico,M,071080,2261046,1738985,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,POL,Poland,M,071080,3886414,3080560,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,SAU,Saudi Arabia,M,071080,187482,119663,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,TUR,Türkiye,M,071080,1517096,1328293,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,USA,United States,M,071080,3016292,1431586,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,W00,World,M,071080,123959509,87694935,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NLD,Netherlands,W00,World,X,071080,302044143,202747234,,,SYNTHETIC_world_exports.json
+2023,NLD,Netherlands,_899,"Areas, nes",M,071080,24548498,17366792,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2023,NOR,Norway,W00,World,M,071080,18475580,12738155,,N/A,SYNTHETIC_world_imports.csv
+2023,OMN,Oman,EGY,Egypt,M,071080,272166,216282,,,SYNTHETIC_mirror.json
+2023,OMN,Oman,W00,World,M,071080,7248049,6139899,,N/A,SYNTHETIC_world_imports.csv
+2023,POL,Poland,W00,World,M,071080,24992147,15304569,,N/A,SYNTHETIC_world_imports.csv
+2023,POL,Poland,W00,World,X,071080,201043251,205906811,,,SYNTHETIC_world_exports.json
+2023,PRT,Portugal,W00,World,M,071080,11944032,7540952,,N/A,SYNTHETIC_world_imports.csv
+2023,QAT,Qatar,EGY,Egypt,M,071080,448824,441299,,,SYNTHETIC_mirror.json
+2023,QAT,Qatar,W00,World,M,071080,16977010,15021864,,N/A,SYNTHETIC_world_imports.csv
+2023,ROU,Romania,W00,World,M,071080,15604632,13505083,,N/A,SYNTHETIC_world_imports.csv
+2023,RUS,Russian Federation,EGY,Egypt,M,071080,2688605,2232180,,,SYNTHETIC_mirror.json
+2023,RUS,Russian Federation,W00,World,M,071080,53601279,38934612,,N/A,SYNTHETIC_world_imports.csv
+2023,SAU,Saudi Arabia,BEL,Belgium,M,071080,6232792,4779022,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,CHN,China,M,071080,1900920,2272318,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,DEU,Germany,M,071080,1651537,1093534,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,EGY,Egypt,M,071080,8055584,7741471,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,ESP,Spain,M,071080,3975637,3383861,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,FRA,France,M,071080,2243362,1591716,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,IND,India,M,071080,2867043,3550865,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,ITA,Italy,M,071080,309917,255852,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,MEX,Mexico,M,071080,2074946,2268942,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,NLD,Netherlands,M,071080,4871880,3093175,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,POL,Poland,M,071080,2643159,2856538,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,TUR,Türkiye,M,071080,1437947,1511036,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,USA,United States,M,071080,1206328,861141,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,W00,World,M,071080,47910867,42798754,,,SYNTHETIC_partner_detail_SAU.json
+2023,SAU,Saudi Arabia,W00,World,X,071080,3493951,2786838,,,SYNTHETIC_world_exports.json
+2023,SAU,Saudi Arabia,_899,"Areas, nes",M,071080,8439815,7539283,,,SYNTHETIC_partner_detail_SAU.json
+2023,SDN,Sudan,W00,World,M,071080,10183481,8480628,,N/A,SYNTHETIC_world_imports.csv
+2023,SGP,Singapore,W00,World,M,071080,22970150,20512006,,N/A,SYNTHETIC_world_imports.csv
+2023,SWE,Sweden,W00,World,M,071080,16841266,15766827,,N/A,SYNTHETIC_world_imports.csv
+2023,TUR,Türkiye,W00,World,M,071080,8158613,5980278,,N/A,SYNTHETIC_world_imports.csv
+2023,TUR,Türkiye,W00,World,X,071080,55643275,59321243,,,SYNTHETIC_world_exports.json
+2023,USA,United States,W00,World,M,071080,549789558,408471916,,N/A,SYNTHETIC_world_imports.csv
+2023,USA,United States,W00,World,X,071080,42702807,27462683,,,SYNTHETIC_world_exports.json
+2024,AUS,Australia,W00,World,M,071080,17028773,12295267,,N/A,SYNTHETIC_world_imports.csv
+2024,AUT,Austria,W00,World,M,071080,26983490,22258507,,N/A,SYNTHETIC_world_imports.csv
+2024,BEL,Belgium,W00,World,M,071080,55718646,42451473,,N/A,SYNTHETIC_world_imports.csv
+2024,BEL,Belgium,W00,World,X,071080,218598984,161350955,,,SYNTHETIC_world_exports.json
+2024,BHR,Bahrain,EGY,Egypt,M,071080,113145,81698,,,SYNTHETIC_mirror.json
+2024,BHR,Bahrain,W00,World,M,071080,15968336,10886819,,N/A,SYNTHETIC_world_imports.csv
+2024,BRA,Brazil,W00,World,M,071080,9546994,8862478,,N/A,SYNTHETIC_world_imports.csv
+2024,CAN,Canada,W00,World,M,071080,48294142,39735183,,N/A,SYNTHETIC_world_imports.csv
+2024,CHE,Switzerland,W00,World,M,071080,25216264,20703620,,N/A,SYNTHETIC_world_imports.csv
+2024,CHN,China,W00,World,M,071080,8057524,6780504,,N/A,SYNTHETIC_world_imports.csv
+2024,CHN,China,W00,World,X,071080,267418047,298762552,,,SYNTHETIC_world_exports.json
+2024,CIV,Côte d'Ivoire,EGY,Egypt,M,071080,765027,636411,,,SYNTHETIC_mirror.json
+2024,CIV,Côte d'Ivoire,W00,World,M,071080,11246168,7555264,,N/A,SYNTHETIC_world_imports.csv
+2024,CZE,Czechia,W00,World,M,071080,12219952,9353701,,N/A,SYNTHETIC_world_imports.csv
+2024,DEU,Germany,BEL,Belgium,M,071080,37208576,26239624,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,CHN,China,M,071080,28015792,34088551,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,EGY,Egypt,M,071080,617916,608281,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,ESP,Spain,M,071080,33844051,26733603,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,FRA,France,M,071080,19685246,13157067,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,IND,India,M,071080,4769832,6426005,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,ITA,Italy,M,071080,9524147,7922919,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,MEX,Mexico,M,071080,6420725,6282101,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,NLD,Netherlands,M,071080,30350477,19427312,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,POL,Poland,M,071080,36015538,38981754,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,SAU,Saudi Arabia,M,071080,336946,278723,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,TUR,Türkiye,M,071080,5250865,5597169,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,USA,United States,M,071080,6964873,4939540,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,W00,World,M,071080,272517263,237274571,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DEU,Germany,W00,World,X,071080,110864560,74506958,,,SYNTHETIC_world_exports.json
+2024,DEU,Germany,_899,"Areas, nes",M,071080,53512279,46591922,,,SYNTHETIC_partner_detail_DEU.csv
+2024,DNK,Denmark,W00,World,M,071080,16570075,13274886,,N/A,SYNTHETIC_world_imports.csv
+2024,EGY,Egypt,ARE,United Arab Emirates,X,071080,5480627,4254475,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,BHR,Bahrain,X,071080,98927,81741,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,CIV,Côte d'Ivoire,X,071080,802170,635026,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,DEU,Germany,X,071080,599249,608304,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,FRA,France,X,071080,190377,172667,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,GBR,United Kingdom,X,071080,3051918,3107577,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,HKG,Hong Kong,X,071080,333355,314040,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,IRQ,Iraq,X,071080,119756,98689,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,ITA,Italy,X,071080,80994,67423,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,JOR,Jordan,X,071080,399713,348694,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,KEN,Kenya,X,071080,53427,43996,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,KWT,Kuwait,X,071080,1676485,1722242,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,LBN,Lebanon,X,071080,225607,213961,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,LBY,Libya,X,071080,705355,634112,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,NLD,Netherlands,X,071080,4016596,3131213,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,OMN,Oman,X,071080,263527,247922,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,QAT,Qatar,X,071080,469678,479849,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,RUS,Russian Federation,X,071080,2607697,2370664,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,SAU,Saudi Arabia,X,071080,8500010,8643662,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,SDN,Sudan,X,071080,665585,616730,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,W00,World,M,071080,10115888,7823657,,N/A,SYNTHETIC_world_imports.csv
+2024,EGY,Egypt,W00,World,X,071080,40692219,37274853,,N/A,SYNTHETIC_home_flows.csv
+2024,EGY,Egypt,_899,"Areas, nes",X,071080,10351166,9481866,,N/A,SYNTHETIC_home_flows.csv
+2024,ESP,Spain,W00,World,M,071080,34521014,23028450,,N/A,SYNTHETIC_world_imports.csv
+2024,ESP,Spain,W00,World,X,071080,410780274,329042676,,,SYNTHETIC_world_exports.json
+2024,FIN,Finland,W00,World,M,071080,9031454,6486139,,N/A,SYNTHETIC_world_imports.csv
+2024,FRA,France,EGY,Egypt,M,071080,204214,170859,,,SYNTHETIC_mirror.json
+2024,FRA,France,W00,World,M,071080,131897363,100172856,,N/A,SYNTHETIC_world_imports.csv
+2024,FRA,France,W00,World,X,071080,159641782,111612960,,,SYNTHETIC_world_exports.json
+2024,GBR,United Kingdom,BEL,Belgium,M,071080,17788372,12954310,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,CHN,China,M,071080,17679032,19067704,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,DEU,Germany,M,071080,9074182,6833406,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,EGY,Egypt,M,071080,2988049,3054979,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,ESP,Spain,M,071080,37854500,30609915,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,FRA,France,M,071080,7029497,5173866,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,IND,India,M,071080,9300033,11204513,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,ITA,Italy,M,071080,2972629,2085441,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,MEX,Mexico,M,071080,9634485,10668790,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,NLD,Netherlands,M,071080,30046699,19831746,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,POL,Poland,M,071080,15105832,15446554,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,SAU,Saudi Arabia,M,071080,171986,130775,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,TUR,Türkiye,M,071080,5261233,5654581,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,USA,United States,M,071080,3067500,2205328,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,W00,World,M,071080,199333816,171977996,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GBR,United Kingdom,_899,"Areas, nes",M,071080,31359787,27056088,,,SYNTHETIC_partner_detail_GBR.csv
+2024,GRC,Greece,W00,World,M,071080,15491026,11701539,,N/A,SYNTHETIC_world_imports.csv
+2024,HKG,Hong Kong,EGY,Egypt,M,071080,355644,311372,,,SYNTHETIC_mirror.json
+2024,HKG,Hong Kong,W00,World,M,071080,10302171,7717138,,N/A,SYNTHETIC_world_imports.csv
+2024,HUN,Hungary,W00,World,M,071080,8394977,6566848,,N/A,SYNTHETIC_world_imports.csv
+2024,IND,India,W00,World,M,071080,9843209,6330415,,N/A,SYNTHETIC_world_imports.csv
+2024,IND,India,W00,World,X,071080,104505248,124254143,,,SYNTHETIC_world_exports.json
+2024,IRL,Ireland,W00,World,M,071080,15674300,11967140,,N/A,SYNTHETIC_world_imports.csv
+2024,IRQ,Iraq,EGY,Egypt,M,071080,127422,99194,,,SYNTHETIC_mirror.json
+2024,IRQ,Iraq,W00,World,M,071080,11692452,7763460,,N/A,SYNTHETIC_world_imports.csv
+2024,ITA,Italy,EGY,Egypt,M,071080,92831,66696,,,SYNTHETIC_mirror.json
+2024,ITA,Italy,W00,World,M,071080,58755522,45771720,,N/A,SYNTHETIC_world_imports.csv
+2024,ITA,Italy,W00,World,X,071080,66759525,47963881,,,SYNTHETIC_world_exports.json
+2024,JOR,Jordan,EGY,Egypt,M,071080,457074,350625,,,SYNTHETIC_mirror.json
+2024,JOR,Jordan,W00,World,M,071080,19433961,15725455,,N/A,SYNTHETIC_world_imports.csv
+2024,JPN,Japan,W00,World,M,071080,54826862,43983733,,N/A,SYNTHETIC_world_imports.csv
+2024,KEN,Kenya,EGY,Egypt,M,071080,58013,43894,,,SYNTHETIC_mirror.json
+2024,KEN,Kenya,W00,World,M,071080,14064911,10817478,,N/A,SYNTHETIC_world_imports.csv
+2024,KOR,South Korea,W00,World,M,071080,26527642,20793572,,N/A,SYNTHETIC_world_imports.csv
+2024,KWT,Kuwait,BEL,Belgium,M,071080,1936813,1586191,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,CHN,China,M,071080,1896749,2451217,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,DEU,Germany,M,071080,460807,366046,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,EGY,Egypt,M,071080,2868983,1715621,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,ESP,Spain,M,071080,1134888,1055018,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,FRA,France,M,071080,2352541,1848691,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,IND,India,M,071080,653571,731513,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,ITA,Italy,M,071080,364459,267315,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,MEX,Mexico,M,071080,598872,606913,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,NLD,Netherlands,M,071080,2270157,1738585,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,POL,Poland,M,071080,835719,835847,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,SAU,Saudi Arabia,M,071080,16860,13249,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,TUR,Türkiye,M,071080,468680,497729,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,USA,United States,M,071080,571941,406472,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,W00,World,M,071080,22312530,19174806,,,SYNTHETIC_partner_detail_KWT.csv
+2024,KWT,Kuwait,_899,"Areas, nes",M,071080,5881490,5054399,,,SYNTHETIC_partner_detail_KWT.csv
+2024,LBN,Lebanon,EGY,Egypt,M,071080,225943,212469,,,SYNTHETIC_mirror.json
+2024,LBN,Lebanon,W00,World,M,071080,7408865,5850316,,N/A,SYNTHETIC_world_imports.csv
+2024,LBY,Libya,EGY,Egypt,M,071080,721601,632631,,,SYNTHETIC_mirror.json
+2024,LBY,Libya,W00,World,M,071080,19576599,14680469,,N/A,SYNTHETIC_world_imports.csv
+2024,MEX,Mexico,W00,World,M,071080,9535976,6591781,,N/A,SYNTHETIC_world_imports.csv
+2024,MEX,Mexico,W00,World,X,071080,101594901,96961315,,,SYNTHETIC_world_exports.json
+2024,MYS,Malaysia,W00,World,M,071080,8408542,7739646,,N/A,SYNTHETIC_world_imports.csv
+2024,NLD,Netherlands,BEL,Belgium,M,071080,19005312,10931223,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,CHN,China,M,071080,17374717,16825166,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,DEU,Germany,M,071080,6018559,2984820,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,EGY,Egypt,M,071080,1033580,3121025,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,ESP,Spain,M,071080,15360011,9807193,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,FRA,France,M,071080,18936387,11369908,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,IND,India,M,071080,9021660,7593533,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,ITA,Italy,M,071080,3110217,1814108,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,MEX,Mexico,M,071080,2499419,1947037,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,POL,Poland,M,071080,4439079,3641983,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,SAU,Saudi Arabia,M,071080,204869,129180,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,TUR,Türkiye,M,071080,1507906,1306186,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,USA,United States,M,071080,3638304,1722475,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,W00,World,M,071080,137065824,98212155,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NLD,Netherlands,W00,World,X,071080,406549240,270927032,,,SYNTHETIC_world_exports.json
+2024,NLD,Netherlands,_899,"Areas, nes",M,071080,34915804,25018318,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2024,NOR,Norway,W00,World,M,071080,20757378,14654721,,N/A,SYNTHETIC_world_imports.csv
+2024,OMN,Oman,EGY,Egypt,M,071080,302320,245234,,,SYNTHETIC_mirror.json
+2024,OMN,Oman,W00,World,M,071080,7846115,6582566,,N/A,SYNTHETIC_world_imports.csv
+2024,POL,Poland,W00,World,M,071080,25551126,15696227,,N/A,SYNTHETIC_world_imports.csv
+2024,POL,Poland,W00,World,X,071080,200263330,205991515,,,SYNTHETIC_world_exports.json
+2024,PRT,Portugal,W00,World,M,071080,11620495,7286954,,N/A,SYNTHETIC_world_imports.csv
+2024,QAT,Qatar,EGY,Egypt,M,071080,478380,473875,,,SYNTHETIC_mirror.json
+2024,QAT,Qatar,W00,World,M,071080,19328839,17035376,,N/A,SYNTHETIC_world_imports.csv
+2024,ROU,Romania,W00,World,M,071080,14973512,13152250,,N/A,SYNTHETIC_world_imports.csv
+2024,RUS,Russian Federation,EGY,Egypt,M,071080,2827186,2350285,,,SYNTHETIC_mirror.json
+2024,RUS,Russian Federation,W00,World,M,071080,51712626,37697364,,N/A,SYNTHETIC_world_imports.csv
+2024,SAU,Saudi Arabia,BEL,Belgium,M,071080,7194689,5251609,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,CHN,China,M,071080,2100941,2502363,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,DEU,Germany,M,071080,1705724,1165548,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,EGY,Egypt,M,071080,8873309,8672382,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,ESP,Spain,M,071080,4621817,4053447,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,FRA,France,M,071080,2363192,1705355,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,IND,India,M,071080,2984776,3673843,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,ITA,Italy,M,071080,314425,250887,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,MEX,Mexico,M,071080,2091816,2294263,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,NLD,Netherlands,M,071080,4755798,3132126,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,POL,Poland,M,071080,2569974,2902034,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,TUR,Türkiye,M,071080,1581985,1622242,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,USA,United States,M,071080,1214428,883972,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,W00,World,M,071080,55983033,50351019,,,SYNTHETIC_partner_detail_SAU.json
+2024,SAU,Saudi Arabia,W00,World,X,071080,4013310,3196688,,,SYNTHETIC_world_exports.json
+2024,SAU,Saudi Arabia,_899,"Areas, nes",M,071080,13610159,12240948,,,SYNTHETIC_partner_detail_SAU.json
+2024,SDN,Sudan,W00,World,M,071080,11245630,9365221,,N/A,SYNTHETIC_world_imports.csv
+2024,SGP,Singapore,W00,World,M,071080,22508937,20140228,,N/A,SYNTHETIC_world_imports.csv
+2024,SWE,Sweden,W00,World,M,071080,18769916,17399643,,N/A,SYNTHETIC_world_imports.csv
+2024,TUR,Türkiye,W00,World,M,071080,7937642,5915590,,N/A,SYNTHETIC_world_imports.csv
+2024,TUR,Türkiye,W00,World,X,071080,59293813,62943688,,,SYNTHETIC_world_exports.json
+2024,USA,United States,W00,World,M,071080,687084705,508458860,,N/A,SYNTHETIC_world_imports.csv
+2024,USA,United States,W00,World,X,071080,46097654,29375546,,,SYNTHETIC_world_exports.json
+2025,AUS,Australia,W00,World,M,071080,19054694,13720511,,N/A,SYNTHETIC_world_imports.csv
+2025,AUT,Austria,W00,World,M,071080,32461789,26537883,,N/A,SYNTHETIC_world_imports.csv
+2025,BEL,Belgium,W00,World,M,071080,63449004,48698385,,N/A,SYNTHETIC_world_imports.csv
+2025,BEL,Belgium,W00,World,X,071080,259853755,191487043,,,SYNTHETIC_world_exports.json
+2025,BHR,Bahrain,EGY,Egypt,M,071080,117271,83641,,,SYNTHETIC_mirror.json
+2025,BHR,Bahrain,W00,World,M,071080,15423348,10673493,,N/A,SYNTHETIC_world_imports.csv
+2025,BRA,Brazil,W00,World,M,071080,10198228,9498984,,N/A,SYNTHETIC_world_imports.csv
+2025,CAN,Canada,W00,World,M,071080,55290254,44986259,,N/A,SYNTHETIC_world_imports.csv
+2025,CHE,Switzerland,W00,World,M,071080,25403766,21323483,,N/A,SYNTHETIC_world_imports.csv
+2025,CHN,China,W00,World,M,071080,8014634,6783898,,N/A,SYNTHETIC_world_imports.csv
+2025,CHN,China,W00,World,X,071080,282955663,314164990,,,SYNTHETIC_world_exports.json
+2025,CIV,Côte d'Ivoire,EGY,Egypt,M,071080,864377,704526,,,SYNTHETIC_mirror.json
+2025,CIV,Côte d'Ivoire,W00,World,M,071080,13076749,8576169,,N/A,SYNTHETIC_world_imports.csv
+2025,CZE,Czechia,W00,World,M,071080,12180971,9188367,,N/A,SYNTHETIC_world_imports.csv
+2025,DEU,Germany,BEL,Belgium,M,071080,35529794,24804774,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,CHN,China,M,071080,31681288,39982878,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,EGY,Egypt,M,071080,629078,621327,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,ESP,Spain,M,071080,39036942,29398950,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,FRA,France,M,071080,18492336,12473740,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,IND,India,M,071080,5540557,7656465,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,ITA,Italy,M,071080,11319053,9293327,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,MEX,Mexico,M,071080,6149242,6254323,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,NLD,Netherlands,M,071080,34963026,21581482,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,POL,Poland,M,071080,34392232,38211510,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,SAU,Saudi Arabia,M,071080,385850,322880,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,TUR,Türkiye,M,071080,5290645,5964923,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,USA,United States,M,071080,6977438,4904240,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,W00,World,M,071080,318116819,278188970,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DEU,Germany,W00,World,X,071080,113756070,76411210,,,SYNTHETIC_world_exports.json
+2025,DEU,Germany,_899,"Areas, nes",M,071080,87729338,76718151,,,SYNTHETIC_partner_detail_DEU.csv
+2025,DNK,Denmark,W00,World,M,071080,17267256,13773061,,N/A,SYNTHETIC_world_imports.csv
+2025,EGY,Egypt,ARE,United Arab Emirates,X,071080,6205322,4652046,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,BHR,Bahrain,X,071080,99688,84475,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,CIV,Côte d'Ivoire,X,071080,895521,706318,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,DEU,Germany,X,071080,588868,621497,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,FRA,France,X,071080,200545,178823,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,GBR,United Kingdom,X,071080,3249368,3378368,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,HKG,Hong Kong,X,071080,346924,325098,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,IRQ,Iraq,X,071080,121302,100918,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,ITA,Italy,X,071080,88525,75186,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,JOR,Jordan,X,071080,452133,396328,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,KEN,Kenya,X,071080,61028,48020,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,KWT,Kuwait,X,071080,1913252,1971080,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,LBN,Lebanon,X,071080,252213,237311,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,LBY,Libya,X,071080,795369,697595,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,NLD,Netherlands,X,071080,4161353,3236171,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,OMN,Oman,X,071080,305624,277815,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,QAT,Qatar,X,071080,498411,516923,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,RUS,Russian Federation,X,071080,2821068,2519779,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,SAU,Saudi Arabia,X,071080,9557039,9751598,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,SDN,Sudan,X,071080,709277,657069,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,W00,World,M,071080,11950363,9226975,,N/A,SYNTHETIC_world_imports.csv
+2025,EGY,Egypt,W00,World,X,071080,45602877,41647297,,N/A,SYNTHETIC_home_flows.csv
+2025,EGY,Egypt,_899,"Areas, nes",X,071080,12280047,11214879,,N/A,SYNTHETIC_home_flows.csv
+2025,ESP,Spain,W00,World,M,071080,34910254,23801485,,N/A,SYNTHETIC_world_imports.csv
+2025,ESP,Spain,W00,World,X,071080,430140875,342723314,,,SYNTHETIC_world_exports.json
+2025,FIN,Finland,W00,World,M,071080,11413777,8317761,,N/A,SYNTHETIC_world_imports.csv
+2025,FRA,France,EGY,Egypt,M,071080,202320,178490,,,SYNTHETIC_mirror.json
+2025,FRA,France,W00,World,M,071080,138483407,104843098,,N/A,SYNTHETIC_world_imports.csv
+2025,FRA,France,W00,World,X,071080,176948857,123798075,,,SYNTHETIC_world_exports.json
+2025,GBR,United Kingdom,BEL,Belgium,M,071080,19859001,14174609,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,CHN,China,M,071080,18007235,19158149,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,DEU,Germany,M,071080,10581370,7938924,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,EGY,Egypt,M,071080,3387376,3374544,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,ESP,Spain,M,071080,45287861,36736319,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,FRA,France,M,071080,8304208,6126913,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,IND,India,M,071080,9275734,11227284,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,ITA,Italy,M,071080,3451193,2351816,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,MEX,Mexico,M,071080,9564735,10413088,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,NLD,Netherlands,M,071080,34650476,22807685,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,POL,Poland,M,071080,16693620,16889310,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,SAU,Saudi Arabia,M,071080,171807,134486,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,TUR,Türkiye,M,071080,5207019,5872668,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,USA,United States,M,071080,3470723,2561218,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,W00,World,M,071080,262820376,223455375,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GBR,United Kingdom,_899,"Areas, nes",M,071080,74908018,63688362,,,SYNTHETIC_partner_detail_GBR.csv
+2025,GRC,Greece,W00,World,M,071080,16701742,12517951,,N/A,SYNTHETIC_world_imports.csv
+2025,HKG,Hong Kong,EGY,Egypt,M,071080,373406,328786,,,SYNTHETIC_mirror.json
+2025,HKG,Hong Kong,W00,World,M,071080,10003321,7640391,,N/A,SYNTHETIC_world_imports.csv
+2025,HUN,Hungary,W00,World,M,071080,9732338,7590427,,N/A,SYNTHETIC_world_imports.csv
+2025,IND,India,W00,World,M,071080,10663889,6734386,,N/A,SYNTHETIC_world_imports.csv
+2025,IND,India,W00,World,X,071080,110904056,131596853,,,SYNTHETIC_world_exports.json
+2025,IRL,Ireland,W00,World,M,071080,17280945,13355167,,N/A,SYNTHETIC_world_imports.csv
+2025,IRQ,Iraq,EGY,Egypt,M,071080,130848,100241,,,SYNTHETIC_mirror.json
+2025,IRQ,Iraq,W00,World,M,071080,14264047,9514549,,N/A,SYNTHETIC_world_imports.csv
+2025,ITA,Italy,EGY,Egypt,M,071080,101876,74976,,,SYNTHETIC_mirror.json
+2025,ITA,Italy,W00,World,M,071080,72165111,57270604,,N/A,SYNTHETIC_world_imports.csv
+2025,ITA,Italy,W00,World,X,071080,68587162,48952128,,,SYNTHETIC_world_exports.json
+2025,JOR,Jordan,EGY,Egypt,M,071080,517373,402809,,,SYNTHETIC_mirror.json
+2025,JOR,Jordan,W00,World,M,071080,20942091,17015928,,N/A,SYNTHETIC_world_imports.csv
+2025,JPN,Japan,W00,World,M,071080,61783912,50157731,,N/A,SYNTHETIC_world_imports.csv
+2025,KEN,Kenya,EGY,Egypt,M,071080,66651,48708,,,SYNTHETIC_mirror.json
+2025,KEN,Kenya,W00,World,M,071080,14976764,11436387,,N/A,SYNTHETIC_world_imports.csv
+2025,KOR,South Korea,W00,World,M,071080,24839644,19620495,,N/A,SYNTHETIC_world_imports.csv
+2025,KWT,Kuwait,BEL,Belgium,M,071080,2007571,1595894,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,CHN,China,M,071080,1970303,2465583,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,DEU,Germany,M,071080,493444,384715,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,EGY,Egypt,M,071080,3264515,1967431,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,ESP,Spain,M,071080,1291470,1213252,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,FRA,France,M,071080,2490440,1980615,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,IND,India,M,071080,709923,812526,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,ITA,Italy,M,071080,356030,263633,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,MEX,Mexico,M,071080,605414,617417,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,NLD,Netherlands,M,071080,2230733,1730475,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,POL,Poland,M,071080,864023,873644,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,SAU,Saudi Arabia,M,071080,17029,13293,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,TUR,Türkiye,M,071080,549101,558108,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,USA,United States,M,071080,549170,390185,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,W00,World,M,071080,20531971,17543606,,,SYNTHETIC_partner_detail_KWT.csv
+2025,KWT,Kuwait,_899,"Areas, nes",M,071080,3132805,2676835,,,SYNTHETIC_partner_detail_KWT.csv
+2025,LBN,Lebanon,EGY,Egypt,M,071080,267395,237838,,,SYNTHETIC_mirror.json
+2025,LBN,Lebanon,W00,World,M,071080,8659736,6789341,,N/A,SYNTHETIC_world_imports.csv
+2025,LBY,Libya,EGY,Egypt,M,071080,789778,703501,,,SYNTHETIC_mirror.json
+2025,LBY,Libya,W00,World,M,071080,19304382,14682053,,N/A,SYNTHETIC_world_imports.csv
+2025,MEX,Mexico,W00,World,M,071080,10424847,7214906,,N/A,SYNTHETIC_world_imports.csv
+2025,MEX,Mexico,W00,World,X,071080,111615107,106481150,,,SYNTHETIC_world_exports.json
+2025,MYS,Malaysia,W00,World,M,071080,8889200,8242736,,N/A,SYNTHETIC_world_imports.csv
+2025,NLD,Netherlands,BEL,Belgium,M,071080,20487923,11369167,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,CHN,China,M,071080,19101834,18431276,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,DEU,Germany,M,071080,6381721,2997663,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,EGY,Egypt,M,071080,1065772,3220518,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,ESP,Spain,M,071080,14586590,9256290,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,FRA,France,M,071080,18821644,11241523,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,IND,India,M,071080,9045594,7668938,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,ITA,Italy,M,071080,3072698,1789523,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,MEX,Mexico,M,071080,2791915,2129270,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,POL,Poland,M,071080,5133556,4227517,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,SAU,Saudi Arabia,M,071080,220658,136016,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,TUR,Türkiye,M,071080,1427059,1296700,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,USA,United States,M,071080,4462969,2074143,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,W00,World,M,071080,137409162,97757198,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NLD,Netherlands,W00,World,X,071080,423634678,281125305,,,SYNTHETIC_world_exports.json
+2025,NLD,Netherlands,_899,"Areas, nes",M,071080,30809229,21918654,,N/A,SYNTHETIC_partner_detail_NLD.csv
+2025,NOR,Norway,W00,World,M,071080,20806038,14851692,,N/A,SYNTHETIC_world_imports.csv
+2025,OMN,Oman,EGY,Egypt,M,071080,346236,276224,,,SYNTHETIC_mirror.json
+2025,OMN,Oman,W00,World,M,071080,8462599,7213973,,N/A,SYNTHETIC_world_imports.csv
+2025,POL,Poland,W00,World,M,071080,24784864,15387115,,N/A,SYNTHETIC_world_imports.csv
+2025,POL,Poland,W00,World,X,071080,189655189,193495077,,,SYNTHETIC_world_exports.json
+2025,PRT,Portugal,W00,World,M,071080,14338769,8910040,,N/A,SYNTHETIC_world_imports.csv
+2025,QAT,Qatar,EGY,Egypt,M,071080,499366,517273,,,SYNTHETIC_mirror.json
+2025,QAT,Qatar,W00,World,M,071080,18606850,16251897,,N/A,SYNTHETIC_world_imports.csv
+2025,ROU,Romania,W00,World,M,071080,16211184,14125851,,N/A,SYNTHETIC_world_imports.csv
+2025,RUS,Russian Federation,EGY,Egypt,M,071080,3077075,2526515,,,SYNTHETIC_mirror.json
+2025,RUS,Russian Federation,W00,World,M,071080,66810460,48560192,,N/A,SYNTHETIC_world_imports.csv
+2025,SAU,Saudi Arabia,BEL,Belgium,M,071080,7617288,5830760,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,CHN,China,M,071080,2253652,2738274,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,DEU,Germany,M,071080,1784026,1226034,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,EGY,Egypt,M,071080,10022333,9927447,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,ESP,Spain,M,071080,5374967,4779071,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,FRA,France,M,071080,2689938,1853739,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,IND,India,M,071080,3072200,3845705,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,ITA,Italy,M,071080,310696,246112,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,MEX,Mexico,M,071080,2167036,2366466,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,NLD,Netherlands,M,071080,4921760,3116156,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,POL,Poland,M,071080,2630922,2923610,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,TUR,Türkiye,M,071080,1659289,1762848,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,USA,United States,M,071080,1250952,901456,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,W00,World,M,071080,59772538,54236997,,,SYNTHETIC_partner_detail_SAU.json
+2025,SAU,Saudi Arabia,W00,World,X,071080,3852529,3038574,,,SYNTHETIC_world_exports.json
+2025,SAU,Saudi Arabia,_899,"Areas, nes",M,071080,14017479,12719319,,,SYNTHETIC_partner_detail_SAU.json
+2025,SDN,Sudan,W00,World,M,071080,12879651,10671307,,N/A,SYNTHETIC_world_imports.csv
+2025,SGP,Singapore,W00,World,M,071080,22114414,19591372,,N/A,SYNTHETIC_world_imports.csv
+2025,SWE,Sweden,W00,World,M,071080,18821645,17552224,,N/A,SYNTHETIC_world_imports.csv
+2025,TUR,Türkiye,W00,World,M,071080,9617340,7116332,,N/A,SYNTHETIC_world_imports.csv
+2025,TUR,Türkiye,W00,World,X,071080,64210045,68275873,,,SYNTHETIC_world_exports.json
+2025,USA,United States,W00,World,M,071080,658713080,489386015,,N/A,SYNTHETIC_world_imports.csv
+2025,USA,United States,W00,World,X,071080,49493726,31538332,,,SYNTHETIC_world_exports.json
+2026,BEL,Belgium,W00,World,M,071080,24242554,18451930,,N/A,SYNTHETIC_world_imports.csv
+2026,BEL,Belgium,W00,World,X,071080,90946148,66511433,,,SYNTHETIC_world_exports.json
+2026,BHR,Bahrain,EGY,Egypt,M,071080,42872,31660,,,SYNTHETIC_mirror.json
+2026,BHR,Bahrain,W00,World,M,071080,6847567,4695159,,N/A,SYNTHETIC_world_imports.csv
+2026,CAN,Canada,W00,World,M,071080,19942745,16088151,,N/A,SYNTHETIC_world_imports.csv
+2026,CHN,China,W00,World,X,071080,108735209,121504189,,,SYNTHETIC_world_exports.json
+2026,CIV,Côte d'Ivoire,EGY,Egypt,M,071080,348540,288753,,,SYNTHETIC_mirror.json
+2026,CIV,Côte d'Ivoire,W00,World,M,071080,5237132,3456758,,N/A,SYNTHETIC_world_imports.csv
+2026,EGY,Egypt,ARE,United Arab Emirates,X,071080,2412303,1866022,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,BHR,Bahrain,X,071080,38100,31561,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,CIV,Côte d'Ivoire,X,071080,364099,288443,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,DEU,Germany,X,071080,222742,223196,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,FRA,France,X,071080,74810,67164,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,GBR,United Kingdom,X,071080,1301576,1344799,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,HKG,Hong Kong,X,071080,136945,126536,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,IRQ,Iraq,X,071080,44751,37626,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,ITA,Italy,X,071080,36439,30023,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,JOR,Jordan,X,071080,188504,167026,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,KEN,Kenya,X,071080,24498,19502,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,KWT,Kuwait,X,071080,770285,799174,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,LBN,Lebanon,X,071080,102483,97864,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,LBY,Libya,X,071080,330842,284667,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,NLD,Netherlands,X,071080,1594062,1242628,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,OMN,Oman,X,071080,122342,116025,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,QAT,Qatar,X,071080,194875,204345,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,RUS,Russian Federation,X,071080,1097480,979911,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,SAU,Saudi Arabia,X,071080,3978222,4067067,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,SDN,Sudan,X,071080,268174,250952,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,W00,World,M,071080,4011327,3090010,,N/A,SYNTHETIC_world_imports.csv
+2026,EGY,Egypt,W00,World,X,071080,16569265,15250302,,N/A,SYNTHETIC_home_flows.csv
+2026,EGY,Egypt,_899,"Areas, nes",X,071080,3265733,3005771,,N/A,SYNTHETIC_home_flows.csv
+2026,ESP,Spain,W00,World,M,071080,15783346,10661079,,N/A,SYNTHETIC_world_imports.csv
+2026,ITA,Italy,EGY,Egypt,M,071080,43300,29910,,,SYNTHETIC_mirror.json
+2026,ITA,Italy,W00,World,M,071080,28000961,22150874,,N/A,SYNTHETIC_world_imports.csv
+2026,JPN,Japan,W00,World,M,071080,25554803,21009743,,N/A,SYNTHETIC_world_imports.csv
+2026,MYS,Malaysia,W00,World,M,071080,3631007,3336594,,N/A,SYNTHETIC_world_imports.csv
+2026,NOR,Norway,W00,World,M,071080,8139257,5882483,,N/A,SYNTHETIC_world_imports.csv
+2026,PRT,Portugal,W00,World,M,071080,5341654,3313622,,N/A,SYNTHETIC_world_imports.csv
+2026,SAU,Saudi Arabia,BEL,Belgium,M,071080,3106825,2332419,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,CHN,China,M,071080,924333,1102530,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,DEU,Germany,M,071080,686718,481743,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,EGY,Egypt,M,071080,4254414,4101897,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,ESP,Spain,M,071080,2350562,2088441,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,FRA,France,M,071080,1062751,729018,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,IND,India,M,071080,1175673,1462551,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,ITA,Italy,M,071080,111864,89253,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,MEX,Mexico,M,071080,805777,875386,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,NLD,Netherlands,M,071080,1853952,1154922,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,POL,Poland,M,071080,975049,1059853,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,TUR,Türkiye,M,071080,646273,687677,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,USA,United States,M,071080,478906,334561,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,W00,World,M,071080,24639372,22055753,,,SYNTHETIC_partner_detail_SAU.json
+2026,SAU,Saudi Arabia,W00,World,X,071080,1766444,1411640,,,SYNTHETIC_world_exports.json
+2026,SAU,Saudi Arabia,_899,"Areas, nes",M,071080,6206275,5555502,,,SYNTHETIC_partner_detail_SAU.json
+2026,SDN,Sudan,W00,World,M,071080,5531501,4616436,,N/A,SYNTHETIC_world_imports.csv
+2026,SGP,Singapore,W00,World,M,071080,9692893,8583019,,N/A,SYNTHETIC_world_imports.csv

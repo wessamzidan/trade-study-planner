@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade Study Planner dashboard</title>
+<style>
+:root{--ink:#18222f;--muted:#4b5666;--line:#cfd6df;--bg:#f3f5f8;--card:#fff;--pri:#1d5c8a;--pri-d:#14425f;--pri-t:#e4eef6;
+--core:#1d5c8a;--growth:#a64b00;--new:#5b2fa0;--minor:#5d6672;--pos:#0b6b3a;--neg:#a31f1f;--buyer:#8a5a00;--tot:#334155;
+--focus:#0b57d0;--r:8px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--pri)}
+h1,h2,h3,h4{line-height:1.25;margin:0 0 .5rem}
+h1{font-size:1.45rem}h2{font-size:1.2rem}h3{font-size:1.02rem}h4{font-size:.95rem}
+p{margin:.35rem 0}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:.5rem 1rem;z-index:10}
+.skip:focus{left:8px;top:8px}
+header.top{background:#fff;border-bottom:1px solid var(--line);padding:.9rem 1rem .6rem}
+.wrap{max-width:1240px;margin:0 auto;padding:0 1rem}
+header.top .wrap{padding:0}
+.sub{color:var(--muted);font-size:.9rem}
+.demo{background:#fff4d6;border:1px solid #d9b23a;color:#5a4300;padding:.35rem .6rem;border-radius:6px;font-size:.85rem;margin-top:.5rem}
+nav.tabs{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav.tabs .wrap{display:flex;gap:.25rem;overflow-x:auto;padding:.4rem 1rem}
+[role=tab]{font:inherit;border:1px solid transparent;background:none;color:var(--ink);padding:.5rem .85rem;border-radius:6px;cursor:pointer;white-space:nowrap;min-height:40px}
+[role=tab]:hover{background:var(--pri-t)}
+[role=tab][aria-selected=true]{background:var(--pri);color:#fff}
+main{padding:1rem 0 2rem}
+.panel{display:none}.panel.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1rem;margin-bottom:1rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1rem}
+.grid2>.card{margin-bottom:0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:.75rem;margin-bottom:1rem}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:.7rem .85rem}
+.tile .l{font-size:.8rem;color:var(--muted)}
+.tile .v{font-size:1.4rem;font-weight:650;line-height:1.2;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tile .s{font-size:.8rem;color:var(--muted)}
+.tile.pos .v{color:var(--pos)}.tile.neg .v{color:var(--neg)}
+button.linkbtn{font:inherit;background:none;border:0;padding:0;color:var(--pri);text-decoration:underline;cursor:pointer;text-align:left}
+button.btn,select,input[type=search],input[type=text]{font:inherit;border:1px solid #8a95a3;border-radius:6px;background:#fff;color:var(--ink);padding:.4rem .6rem;min-height:38px}
+button.btn{cursor:pointer;background:#fff}button.btn:hover{background:var(--pri-t)}
+.note{color:var(--muted);font-size:.85rem}
+.hl{font-size:1.15rem;font-weight:600}
+.tb{display:inline-block;font-size:.68rem;font-weight:650;padding:0 .4em;border-radius:4px;margin-left:.3em;vertical-align:middle;line-height:1.5;border:1px solid transparent;text-transform:lowercase;white-space:nowrap}
+.tb-modelled{background:#fff1d6;color:#6e3a00;border-color:#e3b66b}
+.tb-published{background:#e3eefa;color:#0f4272;border-color:#9bbde0}
+.tb-connector{background:#ddf3ea;color:#0a5238;border-color:#8ccdb3}
+.tb-derived{background:#eaedf1;color:#38424f;border-color:#b6bfca}
+.tb-verify,.tb-missing{background:#fde7e7;color:#8c1717;border-color:#e39a9a}
+.tb-user,.tb-quote{background:#e8f4e8;color:#1d5b1d;border-color:#9fcf9f}
+.tier{display:inline-block;font-size:.8rem;font-weight:600;padding:0 .5em;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.t-core{color:var(--core)}.t-growth{color:var(--growth)}.t-new{color:var(--new)}.t-minor{color:var(--minor)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0}
+.chip{font:inherit;font-size:.88rem;border:1px solid var(--line);background:#fff;border-radius:99px;padding:.25rem .7rem;cursor:pointer;min-height:34px;color:var(--ink)}
+.chip:hover{background:var(--pri-t)}.chip.sel{border-color:var(--pri);font-weight:600}
+.tiers3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}
+.tiers3 h4{margin-bottom:.1rem}
+.tw{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{padding:.4rem .6rem;border-bottom:1px solid #e3e7ec;text-align:left;vertical-align:top}
+th{background:#eef1f5;font-weight:600;white-space:nowrap}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+tbody tr[data-open]{cursor:pointer}tbody tr[data-open]:hover td{background:#f3f8fc}
+tr.cur td{background:#eaf3fb}
+th button{font:inherit;font-weight:600;background:none;border:0;cursor:pointer;color:inherit;padding:0;min-height:28px}
+th button::after{content:" ↕";color:#7b8794}
+th[aria-sort=ascending] button::after{content:" ↑";color:var(--ink)}th[aria-sort=descending] button::after{content:" ↓";color:var(--ink)}
+.filters{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:end;margin-bottom:.75rem}
+.filters label{display:flex;flex-direction:column;font-size:.8rem;color:var(--muted);gap:.15rem}
+.filters label.ck{flex-direction:row;align-items:center;gap:.4rem;font-size:.9rem;color:var(--ink);min-height:38px}
+.kvs{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.4rem .9rem;margin:0}
+.kv{border-bottom:1px solid #edf0f3;padding:.2rem 0}
+.kv dt{font-size:.78rem;color:var(--muted)}.kv dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.chart{width:100%;min-height:40px}
+svg.svgc{display:block;max-width:100%;height:auto;font-family:inherit}
+svg text{fill:var(--ink);font-size:11px}svg text.m{fill:var(--muted)}svg text.b{font-weight:650}
+svg .ax{stroke:#9aa4b0;stroke-width:1}svg .gl{stroke:#e0e5ea;stroke-width:1}
+.ctrl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:.8rem 1.2rem;align-items:end}
+.ctrl label,.ctrl legend{font-size:.85rem;font-weight:600;display:block}
+.ctrl input[type=range]{width:100%;min-height:28px;accent-color:var(--pri)}
+.ctrl output{font-variant-numeric:tabular-nums;font-weight:650;color:var(--pri-d)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.seg{display:flex;gap:.3rem;flex-wrap:wrap}
+.seg label{font-weight:500;display:flex;align-items:center;gap:.3rem;border:1px solid #8a95a3;border-radius:6px;padding:.3rem .6rem;min-height:38px;background:#fff;cursor:pointer}
+.seg input:checked+span{font-weight:700}
+.msg{border-left:4px solid var(--neg);background:#fdf0f0;padding:.6rem .8rem;border-radius:4px}
+.msg.info{border-color:var(--pri);background:var(--pri-t)}
+.legend{display:flex;flex-wrap:wrap;gap:.3rem 1rem;font-size:.82rem;color:var(--muted);margin:.3rem 0}
+.legend i{display:inline-block;width:.8em;height:.8em;border-radius:50%;margin-right:.3em;vertical-align:-1px}
+.sw{display:inline-block;width:1.4em;height:.8em;margin-right:.3em;vertical-align:-1px}
+ul.clean{margin:.3rem 0;padding-left:1.1rem}
+footer.foot{border-top:1px solid var(--line);padding:1rem;color:var(--muted);font-size:.85rem;text-align:center}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.split{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline;justify-content:space-between}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+@media (max-width:640px){body{font-size:14.5px}header.top{padding:.7rem .75rem .5rem}.wrap{padding:0 .75rem}nav.tabs .wrap{padding:.3rem .75rem}.card{padding:.75rem}h1{font-size:1.2rem}.tile .v{font-size:1.2rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media print{
+ @page{margin:12mm}
+ body{background:#fff;font-size:11pt}
+ nav.tabs,.noprint,.skip{display:none!important}
+ .panel{display:block!important;margin-bottom:1rem}
+ .card,.tile{break-inside:avoid;border-color:#bbb}
+ .tw{overflow:visible;border:0}
+ a{color:inherit;text-decoration:none}
+ header.top{border:0}
+ h2.ph{border-bottom:2px solid #333;padding-bottom:.2rem;margin-top:1rem}
+}
+h2.ph{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media print{h2.ph{position:static;width:auto;height:auto;clip:auto;overflow:visible}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#fff"/><rect width="3" height="6" fill="#1d5c8a"/></pattern>
+</defs></svg>
+<header class="top"><div class="wrap" id="hdr"></div></header>
+<nav class="tabs" aria-label="Dashboard sections"><div class="wrap" role="tablist" id="tablist"></div></nav>
+<main id="main" class="wrap">
+ <section class="panel" id="p-overview" role="tabpanel" aria-labelledby="t-overview" tabindex="-1"></section>
+ <section class="panel" id="p-markets" role="tabpanel" aria-labelledby="t-markets" tabindex="-1"></section>
+ <section class="panel" id="p-detail" role="tabpanel" aria-labelledby="t-detail" tabindex="-1"></section>
+ <section class="panel" id="p-economics" role="tabpanel" aria-labelledby="t-economics" tabindex="-1"></section>
+ <section class="panel" id="p-sources" role="tabpanel" aria-labelledby="t-sources" tabindex="-1"></section>
+</main>
+<footer class="foot" id="foot"></footer>
+<noscript><p style="padding:1rem">This dashboard needs JavaScript (it runs entirely offline in your browser).</p></noscript>
+<script>
+var DATA = /*__DATA__*/null;
+/*ENGINE-START*/
+// ---- JavaScript port of model_core.compute_lane (contracts 8.1). Pure functions only. null = missing, never defaulted.
+var TIERS = ["user", "quote", "connector", "published", "modelled", "derived", "missing"];
+var FIRM = ["user", "quote"];
+var SCENARIOS = ["low", "base", "high"];
+var SELLER_FREIGHT = ["CFR", "CIF", "DAP"];
+var SELLER_INSURANCE = ["CIF", "DAP"];
+var SUPPORTED = ["EXW", "FOB", "CFR", "CIF", "DAP"];
+var CHARGE_KEY = {OI: "origin_inland", OD: "origin_docs", OT: "origin_thc", DT: "destination_thc", IC: "import_clearance", DI: "destination_inland"};
+var CIF_NEEDS = {EXW: ["origin_inland", "origin_docs", "origin_thc", "freight", "insurance_rate_pct"], FOB: ["freight", "insurance_rate_pct"], CFR: ["insurance_rate_pct"], CIF: [], DAP: ["destination_thc", "destination_inland"]};
+var FOB_NEEDS = {EXW: ["origin_inland", "origin_docs", "origin_thc"], FOB: [], CFR: ["freight"], CIF: ["insurance_rate_pct", "freight"], DAP: ["destination_thc", "destination_inland", "insurance_rate_pct", "freight"]};
+var VAL_KEYS = ["units_per_container", "net_kg_per_unit", "fx_cost_per_model", "fx_price_per_model", "insurance_rate_pct", "target_margin_pct", "cost_per_unit", "price_per_unit", "purchase_price_per_unit", "local_price_per_unit", "origin_inland", "origin_docs", "origin_thc", "destination_thc", "import_clearance", "destination_inland", "duty_rate_pct", "other_duties_pct", "valuation_basis", "import_vat_pct", "vat_recoverable"];
+
+function ok() { for (var i = 0; i < arguments.length; i++) { if (arguments[i] == null) return false; } return true; }
+function dedupe(a) { var o = []; a.forEach(function (x) { if (o.indexOf(x) < 0) o.push(x); }); return o; }
+function missingKeys(v, keys) { var o = []; keys.forEach(function (k) { if (v[k] == null && o.indexOf(k) < 0) o.push(k); }); return o; }
+function roundHalfUp(x) { if (x == null) return null; return Math.floor(Math.abs(x) + 0.5) * (x >= 0 ? 1 : -1); }
+function weakestTier(ts) {
+  ts = ts.filter(function (t) { return !!t; });
+  if (!ts.length) return "missing";
+  if (ts.indexOf("missing") >= 0) return "missing";
+  var real = ts.filter(function (t) { return t !== "derived"; });
+  if (!real.length) return "derived";
+  return real.reduce(function (a, b) { return TIERS.indexOf(b) > TIERS.indexOf(a) ? b : a; });
+}
+function tierOf(li, keys) {
+  var t = li.tiers || {};
+  return weakestTier(keys.map(function (k) { return t[k] || "missing"; }));
+}
+function inputErrors(li) {
+  var e = (li.input_errors || []).slice();
+  if (li.incoterm == null) e.push("incoterm " + li.incoterm_raw + " is not supported (use EXW FCA FOB CFR CIF DAP; DDP is not modelled)");
+  if (li.perspective === "export") {
+    if (li.cost_basis !== "EXW" && li.cost_basis !== "FOB") e.push("cost.basis must be EXW or FOB, got " + li.cost_basis);
+    if (li.incoterm === "EXW" && li.cost_basis === "FOB") e.push("input error: selling EXW on a FOB cost basis (the cost already includes origin charges)");
+  } else if (li.perspective !== "import") e.push("perspective must be export or import, got " + li.perspective);
+  var tm = li.target_margin_pct;
+  if (tm != null && tm >= 100) e.push("target_margin_pct must be below 100");
+  return e;
+}
+function landedNeeds(T, basis, rec) {
+  var need = CIF_NEEDS[T].slice();
+  if (basis === "FOB") need = need.concat(FOB_NEEDS[T]);
+  need = need.concat(["destination_thc", "import_clearance", "destination_inland", "duty_rate_pct", "other_duties_pct", "valuation_basis"]);
+  need.push("vat_recoverable");
+  if (rec === false) need.push("import_vat_pct");
+  return dedupe(need);
+}
+function vals(li, scn) {
+  var v = {};
+  VAL_KEYS.forEach(function (k) { v[k] = li[k] === undefined ? null : li[k]; });
+  var f = li["freight_" + scn];
+  v.freight = f === undefined ? null : f;
+  return v;
+}
+function chain(T, V, v, dpp) {
+  var out = {FOBv: null, CIFv: null, CV: null, DU: null, VATnr: null, landed: null, INS_buyer: null};
+  if (V == null) return out;
+  var OI = v.origin_inland, OD = v.origin_docs, OT = v.origin_thc, FR = v.freight;
+  var DT = v.destination_thc, DI = v.destination_inland, IC = v.import_clearance;
+  var r = v.insurance_rate_pct == null ? null : v.insurance_rate_pct / 100;
+  var fob = null, cif = null;
+  if (T === "EXW") {
+    if (ok(OI, OD, OT)) fob = V + OI + OD + OT;
+    if (ok(fob, FR, r)) cif = (fob + FR) * (1 + r);
+  } else if (T === "FOB") {
+    fob = V;
+    if (ok(FR, r)) cif = (V + FR) * (1 + r);
+  } else if (T === "CFR") {
+    if (FR != null) fob = V - FR;
+    if (r != null) cif = V * (1 + r);
+  } else if (T === "CIF") {
+    cif = V;
+    if (ok(r, FR)) fob = V / (1 + r) - FR;
+  } else if (T === "DAP") {
+    if (ok(DT, DI)) {
+      cif = V - DT - DI;
+      if (ok(r, FR)) fob = cif / (1 + r) - FR;
+    }
+  }
+  out.FOBv = fob; out.CIFv = cif;
+  var basis = v.valuation_basis;
+  var cv = basis === "CIF" ? cif : basis === "FOB" ? fob : null;
+  out.CV = cv;
+  var duty = v.duty_rate_pct, other = v.other_duties_pct, du = null;
+  if (ok(cv, duty, other)) du = (Math.max(0, duty + dpp) + other) / 100 * cv;
+  out.DU = du;
+  var rec = v.vat_recoverable, vat = null;
+  if (rec === true && ok(cif, du)) vat = 0;
+  else if (rec === false && ok(cif, du, v.import_vat_pct)) vat = v.import_vat_pct / 100 * (cif + du);
+  out.VATnr = vat;
+  if (ok(cif, DT, IC, du, DI, vat)) out.landed = cif + DT + IC + du + DI + vat;
+  if (T === "EXW" && ok(r, OI, OD, OT, FR)) out.INS_buyer = r * (V + OI + OD + OT + FR);
+  else if (T === "FOB" && ok(r, FR)) out.INS_buyer = r * (V + FR);
+  else if (T === "CFR" && r != null) out.INS_buyer = r * V;
+  else if (T === "CIF" || T === "DAP") out.INS_buyer = 0;
+  return out;
+}
+function benchmark(li, perUnit) {
+  var uv = li.benchmark_uv_usd_per_kg, net = li.net_kg_per_unit;
+  if (net == null && String(li.unit || "").trim().toLowerCase() === "kg") net = 1;
+  if (li.model_currency !== "USD" || uv == null || net == null || perUnit == null) return [null, null];
+  var bench = uv * net;
+  if (bench <= 0) return [null, null];
+  return [bench, (perUnit / bench - 1) * 100];
+}
+function packWaterfall(li, T, persp, c, v) {
+  var rows = [], basis = li.cost_basis;
+  function add(key, label, amount, side, tier) { rows.push({key: key, label: label, amount: amount === undefined ? null : amount, side: side, tier: tier}); }
+  function tr() { return tierOf(li, Array.prototype.slice.call(arguments)); }
+  var vatTier = li.vat_recoverable === false ? tr("vat_recoverable", "import_vat_pct") : tr("vat_recoverable");
+  var names = {OI: "Origin inland", OD: "Origin documents", OT: "Origin THC"};
+  if (persp === "export") {
+    add("goods", "Goods at " + basis + " cost", c.goods, "seller", tr("cost_per_unit", "fx_cost_per_model", "units_per_container"));
+    ["OI", "OD", "OT"].forEach(function (k) {
+      var ck = CHARGE_KEY[k];
+      if (T === "EXW") add(k, names[k] + " (buyer)", v[ck], "buyer", tr(ck));
+      else if (basis === "EXW") add(k, names[k], v[ck], "seller", tr(ck));
+      else add(k, names[k] + " (included in FOB cost)", 0, "seller", "derived");
+    });
+    add("FR", "Freight", v.freight, SELLER_FREIGHT.indexOf(T) >= 0 ? "seller" : "buyer", tr("freight"));
+    if (SELLER_INSURANCE.indexOf(T) >= 0) add("INS", "Insurance (seller)", c.INS_seller, "seller", tr("insurance_rate_pct"));
+    else add("INS", "Insurance (buyer)", c.INS_buyer, "buyer", tr("insurance_rate_pct"));
+    add("DT", "Destination THC", v.destination_thc, T === "DAP" ? "seller" : "buyer", tr("destination_thc"));
+    add("IC", "Import clearance", v.import_clearance, "buyer", tr("import_clearance"));
+    add("DU", "Import duty", c.DU, "buyer", tr("duty_rate_pct", "other_duties_pct", "valuation_basis"));
+    add("DI", "Destination inland", v.destination_inland, T === "DAP" ? "seller" : "buyer", tr("destination_inland"));
+    add("VAT", "Non-recoverable VAT", c.VATnr, "buyer", vatTier);
+  } else {
+    add("goods", "Supplier invoice (" + T + ")", c.V, "seller", tr("purchase_price_per_unit", "fx_cost_per_model", "units_per_container"));
+    ["OI", "OD", "OT"].forEach(function (k) {
+      var ck = CHARGE_KEY[k];
+      if (T === "EXW") add(k, names[k], v[ck], "buyer", tr(ck));
+      else add(k, names[k] + " (included in invoice)", 0, "seller", "derived");
+    });
+    if (T === "EXW" || T === "FOB") add("FR", "Freight", v.freight, "buyer", tr("freight"));
+    else add("FR", "Freight (included in invoice)", 0, "seller", "derived");
+    if (SELLER_INSURANCE.indexOf(T) >= 0) add("INS", "Insurance (included in invoice)", 0, "seller", "derived");
+    else add("INS", "Insurance", c.INS_buyer, "buyer", tr("insurance_rate_pct"));
+    if (T === "DAP") add("DT", "Destination THC (included in invoice)", 0, "seller", "derived");
+    else add("DT", "Destination THC", v.destination_thc, "buyer", tr("destination_thc"));
+    add("IC", "Import clearance", v.import_clearance, "buyer", tr("import_clearance"));
+    add("DU", "Import duty", c.DU, "buyer", tr("duty_rate_pct", "other_duties_pct", "valuation_basis"));
+    if (T === "DAP") add("DI", "Destination inland (included in invoice)", 0, "seller", "derived");
+    else add("DI", "Destination inland", v.destination_inland, "buyer", tr("destination_inland"));
+    add("VAT", "Non-recoverable VAT", c.VATnr, "buyer", vatTier);
+  }
+  return rows;
+}
+function computeExport(li, v, ps, cs, fs, dpp, res) {
+  var T = li.incoterm, basis = li.cost_basis;
+  var U = v.units_per_container, fxc = v.fx_cost_per_model, fxp = v.fx_price_per_model;
+  var fxc_e = fxc != null ? fxc * (1 + fs / 100) : null;
+  var costNeed = ["units_per_container", "cost_per_unit", "fx_cost_per_model"];
+  if (T !== "EXW" && basis === "EXW") costNeed = costNeed.concat(["origin_inland", "origin_docs", "origin_thc"]);
+  if (SELLER_FREIGHT.indexOf(T) >= 0) costNeed.push("freight");
+  if (SELLER_INSURANCE.indexOf(T) >= 0) costNeed.push("insurance_rate_pct");
+  if (T === "DAP") costNeed = costNeed.concat(["destination_thc", "destination_inland"]);
+  var priceNeed = ["fx_price_per_model"];
+  if (v.price_per_unit == null) { if (v.target_margin_pct == null) priceNeed = priceNeed.concat(["price_per_unit", "target_margin_pct"]); }
+  var missing = dedupe(missingKeys(v, costNeed).concat(missingKeys(v, priceNeed)));
+  res.missing = missing;
+  var goods = null, fobCost = null;
+  if (ok(v.cost_per_unit, U, fxc_e)) goods = v.cost_per_unit * (1 + cs / 100) * U / fxc_e;
+  if (goods != null) {
+    if (basis === "FOB") fobCost = goods;
+    else if (ok(v.origin_inland, v.origin_docs, v.origin_thc)) fobCost = goods + v.origin_inland + v.origin_docs + v.origin_thc;
+  }
+  var FR = v.freight, r = v.insurance_rate_pct == null ? null : v.insurance_rate_pct / 100;
+  var insSeller = null;
+  if (SELLER_INSURANCE.indexOf(T) >= 0 && ok(fobCost, FR, r)) insSeller = r * (fobCost + FR);
+  var seller = null;
+  if (T === "EXW") seller = goods;
+  else if (T === "FOB") seller = fobCost;
+  else if (T === "CFR") seller = ok(fobCost, FR) ? fobCost + FR : null;
+  else if (T === "CIF") seller = ok(fobCost, FR, insSeller) ? fobCost + FR + insSeller : null;
+  else if (T === "DAP") {
+    var dt = v.destination_thc, di = v.destination_inland;
+    seller = ok(fobCost, FR, insSeller, dt, di) ? fobCost + FR + insSeller + dt + di : null;
+  }
+  var price = v.price_per_unit, required = null, basisP = null, tm = v.target_margin_pct, used;
+  if (ok(seller, tm, fxp, U)) required = seller / (1 - tm / 100) / U * fxp;
+  if (price != null) { used = price; basisP = "user"; }
+  else if (required != null) { used = required; basisP = "required_at_target_margin"; }
+  else { used = null; if (tm != null && price == null) basisP = "required_at_target_margin"; }
+  var priceEff = used != null ? used * (1 + ps / 100) : null;
+  var V = ok(priceEff, U, fxp) ? priceEff * U / fxp : null;
+  res.price_per_unit = priceEff; res.price_basis = basisP; res.required_price_per_unit = required; res.invoice_value = V;
+  var ch = chain(T, V, v, dpp);
+  var buyerNeed = landedNeeds(T, v.valuation_basis, v.vat_recoverable);
+  var bmiss = missingKeys(v, buyerNeed);
+  res.buyer_side_missing = bmiss.filter(function (k) { return missing.indexOf(k) < 0; });
+  res.FOBv = ch.FOBv; res.CIFv = ch.CIFv; res.CV = ch.CV; res.DU = ch.DU; res.VATnr = ch.VATnr; res.buyer_landed = ch.landed;
+  if (ch.landed != null && U) {
+    res.buyer_landed_per_unit = ch.landed / U;
+    var b = benchmark(li, res.buyer_landed_per_unit);
+    res.benchmark_unit_value = b[0]; res.price_gap_pct = b[1];
+  }
+  if (!missing.length) {
+    res.INS = insSeller; res.user_cost = seller; res.revenue = V;
+    if (V != null && seller != null) {
+      res.margin = V - seller;
+      res.margin_pct = V > 0 ? res.margin / V * 100 : null;
+    }
+  }
+  res.FOB_cost = fobCost; res.goods = goods;
+  res.waterfall = packWaterfall(li, T, "export", {goods: goods, INS_seller: insSeller, INS_buyer: ch.INS_buyer, DU: ch.DU, VATnr: ch.VATnr}, v);
+  return res;
+}
+function computeImport(li, v, ps, cs, fs, dpp, res) {
+  var T = li.incoterm;
+  var U = v.units_per_container, fxc = v.fx_cost_per_model, fxp = v.fx_price_per_model;
+  var fxp_e = fxp != null ? fxp * (1 + fs / 100) : null;
+  var need = ["units_per_container", "purchase_price_per_unit", "fx_cost_per_model", "fx_price_per_model"].concat(landedNeeds(T, v.valuation_basis, v.vat_recoverable));
+  var missing = missingKeys(v, need);
+  res.missing = missing;
+  var pp = v.purchase_price_per_unit;
+  var V = ok(pp, U, fxc) ? pp * (1 + cs / 100) * U / fxc : null;
+  var ch = chain(T, V, v, dpp), landed = ch.landed;
+  res.invoice_value = V; res.FOBv = ch.FOBv; res.CIFv = ch.CIFv; res.CV = ch.CV; res.DU = ch.DU; res.VATnr = ch.VATnr; res.INS = ch.INS_buyer;
+  if (!missing.length && landed != null) {
+    res.user_cost = landed; res.buyer_landed = landed; res.buyer_landed_per_unit = landed / U;
+    if (ch.CIFv != null) { var b = benchmark(li, ch.CIFv / U); res.benchmark_unit_value = b[0]; res.price_gap_pct = b[1]; }
+    res.breakeven_local_price_per_unit = landed / U * fxp_e;
+    var tm = v.target_margin_pct;
+    res.required_local_price_per_unit = tm != null ? landed / (1 - tm / 100) / U * fxp_e : null;
+    var lp = v.local_price_per_unit;
+    if (lp != null) {
+      var lpEff = lp * (1 + ps / 100), rev = lpEff * U / fxp_e;
+      res.price_per_unit = lpEff; res.price_basis = "user"; res.revenue = rev; res.margin = rev - landed;
+      res.margin_pct = rev > 0 ? (rev - landed) / rev * 100 : null;
+    } else {
+      res.price_basis = "required_at_target_margin";
+      res.notes.push("no local selling price: break-even and required local price are reported, margin is not");
+    }
+  } else {
+    if (res.breakeven_local_price_per_unit === undefined) res.breakeven_local_price_per_unit = null;
+    if (res.required_local_price_per_unit === undefined) res.required_local_price_per_unit = null;
+  }
+  res.waterfall = packWaterfall(li, T, "import", {V: V, INS_buyer: ch.INS_buyer, DU: ch.DU, VATnr: ch.VATnr}, v);
+  return res;
+}
+/* o: {scenario:'low|base|high', price:%, cost:%, fx:%, duty:pp} */
+function computeLane(li, o) {
+  o = o || {};
+  var scn = o.scenario || "base", ps = o.price || 0, cs = o.cost || 0, fs = o.fx || 0, dpp = o.duty || 0;
+  var errs = inputErrors(li);
+  var res = {status: "incomplete", missing: [], buyer_side_missing: [], errors: errs, notes: (li.notes || []).slice(),
+    perspective: li.perspective, incoterm: li.incoterm, valuation_basis: li.valuation_basis,
+    price_per_unit: null, price_basis: null, required_price_per_unit: null, revenue: null, user_cost: null, margin: null, margin_pct: null,
+    buyer_landed: null, buyer_landed_per_unit: null, benchmark_unit_value: null, price_gap_pct: null,
+    FOBv: null, CIFv: null, CV: null, DU: null, INS: null, VATnr: null, invoice_value: null, waterfall: []};
+  if (errs.length) { res.status = "error"; return res; }
+  if (SCENARIOS.indexOf(scn) < 0) throw new Error("freight scenario must be low, base or high");
+  var v = vals(li, scn);
+  res = li.perspective === "export" ? computeExport(li, v, ps, cs, fs, dpp, res) : computeImport(li, v, ps, cs, fs, dpp, res);
+  res.status = res.missing.length ? "incomplete" : "modelled";
+  return res;
+}
+function breakEven(margin, fixedAnnual) {
+  if (margin == null || fixedAnnual == null || margin <= 0) return null;
+  return fixedAnnual / margin;
+}
+function cashCycle(li) {
+  var need = li.perspective === "export" ? ["production_lead_days", "origin_dwell_days", "credit_days", "advance_pct"]
+    : ["transit_days_base", "clearance_days", "inventory_days", "customer_credit_days", "credit_days", "advance_pct", "production_lead_days"];
+  var miss = missingKeys(li, need);
+  if (miss.length) return {days: null, missing: miss};
+  var adv = li.advance_pct / 100;
+  if (li.perspective === "export") return {days: (li.production_lead_days + li.origin_dwell_days + li.credit_days) * (1 - adv), missing: []};
+  return {days: li.transit_days_base + li.clearance_days + li.inventory_days + li.customer_credit_days - li.credit_days * (1 - adv) + li.production_lead_days * adv, missing: []};
+}
+/* items: [{iso, margin, planned, cycle}]; ramp: null | 24 numbers */
+function portfolioCalc(items, ramp, ann, one) {
+  var inc = items.filter(function (x) { return x.margin != null && x.planned != null && x.planned > 0; });
+  var out = {planned: null, weighted_margin: null, annual_margin: null, annual_fixed: ann, one_time: one, payback_month: null, note: "",
+    monthly: [], included: inc.map(function (x) { return x.iso; }), lag: null, basis: null, excluded: []};
+  var notes = [];
+  out.excluded = items.filter(function (x) { return out.included.indexOf(x.iso) < 0; }).map(function (x) { return x.iso; });
+  var total = inc.reduce(function (a, x) { return a + x.planned; }, 0);
+  if (inc.length) {
+    out.planned = total;
+    out.annual_margin = inc.reduce(function (a, x) { return a + x.planned * x.margin; }, 0);
+    out.weighted_margin = out.annual_margin / total;
+    if (inc.every(function (x) { return x.cycle != null; })) {
+      var wc = inc.reduce(function (a, x) { return a + x.planned * x.cycle; }, 0) / total;
+      out.cycle_days = wc;
+      out.lag = Math.max(0, roundHalfUp(wc / 30));
+    } else notes.push("cash cycle incomplete for: " + inc.filter(function (x) { return x.cycle == null; }).map(function (x) { return x.iso; }).join(", "));
+  } else notes.push("no lane has both a margin and planned containers");
+  var cont;
+  if (ramp != null) { cont = ramp.map(Number); out.basis = "monthly_ramp"; }
+  else if (inc.length) { cont = []; for (var i = 0; i < 24; i++) cont.push(total / 12); out.basis = "derived: planned containers per year / 12"; }
+  else { cont = []; for (var j = 0; j < 24; j++) cont.push(null); }
+  if (ann == null) notes.push("annual fixed cost missing");
+  if (one == null) notes.push("one-time cost missing");
+  var lag = out.lag, wm = out.weighted_margin;
+  var can = wm != null && ann != null && one != null && lag != null && cont.every(function (x) { return x != null; });
+  var cum = 0, payback = null;
+  for (var m = 1; m <= 24; m++) {
+    var row = {month: m, containers: cont[m - 1], cash: null, cumulative: null};
+    if (can) {
+      var recv = m - lag >= 1 ? cont[m - lag - 1] : 0;
+      var cash = recv * wm - ann / 12 - (m === 1 ? one : 0);
+      cum += cash; row.cash = cash; row.cumulative = cum;
+      if (payback == null && cum >= 0) payback = m;
+    }
+    out.monthly.push(row);
+  }
+  if (can) { out.payback_month = payback; if (payback == null) notes.push("cumulative cash stays negative over the 24-month table"); }
+  out.note = notes.join("; ");
+  return out;
+}
+var ENGINE = {computeLane: computeLane, inputErrors: inputErrors, cashCycle: cashCycle, breakEven: breakEven, portfolioCalc: portfolioCalc, weakestTier: weakestTier, tierOf: tierOf};
+/*ENGINE-END*/
+
+// ======================================================================= UI
+(function () {
+"use strict";
+if (!DATA) { document.getElementById("main").innerHTML = '<p class="msg">No data embedded.</p>'; return; }
+var A = DATA.analysis, M = A.meta, P = M.perspective, IN = DATA.inputs || {}, LAN = DATA.lanes || {}, NAMES = DATA.names || {};
+var FIN = DATA.financial, FRT = DATA.freight, TAR = DATA.tariff, NAR = DATA.narrative;
+var isExp = P === "export";
+var LB = M.labels || {};
+var noun = LB.partner_noun || (isExp ? "market" : "supplier"), nouns = noun + "s";
+var Nouns = noun.charAt(0).toUpperCase() + noun.slice(1) + "s", Noun = Nouns.slice(0, -1);
+var homeFlow = isExp ? "exports" : "imports", partnerTrade = isExp ? "imports" : "exports";
+var HOME = (M.home && M.home.iso3) || IN.home_country, HOMENAME = (M.home && M.home.name) || NAMES[HOME] || HOME;
+var SEL = (DATA.selection && DATA.selection.partners) || [];
+var ROWS = A.partners || [], ROW = {}, MIR = {};
+ROWS.forEach(function (r) { ROW[r.iso3] = r; });
+(A.mirror_checks || []).forEach(function (m) { MIR[m.iso3] = m; });
+var PARTIAL = M.partial_years || [];
+var LANE_ISOS = Object.keys(LAN);
+var CUR = (FIN && FIN.currency) || (LANE_ISOS.length ? LAN[LANE_ISOS[0]].model_currency : "") || "USD";
+var UNIT = (LANE_ISOS.length && LAN[LANE_ISOS[0]].unit) || (FIN && FIN.unit) || "unit";
+
+var KEYLABEL = {units_per_container: "Units per container", net_kg_per_unit: "Net kg per unit", fx_cost_per_model: "FX: cost currency per model currency",
+  fx_price_per_model: "FX: price currency per model currency", insurance_rate_pct: "Insurance rate", target_margin_pct: "Target margin",
+  cost_per_unit: "Goods cost per unit", price_per_unit: "Selling price per unit", purchase_price_per_unit: "Purchase price per unit",
+  local_price_per_unit: "Local selling price per unit", freight: "Freight per container", origin_inland: "Origin inland haulage",
+  origin_docs: "Origin documentation", origin_thc: "Origin terminal handling", destination_thc: "Destination terminal handling",
+  import_clearance: "Import clearance", destination_inland: "Destination inland haulage", duty_rate_pct: "Import duty rate applied",
+  other_duties_pct: "Other duties and charges", valuation_basis: "Customs valuation basis", import_vat_pct: "Import VAT", vat_recoverable: "VAT recoverable",
+  credit_days: "Credit days", advance_pct: "Advance payment", customer_credit_days: "Customer credit days", production_lead_days: "Production lead time",
+  origin_dwell_days: "Origin dwell", clearance_days: "Clearance time", inventory_days: "Inventory holding", transit_days_base: "Transit time (base)",
+  planned_containers_per_year: "Planned containers per year", fixed_annual: "Fixed costs per year", fixed_one_time: "One-time costs",
+  mfn_rate_pct: "MFN duty rate (reference)", preference_rate_pct: "Preferential duty rate (reference)"};
+var MIRLABEL = {consistent: "Consistent", partner_not_reporting: "Partner not reporting", partner_reports_less: "Partner reports less",
+  partner_reports_more: "Partner reports more", only_home_reports: "Only home reports", no_mirror_data: "No mirror data"};
+var RUNG = {quote: "Rung 1 - client quote", connector: "Rung 2 - live rate tool", published: "Rung 3 - published rate", modelled: "Rung 4 - distance model", missing: "No rung - coverage gap"};
+
+// ---------- helpers
+function esc(s) { return s == null ? "" : String(s).replace(/[&<>"']/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]; }); }
+var NF0 = new Intl.NumberFormat("en-US", {maximumFractionDigits: 0}), NF2 = new Intl.NumberFormat("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2}),
+  NF4 = new Intl.NumberFormat("en-US", {maximumFractionDigits: 4});
+function num(v, dp) { if (v == null || isNaN(v)) return "—"; return (dp === 2 ? NF2 : dp === 4 ? NF4 : NF0).format(v).replace("-", "−"); }
+function usd(v) {
+  if (v == null || isNaN(v)) return "—";
+  var a = Math.abs(v), s = v < 0 ? "−" : "";
+  if (a >= 1e9) return s + "$" + (a / 1e9).toFixed(2) + "B";
+  if (a >= 1e6) return s + "$" + (a / 1e6).toFixed(1) + "M";
+  if (a >= 1e3) return s + "$" + (a / 1e3).toFixed(0) + "K";
+  return s + "$" + a.toFixed(0);
+}
+function pct(v, signed, dp) { if (v == null || isNaN(v)) return "—"; var s = (signed && v > 0 ? "+" : ""); return s + v.toFixed(dp == null ? 1 : dp).replace("-", "−") + "%"; }
+function money(v, dp) { if (v == null || isNaN(v)) return "—"; return CUR + " " + (dp != null ? num(v, dp) : (Math.abs(v) >= 100 ? num(v) : num(v, 2))); }
+function perUnit(v, cur) { if (v == null) return "—"; return (cur || CUR) + " " + num(v, Math.abs(v) < 100 ? 2 : 0); }
+function badge(t, always) {
+  if (!t) return "";
+  if (!always && FIRM_T.indexOf(t) >= 0) return "";
+  return '<span class="tb tb-' + esc(t) + '" title="' + esc(tipOf(t)) + '">' + esc(t) + "</span>";
+}
+var FIRM_T = ["user", "quote"];
+function tipOf(t) { return {modelled: "Modelled estimate, not a quote", published: "Cited public source, verify before relying on it", connector: "Live tool result, verify before relying on it",
+  derived: "Arithmetic from other values", verify: "Needs verification", missing: "Not provided", user: "Given by the client", quote: "Written quote"}[t] || t; }
+function tierName(t) { return t === "core" ? (LB.tier_core || "Defend") : t === "growth" ? (LB.tier_growth || "Expand") : t === "new" ? (LB.tier_new || "Open") : "Minor"; }
+function tierPill(t) { return '<span class="tier t-' + esc(t) + '">' + esc(tierName(t)) + "</span>"; }
+function nm(iso) { return NAMES[iso] || (ROW[iso] && ROW[iso].name) || iso; }
+function $(id) { return document.getElementById(id); }
+function svVal(sv, fmt) { if (!sv || sv.value == null) return "—"; return fmt ? fmt(sv.value) : esc(sv.value); }
+function kv(l, v, t) { return '<div class="kv"><dt>' + esc(l) + "</dt><dd>" + v + (t ? badge(t) : "") + "</dd></div>"; }
+function tile(l, v, s, o) { o = o || {}; return '<div class="tile ' + (o.cls || "") + '"><div class="l">' + esc(l) + '</div><div class="v">' + v + (o.tier ? badge(o.tier) : "") + '</div><div class="s">' + (s || "") + "</div></div>"; }
+function keyLabel(k) { return KEYLABEL[k] || k; }
+function isPartial(y) { return PARTIAL.indexOf(y) >= 0; }
+
+// ---------- engine use
+var WI = {scn: "base", price: 0, cost: 0, fx: 0, duty: 0};
+function wiOpts() { return {scenario: WI.scn, price: WI.price, cost: WI.cost, fx: WI.fx, duty: WI.duty}; }
+function wiActive() { return WI.scn !== "base" || WI.price || WI.cost || WI.fx || WI.duty; }
+var BASE = {};
+LANE_ISOS.forEach(function (iso) { BASE[iso] = ENGINE.computeLane(LAN[iso], {}); });
+function laneFixed(li) { return li.fixed_annual; }
+function laneTier(li, res) {
+  var ts = [];
+  (res.waterfall || []).forEach(function (w) { if (w.amount != null && w.amount !== 0) ts.push(w.tier); });
+  ts.push(li.perspective === "export" ? (res.price_basis === "user" ? ENGINE.tierOf(li, ["price_per_unit"]) : "derived") : ENGINE.tierOf(li, ["local_price_per_unit"]));
+  return ENGINE.weakestTier(ts);
+}
+function portfolioFor(opts) {
+  var items = LANE_ISOS.map(function (iso) {
+    var li = LAN[iso], r = ENGINE.computeLane(li, opts);
+    return {iso: iso, margin: r.margin, planned: li.planned_containers_per_year, cycle: ENGINE.cashCycle(li).days};
+  });
+  var li0 = LAN[LANE_ISOS[0]];
+  return ENGINE.portfolioCalc(items, IN.monthly_ramp == null ? null : IN.monthly_ramp, li0.fixed_annual, li0.fixed_one_time);
+}
+
+// ---------- sources
+var SRC = (function () {
+  var rows = (DATA.sources || []).map(function (r) { return r; });
+  var seen = {};
+  rows.forEach(function (r) { seen[r.key + "|" + (r.lane || "")] = 1; });
+  if (TAR && TAR.lanes) {
+    SEL.forEach(function (iso) {
+      var tl = TAR.lanes[iso]; if (!tl) return;
+      var ex = [["mfn_rate_pct", tl.mfn_rate_pct, "%"], ["preference_rate_pct", tl.preference && tl.preference.rate_pct, "%"]];
+      ex.forEach(function (e) {
+        if (!e[1] || seen[e[0] + "|" + iso]) return;
+        rows.push({key: e[0], lane: iso, value: e[1].value, unit: e[2], tier: e[1].tier || "missing", source: e[1].source || "", url: e[1].url, as_of: e[1].as_of});
+      });
+    });
+  }
+  return rows;
+})();
+function needsVerify(r) { return FIRM_T.indexOf(r.tier) < 0; }
+function srcValue(r) {
+  if (r.value == null) return "—";
+  if (typeof r.value === "boolean") return r.value ? "Yes" : "No";
+  if (typeof r.value === "number") return num(r.value, Math.abs(r.value) < 100 && r.value % 1 !== 0 ? 2 : 0) + (r.unit ? " " + esc(r.unit) : "");
+  return esc(r.value);
+}
+function safeUrl(u) { return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null; }
+
+// ---------- charts (hand-written SVG)
+var CH = {};
+function svgWrap(w, h, inner, label) {
+  return '<svg class="svgc" role="img" aria-label="' + esc(label) + '" width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + " " + h + '">' + inner + "</svg>";
+}
+function niceRange(min, max, n) {
+  if (min > 0) min = 0; if (max < 0) max = 0;
+  if (max === min) max = min + 1;
+  var raw = (max - min) / n, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p;
+  var step = (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p;
+  return {lo: Math.floor(min / step) * step, hi: Math.ceil(max / step) * step, step: step};
+}
+function trunc(s, n) { s = String(s); return s.length > n ? s.slice(0, n - 1) + "…" : s; }
+function barChart(w, items, o) {
+  o = o || {};
+  var h = o.h || 230, ml = 52, mr = 8, mt = 20, mb = 30, iw = w - ml - mr, ih = h - mt - mb;
+  var max = Math.max.apply(null, items.map(function (d) { return d.value || 0; }).concat([0]));
+  var sc = niceRange(0, max, 4), s = "";
+  for (var t = sc.lo; t <= sc.hi + 1e-9; t += sc.step) {
+    var y = mt + ih - (t - sc.lo) / (sc.hi - sc.lo) * ih;
+    s += '<line class="gl" x1="' + ml + '" x2="' + (w - mr) + '" y1="' + y + '" y2="' + y + '"/><text class="m" x="' + (ml - 6) + '" y="' + (y + 4) + '" text-anchor="end">' + esc(o.axis ? o.axis(t) : usd(t)) + "</text>";
+  }
+  var bw = iw / Math.max(items.length, 1), pad = Math.min(14, bw * 0.2);
+  items.forEach(function (d, i) {
+    var v = d.value || 0, bh = (v - sc.lo) / (sc.hi - sc.lo) * ih, x = ml + i * bw + pad / 2, y2 = mt + ih - bh;
+    s += '<g><title>' + esc(d.label + ": " + (o.fmt ? o.fmt(v) : usd(v)) + (d.partial ? " (partial year)" : "")) + '</title><rect x="' + x + '" y="' + y2 + '" width="' + Math.max(bw - pad, 2) + '" height="' + Math.max(bh, 0) +
+      '" fill="' + (d.partial ? "url(#hatch)" : d.hl ? "#a64b00" : "#1d5c8a") + '" stroke="' + (d.hl ? "#a64b00" : "#1d5c8a") + '"/></g>';
+    if (bw > 38) s += '<text class="b" x="' + (x + (bw - pad) / 2) + '" y="' + (y2 - 4) + '" text-anchor="middle">' + esc(o.fmt ? o.fmt(v) : usd(v)) + "</text>";
+    s += '<text class="m" x="' + (x + (bw - pad) / 2) + '" y="' + (h - 12) + '" text-anchor="middle">' + esc(d.label + (d.partial ? "*" : "")) + "</text>";
+  });
+  s += '<line class="ax" x1="' + ml + '" x2="' + (w - mr) + '" y1="' + (mt + ih) + '" y2="' + (mt + ih) + '"/>';
+  return svgWrap(w, h, s, o.label || "Bar chart");
+}
+function hbarChart(w, rows, o) {
+  var rh = 24, h = rows.length * rh + 8, lw = Math.min(150, Math.max(90, w * 0.34)), vw = 92, bx = lw + 4, bwMax = Math.max(w - bx - vw, 30);
+  var max = Math.max.apply(null, rows.map(function (r) { return r.value; }).concat([1])), s = "";
+  rows.forEach(function (r, i) {
+    var y = 4 + i * rh, bw = r.value / max * bwMax;
+    s += '<text x="' + (lw) + '" y="' + (y + 14) + '" text-anchor="end"' + (r.hl ? ' class="b"' : "") + ">" + esc(trunc(r.label, w < 420 ? 15 : 22)) + '<title>' + esc(r.label) + "</title></text>" +
+      '<rect x="' + bx + '" y="' + (y + 3) + '" width="' + Math.max(bw, 1) + '" height="14" fill="' + (r.hl ? "#a64b00" : "#1d5c8a") + '"/>' +
+      '<text class="m" x="' + (bx + bw + 5) + '" y="' + (y + 14) + '">' + esc(r.text) + "</text>";
+  });
+  return svgWrap(w, h, s, o.label || "Bar chart");
+}
+function scatterChart(w, rows) {
+  var h = Math.round(Math.min(430, Math.max(280, w * 0.7))), ml = 50, mr = 12, mt = 12, mb = 40, iw = w - ml - mr, ih = h - mt - mb;
+  var pts = rows.filter(function (r) { return r.partner_trade_latest_usd > 0 && r.partner_trade_cagr_pct != null; });
+  if (!pts.length) return '<p class="note">No ' + nouns + " in the current filter have both size and growth data.</p>";
+  var xs = pts.map(function (r) { return Math.log10(r.partner_trade_latest_usd); }), ys = pts.map(function (r) { return r.partner_trade_cagr_pct; });
+  var x0 = Math.floor(Math.min.apply(null, xs)), x1 = Math.ceil(Math.max.apply(null, xs)); if (x1 === x0) x1 = x0 + 1;
+  var yr = niceRange(Math.min.apply(null, ys.concat([0])), Math.max.apply(null, ys.concat([0])), 5);
+  var maxHome = Math.max.apply(null, pts.map(function (r) { return r.home_flow_latest_usd || 0; }).concat([1]));
+  var s = "";
+  for (var k = x0; k <= x1; k++) { var x = ml + (k - x0) / (x1 - x0) * iw; s += '<line class="gl" x1="' + x + '" x2="' + x + '" y1="' + mt + '" y2="' + (mt + ih) + '"/><text class="m" x="' + x + '" y="' + (h - 20) + '" text-anchor="middle">' + usd(Math.pow(10, k)) + "</text>"; }
+  for (var t = yr.lo; t <= yr.hi + 1e-9; t += yr.step) { var y = mt + ih - (t - yr.lo) / (yr.hi - yr.lo) * ih; s += '<line class="' + (Math.abs(t) < 1e-9 ? "ax" : "gl") + '" x1="' + ml + '" x2="' + (w - mr) + '" y1="' + y + '" y2="' + y + '"/><text class="m" x="' + (ml - 6) + '" y="' + (y + 4) + '" text-anchor="end">' + pct(t, false, 0) + "</text>"; }
+  s += '<text class="m" x="' + (ml + iw / 2) + '" y="' + (h - 4) + '" text-anchor="middle">' + esc(Noun + " size: total " + partnerTrade + " in " + M.latest_complete_year + " (log scale)") + "</text>";
+  s += '<text class="m" transform="translate(11 ' + (mt + ih / 2) + ') rotate(-90)" text-anchor="middle">' + esc("Growth: CAGR " + M.window_label) + "</text>";
+  var COL = {core: "#1d5c8a", growth: "#a64b00", new: "#5b2fa0", minor: "#5d6672"};
+  pts.slice().sort(function (a, b) { return (b.home_flow_latest_usd || 0) - (a.home_flow_latest_usd || 0); }).forEach(function (r) {
+    var cx = ml + (Math.log10(r.partner_trade_latest_usd) - x0) / (x1 - x0) * iw, cy = mt + ih - (r.partner_trade_cagr_pct - yr.lo) / (yr.hi - yr.lo) * ih;
+    var rad = 4 + Math.sqrt((r.home_flow_latest_usd || 0) / maxHome) * 16;
+    s += '<g class="pt" data-open="' + esc(r.iso3) + '" style="cursor:pointer"><title>' + esc(r.name + " - " + tierName(r.tier) + "; size " + usd(r.partner_trade_latest_usd) + ", growth " + pct(r.partner_trade_cagr_pct, true) + ", home " + homeFlow + " " + usd(r.home_flow_latest_usd)) +
+      '</title><circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + rad.toFixed(1) + '" fill="' + COL[r.tier] + '" fill-opacity="' + ((r.home_flow_latest_usd || 0) > 0 ? 0.55 : 0.2) + '" stroke="' + COL[r.tier] + '" stroke-width="1.5"/>' +
+      (rad > 9 || SEL.indexOf(r.iso3) >= 0 ? '<text x="' + (cx + rad + 3).toFixed(1) + '" y="' + (cy + 4).toFixed(1) + '">' + esc(r.iso3) + "</text>" : "") + "</g>";
+  });
+  return svgWrap(w, h, s, "Scatter of " + nouns + ": size against growth, bubble area is home " + homeFlow + ", colour is tier. The table above has the same data.");
+}
+function waterfallChart(w, steps, label) {
+  // steps: {label, value, kind: step|total|margin, side, tier}
+  var rh = 36, h = steps.length * rh + 28, ml = 6, mr = 6, iw = w - ml - mr, run = 0, items = [], lo = 0, hi = 0;
+  steps.forEach(function (d) {
+    var a, b;
+    if (d.kind === "total") { a = 0; b = d.value; run = d.value; } else { a = run; b = run + d.value; run = b; }
+    items.push({d: d, a: a, b: b}); lo = Math.min(lo, a, b); hi = Math.max(hi, a, b);
+  });
+  var sc = niceRange(lo, hi, 4), span = sc.hi - sc.lo, s = "";
+  function X(v) { return ml + (v - sc.lo) / span * iw; }
+  for (var t = sc.lo; t <= sc.hi + 1e-9; t += sc.step) { s += '<line class="gl" x1="' + X(t) + '" x2="' + X(t) + '" y1="2" y2="' + (h - 22) + '"/><text class="m" x="' + X(t) + '" y="' + (h - 8) + '" text-anchor="middle">' + num(t) + "</text>"; }
+  if (sc.lo < 0) s += '<line class="ax" x1="' + X(0) + '" x2="' + X(0) + '" y1="2" y2="' + (h - 22) + '"/>';
+  items.forEach(function (it, i) {
+    var d = it.d, y = 2 + i * rh, x1 = X(Math.min(it.a, it.b)), x2 = X(Math.max(it.a, it.b));
+    var fill = d.kind === "total" ? "#334155" : d.kind === "margin" ? (d.value >= 0 ? "#0b6b3a" : "#a31f1f") : d.side === "buyer" ? "#8a5a00" : "#1d5c8a";
+    s += '<text x="' + ml + '" y="' + (y + 12) + '">' + esc(d.label) + (d.tier && FIRM_T.indexOf(d.tier) < 0 ? '<tspan class="m"> · ' + esc(d.tier) + "</tspan>" : "") + "</text>" +
+      '<text class="b" x="' + (w - mr) + '" y="' + (y + 12) + '" text-anchor="end">' + esc((d.kind === "step" && d.value > 0 ? "+" : "") + num(d.value)) + "</text>" +
+      '<rect x="' + x1.toFixed(1) + '" y="' + (y + 17) + '" width="' + Math.max(x2 - x1, 1.5).toFixed(1) + '" height="12" fill="' + fill + '"><title>' + esc(d.label + ": " + num(d.value) + " " + CUR) + "</title></rect>";
+  });
+  return svgWrap(w, h, s, label);
+}
+function paybackChart(w, pf) {
+  var m = pf.monthly, h = 250, ml = 62, mr = 12, mt = 22, mb = 32, iw = w - ml - mr, ih = h - mt - mb;
+  var vals = m.map(function (r) { return r.cumulative; });
+  var sc = niceRange(Math.min.apply(null, vals.concat([0])), Math.max.apply(null, vals.concat([0])), 4), span = sc.hi - sc.lo, s = "";
+  function X(i) { return ml + (i - 1) / 23 * iw; } function Y(v) { return mt + ih - (v - sc.lo) / span * ih; }
+  for (var t = sc.lo; t <= sc.hi + 1e-9; t += sc.step) s += '<line class="' + (Math.abs(t) < 1e-9 ? "ax" : "gl") + '" x1="' + ml + '" x2="' + (w - mr) + '" y1="' + Y(t) + '" y2="' + Y(t) + '"/><text class="m" x="' + (ml - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end">' + num(t) + "</text>";
+  [1, 6, 12, 18, 24].forEach(function (i) { s += '<text class="m" x="' + X(i) + '" y="' + (h - 14) + '" text-anchor="middle">' + i + "</text>"; });
+  s += '<text class="m" x="' + (ml + iw / 2) + '" y="' + (h - 1) + '" text-anchor="middle">Month</text>';
+  var pts = m.map(function (r) { return X(r.month).toFixed(1) + "," + Y(r.cumulative).toFixed(1); }).join(" ");
+  s += '<polyline fill="none" stroke="#1d5c8a" stroke-width="2.5" points="' + pts + '"/>';
+  m.forEach(function (r) { s += '<circle cx="' + X(r.month).toFixed(1) + '" cy="' + Y(r.cumulative).toFixed(1) + '" r="3" fill="#1d5c8a"><title>' + esc("Month " + r.month + ": cumulative " + num(r.cumulative) + " " + CUR) + "</title></circle>"; });
+  if (pf.payback_month) {
+    var px = X(pf.payback_month);
+    s += '<line x1="' + px + '" x2="' + px + '" y1="' + mt + '" y2="' + (mt + ih) + '" stroke="#0b6b3a" stroke-width="2" stroke-dasharray="5 3"/><circle cx="' + px + '" cy="' + Y(m[pf.payback_month - 1].cumulative) + '" r="6" fill="#fff" stroke="#0b6b3a" stroke-width="3"/>' +
+      '<text class="b" x="' + Math.min(px + 6, w - 90) + '" y="' + (mt + 10) + '" style="fill:#0b6b3a">Payback: month ' + pf.payback_month + "</text>";
+  }
+  return svgWrap(w, h, s, "Portfolio cumulative cash by month in " + CUR + (pf.payback_month ? ", payback in month " + pf.payback_month : ", no payback within 24 months"));
+}
+
+// ---------- state
+var S = {tab: "overview", partner: null, lane: LANE_ISOS[0] || null, f: {q: "", tier: "all", sel: false, scored: false, home: false}, sort: {k: "score", dir: -1}, sq: {q: "", verify: false, tier: "all"}};
+S.partner = SEL[0] || (A.shortlist && A.shortlist.core && A.shortlist.core[0]) || (ROWS[0] && ROWS[0].iso3) || null;
+var TABS = [["overview", "Overview"], ["markets", Nouns], ["detail", Noun + " detail"], ["economics", "Economics"], ["sources", "Sources"]];
+
+// ---------- header / footer
+function renderHeader() {
+  var st = isExp ? "Export Feasibility Study" : "Import Sourcing Study";
+  var prod = (IN.product && IN.product.name) || M.product_name || "";
+  var sub = [HOMENAME + " · " + (isExp ? "exporter" : "importer"), "HS " + (M.hs_code || ""), "window " + (M.window_label || ""), IN.prepared_for ? "for " + IN.prepared_for : "", IN.prepared_by ? "by " + IN.prepared_by : ""].filter(Boolean).join(" · ");
+  var demo = /demo|synthetic/i.test((IN.prepared_for || "") + (IN.study_id || "")) ? '<div class="demo" role="note">Demonstration study built on synthetic data. Not a real study.</div>' : "";
+  $("hdr").innerHTML = "<h1>" + esc(st) + (prod ? ": " + esc(prod) : "") + '</h1><div class="sub">' + esc(sub) + "</div>" + demo;
+  $("foot").textContent = "Prepared " + (DATA.build.date || "") + " · Trade Study Planner · figures marked modelled/verify are estimates, not quotes";
+  document.title = st + (prod ? " - " + prod : "") + " dashboard";
+}
+function renderTabs() {
+  $("tablist").innerHTML = TABS.map(function (t) {
+    return '<button role="tab" class="noprint-btn" id="t-' + t[0] + '" data-tab="' + t[0] + '" aria-selected="' + (S.tab === t[0]) + '" aria-controls="p-' + t[0] + '" tabindex="' + (S.tab === t[0] ? 0 : -1) + '">' + esc(t[1]) + "</button>";
+  }).join("");
+}
+
+// ---------- overview
+function headline() {
+  var n = NAR && NAR.executive_summary;
+  if (n && n.headline) return n.headline;
+  var hp = A.home_position || {}, yr = M.latest_complete_year;
+  var t = HOMENAME + " " + (isExp ? "exported " : "imported ") + usd(hp.latest_value_usd) + " of " + ((IN.product && IN.product.name) || M.product_name || "the product") + " (HS " + M.hs_code + ") in " + yr;
+  if (hp.cagr_pct != null) t += ", " + (hp.cagr_pct >= 0 ? "up " : "down ") + Math.abs(hp.cagr_pct).toFixed(1) + "% a year since " + M.base_year;
+  if (hp.world_rank != null) t += "; ranked " + hp.world_rank + " of " + hp.n_ranked + " world " + (isExp ? "exporters" : "importers") + " with a " + (hp.world_share_pct == null ? "n/a" : hp.world_share_pct.toFixed(2) + "%") + " share";
+  return t + ".";
+}
+function renderOverview() {
+  var hp = A.home_position || {}, nar = NAR && NAR.executive_summary;
+  var nLanes = LANE_ISOS.length, modelled = LANE_ISOS.filter(function (i) { return BASE[i].status === "modelled"; }).length;
+  var incomplete = nLanes - modelled;
+  var ver = SRC.filter(function (r) { return needsVerify(r) && r.tier !== "missing"; }).length, mis = SRC.filter(function (r) { return r.tier === "missing"; }).length;
+  var h = '<h2 class="ph">Overview</h2><section class="card" aria-labelledby="hl"><p class="hl" id="hl">' + esc(headline()) + "</p>";
+  if (nar) {
+    (nar.paragraphs || []).forEach(function (p) { h += "<p>" + esc(p) + "</p>"; });
+    if ((nar.recommendations || []).length) h += '<h3>Recommendations</h3><ol class="clean">' + nar.recommendations.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ol>";
+    if (nar.key_caveat) h += '<p class="msg info"><strong>Key caveat.</strong> ' + esc(nar.key_caveat) + "</p>";
+  }
+  h += "</section>";
+  h += '<div class="tiles">';
+  h += tile((isExp ? "Home exports " : "Home imports ") + M.latest_complete_year, usd(hp.latest_value_usd), hp.cagr_pct == null ? "growth n/a" : "CAGR " + pct(hp.cagr_pct, true) + " (" + esc(M.window_label) + ")");
+  h += tile("World rank (" + (isExp ? "exporters" : "importers") + ")", hp.world_rank != null ? "#" + hp.world_rank : "—", hp.world_rank != null ? "of " + hp.n_ranked + " · share " + (hp.world_share_pct == null ? "n/a" : hp.world_share_pct.toFixed(2) + "%") : "not ranked");
+  h += tile(Nouns + " selected", SEL.length ? String(SEL.length) : "—", SEL.length ? "lanes to model" : "no selection yet · shortlist " + (["core", "growth", "new"].reduce(function (a, k) { return a + (((A.shortlist || {})[k] || []).length); }, 0)));
+  h += tile("Lanes modelled", nLanes ? modelled + " / " + nLanes : "—", nLanes ? incomplete + " incomplete" + (incomplete ? " (inputs missing)" : "") : "financial case not run");
+  h += '<div class="tile"><div class="l">Items to verify</div><div class="v">' + (SRC.length ? ver : "—") + '</div><div class="s">' + (SRC.length ? (mis ? mis + " inputs missing · " : "") + '<button class="linkbtn" data-goto-verify="1">Review list</button>' : "no sourced values yet") + "</div></div>";
+  h += "</div>";
+  h += '<section class="card"><h3>Home ' + homeFlow + " by year</h3><div class=\"chart\" id=\"ch_trend\"></div>" +
+    '<p class="note">Value in US dollars as reported by ' + esc(HOMENAME) + ". " + (PARTIAL.length ? "Hatched bar (*) = partial year (" + PARTIAL.join(", ") + "), not comparable and left out of growth rates and rankings." : "") + "</p></section>";
+  h += '<section class="card"><h3>Shortlist by tier</h3><div class="tiers3">' + [["core", "Largest current business"], ["growth", "Growing, room to win share"], ["new", "Large " + nouns + " not yet served"]].map(function (t) {
+    var list = (A.shortlist || {})[t[0]] || [];
+    return "<div><h4>" + tierPill(t[0]) + '</h4><div class="note">' + esc(t[1]) + '</div><div class="chips">' + (list.length ? list.map(function (iso) {
+      var r = ROW[iso]; return '<button class="chip' + (SEL.indexOf(iso) >= 0 ? " sel" : "") + '" data-open="' + esc(iso) + '">' + esc(nm(iso)) + (SEL.indexOf(iso) >= 0 ? " ✓" : "") + ' <span class="note">' + (r && r.score != null ? r.score.toFixed(0) : "not scored") + "</span></button>";
+    }).join("") : '<span class="note">none</span>') + "</div></div>";
+  }).join("") + "</div>";
+  if (SEL.length) h += '<h4 style="margin-top:.8rem">Selected for lane modelling (priority order)</h4><div class="chips">' + SEL.map(function (iso, i) { return '<button class="chip sel" data-open="' + esc(iso) + '">' + (i + 1) + ". " + esc(nm(iso)) + "</button>"; }).join("") + "</div>";
+  h += '<p class="note">Score is a ranking aid (0-100), not a verdict. ✓ = in the selection.</p></section>';
+  $("p-overview").innerHTML = h;
+  CH.trend = function (w) {
+    var items = (hp.annual || []).map(function (a) { return {label: String(a.year), value: a.value_usd, partial: !!a.partial || isPartial(a.year)}; });
+    return barChart(w, items, {label: "Home " + homeFlow + " by year in US dollars" + (PARTIAL.length ? ", partial year hatched" : "")});
+  };
+}
+
+// ---------- markets table
+var COLS = [["name", Noun, false], ["tier", "Tier", false], ["score", "Score", true], ["size", "Size (" + partnerTrade + ")", true], ["growth", "Growth (CAGR)", true], ["uv", "Unit value $/kg", true], ["home", "Home " + homeFlow, true], ["mirror", "Mirror check", false]];
+function sortVal(r, k) {
+  switch (k) {
+    case "name": return r.name; case "tier": return ["core", "growth", "new", "minor"].indexOf(r.tier);
+    case "score": return r.score; case "size": return r.partner_trade_latest_usd; case "growth": return r.partner_trade_cagr_pct;
+    case "uv": return r.partner_unit_value_usd_per_kg; case "home": return r.home_flow_latest_usd; case "mirror": return MIR[r.iso3] ? MIRLABEL[MIR[r.iso3].status] || MIR[r.iso3].status : null;
+  }
+}
+function filteredRows() {
+  var f = S.f, q = f.q.trim().toLowerCase();
+  var rows = ROWS.filter(function (r) {
+    if (q && (r.name + " " + r.iso3).toLowerCase().indexOf(q) < 0) return false;
+    if (f.tier !== "all" && r.tier !== f.tier) return false;
+    if (f.sel && SEL.indexOf(r.iso3) < 0) return false;
+    if (f.scored && r.score == null) return false;
+    if (f.home && !(r.home_flow_latest_usd > 0)) return false;
+    return true;
+  });
+  var k = S.sort.k, d = S.sort.dir;
+  rows.sort(function (a, b) {
+    var x = sortVal(a, k), y = sortVal(b, k);
+    if (x == null && y == null) return (b.home_flow_latest_usd || 0) - (a.home_flow_latest_usd || 0);
+    if (x == null) return 1; if (y == null) return -1;
+    var c = typeof x === "string" ? x.localeCompare(y) : x - y;
+    return c * d || (b.home_flow_latest_usd || 0) - (a.home_flow_latest_usd || 0);
+  });
+  return rows;
+}
+function renderMarketsOut() {
+  var rows = filteredRows();
+  var plotted = rows.filter(function (r) { return r.partner_trade_latest_usd > 0 && r.partner_trade_cagr_pct != null; }).length;
+  var h = '<p class="note" role="status">Showing ' + rows.length + " of " + ROWS.length + " " + nouns + ". " + (rows.length - plotted) + " not plotted (no size or growth data: the " + noun + " did not report in " + M.latest_complete_year + ").</p>";
+  h += '<div class="tw"><table><caption class="sr">' + esc(Nouns) + ' ranked by the selected column. Select a row to open its detail.</caption><thead><tr>' + COLS.map(function (c) {
+    var as = S.sort.k === c[0] ? (S.sort.dir > 0 ? "ascending" : "descending") : "none";
+    return '<th scope="col" class="' + (c[2] ? "n" : "") + '" aria-sort="' + as + '"><button data-sort="' + c[0] + '">' + esc(c[1]) + "</button></th>";
+  }).join("") + "</tr></thead><tbody>" + rows.map(function (r) {
+    var m = MIR[r.iso3], sel = SEL.indexOf(r.iso3) >= 0;
+    return '<tr data-open="' + esc(r.iso3) + '"><td><button class="linkbtn" data-open="' + esc(r.iso3) + '">' + esc(r.name) + "</button>" + (sel ? ' <span class="note" title="In the selection">✓</span>' : "") + "</td><td>" + tierPill(r.tier) + '</td><td class="n">' + (r.score == null ? '<span class="note">not scored</span>' : r.score.toFixed(1)) +
+      '</td><td class="n">' + usd(r.partner_trade_latest_usd) + '</td><td class="n">' + pct(r.partner_trade_cagr_pct, true) + '</td><td class="n">' + (r.partner_unit_value_usd_per_kg == null ? "—" : r.partner_unit_value_usd_per_kg.toFixed(2)) +
+      '</td><td class="n">' + usd(r.home_flow_latest_usd) + "</td><td>" + (m ? esc(MIRLABEL[m.status] || m.status) : '<span class="note">not checked</span>') + "</td></tr>";
+  }).join("") + "</tbody></table></div>";
+  h += '<h3 style="margin-top:1rem">Size against growth</h3><div class="legend">' + ["core", "growth", "new", "minor"].map(function (t) { return '<span><i style="background:var(--' + t + ')"></i>' + esc(tierName(t)) + "</span>"; }).join("") + '<span>Bubble area = home ' + homeFlow + " (faint = none). Click a bubble to open it.</span></div><div class=\"chart\" id=\"ch_scatter\"></div>";
+  $("mk_out").innerHTML = h;
+  CH.scatter = function (w) { return scatterChart(w, rows); };
+}
+function renderMarkets() {
+  var f = S.f;
+  $("p-markets").innerHTML = '<h2 class="ph">' + esc(Nouns) + '</h2><section class="card"><div class="split"><h2>' + esc(Nouns) + " compared</h2></div>" +
+    '<p class="note">' + ROWS.length + " candidate " + nouns + ". Tier: " + ["core", "growth", "new"].map(function (t) { return esc(tierName(t)); }).join(" / ") + ". Score is a ranking aid, not a verdict; &ldquo;not scored&rdquo; means the " + noun + " has no reported trade data to score.</p>" +
+    '<div class="filters noprint"><label for="f_q">Search<input type="search" id="f_q" value="' + esc(f.q) + '" placeholder="Name or code"></label>' +
+    '<label for="f_tier">Tier<select id="f_tier">' + [["all", "All tiers"], ["core", tierName("core")], ["growth", tierName("growth")], ["new", tierName("new")], ["minor", "Minor"]].map(function (o) { return '<option value="' + o[0] + '"' + (f.tier === o[0] ? " selected" : "") + ">" + esc(o[1]) + "</option>"; }).join("") + "</select></label>" +
+    '<label class="ck"><input type="checkbox" id="f_sel"' + (f.sel ? " checked" : "") + '> In selection</label><label class="ck"><input type="checkbox" id="f_scored"' + (f.scored ? " checked" : "") + '> Scored only</label><label class="ck"><input type="checkbox" id="f_home"' + (f.home ? " checked" : "") + "> With home " + homeFlow + "</label></div>" +
+    '<div id="mk_out"></div></section>';
+  renderMarketsOut();
+}
+
+// ---------- partner detail
+function detailBase(iso) {
+  var r = ROW[iso], m = MIR[iso], pd = (A.partner_detail || {})[iso], fl = FRT && FRT.lanes && FRT.lanes[iso], tl = TAR && TAR.lanes && TAR.lanes[iso];
+  var h = "";
+  var opts = function (list) { return list.map(function (i) { return '<option value="' + esc(i) + '"' + (i === iso ? " selected" : "") + ">" + esc(nm(i)) + "</option>"; }).join(""); };
+  var others = ROWS.map(function (x) { return x.iso3; }).filter(function (i) { return SEL.indexOf(i) < 0; });
+  h += '<h2 class="ph">' + esc(Noun) + ' detail</h2><section class="card"><div class="split"><h2>' + esc(r ? r.name : nm(iso)) + (r ? " " + tierPill(r.tier) : "") + '</h2><label class="noprint">Choose ' + noun + ' <select id="d_sel">' + (SEL.length ? '<optgroup label="Selected lanes">' + opts(SEL) + "</optgroup>" : "") + '<optgroup label="' + (SEL.length ? "Other candidates" : "Candidates") + '">' + opts(others) + "</optgroup></select></label></div>";
+  if (!r) return h + '<p class="msg">No analysis row for ' + esc(iso) + ".</p></section>";
+  h += '<dl class="kvs">' +
+    kv("Score (0-100)", r.score == null ? '<span class="note">not scored</span>' : r.score.toFixed(1)) +
+    kv(Noun + " " + partnerTrade + " " + M.latest_complete_year, r.partner_reports_latest ? usd(r.partner_trade_latest_usd) : '<span class="note">not reported</span>') +
+    kv("Share of world " + partnerTrade, pct(r.partner_trade_share_pct, false, 2)) + kv("Growth (CAGR " + esc(M.window_label) + ")", pct(r.partner_trade_cagr_pct, true)) +
+    kv("Average unit value", r.partner_unit_value_usd_per_kg == null ? "—" : "$" + r.partner_unit_value_usd_per_kg.toFixed(2) + " /kg") +
+    kv("Home " + homeFlow + " " + M.latest_complete_year, usd(r.home_flow_latest_usd)) + kv("Share of home " + homeFlow, pct(r.home_flow_share_of_home_pct, false, 2)) +
+    kv("Home growth (CAGR)", pct(r.home_flow_cagr_pct, true)) + kv("Home unit value", r.home_unit_value_usd_per_kg == null ? "—" : "$" + r.home_unit_value_usd_per_kg.toFixed(2) + " /kg") +
+    kv("Home share in " + noun + " " + partnerTrade, pct(r.home_share_in_partner_pct, false, 2)) + "</dl>";
+  var sc = r.score_components || {};
+  h += '<h4 style="margin-top:.8rem">Score components</h4><p class="note">' + ["size", "growth", "price", "foothold", "openness"].map(function (k) { return k + " " + (sc[k] == null ? "n/a" : sc[k].toFixed(0)); }).join(" · ") + "</p>";
+  if ((r.notes || []).length) h += '<ul class="clean note">' + r.notes.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + "</ul>";
+  if (SEL.indexOf(iso) >= 0 && DATA.selection && DATA.selection.notes && DATA.selection.notes[iso]) h += '<p class="msg info">Selection note: ' + esc(DATA.selection.notes[iso]) + "</p>";
+  h += "</section>";
+  // history + mix
+  var hist = r.home_flow_by_year || {};
+  h += '<div class="grid2"><section class="card"><h3>Home ' + homeFlow + " to " + (isExp ? "" : "from ") + esc(nm(iso)) + '</h3><div class="chart" id="ch_hist"></div><p class="note">US dollars, reported by ' + esc(HOMENAME) + ".</p></section>";
+  h += '<section class="card"><h3>' + (isExp ? "Who supplies " + esc(nm(iso)) + "'s imports" : "Who buys from " + esc(nm(iso))) + (pd ? " (" + pd.year + ")" : "") + '</h3>';
+  if (pd) {
+    h += '<div class="chart" id="ch_mix"></div><p class="note">' + esc(pd.basis_note || "") + " Basis: " + esc(pd.basis === "partner_reported" ? "reported by the " + noun : "reported by counterparties") + ". Total " + usd(pd.total_usd) + "; " + esc(HOMENAME) + (pd.home_rank ? " ranks " + pd.home_rank + " with " + pct(pd.home_share_pct, false, 2) : " is not among the rows") + "; concentration (HHI) " + (pd.hhi == null ? "n/a" : pd.hhi.toFixed(3)) + ".</p>";
+  } else h += '<p class="note">No ' + (isExp ? "supplier" : "buyer") + " mix loaded for this " + noun + ".</p>";
+  h += "</section></div>";
+  // mirror
+  h += '<section class="card"><h3>Mirror check</h3>';
+  if (m) h += '<dl class="kvs">' + kv("Status", "<strong>" + esc(MIRLABEL[m.status] || m.status) + "</strong>") + kv("Year", esc(m.year)) + kv("Reported by " + esc(HOMENAME), usd(m.home_reported_usd)) + kv("Reported by " + esc(noun), m.partner_reported_usd == null ? "—" : usd(m.partner_reported_usd)) + kv("Ratio (partner / home)", m.ratio == null ? "—" : m.ratio.toFixed(2)) + "</dl><p>" + esc(m.note) + "</p>";
+  else h += '<p class="note">Not checked: home ' + homeFlow + " to this " + noun + " is below the presence threshold.</p>";
+  h += "</section>";
+  // freight + tariff
+  h += '<div class="grid2"><section class="card"><h3>Freight lane</h3>' + freightBlock(fl) + '</section><section class="card"><h3>Tariff</h3>' + tariffBlock(tl) + "</section></div>";
+  // economics
+  h += '<section class="card"><div class="split"><h3>Lane economics (base case)</h3>' + (LAN[iso] ? '<button class="btn noprint" data-lane="' + esc(iso) + '">Open in Economics</button>' : "") + "</div>" + econSummary(iso) + "</section>";
+  return h;
+}
+function freightBlock(fl) {
+  if (!FRT) return '<p class="note">Freight stage not run for this study.</p>';
+  if (!fl) return '<p class="msg">This ' + noun + " is not in freight.json.</p>";
+  var tier = (fl.freight && fl.freight.tier) || "missing", fu = fl.freight_usd || {}, td = fl.transit_days || {};
+  var h = '<dl class="kvs">' + kv("Rung", esc(RUNG[tier] || tier), tier) +
+    kv("Freight low / base / high", fl.coverage_gap ? '<strong class="neg">coverage gap: no price</strong>' : "$" + num(fu.low) + " / <strong>$" + num(fu.base) + "</strong> / $" + num(fu.high) + " per container", fl.coverage_gap ? "" : tier) +
+    kv("Transit (days, low / base / high)", td.base == null ? "—" : num(td.low) + " / " + num(td.base) + " / " + num(td.high), td.tier) +
+    kv("Route", esc(((fl.origin_port || {}).name || "?") + " (" + ((fl.origin_port || {}).locode || "?") + ") → " + ((fl.destination_port || {}).name || "?") + " (" + ((fl.destination_port || {}).locode || "?") + ")")) +
+    kv("Distance", fl.distance_nm == null ? "—" : num(fl.distance_nm) + " nm") + kv("Rate basis", fl.all_in ? "all-in rate" : "ocean freight plus local charges") + "</dl>";
+  if (fl.coverage_gap) h += '<p class="msg">Coverage gap: no quote, connector, published rate or calibrated model exists for this lane. Add a quote or a dated benchmark to price it.</p>';
+  if ((fl.alternatives || []).length) h += '<h4>Alternatives kept for transparency</h4><ul class="clean">' + fl.alternatives.map(function (a) { return "<li>" + esc(a.tier) + ": $" + num(a.usd) + (a.note ? " (" + esc(a.note) + ")" : "") + "</li>"; }).join("") + "</ul>";
+  var lc = fl.local_charges || {};
+  h += '<h4>Local charges per container (' + esc(CUR) + ')</h4><dl class="kvs">' + Object.keys(lc).map(function (k) { var s = lc[k] || {}; return kv(keyLabel(k), s.value == null ? '<span class="neg">missing</span>' : num(s.value), s.value == null ? "missing" : s.tier); }).join("") + "</dl>";
+  if ((fl.notes || []).length) h += '<ul class="clean note">' + fl.notes.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + "</ul>";
+  return h;
+}
+function tariffBlock(tl) {
+  if (!TAR) return '<p class="note">Tariff stage not run for this study.</p>';
+  if (!tl) return '<p class="msg">This ' + noun + " is not in tariff.json.</p>";
+  function s(sv, suffix) { return sv && sv.value != null ? esc(sv.value) + (suffix || "") : '<span class="neg">missing</span>'; }
+  var h = '<dl class="kvs">' + kv("Status", tl.status === "sourced" ? "Sourced" : "Verify", tl.status === "sourced" ? "" : "verify") +
+    kv("Duty applied", s(tl.duty_rate_pct, " %"), tl.duty_rate_pct && tl.duty_rate_pct.tier) + kv("MFN rate (reference)", s(tl.mfn_rate_pct, " %"), tl.mfn_rate_pct && tl.mfn_rate_pct.tier) +
+    kv("Preference", tl.preference ? esc(tl.preference.agreement || "") + (tl.preference.rate_pct && tl.preference.rate_pct.value != null ? " at " + esc(tl.preference.rate_pct.value) + " %" : "") : "none") +
+    kv("Other duties", s(tl.other_duties_pct, " %"), tl.other_duties_pct && tl.other_duties_pct.tier) + kv("Import VAT", s(tl.import_vat_pct, " %") + (tl.vat_recoverable === true ? " (recoverable)" : tl.vat_recoverable === false ? " (not recoverable)" : ""), tl.import_vat_pct && tl.import_vat_pct.tier) +
+    kv("Customs valuation", esc(tl.valuation_basis || "—")) + "</dl>";
+  if (tl.preference && tl.preference.conditions) h += '<p class="note">Conditions: ' + esc(tl.preference.conditions) + "</p>";
+  if ((tl.ntb || []).length) h += "<h4>Non-tariff measures</h4><ul class=\"clean\">" + tl.ntb.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + "</ul>";
+  if (tl.notes) h += '<p class="note">' + esc(tl.notes) + "</p>";
+  return h;
+}
+function missingList(keys) { return keys.map(keyLabel).join(", "); }
+function econSummary(iso) {
+  var li = LAN[iso]; if (!li) return '<p class="note">' + (IN.has_commercial ? "This " + noun + " is not in the selection, so no lane was modelled." : "The financial case is deferred: no commercial inputs were provided.") + "</p>";
+  var r = BASE[iso];
+  if (r.status === "error") return '<p class="msg">Input error: ' + esc(r.errors.join("; ")) + "</p>";
+  if (r.status === "incomplete") return '<p class="msg">Incomplete: needs ' + esc(missingList(r.missing)) + ". No margin is shown until these are provided.</p>" + (r.buyer_landed != null ? '<p>Buyer landed cost per ' + esc(UNIT) + ": " + perUnit(r.buyer_landed_per_unit) + "</p>" : "");
+  var t = laneTier(li, r);
+  return '<dl class="kvs">' + kv("Price per " + UNIT, perUnit(r.price_per_unit, li.price_currency) + (r.price_basis !== "user" && isExp ? " (required at target margin)" : "")) + kv(isExp ? "Revenue per container" : "Revenue per container", money(r.revenue), t) +
+    kv(isExp ? "Your cost per container" : "Landed cost per container", money(r.user_cost), t) + kv("Margin per container", r.margin == null ? "—" : money(r.margin), t) + kv("Margin %", pct(r.margin_pct), t) +
+    kv("Buyer landed per " + UNIT, perUnit(r.buyer_landed_per_unit), t) + kv("Gap to benchmark unit value", r.price_gap_pct == null ? "—" : pct(r.price_gap_pct, true), "published") + "</dl>";
+}
+function renderDetail() {
+  if (!S.partner) { $("p-detail").innerHTML = '<p class="msg">No ' + nouns + " to show.</p>"; return; }
+  var iso = S.partner;
+  $("p-detail").innerHTML = detailBase(iso);
+  var r = ROW[iso] || {}, pd = (A.partner_detail || {})[iso];
+  CH.hist = function (w) {
+    var ys = Object.keys(r.home_flow_by_year || {}).sort();
+    return barChart(w, ys.map(function (y) { return {label: y, value: r.home_flow_by_year[y], partial: isPartial(Number(y))}; }), {h: 200, label: "Home " + homeFlow + " by year with " + nm(iso)});
+  };
+  if (pd) CH.mix = function (w) {
+    var rows = (pd.rows || []).slice(0, 10).map(function (x) { return {label: x.name, value: x.value_usd, text: pct(x.share_pct, false, 1) + " · " + usd(x.value_usd), hl: x.iso3 === HOME}; });
+    return hbarChart(w, rows, {label: (isExp ? "Supplier" : "Buyer") + " mix of " + nm(iso) + ", top 10 by value; " + HOMENAME + " highlighted"});
+  };
+}
+
+// ---------- economics
+function renderEconomics() {
+  var el = $("p-economics");
+  if (!LANE_ISOS.length) {
+    el.innerHTML = '<h2 class="ph">Economics</h2><section class="card"><h2>Economics</h2><p class="msg info">' + (IN.has_commercial ? "No lanes to model yet: choose " + nouns + " in selection.json, then add freight and tariff." : "The financial case is deferred: this study has no commercial inputs. The economics tab becomes available once they are provided.") + "</p></section>";
+    return;
+  }
+  if (!S.lane || !LAN[S.lane]) S.lane = LANE_ISOS[0];
+  var li = LAN[S.lane];
+  var fr = function (s) { var v = li["freight_" + s]; return v == null ? "n/a" : "$" + num(v); };
+  function slider(id, label, min, max, step, val, unit, hint) {
+    return '<div><label for="' + id + '">' + esc(label) + ": <output id=\"o_" + id + '" for="' + id + '">' + fmtShock(val, unit) + '</output></label><input type="range" id="' + id + '" min="' + min + '" max="' + max + '" step="' + step + '" value="' + val + '" aria-describedby="h_' + id + '"><div class="note" id="h_' + id + '">' + esc(hint) + "</div></div>";
+  }
+  var h = '<h2 class="ph">Economics</h2><section class="card noprint-controls"><h2>What-if economics</h2><p class="note">Per container, in ' + esc(CUR) + '. Recomputed live in your browser with a port of the financial model; nothing leaves this page.</p><div class="ctrl">' +
+    '<div><label for="e_lane">Lane</label><select id="e_lane">' + LANE_ISOS.map(function (i) { return '<option value="' + esc(i) + '"' + (i === S.lane ? " selected" : "") + ">" + esc(nm(i)) + (BASE[i].status === "modelled" ? "" : " (" + BASE[i].status + ")") + "</option>"; }).join("") + "</select></div>" +
+    '<fieldset><legend>Freight scenario</legend><div class="seg">' + ["low", "base", "high"].map(function (s) { return '<label><input type="radio" name="e_scn" value="' + s + '"' + (WI.scn === s ? " checked" : "") + "><span>" + s.charAt(0).toUpperCase() + s.slice(1) + " " + fr(s) + "</span></label>"; }).join("") + "</div></fieldset>" +
+    slider("e_price", isExp ? "Selling price shock" : "Local price shock", -30, 30, 1, WI.price, "%", isExp ? "Scales the selling price (or the required price when none was given)." : "Scales the local selling price.") +
+    slider("e_cost", isExp ? "Goods cost shock" : "Purchase price shock", -30, 30, 1, WI.cost, "%", isExp ? "Scales the goods cost per unit." : "Scales the supplier's purchase price.") +
+    slider("e_fx", "FX shock", -30, 30, 1, WI.fx, "%", "Plus = " + (isExp ? "cost currency" : "price currency") + " weakens against " + CUR + ".") +
+    slider("e_duty", "Duty shock", -10, 10, 0.5, WI.duty, "pp", "Percentage points added to the duty rate (not below 0).") +
+    '<div><button class="btn" id="e_reset">Reset to base case</button></div></div></section><div id="econ_out"></div>';
+  el.innerHTML = h;
+  updateEcon();
+}
+function fmtShock(v, unit) { return (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v) + (unit === "pp" ? " pp" : "%"); }
+function stepsFor(res, li) {
+  var wf = res.waterfall.filter(function (w) { return w.amount != null; });
+  function nice(w) { return w.label.replace(/ \((buyer|seller)\)$/, ""); }
+  function st(w, kind) { return {label: w.label, value: w.amount, kind: kind || "step", side: w.side, tier: w.tier}; }
+  var out = {};
+  if (isExp) {
+    var sellerRows = wf.filter(function (w) { return w.side === "seller" && Math.abs(w.amount) > 1e-9; }).map(function (w) { return st(w); });
+    out.a = sellerRows.concat([{label: "Cost to you", value: res.user_cost, kind: "total"}, {label: "Margin", value: res.margin, kind: "margin"}, {label: "Revenue (invoice)", value: res.revenue, kind: "total"}]);
+    if (res.margin == null) out.a = null;
+    if (res.buyer_landed != null && res.invoice_value != null) {
+      var buyerRows = wf.filter(function (w) { return w.side === "buyer" && Math.abs(w.amount) > 1e-9; }).map(function (w) { return st(w); });
+      out.b = [{label: "Invoice value", value: res.invoice_value, kind: "total"}].concat(buyerRows, [{label: "Buyer landed cost", value: res.buyer_landed, kind: "total"}]);
+    }
+  } else {
+    var rows = wf.filter(function (w) { return Math.abs(w.amount) > 1e-9; }).map(function (w) { return st(w); });
+    rows.push({label: "Landed cost", value: res.user_cost, kind: "total"});
+    if (res.margin != null) { rows.push({label: "Margin", value: res.margin, kind: "margin"}); rows.push({label: "Revenue (local sales)", value: res.revenue, kind: "total"}); }
+    out.a = rows;
+  }
+  return out;
+}
+function updateEcon() {
+  var out = $("econ_out"); if (!out) return;
+  var iso = S.lane, li = LAN[iso], o = wiOpts(), res = ENGINE.computeLane(li, o), base = BASE[iso];
+  var h = "";
+  if (res.status === "error") { out.innerHTML = '<div class="msg">Input error: ' + esc(res.errors.join("; ")) + "</div>"; return; }
+  var fx = li.fixed_annual;
+  h += '<section class="card" aria-labelledby="eh"><h3 id="eh">' + esc(nm(iso)) + " lane " + (wiActive() ? '<span class="tb tb-modelled">what-if</span>' : '<span class="tb tb-derived">base case</span>') + "</h3>";
+  if (res.status === "incomplete") {
+    h += '<div class="msg" role="status"><strong>Incomplete: no margin can be shown.</strong> Missing inputs: ' + esc(missingList(res.missing)) + ".</div>";
+    if (res.required_price_per_unit == null && isExp && li.price_per_unit == null) h += '<p class="note">Without a selling price the model needs a target margin to derive the required price.</p>';
+  } else {
+    var t = laneTier(li, res), gain = res.margin;
+    h += '<p class="sr" aria-live="polite">' + (gain == null ? "Margin not available." : "Margin per container " + num(gain) + " " + CUR + ", " + pct(res.margin_pct)) + "</p>";
+    h += '<div class="tiles">';
+    h += tile(isExp ? "Revenue / container" : "Revenue / container", res.revenue == null ? "—" : money(res.revenue), res.price_basis === "user" ? "at " + perUnit(res.price_per_unit, li.price_currency) + " per " + esc(UNIT) : isExp ? "at required " + perUnit(res.price_per_unit, li.price_currency) + " per " + esc(UNIT) : "no local price given", {tier: res.revenue == null ? null : t});
+    h += tile(isExp ? "Your cost / container" : "Landed cost / container", money(res.user_cost), isExp ? "incoterm " + esc(li.incoterm) : "incoterm " + esc(li.incoterm) + ", " + esc(li.valuation_basis || "?") + " valuation", {tier: t});
+    h += tile("Margin / container", res.margin == null ? "—" : (res.margin >= 0 ? "+" : "") + money(res.margin), res.margin == null ? (isExp ? "" : "no local price: see break-even") : (res.margin >= 0 ? "profit" : "loss") + (base.margin != null && wiActive() ? " · base " + num(base.margin) : ""), {cls: res.margin == null ? "" : res.margin >= 0 ? "pos" : "neg", tier: res.margin == null ? null : t});
+    h += tile("Margin %", pct(res.margin_pct), "of revenue" + (li.target_margin_pct != null ? " · target " + num(li.target_margin_pct) + "%" : ""), {tier: res.margin_pct == null ? null : t});
+    h += tile("Buyer landed / " + UNIT, perUnit(res.buyer_landed_per_unit), res.price_gap_pct == null ? "no benchmark comparison" : pct(res.price_gap_pct, true) + " vs average import unit value", {tier: res.buyer_landed_per_unit == null ? null : t});
+    var be = ENGINE.breakEven(res.margin, fx);
+    h += tile("Break-even", be == null ? "—" : num(be, 1) + " containers/yr", fx == null ? "fixed costs missing" : res.margin != null && res.margin <= 0 ? "margin is not positive" : "to cover " + money(fx, 0) + " fixed per year");
+    if (!isExp) {
+      h += tile("Break-even local price", perUnit(res.breakeven_local_price_per_unit, li.price_currency), "per " + esc(UNIT) + " to cover landed cost", {tier: t});
+      h += tile("Required local price", perUnit(res.required_local_price_per_unit, li.price_currency), li.target_margin_pct != null ? "for " + num(li.target_margin_pct) + "% margin" : "target margin missing", {tier: t});
+    }
+    h += "</div>";
+  }
+  if (res.buyer_side_missing && res.buyer_side_missing.length && isExp) h += '<p class="note">Buyer-side figures need: ' + esc(missingList(res.buyer_side_missing)) + ".</p>";
+  (res.notes || []).forEach(function (n) { h += '<p class="note">' + esc(n) + "</p>"; });
+  h += "</section>";
+  // waterfalls
+  if (res.status === "modelled") {
+    var st = stepsFor(res, li);
+    CH.wfa = st.a ? function (w) { return waterfallChart(w, st.a, (isExp ? "Seller side" : "Landed cost and margin") + " waterfall in " + CUR); } : null;
+    CH.wfb = st.b ? function (w) { return waterfallChart(w, st.b, "Buyer side waterfall in " + CUR); } : null;
+    h += '<div class="grid2"><section class="card"><h3>' + (isExp ? "Seller side: your cost and margin" : "Landed cost and margin") + '</h3><div class="legend"><span><span class="sw" style="background:#1d5c8a"></span>supplier / seller pays</span>' + (isExp ? "" : '<span><span class="sw" style="background:#8a5a00"></span>you pay</span>') + '</div>' + (st.a ? '<div class="chart" id="ch_wfa"></div>' : '<p class="note">Margin not available.</p>') + "</section>";
+    if (isExp) h += '<section class="card"><h3>Buyer side: landed cost at destination</h3><div class="legend"><span><span class="sw" style="background:#8a5a00"></span>buyer pays</span></div>' + (st.b ? '<div class="chart" id="ch_wfb"></div>' : '<p class="note">Buyer landed cost needs: ' + esc(missingList(res.buyer_side_missing || [])) + ".</p>") + "</section>";
+    else {
+      h += '<section class="card"><h3>Cost line items</h3>' + wfTable(res) + "</section>";
+    }
+    h += "</div>";
+    if (isExp) h += '<section class="card"><h3>Cost line items</h3>' + wfTable(res) + "</section>";
+  }
+  // lanes table
+  h += '<section class="card"><h3>Lanes compared (base case: base freight, no shocks)</h3>' + lanesTable() + "</section>";
+  // portfolio
+  var pf = portfolioFor(o);
+  h += '<section class="card"><h3>Portfolio payback' + (wiActive() ? ' <span class="tb tb-modelled">what-if</span>' : "") + '</h3>';
+  if (pf.payback_month != null || (pf.monthly[0] && pf.monthly[0].cumulative != null)) {
+    h += '<div class="tiles"><div class="tile"><div class="l">Payback month</div><div class="v">' + (pf.payback_month == null ? "none in 24" : pf.payback_month) + '</div><div class="s">cumulative cash turns positive</div></div>' +
+      tile("Plan", num(pf.planned, 1) + " containers/yr", "weighted margin " + money(pf.weighted_margin, 0) + " per container") + tile("Annual margin", money(pf.annual_margin, 0), "before fixed " + money(pf.annual_fixed, 0)) +
+      tile("Cash lag", pf.lag + " months", "weighted cash cycle " + num(pf.cycle_days, 0) + " days") + "</div>";
+    CH.pay = function (w) { return paybackChart(w, pf); };
+    h += '<div class="chart" id="ch_pay"></div>';
+    h += '<p class="note">Cumulative cash per month. Containers: ' + esc(pf.basis || "") + (pf.basis && pf.basis.indexOf("derived") === 0 ? ' <span class="tb tb-derived">derived</span>' : "") + ". Lanes included: " + pf.included.map(nm).map(esc).join(", ") + (pf.excluded.length ? ". Excluded (no margin or no plan): " + pf.excluded.map(nm).map(esc).join(", ") : "") + ".</p>";
+  } else h += '<p class="msg info">Payback cannot be computed: ' + esc(pf.note || "inputs missing") + "</p>";
+  h += "</section>";
+  out.innerHTML = h;
+}
+function wfTable(res) {
+  return '<div class="tw"><table><caption class="sr">Cost line items per container</caption><thead><tr><th scope="col">Item</th><th scope="col">Paid by</th><th scope="col" class="n">' + esc(CUR) + '</th><th scope="col">Tier</th></tr></thead><tbody>' + res.waterfall.map(function (w) {
+    return "<tr><td>" + esc(w.label) + "</td><td>" + esc(w.side === "seller" ? (isExp ? "you / seller" : "supplier") : (isExp ? "buyer" : "you")) + '</td><td class="n">' + (w.amount == null ? "missing" : num(w.amount, 2)) + "</td><td>" + (w.amount === 0 && /included/.test(w.label) ? "" : badge(w.tier, true)) + "</td></tr>";
+  }).join("") + "</tbody></table></div>";
+}
+function lanesTable() {
+  var wi = wiActive();
+  return '<div class="tw"><table><caption class="sr">Lane comparison</caption><thead><tr><th scope="col">Lane</th><th scope="col">Status</th><th scope="col" class="n">Price / ' + esc(UNIT) + '</th><th scope="col" class="n">Revenue</th><th scope="col" class="n">Cost</th><th scope="col" class="n">Margin</th><th scope="col" class="n">Margin %</th><th scope="col" class="n">Buyer landed / ' + esc(UNIT) + "</th><th scope=\"col\" class=\"n\">Gap</th>" + (wi ? '<th scope="col" class="n">Margin (what-if)</th>' : "") + "</tr></thead><tbody>" + LANE_ISOS.map(function (iso) {
+    var li = LAN[iso], r = BASE[iso], cur = iso === S.lane ? ' class="cur"' : "";
+    var link = '<button class="linkbtn" data-lane="' + esc(iso) + '">' + esc(nm(iso)) + "</button>";
+    if (r.status !== "modelled") return "<tr" + cur + "><td>" + link + "</td><td><strong>" + esc(r.status) + '</strong></td><td colspan="' + (wi ? 8 : 7) + '">' + (r.status === "error" ? esc(r.errors.join("; ")) : "Missing: " + esc(missingList(r.missing))) + "</td></tr>";
+    var t = laneTier(li, r), w = wi ? ENGINE.computeLane(li, wiOpts()) : null;
+    return "<tr" + cur + "><td>" + link + "</td><td>modelled</td><td class=\"n\">" + perUnit(r.price_per_unit, li.price_currency) + (r.price_basis !== "user" && isExp ? " " + badge("derived") : "") + '</td><td class="n">' + num(r.revenue) + badge(t) + '</td><td class="n">' + num(r.user_cost) + badge(t) + '</td><td class="n ' + (r.margin == null ? "" : r.margin >= 0 ? "pos" : "neg") + '">' + (r.margin == null ? "—" : num(r.margin)) + badge(t) +
+      '</td><td class="n">' + pct(r.margin_pct) + '</td><td class="n">' + perUnit(r.buyer_landed_per_unit) + '</td><td class="n">' + (r.price_gap_pct == null ? "—" : pct(r.price_gap_pct, true)) + "</td>" + (wi ? '<td class="n">' + (w.margin == null ? "—" : num(w.margin)) + "</td>" : "") + "</tr>";
+  }).join("") + "</tbody></table></div>";
+}
+
+// ---------- sources
+function notesList() {
+  var n = [];
+  (M.warnings || []).forEach(function (w) { n.push(["Analysis", w]); });
+  if (PARTIAL.length) n.push(["Years", "Partial year(s) " + PARTIAL.join(", ") + ": too few reporters; shown hatched, left out of growth rates, rankings and scores. Latest complete year is " + M.latest_complete_year + "; base year " + M.base_year + "."]);
+  var v = M.views || {};
+  Object.keys(v).forEach(function (k) { if (v[k] === false) n.push(["Data views", "View not loaded: " + k.replace(/_/g, " ") + ". Related checks are skipped, nothing was estimated."]); });
+  if (FIN) {
+    Object.keys(FIN.lanes || {}).forEach(function (i) {
+      var l = FIN.lanes[i];
+      (l.errors || []).forEach(function (e) { n.push(["Financial " + nm(i), "Input error: " + e]); });
+      (l.notes || []).forEach(function (e) { n.push(["Financial " + nm(i), e]); });
+      if (l.status === "incomplete") n.push(["Financial " + nm(i), "Incomplete, missing: " + missingList(l.missing || [])]);
+    });
+    ((FIN.portfolio || {}).notes || []).forEach(function (e) { n.push(["Portfolio", e]); });
+    if (FIN.portfolio && FIN.portfolio.payback_note) n.push(["Portfolio", FIN.portfolio.payback_note]);
+  } else LANE_ISOS.forEach(function (i) { (LAN[i].notes || []).forEach(function (e) { n.push(["Lane " + nm(i), e]); }); });
+  if (FRT) Object.keys(FRT.lanes || {}).forEach(function (i) { var l = FRT.lanes[i]; if (SEL.length && SEL.indexOf(i) < 0) return; if (l.coverage_gap) n.push(["Freight " + nm(i), "Coverage gap: no price available."]); (l.notes || []).forEach(function (e) { n.push(["Freight " + nm(i), e]); }); });
+  if (TAR) Object.keys(TAR.lanes || {}).forEach(function (i) { var l = TAR.lanes[i]; if (SEL.length && SEL.indexOf(i) < 0) return; if (l.status !== "sourced") n.push(["Tariff " + nm(i), "Status is verify: confirm rates against the official schedule before relying on them."]); if (l.notes) n.push(["Tariff " + nm(i), l.notes]); });
+  return n;
+}
+function renderSources() {
+  var s = S.sq, tiers = ["all"].concat(TIERS_ALL());
+  var h = '<h2 class="ph">Sources</h2><section class="card"><h2>Sourced values used</h2><p class="note">Every commercial, freight and tariff value behind the economics, with its tier. Tiers other than user and quote are estimates or third-party figures and belong on the verification list.</p>' +
+    '<div class="filters noprint"><label for="s_q">Search<input type="search" id="s_q" value="' + esc(s.q) + '" placeholder="Item, lane or source"></label><label for="s_tier">Tier<select id="s_tier">' + tiers.map(function (t) { return '<option value="' + t + '"' + (s.tier === t ? " selected" : "") + ">" + (t === "all" ? "All tiers" : t) + "</option>"; }).join("") + '</select></label><label class="ck"><input type="checkbox" id="s_verify"' + (s.verify ? " checked" : "") + '> Needs verification (not user or quote)</label></div><div id="src_out"></div></section>';
+  var nl = notesList();
+  h += '<section class="card"><h2>Data notes</h2>' + (nl.length ? '<ul class="clean">' + nl.map(function (x) { return "<li><strong>" + esc(x[0]) + ":</strong> " + esc(x[1]) + "</li>"; }).join("") + "</ul>" : '<p class="note">No warnings.</p>') + "</section>";
+  $("p-sources").innerHTML = h;
+  renderSrcOut();
+}
+function TIERS_ALL() { return ["user", "quote", "connector", "published", "modelled", "derived", "missing"]; }
+function renderSrcOut() {
+  var s = S.sq, q = s.q.trim().toLowerCase();
+  var rows = SRC.filter(function (r) {
+    if (s.verify && !needsVerify(r)) return false;
+    if (s.tier !== "all" && r.tier !== s.tier) return false;
+    if (q && (keyLabel(r.key) + " " + (r.lane ? nm(r.lane) : "") + " " + (r.source || "")).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+  var h = '<p class="note" role="status">' + rows.length + " of " + SRC.length + " values shown; " + SRC.filter(needsVerify).length + " need verification.</p>";
+  if (!SRC.length) h = '<p class="msg info">No sourced values yet: the study has no commercial inputs or the financial stage has not run.</p>';
+  else h += '<div class="tw"><table><caption class="sr">Sourced values</caption><thead><tr><th scope="col">Item</th><th scope="col">Lane</th><th scope="col" class="n">Value</th><th scope="col">Tier</th><th scope="col">Source</th><th scope="col">As of</th></tr></thead><tbody>' + rows.map(function (r) {
+    var u = safeUrl(r.url);
+    return "<tr><td>" + esc(keyLabel(r.key)) + "</td><td>" + (r.lane ? esc(nm(r.lane)) : "all") + '</td><td class="n">' + srcValue(r) + "</td><td>" + badge(r.tier, true) + "</td><td>" + esc(r.source || "") + (u ? ' <a href="' + esc(u) + '" rel="noopener noreferrer" target="_blank">link<span class="sr"> (opens source)</span></a>' : "") + "</td><td>" + esc(r.as_of || "—") + "</td></tr>";
+  }).join("") + "</tbody></table></div>";
+  $("src_out").innerHTML = h;
+}
+
+// ---------- rendering control
+var RENDER = {overview: renderOverview, markets: renderMarkets, detail: renderDetail, economics: renderEconomics, sources: renderSources};
+function drawCharts() {
+  var els = document.querySelectorAll(".chart");
+  Array.prototype.forEach.call(els, function (el) {
+    var id = el.id.replace(/^ch_/, ""), fn = CH[id];
+    if (!fn || !el.offsetParent && !document.body.classList.contains("printing")) return;
+    var w = Math.max(280, Math.floor(el.clientWidth));
+    if (!el.clientWidth) return;
+    el.innerHTML = fn(w);
+  });
+}
+function show(tab, focusPanel) {
+  S.tab = tab;
+  TABS.forEach(function (t) { $("p-" + t[0]).classList.toggle("on", t[0] === tab); });
+  RENDER[tab]();
+  renderTabs();
+  drawCharts();
+  if (focusPanel) $("p-" + tab).focus({preventScroll: true});
+  try { history.replaceState(null, "", "#" + tab); } catch (e) { /* file: pages may refuse */ }
+}
+function openPartner(iso) { S.partner = iso; show("detail", false); window.scrollTo(0, 0); }
+
+document.addEventListener("click", function (e) {
+  var t = e.target.closest("[data-tab],[data-sort],[data-open],[data-lane],[data-goto-verify]"); if (!t) return;
+  if (t.hasAttribute("data-tab")) return show(t.getAttribute("data-tab"), true);
+  if (t.hasAttribute("data-sort")) { var k = t.getAttribute("data-sort"); S.sort = {k: k, dir: S.sort.k === k ? -S.sort.dir : (k === "name" || k === "mirror" || k === "tier" ? 1 : -1)}; renderMarkets(); drawCharts(); var b = document.querySelector('[data-sort="' + k + '"]'); if (b) b.focus(); return; }
+  if (t.hasAttribute("data-open")) return openPartner(t.getAttribute("data-open"));
+  if (t.hasAttribute("data-lane")) { S.lane = t.getAttribute("data-lane"); return show("economics", false); }
+  if (t.hasAttribute("data-goto-verify")) { S.sq.verify = true; show("sources", false); }
+});
+document.addEventListener("keydown", function (e) {
+  var tab = e.target.closest && e.target.closest('[role="tab"]');
+  if (!tab) return;
+  var i = TABS.map(function (x) { return x[0]; }).indexOf(S.tab), n = TABS.length, j = null;
+  if (e.key === "ArrowRight") j = (i + 1) % n; else if (e.key === "ArrowLeft") j = (i + n - 1) % n; else if (e.key === "Home") j = 0; else if (e.key === "End") j = n - 1;
+  if (j == null) return;
+  e.preventDefault(); show(TABS[j][0], false); $("t-" + TABS[j][0]).focus();
+});
+document.addEventListener("input", function (e) {
+  var id = e.target.id;
+  if (id === "f_q") { S.f.q = e.target.value; renderMarketsOut(); drawCharts(); }
+  else if (id === "s_q") { S.sq.q = e.target.value; renderSrcOut(); }
+  else if (/^e_(price|cost|fx|duty)$/.test(id)) {
+    var key = id.slice(2), v = parseFloat(e.target.value); WI[key] = v;
+    $("o_" + id).textContent = fmtShock(v, key === "duty" ? "pp" : "%");
+    updateEcon(); drawCharts();
+  }
+});
+document.addEventListener("change", function (e) {
+  var id = e.target.id, name = e.target.name;
+  if (id === "f_tier") { S.f.tier = e.target.value; renderMarketsOut(); drawCharts(); }
+  else if (id === "f_sel" || id === "f_scored" || id === "f_home") { S.f[id.slice(2)] = e.target.checked; renderMarketsOut(); drawCharts(); }
+  else if (id === "d_sel") { S.partner = e.target.value; renderDetail(); drawCharts(); $("d_sel").focus(); }
+  else if (id === "e_lane") { S.lane = e.target.value; renderEconomics(); drawCharts(); $("e_lane").focus(); }
+  else if (name === "e_scn") { WI.scn = e.target.value; updateEcon(); drawCharts(); }
+  else if (id === "s_tier") { S.sq.tier = e.target.value; renderSrcOut(); }
+  else if (id === "s_verify") { S.sq.verify = e.target.checked; renderSrcOut(); }
+});
+document.addEventListener("click", function (e) {
+  if (e.target.id === "e_reset") { WI = {scn: "base", price: 0, cost: 0, fx: 0, duty: 0}; renderEconomics(); drawCharts(); $("e_reset").focus(); }
+});
+var rt = null;
+window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(drawCharts, 120); });
+function renderAll() { Object.keys(RENDER).forEach(function (k) { RENDER[k](); }); }
+window.addEventListener("beforeprint", function () { document.body.classList.add("printing"); renderAll(); drawCharts(); });
+window.addEventListener("afterprint", function () { document.body.classList.remove("printing"); show(S.tab, false); });
+
+renderHeader();
+var h0 = (location.hash || "").replace("#", "");
+show(RENDER[h0] ? h0 : "overview", false);
+})();
+</script>
+</body>
+</html>

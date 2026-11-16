@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "study_id": "DEMO-export-frozen-veg",
+  "prepared_for": "DEMO — synthetic data, not a real study",
+  "prepared_by": "Trade Study Planner test suite",
+  "date_prepared": "2026-11-13",
+  "depth": "full_study",
+  "perspective": "export",
+  "home_country": "EGY",
+  "product": {
+    "name": "Frozen vegetables",
+    "description": "IQF mixed vegetables in 10 kg cartons",
+    "hs_code": "071080",
+    "hs_description": "Vegetables; n.e.c. in heading 0710, uncooked or cooked by steaming or boiling in water, frozen",
+    "hs_confirmed_by_user": true
+  },
+  "years": {"from": 2021, "to": 2026},
+  "partners_of_interest": ["DEU"],
+  "partners_existing": ["SAU", "ARE"],
+  "partners_excluded": [],
+  "commercial": {
+    "unit": "kg",
+    "container": {
+      "type": "40RF",
+      "units_per_container": {"value": 24000, "tier": "user", "source": "client packing list", "url": null, "as_of": "2026-11-13"},
+      "net_kg_per_unit": {"value": 1, "tier": "derived", "source": "unit is kg", "url": null, "as_of": "2026-11-13"}
+    },
+    "currencies": {
+      "model": "USD", "cost": "EGP", "price": "USD",
+      "fx_cost_per_model": {"value": 50.0, "tier": "user", "source": "client planning rate", "url": null, "as_of": "2026-11-13"},
+      "fx_price_per_model": {"value": 1, "tier": "derived", "source": "price currency equals model currency", "url": null, "as_of": "2026-11-13"}
+    },
+    "insurance_rate_pct": {"value": 0.4, "tier": "user", "source": "client's cargo policy", "url": null, "as_of": "2026-11-13"},
+    "target_margin_pct": {"value": 18, "tier": "user", "source": "client target", "url": null, "as_of": "2026-11-13"},
+    "cost": {"basis": "EXW", "per_unit": {"value": 38.0, "tier": "user", "source": "client costing sheet", "url": null, "as_of": "2026-11-13"}},
+    "sell_incoterm": "CFR",
+    "price_per_unit": {
+      "default": {"value": null, "tier": "missing", "source": "", "url": null, "as_of": null},
+      "by_partner": {
+        "SAU": {"value": 1.12, "tier": "user", "source": "current customer price", "url": null, "as_of": "2026-11-13"},
+        "ARE": {"value": 1.15, "tier": "user", "source": "current customer price", "url": null, "as_of": "2026-11-13"}
+      }
+    },
+    "payment": {
+      "terms": "T/T 30 days after B/L",
+      "credit_days": {"value": 30, "tier": "user", "source": "client terms", "url": null, "as_of": "2026-11-13"},
+      "advance_pct": {"value": 20, "tier": "user", "source": "client terms", "url": null, "as_of": "2026-11-13"}
+    },
+    "timing": {
+      "production_lead_days": {"value": 21, "tier": "user", "source": "client", "url": null, "as_of": "2026-11-13"},
+      "origin_dwell_days": {"value": 4, "tier": "user", "source": "client", "url": null, "as_of": "2026-11-13"},
+      "clearance_days": {"value": null, "tier": "missing", "source": "", "url": null, "as_of": null}
+    },
+    "fixed_costs": {
+      "one_time": {"value": 9000, "tier": "user", "source": "certification and samples budget", "url": null, "as_of": "2026-11-13"},
+      "annual": {"value": 18000, "tier": "user", "source": "export desk allocation", "url": null, "as_of": "2026-11-13"}
+    },
+    "volume": {
+      "capacity_units_per_year": {"value": 1800000, "tier": "user", "source": "client", "url": null, "as_of": "2026-11-13"},
+      "planned_containers_per_year": {
+        "default": {"value": 6, "tier": "user", "source": "client plan", "url": null, "as_of": "2026-11-13"},
+        "by_partner": {"SAU": {"value": 24, "tier": "user", "source": "client plan", "url": null, "as_of": "2026-11-13"}}
+      },
+      "monthly_ramp": null
+    }
+  }
+}

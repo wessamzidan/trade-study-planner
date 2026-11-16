@@ -1,0 +1,511 @@
+{
+  "schema_version": "2.0",
+  "container_type": "40RF",
+  "generated_at": "2026-11-13T15:46:50",
+  "direction": "partner_to_home",
+  "home": "SAU",
+  "lanes": {
+    "EGY": {
+      "partner": {
+        "iso3": "EGY",
+        "name": "Egypt"
+      },
+      "origin_port": {
+        "name": "Alexandria",
+        "locode": "EGALY",
+        "lat": 31.1833,
+        "lon": 29.9167
+      },
+      "destination_port": {
+        "name": "Jeddah",
+        "locode": "SAJED",
+        "lat": 21.4667,
+        "lon": 39.1667
+      },
+      "distance_nm": 881,
+      "freight_usd": {
+        "low": 1450.0,
+        "base": 1450.0,
+        "high": 1450.0
+      },
+      "freight": {
+        "value": 1450.0,
+        "tier": "quote",
+        "source": "DEMO synthetic forwarder quote ref D-001 (all-in)",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "transit_days": {
+        "low": 6.0,
+        "base": 6.0,
+        "high": 6.0,
+        "tier": "quote"
+      },
+      "all_in": true,
+      "local_charges": {
+        "origin_inland": {
+          "value": 350,
+          "tier": "quote",
+          "source": "DEMO synthetic origin inland tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 120,
+          "tier": "quote",
+          "source": "DEMO synthetic origin docs tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 0,
+          "tier": "quote",
+          "source": "included in all-in rate",
+          "url": null,
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 0,
+          "tier": "quote",
+          "source": "included in all-in rate",
+          "url": null,
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 260,
+          "tier": "quote",
+          "source": "DEMO synthetic import clearance tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 400,
+          "tier": "quote",
+          "source": "DEMO synthetic destination inland tariff, lane EGY",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      },
+      "alternatives": [
+        {
+          "tier": "modelled",
+          "usd": 1803.74,
+          "low": 1172.43,
+          "high": 2435.05,
+          "note": "distance model (least_squares, 2 point(s)); cross-check only"
+        }
+      ],
+      "coverage_gap": false,
+      "notes": [
+        "all-in rate covers: origin_thc, destination_thc"
+      ]
+    },
+    "CHN": {
+      "partner": {
+        "iso3": "CHN",
+        "name": "China"
+      },
+      "origin_port": {
+        "name": "Shanghai",
+        "locode": "CNSHA",
+        "lat": 31.4001,
+        "lon": 121.4971
+      },
+      "destination_port": {
+        "name": "Jeddah",
+        "locode": "SAJED",
+        "lat": 21.4667,
+        "lon": 39.1667
+      },
+      "distance_nm": 6597,
+      "freight_usd": {
+        "low": 1680.0,
+        "base": 1680.0,
+        "high": 1680.0
+      },
+      "freight": {
+        "value": 1680.0,
+        "tier": "quote",
+        "source": "DEMO synthetic forwarder quote ref D-002",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "transit_days": {
+        "low": 9.0,
+        "base": 9.0,
+        "high": 9.0,
+        "tier": "quote"
+      },
+      "all_in": false,
+      "local_charges": {
+        "origin_inland": {
+          "value": 371,
+          "tier": "quote",
+          "source": "DEMO synthetic origin inland tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 127,
+          "tier": "quote",
+          "source": "DEMO synthetic origin docs tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 191,
+          "tier": "quote",
+          "source": "DEMO synthetic origin thc tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 233,
+          "tier": "quote",
+          "source": "DEMO synthetic destination thc tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 276,
+          "tier": "quote",
+          "source": "DEMO synthetic import clearance tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 424,
+          "tier": "quote",
+          "source": "DEMO synthetic destination inland tariff, lane CHN",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      },
+      "alternatives": [
+        {
+          "tier": "modelled",
+          "usd": 2477.09,
+          "low": 1610.11,
+          "high": 3344.07,
+          "note": "distance model (least_squares, 2 point(s)); cross-check only"
+        }
+      ],
+      "coverage_gap": false,
+      "notes": []
+    },
+    "BEL": {
+      "partner": {
+        "iso3": "BEL",
+        "name": "Belgium"
+      },
+      "origin_port": {
+        "name": "Antwerp",
+        "locode": "BEANR",
+        "lat": 51.2167,
+        "lon": 4.4167
+      },
+      "destination_port": {
+        "name": "Jeddah",
+        "locode": "SAJED",
+        "lat": 21.4667,
+        "lon": 39.1667
+      },
+      "distance_nm": 4005,
+      "freight_usd": {
+        "low": 2937.5,
+        "base": 2937.5,
+        "high": 2937.5
+      },
+      "freight": {
+        "value": 2937.5,
+        "tier": "connector",
+        "source": "DEMO synthetic rate tool market average",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "transit_days": {
+        "low": 22.0,
+        "base": 22.0,
+        "high": 22.0,
+        "tier": "connector"
+      },
+      "all_in": false,
+      "local_charges": {
+        "origin_inland": {
+          "value": 392,
+          "tier": "user",
+          "source": "DEMO synthetic origin inland tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 134,
+          "tier": "user",
+          "source": "DEMO synthetic origin docs tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 202,
+          "tier": "published",
+          "source": "DEMO synthetic origin thc tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 246,
+          "tier": "published",
+          "source": "DEMO synthetic destination thc tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 291,
+          "tier": "user",
+          "source": "DEMO synthetic import clearance tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 448,
+          "tier": "user",
+          "source": "DEMO synthetic destination inland tariff, lane BEL",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      },
+      "alternatives": [
+        {
+          "tier": "modelled",
+          "usd": 2171.76,
+          "low": 1411.64,
+          "high": 2931.87,
+          "note": "distance model (least_squares, 2 point(s)); cross-check only"
+        }
+      ],
+      "coverage_gap": false,
+      "notes": [
+        "connector rate from 'DEMO synthetic rate tool market average': 40DC rate converted to 40RF with equipment_multiplier 1.25"
+      ]
+    },
+    "ESP": {
+      "partner": {
+        "iso3": "ESP",
+        "name": "Spain"
+      },
+      "origin_port": {
+        "name": "Valencia",
+        "locode": "ESVLC",
+        "lat": 39.4511,
+        "lon": -0.3303
+      },
+      "destination_port": {
+        "name": "Jeddah",
+        "locode": "SAJED",
+        "lat": 21.4667,
+        "lon": 39.1667
+      },
+      "distance_nm": 2383,
+      "freight_usd": {
+        "low": 2890.0,
+        "base": 2890.0,
+        "high": 2890.0
+      },
+      "freight": {
+        "value": 2890.0,
+        "tier": "published",
+        "source": "DEMO synthetic published carrier spot rate page",
+        "url": "https://example.com/demo",
+        "as_of": "2026-11-13"
+      },
+      "transit_days": {
+        "low": 6.5,
+        "base": 9.6,
+        "high": 14.6,
+        "tier": "modelled"
+      },
+      "all_in": false,
+      "local_charges": {
+        "origin_inland": {
+          "value": 413,
+          "tier": "user",
+          "source": "DEMO synthetic origin inland tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 142,
+          "tier": "user",
+          "source": "DEMO synthetic origin docs tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 212,
+          "tier": "published",
+          "source": "DEMO synthetic origin thc tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 260,
+          "tier": "published",
+          "source": "DEMO synthetic destination thc tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 307,
+          "tier": "user",
+          "source": "DEMO synthetic import clearance tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": 472,
+          "tier": "user",
+          "source": "DEMO synthetic destination inland tariff, lane ESP",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        }
+      },
+      "alternatives": [
+        {
+          "tier": "modelled",
+          "usd": 1980.71,
+          "low": 1287.46,
+          "high": 2673.96,
+          "note": "distance model (least_squares, 2 point(s)); cross-check only"
+        }
+      ],
+      "coverage_gap": false,
+      "notes": [
+        "rate states no transit time: modelled from distance"
+      ]
+    },
+    "IND": {
+      "partner": {
+        "iso3": "IND",
+        "name": "India"
+      },
+      "origin_port": {
+        "name": "Nhava Sheva",
+        "locode": "INNSA",
+        "lat": 18.95,
+        "lon": 72.9667
+      },
+      "destination_port": {
+        "name": "Jeddah",
+        "locode": "SAJED",
+        "lat": 21.4667,
+        "lon": 39.1667
+      },
+      "distance_nm": 2386,
+      "freight_usd": {
+        "low": 1287.69,
+        "base": 1981.06,
+        "high": 2674.43
+      },
+      "freight": {
+        "value": 1981.06,
+        "tier": "modelled",
+        "source": "Distance model usd = a + b x nm (least_squares, a=1699.917, b=0.11781) fitted to 2 benchmark(s): DEMO synthetic index: Far East to North Europe (2026-11-13); DEMO synthetic index: Far East to US West Coast (2026-11-13); range +/-35%",
+        "url": null,
+        "as_of": "2026-11-13"
+      },
+      "transit_days": {
+        "low": 6.5,
+        "base": 9.6,
+        "high": 14.6,
+        "tier": "modelled"
+      },
+      "all_in": false,
+      "local_charges": {
+        "origin_inland": {
+          "value": 434,
+          "tier": "user",
+          "source": "DEMO synthetic origin inland tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_docs": {
+          "value": 149,
+          "tier": "user",
+          "source": "DEMO synthetic origin docs tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "origin_thc": {
+          "value": 223,
+          "tier": "published",
+          "source": "DEMO synthetic origin thc tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_thc": {
+          "value": 273,
+          "tier": "published",
+          "source": "DEMO synthetic destination thc tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "import_clearance": {
+          "value": 322,
+          "tier": "user",
+          "source": "DEMO synthetic import clearance tariff, lane IND",
+          "url": "https://example.com/demo",
+          "as_of": "2026-11-13"
+        },
+        "destination_inland": {
+          "value": null,
+          "tier": "missing",
+          "source": "DEMO synthetic: not yet obtained, left missing on purpose",
+          "url": null,
+          "as_of": null
+        }
+      },
+      "alternatives": [],
+      "coverage_gap": false,
+      "notes": [
+        "modelled from distance and benchmarks: indicative only, never a quote"
+      ]
+    }
+  },
+  "model": {
+    "container_type": "40RF",
+    "range_pct": 35,
+    "n_points": 2,
+    "a": 1699.917,
+    "b": 0.11781,
+    "method": "least_squares",
+    "points": [
+      {
+        "label": "DEMO synthetic index: Far East to North Europe",
+        "from_locode": "SGSIN",
+        "to_locode": "NLRTM",
+        "distance_nm": 8382.9,
+        "usd": 2150.0,
+        "container_type": "40DC",
+        "usd_lane_equipment": 2687.5,
+        "multiplier_applied": true,
+        "as_of": "2026-11-13",
+        "source": "DEMO synthetic index",
+        "url": "https://example.com/demo"
+      },
+      {
+        "label": "DEMO synthetic index: Far East to US West Coast",
+        "from_locode": "CNSHA",
+        "to_locode": "USLAX",
+        "distance_nm": 5730.3,
+        "usd": 1900.0,
+        "container_type": "40DC",
+        "usd_lane_equipment": 2375.0,
+        "multiplier_applied": true,
+        "as_of": "2026-11-13",
+        "source": "DEMO synthetic index",
+        "url": "https://example.com/demo"
+      }
+    ]
+  },
+  "warnings": []
+}

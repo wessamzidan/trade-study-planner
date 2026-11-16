@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0",
+  "partners": [
+    "SAU",
+    "ARE",
+    "NLD",
+    "GBR",
+    "DEU",
+    "KWT"
+  ],
+  "decided_by": "demo",
+  "notes": {}
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "study_id": "DEMO-import-frozen-veg",
+  "prepared_for": "DEMO — synthetic data, not a real study",
+  "prepared_by": "Trade Study Planner test suite",
+  "date_prepared": "2026-11-13",
+  "depth": "full_study",
+  "perspective": "import",
+  "home_country": "SAU",
+  "product": {
+    "name": "Frozen vegetables",
+    "description": "IQF mixed vegetables in 10 kg cartons",
+    "hs_code": "071080",
+    "hs_description": "Vegetables; n.e.c. in heading 0710, uncooked or cooked by steaming or boiling in water, frozen",
+    "hs_confirmed_by_user": true
+  },
+  "years": {"from": 2021, "to": 2026},
+  "partners_of_interest": ["IND"],
+  "partners_existing": ["EGY", "CHN"],
+  "partners_excluded": [],
+  "commercial": {
+    "unit": "kg",
+    "container": {
+      "type": "40RF",
+      "units_per_container": {"value": 24000, "tier": "user", "source": "supplier packing list", "url": null, "as_of": "2026-11-13"},
+      "net_kg_per_unit": {"value": 1, "tier": "derived", "source": "unit is kg", "url": null, "as_of": "2026-11-13"}
+    },
+    "currencies": {
+      "model": "USD", "cost": "USD", "price": "SAR",
+      "fx_cost_per_model": {"value": 1, "tier": "derived", "source": "cost currency equals model currency", "url": null, "as_of": "2026-11-13"},
+      "fx_price_per_model": {"value": 3.75, "tier": "user", "source": "SAR peg", "url": null, "as_of": "2026-11-13"}
+    },
+    "insurance_rate_pct": {"value": 0.35, "tier": "user", "source": "importer's cargo policy", "url": null, "as_of": "2026-11-13"},
+    "target_margin_pct": {"value": 15, "tier": "user", "source": "importer target", "url": null, "as_of": "2026-11-13"},
+    "buy_incoterm": "FOB",
+    "purchase_price_per_unit": {
+      "default": {"value": null, "tier": "missing", "source": "", "url": null, "as_of": null},
+      "by_partner": {
+        "EGY": {"value": 0.95, "tier": "quote", "source": "supplier pro-forma", "url": null, "as_of": "2026-11-10"},
+        "CHN": {"value": 0.88, "tier": "quote", "source": "supplier pro-forma", "url": null, "as_of": "2026-11-09"},
+        "BEL": {"value": 1.25, "tier": "user", "source": "last season's price", "url": null, "as_of": "2026-11-13"}
+      }
+    },
+    "local_price_per_unit": {"value": 5.6, "tier": "user", "source": "importer's wholesale price list", "url": null, "as_of": "2026-11-13"},
+    "payment": {
+      "terms": "30% advance, balance 30 days after B/L",
+      "credit_days": {"value": 30, "tier": "user", "source": "supplier terms", "url": null, "as_of": "2026-11-13"},
+      "advance_pct": {"value": 30, "tier": "user", "source": "supplier terms", "url": null, "as_of": "2026-11-13"},
+      "customer_credit_days": {"value": 45, "tier": "user", "source": "importer's customer terms", "url": null, "as_of": "2026-11-13"}
+    },
+    "timing": {
+      "production_lead_days": {"value": 20, "tier": "user", "source": "supplier", "url": null, "as_of": "2026-11-13"},
+      "origin_dwell_days": {"value": null, "tier": "missing", "source": "", "url": null, "as_of": null},
+      "clearance_days": {"value": 5, "tier": "user", "source": "importer's broker", "url": null, "as_of": "2026-11-13"},
+      "inventory_days": {"value": 30, "tier": "user", "source": "importer", "url": null, "as_of": "2026-11-13"}
+    },
+    "fixed_costs": {
+      "one_time": {"value": 6000, "tier": "user", "source": "supplier audit and registration", "url": null, "as_of": "2026-11-13"},
+      "annual": {"value": 15000, "tier": "user", "source": "sourcing desk allocation", "url": null, "as_of": "2026-11-13"}
+    },
+    "volume": {
+      "capacity_units_per_year": {"value": null, "tier": "missing", "source": "", "url": null, "as_of": null},
+      "planned_containers_per_year": {
+        "default": {"value": 12, "tier": "user", "source": "importer plan", "url": null, "as_of": "2026-11-13"},
+        "by_partner": {}
+      },
+      "monthly_ramp": null
+    }
+  }
+}
