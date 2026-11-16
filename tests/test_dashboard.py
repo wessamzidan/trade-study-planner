@@ -169,7 +169,7 @@ for label, ex, li, kw in cases:
     payload.append({"label": label, "li": ex, "opts": {JS_KEYS[k]: v for k, v in kw.items()}})
     expected.append(mc.compute_lane(li, **kw))
 (TMP / "cases.json").write_text(json.dumps(payload, allow_nan=False), encoding="utf-8")
-runner = TMP / "run_engine.js"
+runner = TMP / "run_engine.cjs"
 runner.write_text("""
 const fs = require('fs');
 const code = fs.readFileSync(process.argv[2], 'utf8');
@@ -236,7 +236,7 @@ if js:
     check("removing an input never yields a margin number", all(jr["status"] == "incomplete" or jr["margin"] is None or "freight_low" in jr["label"] or "origin_inland" in jr["label"] or True for jr in miss))
 
     # portfolio / payback parity against financial.json (base case)
-    pf_runner = TMP / "run_pf.js"
+    pf_runner = TMP / "run_pf.cjs"
     pf_runner.write_text("""
 const fs = require('fs');
 const E = new Function(fs.readFileSync(process.argv[2], 'utf8') + '\\n;return ENGINE;')();
